@@ -18,18 +18,18 @@ abstract: >
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab is 
 # needed on the line after the >.
-#acknowledgements: >
-#  I want to thank a few people.
-#dedication: >
-#  You can have a dedication here if you wish. 
-#preface: >
-#  This is an example of a thesis setup to use the reed thesis document class.
+acknowledgements: >
+  I want to thank a few people.
+dedication: >
+  You can have a dedication here if you wish. 
+preface: >
+  This is an example of a thesis setup to use the reed thesis document class.
 bibliography: bib/thesis.bib
 # Download your specific bibliography database file and refer to it in the line above.
 csl: csl/apa.csl
 # Download your specific csl file and refer to it in the line above.
-#lot: true
-#lof: true
+lot: true
+lof: true
 #space_between_paragraphs: true
 # Delete the # at the beginning of the previous line if you'd like
 # to have a blank new line between each paragraph
