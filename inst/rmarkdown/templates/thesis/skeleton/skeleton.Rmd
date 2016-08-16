@@ -10,10 +10,10 @@ title: 'My Final College Paper'
 knit: "bookdown::render_book"
 #site: bookdown::bookdown_site
 output: 
-#  thesisdown::thesis_pdf: default
-#  thesisdown::thesis_gitbook: default
+  thesisdown::thesis_pdf: default
+#   thesisdown::thesis_gitbook: default
 #   thesisdown::thesis_word: default
-   thesisdown::thesis_epub: default
+#   thesisdown::thesis_epub: default
 abstract: >
   `r paste(readLines('abstract.Rmd'), collapse = ' ')`
 # If you'd rather include the preliminary content in files instead of inline
