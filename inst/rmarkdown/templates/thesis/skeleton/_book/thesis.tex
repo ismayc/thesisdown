@@ -179,19 +179,19 @@ starts here.
   \addcontentsline{toc}{chapter}{Introduction}
   
   Welcome to the \emph{R Markdown} thesis template. This template is based
-  on (and in many places copied directly from) the Reed College
-  \LaTeX~template, but hopefully it will provide a nicer interface for
-  those that have never used \TeX~or \LaTeX~before. Using \emph{R
-  Markdown} will also allow you to easily keep track of your analyses in
-  \textbf{R} chunks of code, with the resulting plots and output included
-  as well. The hope is this \emph{R Markdown} template gets you in the
-  habit of doing reproducible research, which benefits you long-term as a
-  researcher, but also will greatly help anyone that is trying to
-  reproduce or build onto your results down the road.
+  on (and in many places copied directly from) the Reed College LaTeX
+  template, but hopefully it will provide a nicer interface for those that
+  have never used TeX or LaTeX before. Using \emph{R Markdown} will also
+  allow you to easily keep track of your analyses in \textbf{R} chunks of
+  code, with the resulting plots and output included as well. The hope is
+  this \emph{R Markdown} template gets you in the habit of doing
+  reproducible research, which benefits you long-term as a researcher, but
+  also will greatly help anyone that is trying to reproduce or build onto
+  your results down the road.
   
   Hopefully, you won't have much of a learning period to go through and
   you will reap the benefits of a nicely formatted thesis. The use of
-  \LaTeX~in combination with \emph{Markdown} is more consistent than the
+  LaTeX in combination with \emph{Markdown} is more consistent than the
   output of a word processor, much less prone to corruption or crashing,
   and the resulting file is smaller than a Word file. While you may have
   never had problems using Word in the past, your thesis is likely going
@@ -200,19 +200,19 @@ starts here.
   and \textbf{R} together for a few weeks, we are confident this will be
   your reporting style of choice going forward.
   
-  \subsubsection{Why use it?}\label{why-use-it}
+  \textbf{Why use it?}
   
   \emph{R Markdown} creates a simple and straightforward way to interface
-  with the beauty of \LaTeX. Packages have been written in \textbf{R} to
-  work directly with \LaTeX~to produce nicely formatting tables and
-  paragraphs. In addition to creating a user friendly interface to \LaTeX,
+  with the beauty of LaTeX. Packages have been written in \textbf{R} to
+  work directly with LaTeX to produce nicely formatting tables and
+  paragraphs. In addition to creating a user friendly interface to LaTeX,
   \emph{R Markdown} also allows you to read in your data, to analyze it
   and to visualize it using \textbf{R} functions, and also to provide the
   documentation and commentary on the results of your project. Further, it
   allows for \textbf{R} results to be passed inline to the commentary of
   your results. You'll see more on this later.
   
-  \subsubsection{Who should use it?}\label{who-should-use-it}
+  \textbf{Who should use it?}
   
   Anyone who needs to use data analysis, math, tables, a lot of figures,
   complex cross-references, or who just cares about the final appearance
@@ -495,7 +495,7 @@ starts here.
   A useful function in the \texttt{knitr} package for making nice tables
   in \emph{R Markdown} is called \texttt{kable}. It is much easier to use
   than manually entering values into a table by copying and pasting values
-  into Excel or \LaTeX. This again goes to show how nice reproducible
+  into Excel or LaTeX. This again goes to show how nice reproducible
   documents can be! (Note the use of \texttt{results="asis"}, which will
   produce the table instead of the code to create the table.) The
   \texttt{caption.short} argument is used to include a shorter title to
@@ -592,7 +592,7 @@ starts here.
   \TeX~is the best way to typeset mathematics. Donald Knuth designed
   \TeX~when he got frustrated at how long it was taking the typesetters to
   finish his book, which contained a lot of mathematics. One nice feature
-  of \emph{R Markdown} is its ability to read \LaTeX~code directly.
+  of \emph{R Markdown} is its ability to read LaTeX code directly.
   
   If you are doing a thesis that will involve lots of math, you will want
   to read the following section which has been commented out. If you're
@@ -601,7 +601,7 @@ starts here.
   \section{Chemistry 101: Symbols}\label{chemistry-101-symbols}
   
   Chemical formulas will look best if they are not italicized. Get around
-  math mode's automatic italicizing in \LaTeX~by using the argument
+  math mode's automatic italicizing in LaTeX by using the argument
   \texttt{\$\textbackslash{}mathrm\{formula\ here\}\$}, with your formula
   inside the curly brackets. (Notice the use of the backticks here which
   enclose text that acts as code.)
@@ -616,11 +616,7 @@ starts here.
   To stack numbers or letters as in \(\mathrm{Fe_2^{2+}}\), the subscript
   is defined first, and then the superscript is defined.
   
-  \noindent Angstrom: \({\AA}\)
-  
   \noindent Bullet: CuCl \(\bullet\) \(\mathrm{7H_{2}O}\)
-  
-  \noindent Double Dagger: \(\ddag\)
   
   \noindent Delta: \(\Delta\)
   
@@ -629,15 +625,12 @@ starts here.
   
   \noindent Resonance Arrows: \(\leftrightarrow\)
   
-  \noindent Reversible Reaction Arrows: \(\rightleftharpoons\) or
-  \(\xrightleftharpoons[ ]{solution}\) (the latter requires the
-  \texttt{chemarr} \LaTeX~package which is automatically loaded in this
-  template)
+  \noindent Reversible Reaction Arrows: \(\rightleftharpoons\)
   
   \subsection{Typesetting reactions}\label{typesetting-reactions}
   
   You may wish to put your reaction in an equation environment, which
-  means that \LaTeX~will place the reaction where it fits and will number
+  means that LaTeX will place the reaction where it fits and will number
   the equations for you.
   
   \begin{equation}
@@ -661,7 +654,7 @@ starts here.
   
   Many of the symbols you will need can be found on the math page
   \url{http://web.reed.edu/cis/help/latex/math.html} and the Comprehensive
-  \LaTeX~Symbol Guide
+  LaTeX Symbol Guide
   (\url{http://mirror.utexas.edu/ctan/info/symbols/comprehensive/symbols-letter.pdf}).
   
   \section{Biology}\label{biology}
@@ -689,20 +682,6 @@ starts here.
   and columns.
   
   \begin{longtable}[]{@{}ccc@{}}
-  \caption{Correlation of Inheritance Factors for Parents and Child
-  \label{tab:inher}}\tabularnewline
-  \toprule
-  \begin{minipage}[b]{0.29\columnwidth}\centering\strut
-  Factors
-  \strut\end{minipage} &
-  \begin{minipage}[b]{0.47\columnwidth}\centering\strut
-  Correlation between Parents \& Child
-  \strut\end{minipage} &
-  \begin{minipage}[b]{0.16\columnwidth}\centering\strut
-  Inherited
-  \strut\end{minipage}\tabularnewline
-  \midrule
-  \endfirsthead
   \toprule
   \begin{minipage}[b]{0.29\columnwidth}\centering\strut
   Factors
@@ -763,6 +742,9 @@ starts here.
   \bottomrule
   \end{longtable}
   
+  Table \label{tab:inher}: Correlation of Inheritance Factors for Parents and
+  Child
+  
   We can also create a link to the table by doing the following: Table
   \ref{tab:inher}. If you go back to
   \protect\hyperlink{loading-and-exploring-data}{Loading and exploring
@@ -785,7 +767,7 @@ starts here.
   earlier. If you label your figures, you can move the figures around and
   \emph{R Markdown} will automatically adjust the numbering for you. No
   need for you to remember! So that you don't have to get too far into
-  \LaTeX~to do this, a couple \textbf{R} functions have been created for
+  LaTeX to do this, a couple \textbf{R} functions have been created for
   you to assist. You'll see their use below.
   
   In the \textbf{R} chunk below, we will load in a picture stored as
@@ -871,7 +853,8 @@ starts here.
   \subsubsection{More Figure Stuff}\label{more-figure-stuff}
   
   Lastly, we will explore how to rotate and enlarge figures using the
-  \texttt{out.extra} chunk option.
+  \texttt{out.extra} chunk option. (Currently this only works in the PDF
+  version of the book.)
   
   \begin{figure}
   
@@ -906,7 +889,7 @@ starts here.
   
   \emph{R Markdown} uses \emph{pandoc} (\url{http://pandoc.org/}) to build
   its bibliographies. One nice caveat of this is that you won't have to do
-  a second compile to load in references as standard \LaTeX~requires. To
+  a second compile to load in references as standard LaTeX requires. To
   cite references in your thesis (after creating your bibliography
   database), place the reference name inside square brackets and precede
   it by the ``at'' symbol. For example, here's a reference to a book about
@@ -936,7 +919,7 @@ starts here.
   files at \url{https://www.zotero.org/styles}. Make sure to download the
   file into the csl folder.
   
-  \paragraph{Tips for Bibliographies}\label{tips-for-bibliographies}
+  \textbf{Tips for Bibliographies}
   
   \begin{itemize}
   \tightlist
@@ -954,7 +937,7 @@ starts here.
     \texttt{Author\ =\ \{Noble,\ Sam\ and\ Youngberg,\ Jessica\},}.
   \item
     Bibliographies made using BibTeX (whether manually or using a manager)
-    accept \LaTeX~markup, so you can italicize and add symbols as
+    accept LaTeX markup, so you can italicize and add symbols as
     necessary.
   \item
     To force capitalization in an article title or where all lowercase is
@@ -985,7 +968,7 @@ starts here.
   instead of 4.1. The \LaTeX~commands immediately following the Conclusion
   declaration get things back on track.
   
-  \subsubsection{More info}\label{more-info}
+  \textbf{More info}
   
   And here's some other random info: the first paragraph after a chapter
   title or section head \emph{shouldn't be} indented, because indents are
@@ -1001,7 +984,7 @@ starts here.
   hidden throughout the document (using the \texttt{include\ =\ FALSE}
   chunk tag) to help with readibility and/or setup.
   
-  \subsubsection{In the main Rmd file:}\label{in-the-main-rmd-file}
+  \textbf{In the main Rmd file}
   
   \begin{Shaded}
   \begin{Highlighting}[]
@@ -1016,8 +999,7 @@ starts here.
   \end{Highlighting}
   \end{Shaded}
   
-  \subsubsection{In Chapter
-  \ref{ref-labels}:}\label{in-chapter-refref-labels}
+  \textbf{In Chapter \ref{ref-labels}:}
   
   \begin{Shaded}
   \begin{Highlighting}[]

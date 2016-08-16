@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Final College Paper</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="My Final College Paper">
+  <meta name="generator" content="bookdown 0.1.4 and GitBook 2.6.7">
+
+  <meta property="og:title" content="My Final College Paper" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="My Final College Paper" />
+  
+  
+  
+
+<meta name="author" content="Your R. Name">
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="introduction.html">
+<link rel="next" href="2-math-sci.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./"></a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="1-rmd-basics.html"><a href="1-rmd-basics.html"><i class="fa fa-check"></i><b>1</b> R Markdown Basics</a><ul>
+<li class="chapter" data-level="1.1" data-path="1-rmd-basics.html"><a href="1-rmd-basics.html#lists"><i class="fa fa-check"></i><b>1.1</b> Lists</a></li>
+<li class="chapter" data-level="1.2" data-path="1-rmd-basics.html"><a href="1-rmd-basics.html#line-breaks"><i class="fa fa-check"></i><b>1.2</b> Line breaks</a></li>
+<li class="chapter" data-level="1.3" data-path="1-rmd-basics.html"><a href="1-rmd-basics.html#r-chunks"><i class="fa fa-check"></i><b>1.3</b> R chunks</a></li>
+<li class="chapter" data-level="1.4" data-path="1-rmd-basics.html"><a href="1-rmd-basics.html#inline-code"><i class="fa fa-check"></i><b>1.4</b> Inline code</a></li>
+<li class="chapter" data-level="1.5" data-path="1-rmd-basics.html"><a href="1-rmd-basics.html#including-plots"><i class="fa fa-check"></i><b>1.5</b> Including plots</a></li>
+<li class="chapter" data-level="1.6" data-path="1-rmd-basics.html"><a href="1-rmd-basics.html#loading-and-exploring-data"><i class="fa fa-check"></i><b>1.6</b> Loading and exploring data</a></li>
+<li class="chapter" data-level="1.7" data-path="1-rmd-basics.html"><a href="1-rmd-basics.html#additional-resources"><i class="fa fa-check"></i><b>1.7</b> Additional resources</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="2-math-sci.html"><a href="2-math-sci.html"><i class="fa fa-check"></i><b>2</b> Mathematics and Science</a><ul>
+<li class="chapter" data-level="2.1" data-path="2-math-sci.html"><a href="2-math-sci.html#math"><i class="fa fa-check"></i><b>2.1</b> Math</a></li>
+<li class="chapter" data-level="2.2" data-path="2-math-sci.html"><a href="2-math-sci.html#chemistry-101-symbols"><i class="fa fa-check"></i><b>2.2</b> Chemistry 101: Symbols</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="2-math-sci.html"><a href="2-math-sci.html#typesetting-reactions"><i class="fa fa-check"></i><b>2.2.1</b> Typesetting reactions</a></li>
+<li class="chapter" data-level="2.2.2" data-path="2-math-sci.html"><a href="2-math-sci.html#other-examples-of-reactions"><i class="fa fa-check"></i><b>2.2.2</b> Other examples of reactions</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="2-math-sci.html"><a href="2-math-sci.html#physics"><i class="fa fa-check"></i><b>2.3</b> Physics</a></li>
+<li class="chapter" data-level="2.4" data-path="2-math-sci.html"><a href="2-math-sci.html#biology"><i class="fa fa-check"></i><b>2.4</b> Biology</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="3-ref-labels.html"><a href="3-ref-labels.html"><i class="fa fa-check"></i><b>3</b> Tables, Graphics, References, and Labels</a><ul>
+<li class="chapter" data-level="3.1" data-path="3-ref-labels.html"><a href="3-ref-labels.html#tables"><i class="fa fa-check"></i><b>3.1</b> Tables</a></li>
+<li class="chapter" data-level="3.2" data-path="3-ref-labels.html"><a href="3-ref-labels.html#figures"><i class="fa fa-check"></i><b>3.2</b> Figures</a></li>
+<li class="chapter" data-level="3.3" data-path="3-ref-labels.html"><a href="3-ref-labels.html#footnotes-and-endnotes"><i class="fa fa-check"></i><b>3.3</b> Footnotes and Endnotes</a></li>
+<li class="chapter" data-level="3.4" data-path="3-ref-labels.html"><a href="3-ref-labels.html#bibliographies"><i class="fa fa-check"></i><b>3.4</b> Bibliographies</a></li>
+<li class="chapter" data-level="3.5" data-path="3-ref-labels.html"><a href="3-ref-labels.html#anything-else"><i class="fa fa-check"></i><b>3.5</b> Anything else?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i>Conclusion</a></li>
+<li class="chapter" data-level="4" data-path="4-the-first-appendix.html"><a href="4-the-first-appendix.html"><i class="fa fa-check"></i><b>4</b> The First Appendix</a></li>
+<li class="chapter" data-level="5" data-path="5-the-second-appendix-for-fun.html"><a href="5-the-second-appendix-for-fun.html"><i class="fa fa-check"></i><b>5</b> The Second Appendix, for Fun</a></li>
+<li class="chapter" data-level="6" data-path="6-references.html"><a href="6-references.html"><i class="fa fa-check"></i><b>6</b> References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">My Final College Paper</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="rmd-basics" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> R Markdown Basics</h1>
+<p>Here is a brief introduction into using <em>R Markdown</em>. <em>Markdown</em> is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. <em>R Markdown</em> provides the flexibility of <em>Markdown</em> with the implementation of <strong>R</strong> input and output. For more details on using <em>R Markdown</em> see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>Be careful with your spacing in <em>Markdown</em> documents. While whitespace largely is ignored, it does at times give <em>Markdown</em> signals as to how to proceed. As a habit, try to keep everything left aligned whenever possible, especially as you type a new paragraph. In other words, there is no need to indent basic text in the Rmd document (in fact, it might cause your text to do funny things if you do).</p>
+<div id="lists" class="section level2">
+<h2><span class="header-section-number">1.1</span> Lists</h2>
+<p>It’s easy to create a list. It can be unordered like</p>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+</ul>
+<p>or it can be ordered like</p>
+<ol style="list-style-type: decimal">
+<li>Item 1</li>
+<li>Item 2</li>
+</ol>
+<p>Notice that I intentionally mislabeled Item 2 as number 4. <em>Markdown</em> automatically figures this out! You can put any numbers in the list and it will create the list. Check it out below.</p>
+<p>To create a sublist, just indent the values a bit (at least four spaces or a tab). (Here’s one case where indentation is key!)</p>
+<ol style="list-style-type: decimal">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3
+<ul>
+<li>Item 3a</li>
+<li>Item 3b</li>
+</ul></li>
+</ol>
+</div>
+<div id="line-breaks" class="section level2">
+<h2><span class="header-section-number">1.2</span> Line breaks</h2>
+<p>Make sure to add white space between lines if you’d like to start a new paragraph. Look at what happens below in the outputted document if you don’t:</p>
+<p>Here is the first sentence. Here is another sentence. Here is the last sentence to end the paragraph. This should be a new paragraph.</p>
+<p><em>Now for the correct way:</em></p>
+<p>Here is the first sentence. Here is another sentence. Here is the last sentence to end the paragraph.</p>
+<p>This should be a new paragraph.</p>
+</div>
+<div id="r-chunks" class="section level2">
+<h2><span class="header-section-number">1.3</span> R chunks</h2>
+<p>When you click the <strong>Knit</strong> button above a document will be generated that includes both content as well as the output of any embedded <strong>R</strong> code chunks within the document. You can embed an <strong>R</strong> code chunk like this (<code>cars</code> is a built-in <strong>R</strong> dataset):</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(cars)</code></pre></div>
+<pre><code>     speed           dist       
+ Min.   : 4.0   Min.   :  2.00  
+ 1st Qu.:12.0   1st Qu.: 26.00  
+ Median :15.0   Median : 36.00  
+ Mean   :15.4   Mean   : 42.98  
+ 3rd Qu.:19.0   3rd Qu.: 56.00  
+ Max.   :25.0   Max.   :120.00  </code></pre>
+</div>
+<div id="inline-code" class="section level2">
+<h2><span class="header-section-number">1.4</span> Inline code</h2>
+<p>If you’d like to put the results of your analysis directly into your discussion, add inline code like this:</p>
+<blockquote>
+<p>The <code>cos</code> of <span class="math inline">\(2 \pi\)</span> is 1.</p>
+</blockquote>
+<p>Another example would be the direct calculation of the standard deviation:</p>
+<blockquote>
+<p>The standard deviation of <code>speed</code> in <code>cars</code> is 5.2876444.</p>
+</blockquote>
+<p>One last neat feature is the use of the <code>ifelse</code> conditional statement which can be used to output text depending on the result of an <strong>R</strong> calculation:</p>
+<blockquote>
+<p>The standard deviation is less than 6.</p>
+</blockquote>
+<p>Note the use of <code>&gt;</code> here, which signifies a quotation environment that will be indented.</p>
+<p>As you see with <code>$2 \pi$</code> above, mathematics can be added by surrounding the mathematical text with dollar signs. More examples of this are in <a href="2-math-sci.html#math-sci">Mathematics and Science</a> if you uncomment the code in <a href="2-math-sci.html#math">Math</a>.</p>
+</div>
+<div id="including-plots" class="section level2">
+<h2><span class="header-section-number">1.5</span> Including plots</h2>
+<p>You can also embed plots. For example, here is a way to use the base <strong>R</strong> graphics package to produce a plot using the built-in <code>pressure</code> dataset:</p>
+<p><img src="thesis_files/figure-html/pressure-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Note that the <code>echo=FALSE</code> parameter was added to the code chunk to prevent printing of the <strong>R</strong> code that generated the plot. There are plenty of other ways to add chunk options. More information is available at <a href="http://yihui.name/knitr/options/" class="uri">http://yihui.name/knitr/options/</a>.</p>
+<p>Another useful chunk option is the setting of <code>cache=TRUE</code> as you see here. If document rendering becomes time consuming due to long computations or plots that are expensive to generate you can use knitr caching to improve performance. Later in this file, you’ll see a way to reference plots created in <strong>R</strong> or external figures.</p>
+</div>
+<div id="loading-and-exploring-data" class="section level2">
+<h2><span class="header-section-number">1.6</span> Loading and exploring data</h2>
+<p>Included in this template is a file called <code>flights.csv</code>. This file includes a subset of the larger dataset of information about all flights that departed from Seattle and Portland in 2014. More information about this dataset and its <strong>R</strong> package is available at <a href="http://github.com/ismayc/pnwflights14" class="uri">http://github.com/ismayc/pnwflights14</a>. This subset includes only Portland flights and only rows that were complete with no missing values. Merges were also done with the <code>airports</code> and <code>airlines</code> data sets in the <code>pnwflights14</code> package to get more descriptive airport and airline names.</p>
+<p>We can load in this data set using the following command:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">flights &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/flights.csv&quot;</span>)</code></pre></div>
+<p>The data is now stored in the data frame called <code>flights</code> in <strong>R</strong>. To get a better feel for the variables included in this dataset we can use a variety of functions. Here we can see the dimensions (rows by columns) and also the names of the columns.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">dim</span>(flights)</code></pre></div>
+<pre><code>[1] 52808    16</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">names</span>(flights)</code></pre></div>
+<pre><code> [1] &quot;month&quot;        &quot;day&quot;          &quot;dep_time&quot;     &quot;dep_delay&quot;   
+ [5] &quot;arr_time&quot;     &quot;arr_delay&quot;    &quot;carrier&quot;      &quot;tailnum&quot;     
+ [9] &quot;flight&quot;       &quot;dest&quot;         &quot;air_time&quot;     &quot;distance&quot;    
+[13] &quot;hour&quot;         &quot;minute&quot;       &quot;carrier_name&quot; &quot;dest_name&quot;   </code></pre>
+<p>Another good idea is to take a look at the dataset in table form. With this dataset having more than 50,000 rows, we won’t explicitly show the results of the command here. I recommend you enter the command into the Console <strong><em>after</em></strong> you have run the <strong>R</strong> chunks above to load the data into <strong>R</strong>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">View</span>(flights)</code></pre></div>
+<p>While not required, it is highly recommended you use the <code>dplyr</code> package to manipulate and summarize your data set as needed. It uses a syntax that is easy to understand using chaining operations. Below I’ve created a few examples of using <code>dplyr</code> to get information about the Portland flights in 2014. You will also see the use of the <code>ggplot2</code> package, which produces beautiful, high-quality academic visuals.</p>
+<p>We begin by checking to ensure that needed packages are installed and then we load them into our current working environment:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># List of packages required for this analysis</span>
+pkg &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;dplyr&quot;</span>, <span class="st">&quot;ggplot2&quot;</span>, <span class="st">&quot;knitr&quot;</span>, <span class="st">&quot;bookdown&quot;</span>, <span class="st">&quot;devtools&quot;</span>)
+<span class="co"># Check if packages are not installed and assign the</span>
+<span class="co"># names of the packages not installed to the variable new.pkg</span>
+new.pkg &lt;-<span class="st"> </span>pkg[!(pkg %in%<span class="st"> </span><span class="kw">installed.packages</span>())]
+<span class="co"># If there are any packages in the list that aren&#39;t installed,</span>
+<span class="co"># install them</span>
+if (<span class="kw">length</span>(new.pkg))
+  <span class="kw">install.packages</span>(new.pkg, <span class="dt">repos =</span> <span class="st">&quot;http://cran.rstudio.com&quot;</span>)
+<span class="co"># Load packages (thesisdown will load all of the packages as well)</span>
+<span class="kw">library</span>(thesisdown)</code></pre></div>
+<p></p>
+<p>The example we show here does the following:</p>
+<ul>
+<li><p>Selects only the <code>carrier_name</code> and <code>arr_delay</code> from the <code>flights</code> dataset and then assigns this subset to a new variable called <code>flights2</code>.</p></li>
+<li><p>Using <code>flights2</code>, we determine the largest arrival delay for each of the carriers.</p></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">flights2 &lt;-<span class="st"> </span>flights %&gt;%<span class="st"> </span>
+<span class="st">  </span><span class="kw">select</span>(carrier_name, arr_delay)
+max_delays &lt;-<span class="st"> </span>flights2 %&gt;%<span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(carrier_name) %&gt;%
+<span class="st">  </span><span class="kw">summarize</span>(<span class="dt">max_arr_delay =</span> <span class="kw">max</span>(arr_delay, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>))</code></pre></div>
+<p>A useful function in the <code>knitr</code> package for making nice tables in <em>R Markdown</em> is called <code>kable</code>. It is much easier to use than manually entering values into a table by copying and pasting values into Excel or LaTeX. This again goes to show how nice reproducible documents can be! (Note the use of <code>results=&quot;asis&quot;</code>, which will produce the table instead of the code to create the table.) The <code>caption.short</code> argument is used to include a shorter title to appear in the List of Tables.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(max_delays, 
+      <span class="dt">col.names =</span> <span class="kw">c</span>(<span class="st">&quot;Airline&quot;</span>, <span class="st">&quot;Max Arrival Delay&quot;</span>),
+      <span class="dt">caption =</span> <span class="st">&quot;Maximum Delays by Airline&quot;</span>,
+      <span class="dt">caption.short =</span> <span class="st">&quot;Max Delays by Airline&quot;</span>,
+      <span class="dt">longtable =</span> <span class="ot">TRUE</span>,
+      <span class="dt">booktabs =</span> <span class="ot">TRUE</span>)</code></pre></div>
+<table>
+<caption><span id="tab:maxdelays">Table 1.1: </span>Maximum Delays by Airline</caption>
+<thead>
+<tr class="header">
+<th align="left">Airline</th>
+<th align="right">Max Arrival Delay</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Alaska Airlines Inc.</td>
+<td align="right">338</td>
+</tr>
+<tr class="even">
+<td align="left">American Airlines Inc.</td>
+<td align="right">1539</td>
+</tr>
+<tr class="odd">
+<td align="left">Delta Air Lines Inc.</td>
+<td align="right">651</td>
+</tr>
+<tr class="even">
+<td align="left">Frontier Airlines Inc.</td>
+<td align="right">575</td>
+</tr>
+<tr class="odd">
+<td align="left">Hawaiian Airlines Inc.</td>
+<td align="right">407</td>
+</tr>
+<tr class="even">
+<td align="left">JetBlue Airways</td>
+<td align="right">273</td>
+</tr>
+<tr class="odd">
+<td align="left">SkyWest Airlines Inc.</td>
+<td align="right">421</td>
+</tr>
+<tr class="even">
+<td align="left">Southwest Airlines Co.</td>
+<td align="right">694</td>
+</tr>
+<tr class="odd">
+<td align="left">United Air Lines Inc.</td>
+<td align="right">472</td>
+</tr>
+<tr class="even">
+<td align="left">US Airways Inc.</td>
+<td align="right">347</td>
+</tr>
+<tr class="odd">
+<td align="left">Virgin America</td>
+<td align="right">366</td>
+</tr>
+</tbody>
+</table>
+<p>The last two options make the table a little easier-to-read.</p>
+<p>We can further look into the properties of the largest value here for American Airlines Inc. To do so, we can isolate the row corresponding to the arrival delay of 1539 minutes for American in our original <code>flights</code> dataset.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">flights %&gt;%<span class="st"> </span><span class="kw">filter</span>(arr_delay ==<span class="st"> </span><span class="dv">1539</span>, 
+                  carrier_name ==<span class="st"> &quot;American Airlines Inc.&quot;</span>) %&gt;%
+<span class="st">  </span><span class="kw">select</span>(-<span class="kw">c</span>(month, day, carrier, dest_name, hour, 
+            minute, carrier_name, arr_delay))</code></pre></div>
+<pre><code>  dep_time dep_delay arr_time tailnum flight dest air_time distance
+1     1403      1553     1934  N595AA   1568  DFW      182     1616</code></pre>
+<p>We see that the flight occurred on March 3rd and departed a little after 2 PM on its way to Dallas/Fort Worth. Lastly, we show how we can visualize the arrival delay of all departing flights from Portland on March 3rd against time of departure.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">flights %&gt;%<span class="st"> </span><span class="kw">filter</span>(month ==<span class="st"> </span><span class="dv">3</span>, day ==<span class="st"> </span><span class="dv">3</span>) %&gt;%
+<span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x =</span> dep_time, <span class="dt">y =</span> arr_delay)) +<span class="st"> </span><span class="kw">geom_point</span>()</code></pre></div>
+<p><img src="thesis_files/figure-html/march3plot-1.png" width="576" style="display: block; margin: auto;" /></p>
+</div>
+<div id="additional-resources" class="section level2">
+<h2><span class="header-section-number">1.7</span> Additional resources</h2>
+<ul>
+<li><p><em>Markdown</em> Cheatsheet - <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" class="uri">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</a></p></li>
+<li><p><em>R Markdown</em> Reference Guide - <a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf" class="uri">https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf</a></p></li>
+<li><p>Introduction to <code>dplyr</code> - <a href="https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html" class="uri">https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html</a></p></li>
+<li><p><code>ggplot2</code> Documentation - <a href="http://docs.ggplot2.org/current/" class="uri">http://docs.ggplot2.org/current/</a></p></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="2-math-sci.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["thesis.pdf", "thesis.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -9,7 +9,7 @@ MathJax.Hub.Config({
 
 ## Math
 
-\TeX\ is the best way to typeset mathematics. Donald Knuth designed \TeX\ when he got frustrated at how long it was taking the typesetters to finish his book, which contained a lot of mathematics.  One nice feature of _R Markdown_ is its ability to read \LaTeX\ code directly.
+\TeX\ is the best way to typeset mathematics. Donald Knuth designed \TeX\ when he got frustrated at how long it was taking the typesetters to finish his book, which contained a lot of mathematics.  One nice feature of _R Markdown_ is its ability to read LaTeX code directly.
 
 If you are doing a thesis that will involve lots of math, you will want to read the following section which has been commented out. If you're not going to use math, skip over or delete this next commented section.
 
@@ -71,7 +71,7 @@ $$
 
 ## Chemistry 101: Symbols
 
-Chemical formulas will look best if they are not italicized. Get around math mode's automatic italicizing in \LaTeX\ by using the argument `$\mathrm{formula here}$`, with your formula inside the curly brackets.  (Notice the use of the backticks here which enclose text that acts as code.)
+Chemical formulas will look best if they are not italicized. Get around math mode's automatic italicizing in LaTeX by using the argument `$\mathrm{formula here}$`, with your formula inside the curly brackets.  (Notice the use of the backticks here which enclose text that acts as code.)
 
 So, $\mathrm{Fe_2^{2+}Cr_2O_4}$ is written `$\mathrm{Fe_2^{2+}Cr_2O_4}$`.
 
@@ -85,11 +85,8 @@ The \noindent command below does what you'd expect:  it forces the current line/
 
 To stack numbers or letters as in $\mathrm{Fe_2^{2+}}$, the subscript is defined first, and then the superscript is defined.
 
-\noindent Angstrom: ${\AA}$
-
 \noindent Bullet: CuCl $\bullet$ $\mathrm{7H_{2}O}$
 
-\noindent Double Dagger: $\ddag$
 
 \noindent Delta: $\Delta$
 
@@ -97,11 +94,11 @@ To stack numbers or letters as in $\mathrm{Fe_2^{2+}}$, the subscript is defined
 
 \noindent Resonance Arrows: $\leftrightarrow$
 
-\noindent Reversible Reaction Arrows: $\rightleftharpoons$ or $\xrightleftharpoons[ ]{solution}$ (the latter requires the `chemarr` \LaTeX\ package which is automatically loaded in this template)
+\noindent Reversible Reaction Arrows: $\rightleftharpoons$
 
 ### Typesetting reactions
 
-You may wish to put your reaction in an equation environment, which means that \LaTeX\ will place the reaction where it fits and will number the equations for you. 
+You may wish to put your reaction in an equation environment, which means that LaTeX will place the reaction where it fits and will number the equations for you. 
 
 \begin{equation}
   \mathrm{C_6H_{12}O_6  + 6O_2} \longrightarrow \mathrm{6CO_2 + 6H_2O}
@@ -118,7 +115,7 @@ $\mathrm{NH_4Cl_{(s)}}$ $\rightleftharpoons$ $\mathrm{NH_{3(g)}+HCl_{(g)}}$
 
 ## Physics
 
-Many of the symbols you will need can be found on the math page <http://web.reed.edu/cis/help/latex/math.html> and the Comprehensive \LaTeX\ Symbol Guide (<http://mirror.utexas.edu/ctan/info/symbols/comprehensive/symbols-letter.pdf>).
+Many of the symbols you will need can be found on the math page <http://web.reed.edu/cis/help/latex/math.html> and the Comprehensive LaTeX Symbol Guide (<http://mirror.utexas.edu/ctan/info/symbols/comprehensive/symbols-letter.pdf>).
 
 ## Biology
 
