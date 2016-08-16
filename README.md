@@ -29,6 +29,6 @@ devtools::install_github("ismayc/thesisdown")
 
 3) Use the **New R Markdown** dialog to select **Thesis**:
 
-![New R Markdown](reed_template.png)
+![New R Markdown](thesis_rmd.png)
 
 Note that this will currently only **Knit** if you name the directory `skeleton` as shown above.
