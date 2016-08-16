@@ -1,0 +1,6 @@
+book_filename: "thesis"
+chapter_name: "Chapter "
+rmd_files: ["skeleton.Rmd", "chap1.Rmd", "chap2.Rmd", "chap3.Rmd", "conclusion.Rmd", "bibliography.Rmd"]
+
+#    html:  ["index.Rmd", "abstract.Rmd",  "chap1.Rmd", "chap2.Rmd", "chap3.Rmd", "conclusion.Rmd", "bibliography.Rmd"]
+#    latex:
