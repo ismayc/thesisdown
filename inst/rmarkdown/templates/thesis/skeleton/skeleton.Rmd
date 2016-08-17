@@ -8,14 +8,17 @@ advisor: 'Advisor F. Name'
 department: 'Mathematics'
 title: 'My Final College Paper'
 knit: "bookdown::render_book"
-#site: bookdown::bookdown_site
+site: bookdown::bookdown_site
 output: 
   thesisdown::thesis_pdf: default
-#   thesisdown::thesis_gitbook: default
-#   thesisdown::thesis_word: default
-#   thesisdown::thesis_epub: default
+#  thesisdown::thesis_gitbook: default
+#  thesisdown::thesis_word: default
+#  thesisdown::thesis_epub: default
+# If you are creating a PDF you'll need to write your preliminary content here or
+# use code similar to line 20 for the files.  If you are producing in a different
+# format than PDF, you can delete or ignore lines 20-31 in this YAML header.
 abstract: >
-  `r paste(readLines('abstract.Rmd'), collapse = ' ')`
+  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = ' ')`
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab is 
 # needed on the line after the >.
@@ -24,7 +27,8 @@ acknowledgements: >
 dedication: >
   You can have a dedication here if you wish. 
 preface: >
-  This is an example of a thesis setup to use the reed thesis document class.
+  This is an example of a thesis setup to use the reed thesis document class
+  (for LaTeX) and the R bookdown package, in general.
 bibliography: bib/thesis.bib
 # Download your specific bibliography database file and refer to it in the line above.
 csl: csl/apa.csl
@@ -43,7 +47,11 @@ Above is the YAML (YAML Ain't Markup Language) header that includes a lot of met
 
 If you'd prefer to not include a Dedication, for example, simply delete lines 17 and 18 above or add a # before them to comment them out.  If you have other LaTeX packages you would like to include, delete the # before header-includes and list the packages after hyphens on new lines.
 
-If you'd like to include a comment that won't be produced in your resulting PDF file enclose it in a block like this.
+If you'd like to include a comment that won't be produced in your resulting file enclose it in a block like this.
+-->
+
+<!--
+If you receive a duplicate label error after knitting, make sure to delete the thesis.Rmd file and then knit again.
 -->
 
 ```{r include_packages, include = FALSE}
@@ -57,13 +65,14 @@ if(!require(thesisdown))
 library(thesisdown)
 ```
 
-<!--
-This is the way to split your thesis into chapters and then include each of the chapters seperately.  You can Knit the Rmd files corresponding to each chapter individually and then put them all back together by Knit-ing this document.
-
-You'll need to include the order that you'd like Rmd files to appear in the _bookdown.yml file.
+<!-- You'll need to include the order that you'd like Rmd files to appear in the _bookdown.yml file for
+PDF files and also delete the # before rmd_files: there.  You'll want to not include 00(two-hyphens)prelim.Rmd
+and 00-abstract.Rmd since they are handled in the YAML above differently for the PDF version.
 -->
 
-<!-- The {.unnumbered} option here means that the introduction will be "Chapter 0." -->
+<!-- The {.unnumbered} option here means that the introduction will be "Chapter 0." You can also use {-} for no numbers
+on chapters.
+-->
 
 # Introduction {.unnumbered}
 
@@ -72,7 +81,7 @@ Welcome to the _R Markdown_ thesis template. This template is based on (and in m
 Hopefully, you won't have much of a learning period to go through and you will reap the benefits of a nicely formatted thesis.  The use of LaTeX in combination with _Markdown_ is more consistent than the output of a word processor, much less prone to corruption or crashing, and the resulting file is smaller than a Word file. While you may have never had problems using Word in the past, your thesis is likely going to be about twice as large and complex as anything you've written before, taxing Word's capabilities.  After working with _Markdown_ and **R** together for a few weeks, we are confident this will be your reporting style of choice going forward.
 
 <!-- 
-If you're still on the fence about using _R Markdown_, check out the various tutorials available at <http://www.reed.edu/data-at-reed> or email us at <data@reed.edu>. 
+If you're still on the fence about using _R Markdown_, check out the resource for newbies available at <https://ismayc.github.io/rbasics-book/> or email us at <data@reed.edu>. 
 -->
 
 **Why use it?**

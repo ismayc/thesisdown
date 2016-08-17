@@ -2,15 +2,6 @@
 The bib chunk below must go last in this document according to how R Markdown renders.  More info is at http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
 -->
 
-```{r include=FALSE}
-# To ensure skeleton and index files are linked
-# for template
-#file.remove("index.Rmd")
-#file.symlink("skeleton.Rmd", "index.Rmd")
-```
-
-
-
 \backmatter
 
 <!-- 

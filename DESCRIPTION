@@ -1,6 +1,6 @@
 Package: thesisdown
 Title: An updated R Markdown thesis template using the bookdown package
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = c("aut", "cre"))
 Description: Using the bookdown package and LaTeX and Word thesis templates from
     Reed College, this package aims to encourage reproducible research using

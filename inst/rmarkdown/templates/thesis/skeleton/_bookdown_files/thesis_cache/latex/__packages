@@ -5,3 +5,9 @@ utils
 grDevices
 graphics
 stats
+devtools
+dplyr
+ggplot2
+bookdown
+knitr
+thesisdown

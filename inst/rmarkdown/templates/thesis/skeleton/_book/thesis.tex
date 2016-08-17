@@ -124,10 +124,11 @@ You can have a dedication here if you wish.
 
 \Preface{
 This is an example of a thesis setup to use the reed thesis document
-class.
+class (for LaTeX) and the R bookdown package, in general.
 }
 
 \Abstract{
+\texttt{r\ if(!knitr:::is\_latex\_output())\ \textquotesingle{}\#\#\ Abstract\ \{-\}\textquotesingle{}}
 The preface pretty much says it all. \par  Second paragraph of abstract
 starts here.
 }
@@ -152,7 +153,7 @@ starts here.
   
       \begin{preface}
       This is an example of a thesis setup to use the reed thesis document
-      class.
+      class (for LaTeX) and the R bookdown package, in general.
     \end{preface}
   
       \hypersetup{linkcolor=black}
@@ -164,6 +165,7 @@ starts here.
       \listoffigures
   
       \begin{abstract}
+      \texttt{r\ if(!knitr:::is\_latex\_output())\ \textquotesingle{}\#\#\ Abstract\ \{-\}\textquotesingle{}}
       The preface pretty much says it all. \par  Second paragraph of abstract
       starts here.
     \end{abstract}
@@ -682,68 +684,65 @@ starts here.
   and columns.
   
   \begin{longtable}[]{@{}ccc@{}}
+  \caption{\label{tab:inher} Correlation of Inheritance Factors for Parents
+  and Child}\tabularnewline
   \toprule
   \begin{minipage}[b]{0.29\columnwidth}\centering\strut
-  Factors
-  \strut\end{minipage} &
-  \begin{minipage}[b]{0.47\columnwidth}\centering\strut
-  Correlation between Parents \& Child
-  \strut\end{minipage} &
-  \begin{minipage}[b]{0.16\columnwidth}\centering\strut
-  Inherited
-  \strut\end{minipage}\tabularnewline
+  Factors\strut
+  \end{minipage} & \begin{minipage}[b]{0.47\columnwidth}\centering\strut
+  Correlation between Parents \& Child\strut
+  \end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\centering\strut
+  Inherited\strut
+  \end{minipage}\tabularnewline
+  \midrule
+  \endfirsthead
+  \toprule
+  \begin{minipage}[b]{0.29\columnwidth}\centering\strut
+  Factors\strut
+  \end{minipage} & \begin{minipage}[b]{0.47\columnwidth}\centering\strut
+  Correlation between Parents \& Child\strut
+  \end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\centering\strut
+  Inherited\strut
+  \end{minipage}\tabularnewline
   \midrule
   \endhead
   \begin{minipage}[t]{0.29\columnwidth}\centering\strut
-  Education
-  \strut\end{minipage} &
-  \begin{minipage}[t]{0.47\columnwidth}\centering\strut
-  -0.49
-  \strut\end{minipage} &
-  \begin{minipage}[t]{0.16\columnwidth}\centering\strut
-  Yes
-  \strut\end{minipage}\tabularnewline
+  Education\strut
+  \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering\strut
+  -0.49\strut
+  \end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering\strut
+  Yes\strut
+  \end{minipage}\tabularnewline
   \begin{minipage}[t]{0.29\columnwidth}\centering\strut
-  Socio-Economic Status
-  \strut\end{minipage} &
-  \begin{minipage}[t]{0.47\columnwidth}\centering\strut
-  0.28
-  \strut\end{minipage} &
-  \begin{minipage}[t]{0.16\columnwidth}\centering\strut
-  Slight
-  \strut\end{minipage}\tabularnewline
+  Socio-Economic Status\strut
+  \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering\strut
+  0.28\strut
+  \end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering\strut
+  Slight\strut
+  \end{minipage}\tabularnewline
   \begin{minipage}[t]{0.29\columnwidth}\centering\strut
-  Income
-  \strut\end{minipage} &
-  \begin{minipage}[t]{0.47\columnwidth}\centering\strut
-  0.08
-  \strut\end{minipage} &
-  \begin{minipage}[t]{0.16\columnwidth}\centering\strut
-  No
-  \strut\end{minipage}\tabularnewline
+  Income\strut
+  \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering\strut
+  0.08\strut
+  \end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering\strut
+  No\strut
+  \end{minipage}\tabularnewline
   \begin{minipage}[t]{0.29\columnwidth}\centering\strut
-  Family Size
-  \strut\end{minipage} &
-  \begin{minipage}[t]{0.47\columnwidth}\centering\strut
-  0.18
-  \strut\end{minipage} &
-  \begin{minipage}[t]{0.16\columnwidth}\centering\strut
-  Slight
-  \strut\end{minipage}\tabularnewline
+  Family Size\strut
+  \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering\strut
+  0.18\strut
+  \end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering\strut
+  Slight\strut
+  \end{minipage}\tabularnewline
   \begin{minipage}[t]{0.29\columnwidth}\centering\strut
-  Occupational Prestige
-  \strut\end{minipage} &
-  \begin{minipage}[t]{0.47\columnwidth}\centering\strut
-  0.21
-  \strut\end{minipage} &
-  \begin{minipage}[t]{0.16\columnwidth}\centering\strut
-  Slight
-  \strut\end{minipage}\tabularnewline
+  Occupational Prestige\strut
+  \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering\strut
+  0.21\strut
+  \end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering\strut
+  Slight\strut
+  \end{minipage}\tabularnewline
   \bottomrule
   \end{longtable}
-  
-  Table \label{tab:inher}: Correlation of Inheritance Factors for Parents and
-  Child
   
   We can also create a link to the table by doing the following: Table
   \ref{tab:inher}. If you go back to
@@ -784,7 +783,7 @@ starts here.
   
   \begin{figure}
   
-  {\centering \includegraphics[width=3.47in]{figure/reed} 
+  {\centering \includegraphics{figure/reed} 
   
   }
   
@@ -1039,11 +1038,11 @@ starts here.
   \hypertarget{refs}{}
   \hypertarget{ref-angel2000}{}
   Angel, E. (2000). \emph{Interactive computer graphics : A top-down
-  approach with openGL}. Boston, MA: Addison Wesley Longman.
+  approach with opengl}. Boston, MA: Addison Wesley Longman.
   
   \hypertarget{ref-angel2001}{}
   Angel, E. (2001a). \emph{Batch-file computer graphics : A bottom-up
-  approach with quickTime}. Boston, MA: Wesley Addison Longman.
+  approach with quicktime}. Boston, MA: Wesley Addison Longman.
   
   \hypertarget{ref-angel2002a}{}
   Angel, E. (2001b). \emph{Test second book by angel}. Boston, MA: Wesley
@@ -1060,7 +1059,7 @@ starts here.
   (Undergraduate thesis). Reed College.
   
   \hypertarget{ref-reedweb2007}{}
-  Reed~College. (2007, March). LaTeX your document. Retrieved from
+  Reed~College. (2007, march). LaTeX your document. Retrieved from
   \url{http://web.reed.edu/cis/help/LaTeX/index.html}
 
 

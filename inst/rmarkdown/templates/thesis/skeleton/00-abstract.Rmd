@@ -1,3 +1,5 @@
+`r if(!knitr:::is_latex_output()) '## Abstract {-}'`
+
 The preface pretty much says it all.  \par
 
 Second paragraph of abstract starts here.

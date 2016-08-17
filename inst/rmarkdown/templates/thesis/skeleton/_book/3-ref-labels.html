@@ -106,7 +106,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <ul class="summary">
 <li><a href="./"></a></li>
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="preliminary-content.html"><a href="preliminary-content.html"><i class="fa fa-check"></i>Preliminary Content</a><ul>
+<li class="chapter" data-level="" data-path="preliminary-content.html"><a href="preliminary-content.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="preliminary-content.html"><a href="preliminary-content.html#preface"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="preliminary-content.html"><a href="preliminary-content.html#dedication"><i class="fa fa-check"></i>Dedication</a></li>
+<li class="chapter" data-level="" data-path="preliminary-content.html"><a href="preliminary-content.html#abstract"><i class="fa fa-check"></i>Abstract</a></li>
+</ul></li>
 <li class="chapter" data-level="1" data-path="1-rmd-basics.html"><a href="1-rmd-basics.html"><i class="fa fa-check"></i><b>1</b> R Markdown Basics</a><ul>
 <li class="chapter" data-level="1.1" data-path="1-rmd-basics.html"><a href="1-rmd-basics.html#lists"><i class="fa fa-check"></i><b>1.1</b> Lists</a></li>
 <li class="chapter" data-level="1.2" data-path="1-rmd-basics.html"><a href="1-rmd-basics.html#line-breaks"><i class="fa fa-check"></i><b>1.2</b> Line breaks</a></li>
@@ -161,6 +167,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h2><span class="header-section-number">3.1</span> Tables</h2>
 <p>In addition to the tables that can be automatically generated from a data frame in <strong>R</strong> that you saw in <a href="1-rmd-basics.html#rmd-basics">R Markdown Basics</a> using the <code>kable</code> function, you can also create tables using <em>pandoc</em>. (More information is available at <a href="http://pandoc.org/README.html#tables" class="uri">http://pandoc.org/README.html#tables</a>.) This might be useful if you don’t have values specifically stored in <strong>R</strong>, but you’d like to display them in table form. Below is an example. Pay careful attention to the alignment in the table and hyphens to create the rows and columns.</p>
 <table>
+<caption><span id="tab:inher">Table 3.1: </span> Correlation of Inheritance Factors for Parents and Child</caption>
 <colgroup>
 <col width="31%" />
 <col width="51%" />
@@ -201,8 +208,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </tr>
 </tbody>
 </table>
-<p>Table (#tab:inher): Correlation of Inheritance Factors for Parents and Child</p>
-<p>We can also create a link to the table by doing the following: Table <a href="#tab:inher">3.1</a>. If you go back to <a href="1-rmd-basics.html#loading-and-exploring-data">Loading and exploring data</a> and look at the <code>kable</code> table, we can create a reference to this max delays table too: Table <a href="1-rmd-basics.html#tab:maxdelays">1.1</a>. The addition of the <code>\label{tab:inher}</code> option to the end of the table caption allows us to then a make a reference to Table <code>\@ref(tab:label)</code>. Note that this reference could appear anywhere throughout the document after the table has appeared.</p>
+<p>We can also create a link to the table by doing the following: Table <a href="3-ref-labels.html#tab:inher">3.1</a>. If you go back to <a href="1-rmd-basics.html#loading-and-exploring-data">Loading and exploring data</a> and look at the <code>kable</code> table, we can create a reference to this max delays table too: Table <a href="1-rmd-basics.html#tab:maxdelays">1.1</a>. The addition of the <code>\label{tab:inher}</code> option to the end of the table caption allows us to then a make a reference to Table <code>\@ref(tab:label)</code>. Note that this reference could appear anywhere throughout the document after the table has appeared.</p>
 <!-- We will next explore ways to create this label-ref link using figures. -->
 <p></p>
 <!-- clearpage ends the page, and also dumps out all floats.
@@ -219,7 +225,7 @@ If you need a graphic or tabular material to be part of the text, you can just p
 <p>In the <strong>R</strong> chunk below, we will load in a picture stored as <code>reed.jpg</code> in our main directory. We then give it the caption of “Reed logo”, the label of “reedlogo”, and specify that this is a figure. Make note of the different <strong>R</strong> chunk options that are given in the R Markdown file (not shown in the knitted document).</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">include_graphics</span>(<span class="dt">path =</span> <span class="st">&quot;figure/reed.jpg&quot;</span>)</code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:reedlogo"></span>
-<img src="figure/reed.jpg" alt="Reed logo" width="125" />
+<img src="figure/reed.jpg" alt="Reed logo"  />
 <p class="caption">
 Figure 3.1: Reed logo
 </p>
