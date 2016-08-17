@@ -31,4 +31,4 @@ devtools::install_github("ismayc/thesisdown")
 
 ![New R Markdown](thesis_rmd.png)
 
-Note that this will currently only **Knit** if you name the directory `skeleton` as shown above.
+Note that this will currently only **Knit** if you name the directory `index` as shown above.
