@@ -2,7 +2,7 @@
 
 This project was inspired by the [bookdown](http://github.com/rstudio/bookdown) package and is an updated version of my Senior Thesis template in the `reedtemplates` package [here](http://github.com/ismayc/reedtemplates).
 
-Currently, the PDF version is fully-functional.  The gitbook version needs to have the preamble chapters added.  The word and epub versions have no templates behind them and are essentially calls to the appropriate functions in bookdown.
+Currently, the PDF and gitbook versions are fully-functional.  The word and epub versions are developmental, have no templates behind them, and are essentially calls to the appropriate functions in bookdown.
 
 The current output for the four versions is here:
 - [PDF](https://github.com/ismayc/thesisdown/blob/master/inst/rmarkdown/templates/thesis/skeleton/_book/thesis.pdf)
