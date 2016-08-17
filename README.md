@@ -8,7 +8,7 @@ The current output for the four versions is
 - [PDF](https://github.com/ismayc/thesisdown/blob/master/inst/rmarkdown/templates/thesis/skeleton/_book/thesis.pdf)
 - [Word](https://github.com/ismayc/thesisdown/blob/master/inst/rmarkdown/templates/thesis/skeleton/_book/thesis.docx)
 - [ePub](https://github.com/ismayc/thesisdown/blob/master/inst/rmarkdown/templates/thesis/skeleton/_book/thesis.epub)
-- [gitbook](http://ismayc.github.io/thesisdown_book).  The needed files are [here](https://github.com/ismayc/thesisdown/tree/master/inst/rmarkdown/templates/thesis/skeleton/_book).
+- [gitbook](http://ismayc.github.io/thesisdown_book)
 
 Under the hood, the Reed College LaTeX template (and soon the Reed College Word template) is used to ensure that documents conform precisely to submission standards. At the same time, composition and formatting can be done using lightweight [markdown](http://rmarkdown.rstudio.com/authoring_basics.html) syntax, and **R** code and its output can be seamlessly included using [rmarkdown](http://yihui.name/knitr/).
 
