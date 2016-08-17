@@ -4,7 +4,7 @@ This project was inspired by the [bookdown](http://github.com/rstudio/bookdown) 
 
 Currently, the PDF version is fully-functional.  The gitbook version needs to have the preamble chapters added.  The word and epub versions have no templates behind them and are essentially calls to the appropriate functions in bookdown.
 
-The current output for the four versions is
+The current output for the four versions is here:
 - [PDF](https://github.com/ismayc/thesisdown/blob/master/inst/rmarkdown/templates/thesis/skeleton/_book/thesis.pdf)
 - [Word](https://github.com/ismayc/thesisdown/blob/master/inst/rmarkdown/templates/thesis/skeleton/_book/thesis.docx)
 - [ePub](https://github.com/ismayc/thesisdown/blob/master/inst/rmarkdown/templates/thesis/skeleton/_book/thesis.epub)
