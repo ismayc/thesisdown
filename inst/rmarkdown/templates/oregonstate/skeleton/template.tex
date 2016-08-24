@@ -1,0 +1,121 @@
+% This is the Reed College LaTeX thesis template. Most of the work
+% for the document class was done by Sam Noble (SN), as well as this
+% template. Later comments etc. by Ben Salzberg (BTS). Additional
+% restructuring and APA support by Jess Youngberg (JY).
+% Your comments and suggestions are more than welcome; please email
+% them to cus@reed.edu
+%
+% See http://web.reed.edu/cis/help/latex.html for help. There are a
+% great bunch of help pages there, with notes on
+% getting started, bibtex, etc. Go there and read it if you're not
+% already familiar with LaTeX.
+%
+% Any line that starts with a percent symbol is a comment.
+% They won't show up in the document, and are useful for notes
+% to yourself and explaining commands.
+% Commenting also removes a line from the document;
+% very handy for troubleshooting problems. -BTS
+
+% As far as I know, this follows the requirements laid out in
+% the 2002-2003 Senior Handbook. Ask a librarian to check the
+% document before binding. -SN
+
+%%
+%% Preamble
+%%
+% \documentclass{<something>} must begin each LaTeX document
+\documentclass[double,12pt]{beavtex}
+\usepackage{graphicx}
+\usepackage{rotating} % Package added to allow the rotation of figures and chart
+                      % on a page, {sidewaysfigure} command
+\usepackage{tablefootnote} % Packaged added to allow footnotes in the tabular
+                           % environment, use \tablefootnote command
+
+%
+% \documentclass[12pt,twoside]{reedthesis}
+% % Packages are extensions to the basic LaTeX functions. Whatever you
+% % want to typeset, there is probably a package out there for it.
+% % Chemistry (chemtex), screenplays, you name it.
+% % Check out CTAN to see: http://www.ctan.org/
+% %%
+% \usepackage{graphicx,latexsym}
+% \usepackage{amsmath}
+% \usepackage{amssymb,amsthm}
+% \usepackage{longtable,booktabs,setspace}
+% \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
+% \usepackage[hyphens]{url}
+% % Added by CII
+% \usepackage{hyperref}
+% \usepackage{lmodern}
+% \usepackage{float}
+% \floatplacement{figure}{H}
+% % End of CII addition
+% \usepackage{rotating}
+
+% Next line commented out by CII
+%%% \usepackage{natbib}
+% Comment out the natbib line above and uncomment the following two lines to use the new
+% biblatex-chicago style, for Chicago A. Also make some changes at the end where the
+% bibliography is included.
+%\usepackage{biblatex-chicago}
+%\bibliography{thesis}
+
+
+% Added by CII (Thanks, Hadley!)
+% Use ref for internal links
+\renewcommand{\hyperref}[2][???]{\autoref{#1}}
+\def\chapterautorefname{Chapter}
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Subsection}
+% End of CII addition
+
+% Added by CII
+\usepackage{caption}
+\captionsetup{width=5in}
+% End of CII addition
+
+% \usepackage{times} % other fonts are available like times, bookman, charter, palatino
+
+\begin{document}
+\title{$title$} % {An Analysis of Something}
+\author{$author$} % {Joseph A. Student}
+\degree{$degree$} % {Master of Science}
+\doctype{Thesis}
+\department{$department$} % {Nuclear Engineering and Radiation Health Physics}
+\depttype{$depttype$} % {School}
+\depthead{$depthead$} % {Director}
+\major{$major$} % {Radiation Health Physics}
+\advisor{$advisor$} % {Jane R. Professor}
+$if(altadvisor)$
+\altadvisor{$altadvisor$} % alternative advisor may be left blank
+$endif$
+\submitdate{$date$} % {January 1, 2013}
+\commencementyear{$commencement$} % {2013}
+
+
+\abstract{
+  $abstract$
+}
+%\abstract{This is a LaTex template derived from the beavtex template found on the Oregon State University Math Department website. Only three things have changed:
+% \begin{itemize}
+% \item I changed the code of the beavtex.cls to include dots for subchapters in the TOC
+% \item I added the \textbf{rotating} package to allow for rotating charts that were too wide
+% \item I added the \textbf{tablefootnote} package to allow for footnotes in tables
+% \end{itemize}
+% Other than that, the Grad School has approved the pretext pages as of December 2013. Good luck!}
+
+\acknowledgements{
+  $acknowledgements$
+}
+% \acknowledgements{I would like to acknowledge...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel eros sed mauris porttitor semper nec a orci. Nullam vestibulum mi nec condimentum posuere. Pellentesque eget diam id sapien aliquet ullamcorper. Pellentesque blandit nec lectus ut mollis. Praesent in facilisis justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget congue leo, sed consequat libero. In rutrum malesuada nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi sollicitudin tortor ut sem facilisis mollis.}
+
+
+\maketitle
+\mainmatter
+
+
+  $body$
+
+
+\end{document}
+
