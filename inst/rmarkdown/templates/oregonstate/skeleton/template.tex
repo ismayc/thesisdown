@@ -69,7 +69,7 @@ $endfor$
 \title{$title$} % {An Analysis of Something}
 \author{$author$} % {Joseph A. Student}
 \degree{$degree$} % {Master of Science}
-\doctype{Thesis}
+\doctype{$doctype$}
 \department{$department$} % {Nuclear Engineering and Radiation Health Physics}
 \depttype{$depttype$} % {School}
 \depthead{$depthead$} % {Director}
@@ -89,18 +89,28 @@ $endif$
 \abstract{
   $abstract$
 }
-%\abstract{This is a LaTex template derived from the beavtex template found on the Oregon State University Math Department website. Only three things have changed:
-% \begin{itemize}
-% \item I changed the code of the beavtex.cls to include dots for subchapters in the TOC
-% \item I added the \textbf{rotating} package to allow for rotating charts that were too wide
-% \item I added the \textbf{tablefootnote} package to allow for footnotes in tables
-% \end{itemize}
-% Other than that, the Grad School has approved the pretext pages as of December 2013. Good luck!}
 
 \acknowledgements{
   $acknowledgements$
 }
-% \acknowledgements{I would like to acknowledge...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel eros sed mauris porttitor semper nec a orci. Nullam vestibulum mi nec condimentum posuere. Pellentesque eget diam id sapien aliquet ullamcorper. Pellentesque blandit nec lectus ut mollis. Praesent in facilisis justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget congue leo, sed consequat libero. In rutrum malesuada nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi sollicitudin tortor ut sem facilisis mollis.}
+
+$if(contributors)$
+	\contributors{
+	  $contributors$
+	}
+$endif$
+
+$if(dedication)$
+	\dedication{
+	  $dedication$
+	}
+$endif$
+
+$if(preface)$
+	\preface{
+	  $preface$
+	}
+$endif$
 
 
 \maketitle
