@@ -106,3 +106,20 @@ thesis_epub <- function(){
   base
 
 }
+
+#' Generate a section for the yaml input
+#'
+#' @param input a file containing markdown text
+#' @param sep a separator for each line. Defaults to "\\n  "
+#'
+#' @return a string
+#' @export
+#'
+#' @examples
+#' f <- file()
+#' cat("this is\nsome text that\nwill be renedered in\n a file", file = f)
+#' cat(thesis_section(f))
+#' close(f)
+inc <- function(input, sep = "\n  "){
+  paste(readLines(input), collapse = sep)
+}
