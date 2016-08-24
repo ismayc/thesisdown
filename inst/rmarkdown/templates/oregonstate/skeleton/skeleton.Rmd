@@ -20,12 +20,12 @@ output:
 # use code similar to line 20 for the files.  If you are producing in a different
 # format than PDF, you can delete or ignore lines 20-31 in this YAML header.
 abstract: >
-  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = ' ')`
+  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n\t')`
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab is 
 # needed on the line after the >.
 acknowledgements: >
-  `r if(knitr:::is_latex_output()) paste(readLines("00-acknowledgements.Rmd"), collapse = ' ')`
+  `r if(knitr:::is_latex_output()) paste(readLines("00-acknowledgements.Rmd"), collapse = '\n\t')`
 bibliography: ['bib/references.bib', 'bib/thesis.bib']
 # Download your specific bibliography database file and refer to it in the line above.
 csl: csl/apa.csl
@@ -78,8 +78,8 @@ You can also use {-} for no numbers on chapters.
 # Introduction {.unnumbered}
 
 Welcome to the _R Markdown_ thesis template. This template is based on (and in
-many places copied directly from) the [0][Oregon State University LaTeX
-template] and wrapped up into Chester Ismay's [1][*thesisdown* package], but
+many places copied directly from) the [Oregon State University LaTeX
+template][0] and wrapped up into Chester Ismay's [*thesisdown* package][1], but
 hopefully it will provide a nicer interface for those that have never used TeX
 or LaTeX before.  Using _R Markdown_ will also allow you to easily keep track of
 your analyses in **R** chunks of code, with the resulting plots and output
