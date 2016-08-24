@@ -1,15 +1,15 @@
 ---
-doctype: 'Dissertation' # or Thesis
-title: 'An Analysis of Something'
+doctype: 'Dissertation'            # or Thesis
+title: 'An Analysis of Something'  # make a better title than this...
 author: 'Joseph A. Student'
-date: 'January 1, 2013' # date of submission
-commencement: '2013'    # year of commencement
-degree: 'Doctor of Philosophy' # Masters of Science, Art, etc. 
+date: 'January 1, 2013'            # date of submission
+commencement: '2013'               # year of commencement
+degree: 'Doctor of Philosophy'     # Masters of Science, Art, etc. 
 major: 'Radiation Health Physics'
+depttype: 'School'                 # Department, College, etc.
 department: 'Nuclear Engineering and Radiation Health Physics'
-depttype: 'School' # Department, College, etc.
 advisor: 'Jane R. Professor'
-# altadvisor: 'Your Other Advisor' # uncomment this line to add another advisor
+# altadvisor: 'Your Other Advisor' # un-comment this line to add another advisor
 
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
@@ -20,15 +20,15 @@ output:
 #  thesisdown::thesis_epub: default
 # If you are creating a PDF you'll need to write your preliminary content here 
 # or use code similar to the line below for the files.  If you are producing in 
-# a different format than PDF, you can delete or ignore lines 20-31 in this YAML
-# header.
+# a different format than PDF, you can delete or ignore the following lines in 
+# this YAML header.
 abstract: >
-  `r if(knitr:::is_latex_output()) thesisdown::inc("00-abstract.Rmd")`
+  `r if(knitr:::is_latex_output()) thesisdown::inc("pre/00-abstract.Rmd")`
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab is 
 # needed on the line after the >.
 acknowledgements: >
-  `r if(knitr:::is_latex_output()) thesisdown::inc("00-acknowledgements.Rmd")`
+  `r if(knitr:::is_latex_output()) thesisdown::inc("pre/00-acknowledgements.Rmd")`
 bibliography: ['bib/references.bib', 'bib/thesis.bib']
 # Download your specific bibliography database file and refer to it in the line above.
 csl: csl/apa.csl
