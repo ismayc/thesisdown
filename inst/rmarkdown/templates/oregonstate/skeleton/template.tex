@@ -25,41 +25,26 @@
 %%
 % \documentclass{<something>} must begin each LaTeX document
 \documentclass[double,12pt]{beavtex}
-\usepackage{graphicx}
+% Added by CII
+\usepackage{graphicx,latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb,amsthm}
+\usepackage{longtable,booktabs,setspace}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{float}
+\floatplacement{figure}{H}
+% End of CII addition
 \usepackage{rotating} % Package added to allow the rotation of figures and chart
                       % on a page, {sidewaysfigure} command
 \usepackage{tablefootnote} % Packaged added to allow footnotes in the tabular
                            % environment, use \tablefootnote command
 
-%
-% \documentclass[12pt,twoside]{reedthesis}
-% % Packages are extensions to the basic LaTeX functions. Whatever you
-% % want to typeset, there is probably a package out there for it.
-% % Chemistry (chemtex), screenplays, you name it.
-% % Check out CTAN to see: http://www.ctan.org/
-% %%
-% \usepackage{graphicx,latexsym}
-% \usepackage{amsmath}
-% \usepackage{amssymb,amsthm}
-% \usepackage{longtable,booktabs,setspace}
-% \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
-% \usepackage[hyphens]{url}
-% % Added by CII
-% \usepackage{hyperref}
-% \usepackage{lmodern}
-% \usepackage{float}
-% \floatplacement{figure}{H}
-% % End of CII addition
-% \usepackage{rotating}
-
-% Next line commented out by CII
-%%% \usepackage{natbib}
-% Comment out the natbib line above and uncomment the following two lines to use the new
-% biblatex-chicago style, for Chicago A. Also make some changes at the end where the
-% bibliography is included.
-%\usepackage{biblatex-chicago}
-%\bibliography{thesis}
-
+% This has to do with a default pandoc thing
+% http://tex.stackexchange.com/a/258486/77699
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % Added by CII (Thanks, Hadley!)
 % Use ref for internal links
@@ -73,10 +58,10 @@
 \usepackage{caption}
 \captionsetup{width=5in}
 % End of CII addition
+$for(header-includes)$
+  $header-includes$
+$endfor$
 
-% \usepackage{times} % other fonts are available like times, bookman, charter, palatino
-
-\begin{document}
 \title{$title$} % {An Analysis of Something}
 \author{$author$} % {Joseph A. Student}
 \degree{$degree$} % {Master of Science}
@@ -87,10 +72,14 @@
 \major{$major$} % {Radiation Health Physics}
 \advisor{$advisor$} % {Jane R. Professor}
 $if(altadvisor)$
-\altadvisor{$altadvisor$} % alternative advisor may be left blank
+  \altadvisor{$altadvisor$} % alternative advisor may be left blank
 $endif$
 \submitdate{$date$} % {January 1, 2013}
 \commencementyear{$commencement$} % {2013}
+
+
+\begin{document}
+
 
 
 \abstract{
