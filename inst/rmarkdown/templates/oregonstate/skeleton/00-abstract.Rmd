@@ -1,0 +1,13 @@
+This is a LaTex template derived from the beavtex template found on the Oregon
+State University Math Department website. Only three things have changed:
+
+ - I changed the code of the beavtex.cls to include dots for subchapters in the
+   TOC
+ - I added the **rotating** package to allow for rotating charts that were too
+   wide
+ - I added the **tablefootnote** package to allow for footnotes in tables
+
+Other than that, the Grad School has approved the pretext pages as of December
+2013. Good luck!
+
+2016: This template is now a markdown template.
