@@ -1,24 +1,5 @@
-% This is the Reed College LaTeX thesis template. Most of the work
-% for the document class was done by Sam Noble (SN), as well as this
-% template. Later comments etc. by Ben Salzberg (BTS). Additional
-% restructuring and APA support by Jess Youngberg (JY).
-% Your comments and suggestions are more than welcome; please email
-% them to cus@reed.edu
-%
-% See http://web.reed.edu/cis/help/latex.html for help. There are a
-% great bunch of help pages there, with notes on
-% getting started, bibtex, etc. Go there and read it if you're not
-% already familiar with LaTeX.
-%
-% Any line that starts with a percent symbol is a comment.
-% They won't show up in the document, and are useful for notes
-% to yourself and explaining commands.
-% Commenting also removes a line from the document;
-% very handy for troubleshooting problems. -BTS
-
-% As far as I know, this follows the requirements laid out in
-% the 2002-2003 Senior Handbook. Ask a librarian to check the
-% document before binding. -SN
+% This is the Oregon State University LaTeX template. To the best of my
+% knowledge, most of the work was done by those acknowledged in beavtex.cls.
 
 %%
 %% Preamble
@@ -82,17 +63,6 @@ $endif$
 \commencementyear{$commencement$} % {2013}
 
 
-\begin{document}
-
-
-
-\abstract{
-  $abstract$
-}
-
-\acknowledgements{
-  $acknowledgements$
-}
 
 $if(contributors)$
 	\contributors{
@@ -112,6 +82,16 @@ $if(preface)$
 	}
 $endif$
 
+
+\abstract{
+  $abstract$
+}
+
+\acknowledgements{
+  $acknowledgements$
+}
+
+\begin{document}
 
 \maketitle
 \mainmatter

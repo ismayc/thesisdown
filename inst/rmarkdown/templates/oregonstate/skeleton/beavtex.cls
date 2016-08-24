@@ -38,7 +38,8 @@
 % -------------------------------------------------------------------------------
 %  August 2016: Edited by Zhian N. Kamvar
 %
-%  Add elements to use with Rmarkdown
+%  Add elements to use with Rmarkdown. Mainly, adding code for compatibility 
+%  code produced from Rmarkdown.
 
 
 \NeedsTeXFormat{LaTeX2e}
