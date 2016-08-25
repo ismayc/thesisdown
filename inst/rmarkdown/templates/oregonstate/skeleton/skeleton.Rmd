@@ -1,4 +1,7 @@
 ---
+#
+# Required Information --------------------------------------------------------
+#
 doctype: 'Dissertation'            # or Thesis
 title: 'An Analysis of Something'  # make a better title than this...
 author: 'Joseph A. Student'
@@ -8,9 +11,20 @@ degree: 'Doctor of Philosophy'     # Masters of Science, Art, etc.
 major: 'Radiation Health Physics'
 depttype: 'School'                 # Department, College, etc.
 department: 'Nuclear Engineering and Radiation Health Physics'
+depthead: 'Marie Curie'
 advisor: 'Jane R. Professor'
-# altadvisor: 'Your Other Advisor' # un-comment this line to add another advisor
-
+#
+# Optional Information --------------------------------------------------------
+#
+# un-comment the following lines if you have a second major in a different dept.
+# twomajor: 'Creative Writing'
+# depttype: 'School'
+# department: 'Writing Literature and Film'
+# depthead: 'Octavia Butler'
+# coadvisor: 'Sir Writes A. Lot'
+#
+# Rendering Options -----------------------------------------------------------
+#
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
@@ -22,6 +36,15 @@ output:
 # or use code similar to the line below for the files.  If you are producing in 
 # a different format than PDF, you can delete or ignore the following lines in 
 # this YAML header.
+bibliography: ['bib/references.bib', 'bib/thesis.bib']
+# Download your specific bibliography database file and refer to it in the line above.
+csl: csl/apa.csl
+# Download your specific csl file and refer to it in the line above.
+# header-includes:
+#- \usepackage{tikz}
+#
+# Pretext sections ------------------------------------------------------------
+#
 abstract: >
   `r if(knitr:::is_latex_output()) thesisdown::inc("pre/00-abstract.Rmd")`
 # If you'd rather include the preliminary content in files instead of inline
@@ -29,19 +52,14 @@ abstract: >
 # needed on the line after the >.
 acknowledgements: >
   `r if(knitr:::is_latex_output()) thesisdown::inc("pre/00-acknowledgements.Rmd")`
-bibliography: ['bib/references.bib', 'bib/thesis.bib']
-# Download your specific bibliography database file and refer to it in the line above.
-csl: csl/apa.csl
-# Download your specific csl file and refer to it in the line above.
-contributors: >	
-  stuff and such here
-  this will be renedred?
+contributors: > 
+    `r if(knitr:::is_latex_output()) thesisdown::inc("pre/00-contributors.Rmd")`
 dedication: >
-  This is for my mother.
-preface: >	
-  more suff here will be renedered?
-#header-includes:
-#- \usepackage{tikz}
+  This is for my mother 
+  who paved the way.
+# preface: >  
+#  Uncomment the above to include a preface. Again, this can be rendered much
+#  like the files above.
 ---
 
 <!-- 
@@ -69,7 +87,7 @@ thesis.Rmd file and then knit again.
 if(!require(devtools))
   install.packages("devtools", repos = "http://cran.rstudio.com")
 if(!require(thesisdown))
-  devtools::install_github("ismayc/thesisdown")
+  devtools::install_github("zkamvar/thesisdown@osu-thesis")
 library(thesisdown)
 ```
 
