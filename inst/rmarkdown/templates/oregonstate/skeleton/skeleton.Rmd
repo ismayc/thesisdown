@@ -99,11 +99,11 @@ they are handled in the YAML above differently for the PDF version.
 -->
 
 <!-- 
-The {.unnumbered} option here means that the introduction will be "Chapter 0."
-You can also use {-} for no numbers on chapters.
+The {-} option here means that there will be no numbers on the introduction. You
+can also use {.unnumbered} so the introduction will be "Chapter 0."
 -->
 
-# Introduction {.unnumbered}
+# Introduction {-}
 
 Welcome to the _R Markdown_ thesis template. This template is based on (and in
 many places copied directly from) the [Oregon State University LaTeX
@@ -157,8 +157,7 @@ easily include figures, automatically generate a table of contents, index,
 references, table of figures, etc. should make it of great benefit to nearly
 anyone writing a thesis project.
 
-Objective
----------
+## Objective {-}
 
 The purpose of this study is to... Lorem @smith ipsum dolor sit amet,
 consectetur adipiscing elit. Sed venenatis nunc sapien. Praesent
@@ -176,8 +175,7 @@ cursus. Phasellus mattis nibh vitae semper pellentesque. Lorem ipsum
 dolor sit amet, consectetur adipiscing elit. Sed dignissim tellus id
 adipiscing tempus. Aenean posuere malesuada rhoncus. Ut quis elit eros.
 
-Background
-----------
+## Background {-}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis
 nunc sapien. Praesent imperdiet nulla eu rutrum venenatis. Fusce rhoncus
