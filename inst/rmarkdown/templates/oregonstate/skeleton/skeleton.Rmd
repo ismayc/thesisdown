@@ -10,8 +10,8 @@ commencement: '2013'               # year of commencement
 degree: 'Doctor of Philosophy'     # Masters of Science, Art, etc. 
 major: 'Radiation Health Physics'
 depttype: 'School'                 # Department, College, etc.
+depthead: 'Head'                   # Chair, Chancellor, Interim Head, etc.
 department: 'Nuclear Engineering and Radiation Health Physics'
-depthead: 'Marie Curie'
 advisor: 'Jane R. Professor'
 #
 # Optional Information --------------------------------------------------------
@@ -20,7 +20,7 @@ advisor: 'Jane R. Professor'
 # twomajor: 'Creative Writing'
 # depttype: 'School'
 # department: 'Writing Literature and Film'
-# depthead: 'Octavia Butler'
+# depthead: 'Chair'
 # coadvisor: 'Sir Writes A. Lot'
 #
 # Rendering Options -----------------------------------------------------------
@@ -53,7 +53,7 @@ abstract: >
 acknowledgements: >
   `r if(knitr:::is_latex_output()) thesisdown::inc("pre/00-acknowledgements.Rmd")`
 contributors: > 
-    `r if(knitr:::is_latex_output()) thesisdown::inc("pre/00-contributors.Rmd")`
+  `r if(knitr:::is_latex_output()) thesisdown::inc("pre/00-contributors.Rmd")`
 dedication: >
   This is for my mother 
   who paved the way.
