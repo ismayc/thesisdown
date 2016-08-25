@@ -1,13 +1,17 @@
-This is a LaTex template derived from the beavtex template found on the Oregon
-State University Math Department website. Only three things have changed:
+This is a 
+\LaTeX template derived from the \beavtex template found on overleaf 
+(https://www.overleaf.com/latex/templates/oregon-state-university-thesis-and-dissertation/wnvzcdhqshxf) 
+and cloned using `git clone https://git.overleaf.com/5973847rnpkdf`
 
- - I changed the code of the beavtex.cls to include dots for subchapters in the
-   TOC
- - I added the **rotating** package to allow for rotating charts that were too
-   wide
- - I added the **tablefootnote** package to allow for footnotes in tables
+I have made the following changes 
 
-Other than that, the Grad School has approved the pretext pages as of December
-2013. Good luck!
+ - modified `beavtex.cls` from v1.1 to include support for verbatim font styles
+   in R code
+ - stripped the template of its original content to create a pandoc template
+ - placed this into a bookdown (https://bookdown.org/) framework
+ - added packages latexsym, amsmath amssymb,amsthm, longtable, booktabs,
+   setspace, url, hyperref, lmodern, caption, and float
 
-2016: This template is now a markdown template.
+This is still a WIP, but it seems to work for the moment.
+
+Zhian N. Kamvar 2016-08-25
