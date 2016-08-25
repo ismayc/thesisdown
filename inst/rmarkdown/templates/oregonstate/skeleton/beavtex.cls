@@ -1,6 +1,6 @@
 \newcommand{\filename}{beavtex}
-\newcommand{\fileversion}{v1.1}
-\newcommand{\filedate}{2013/12/05}
+\newcommand{\fileversion}{v1.2}
+\newcommand{\filedate}{2016/08/25}
 
 %-------------------------------------------------------------------------------
 % BeavTeX
@@ -39,7 +39,9 @@
 %  August 2016: Edited by Zhian N. Kamvar
 %
 %  Add elements to use with Rmarkdown. Mainly, adding code for compatibility 
-%  code produced from Rmarkdown.
+%  code produced from Rmarkdown. Much of the code was copied directly from
+%  Chester Ismay's thesisdown package for Reed college: 
+%  https://github.com/ismayc/thesisdown
 
 
 \NeedsTeXFormat{LaTeX2e}
