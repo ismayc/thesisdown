@@ -122,8 +122,8 @@ thesis_epub <- function(){
 #'
 #' @examples
 #' f <- file()
-#' cat("this is\nsome text that\nwill be renedered in\n a file", file = f)
-#' cat(thesis_section(f))
+#' cat("  this is\nsome text that\nwill be renedered in\na file\n", file = f)
+#' cat(inc(f))
 #' close(f)
 inc <- function(input, sep = "\n  "){
   paste(readLines(input), collapse = sep)
