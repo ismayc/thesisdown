@@ -4,12 +4,14 @@
 \alias{thesis_pdf}
 \title{Creates an R Markdown PDF Thesis document}
 \usage{
-thesis_pdf(toc = TRUE, toc_depth = 3)
+thesis_pdf(toc = TRUE, toc_depth = 3, ...)
 }
 \arguments{
 \item{toc}{A Boolean (TRUE or FALSE) specifying where table of contents should be created}
 
 \item{toc_depth}{A positive integer}
+
+\item{...}{arguments to be passed to \code{rmarkdown::\link[rmarkdown]{pdf_document}}}
 }
 \value{
 A modified \code{pdf_document} based on the Reed Senior Thesis LaTeX
@@ -17,7 +19,10 @@ A modified \code{pdf_document} based on the Reed Senior Thesis LaTeX
 }
 \description{
 This is a function called in output in the YAML of the driver Rmd file
-to specify using the Reed College Senior Thesis LaTeX template and cls files.
+to specify using the Oregon State University LaTeX template and cls files.
+}
+\note{
+The arguments highlight, keep_tex, and pandoc_args, are already set.
 }
 \examples{
 \dontrun{

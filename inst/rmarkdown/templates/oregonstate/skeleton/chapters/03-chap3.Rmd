@@ -64,8 +64,8 @@ If you need a graphic or tabular material to be part of the text, you can just p
 
 In the **R** chunk below, we will load in a picture stored as `reed.jpg` in our main directory.  We then give it the caption of "Reed logo", the label of "reedlogo", and specify that this is a figure.  Make note of the different **R** chunk options that are given in the R Markdown file (not shown in the knitted document).
 
-```{r reedlogo, fig.cap="Reed logo"}
-include_graphics(path = "figure/reed.jpg")
+```{r reedlogo, fig.cap="Frogs are weird...", out.width = "9cm"}
+include_graphics(path = "figure/frog.jpg")
 ```
 
 Here is a reference to the Reed logo: Figure \@ref(fig:reedlogo).  Note the use of the `fig:` code here.  By naming the **R** chunk that contains the figure, we can then reference that figure later as done in the first sentence here.  We can also specify the caption for the figure via the R chunk option `fig.cap`.

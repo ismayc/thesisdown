@@ -1,0 +1,198 @@
+---
+#
+# Required Information --------------------------------------------------------
+#
+doctype: 'Dissertation'            # or Thesis
+title: 'An Analysis of Something'  # make a better title than this...
+author: 'Joseph A. Student'
+date: 'January 1, 2013'            # date of submission
+commencement: '2013'               # year of commencement
+degree: 'Doctor of Philosophy'     # Masters of Science, Art, etc. 
+major: 'Radiation Health Physics'
+depttype: 'School'                 # Department, College, etc.
+depthead: 'Head'                   # Chair, Chancellor, Interim Head, etc.
+department: 'Nuclear Engineering and Radiation Health Physics'
+advisor: 'Jane R. Professor'
+#
+# Optional Information --------------------------------------------------------
+#
+# un-comment the following lines if you have a second major in a different dept.
+# twomajor: 'Creative Writing'
+# depttype: 'School'
+# department: 'Writing Literature and Film'
+# depthead: 'Chair'
+# coadvisor: 'Sir Writes A. Lot'
+#
+# Rendering Options -----------------------------------------------------------
+#
+knit: "bookdown::render_book"
+site: bookdown::bookdown_site
+output: 
+  beaverdown::thesis_pdf: default
+#  beaverdown::thesis_gitbook: default
+#  beaverdown::thesis_word: default
+#  beaverdown::thesis_epub: default
+# If you are creating a PDF you'll need to write your preliminary content here 
+# or use code similar to the line below for the files.  If you are producing in 
+# a different format than PDF, you can delete or ignore the following lines in 
+# this YAML header.
+bibliography: ['bib/references.bib', 'bib/thesis.bib']
+# Download your specific bibliography database file and refer to it in the line above.
+csl: csl/apa.csl
+# Download your specific csl file and refer to it in the line above.
+# header-includes:
+#- \usepackage{tikz}
+#
+# Pretext sections ------------------------------------------------------------
+#
+abstract: >
+  `r if(knitr:::is_latex_output()) beaverdown::inc("pre/00-abstract.Rmd")`
+# If you'd rather include the preliminary content in files instead of inline
+# like below, use a command like that for the abstract above.  Note that a tab is 
+# needed on the line after the >.
+acknowledgements: >
+  `r if(knitr:::is_latex_output()) beaverdown::inc("pre/00-acknowledgements.Rmd")`
+contributors: > 
+  `r if(knitr:::is_latex_output()) beaverdown::inc("pre/00-contributors.Rmd")`
+dedication: >
+  This is for my mother 
+  who paved the way.
+# preface: >  
+#  Uncomment the above to include a preface. Again, this can be rendered much
+#  like the files above.
+---
+
+<!-- 
+Above is the YAML (YAML Ain't Markup Language) header that includes a lot of
+metadata used to produce the document.  Be careful with spacing in this header!
+
+If you'd prefer to not include a Dedication, for example, simply delete lines 17
+and 18 above or add a # before them to comment them out.  If you have other
+LaTeX packages you would like to include, delete the # before header-includes
+and list the packages after hyphens on new lines.
+
+If you'd like to include a comment that won't be produced in your resulting file
+enclose it in a block like this. 
+-->
+
+<!--
+If you receive a duplicate label error after knitting, make sure to delete the
+thesis.Rmd file and then knit again.
+-->
+
+```{r include_packages, include = FALSE}
+# This chunk ensures that the beaverdown package is
+# installed and loaded. This beaverdown package includes
+# the template files for the thesis.
+if(!require(devtools))
+  install.packages("devtools", repos = "http://cran.rstudio.com")
+if(!require(beaverdown))
+  devtools::install_github("zkamvar/beaverdown")
+library(beaverdown)
+```
+
+<!-- 
+You'll need to include the order that you'd like Rmd files to appear in the
+_bookdown.yml file for PDF files and also delete the # before rmd_files: there.
+You'll want to not include 00(two-hyphens)prelim.Rmd and 00-abstract.Rmd since
+they are handled in the YAML above differently for the PDF version.
+-->
+
+<!-- 
+The {-} option here means that there will be no numbers on the introduction. You
+can also use {.unnumbered} so the introduction will be "Chapter 0."
+-->
+
+# Introduction {-}
+
+Welcome to the _R Markdown_ thesis template. This template is based on (and in
+many places copied directly from) the [Oregon State University LaTeX
+template][0] and wrapped up into Chester Ismay's [*beaverdown* package][1], but
+hopefully it will provide a nicer interface for those that have never used TeX
+or LaTeX before.  Using _R Markdown_ will also allow you to easily keep track of
+your analyses in **R** chunks of code, with the resulting plots and output
+included as well.  The hope is this _R Markdown_ template gets you in the habit
+of doing reproducible research, which benefits you long-term as a researcher,
+but also will greatly help anyone that is trying to reproduce or build onto your
+results down the road.
+
+Hopefully, you won't have much of a learning period to go through and you will
+reap the benefits of a nicely formatted thesis.  The use of LaTeX in combination
+with _Markdown_ is more consistent than the output of a word processor, much
+less prone to corruption or crashing, and the resulting file is smaller than a
+Word file. While you may have never had problems using Word in the past, your
+thesis is likely going to be about twice as large and complex as anything you've
+written before, taxing Word's capabilities.  After working with _Markdown_ and
+**R** together for a few weeks, we are confident this will be your reporting
+style of choice going forward.
+
+<!-- 
+If you're still on the fence about using _R Markdown_, check out the resource
+for newbies available at <https://ismayc.github.io/rbasics-book/> or email us at
+<data@reed.edu>.
+-->
+
+**Why use it?**
+
+_R Markdown_ creates a simple and straightforward way to interface with the
+beauty of LaTeX.  Packages have been written in **R** to work directly with
+LaTeX to produce nicely formatting tables and paragraphs. In addition to
+creating a user friendly interface to LaTeX, _R Markdown_ also allows you to
+read in your data, to analyze it and to visualize it using **R** functions, and
+also to provide the documentation and commentary on the results of your project.
+Further, it allows for **R** results to be passed inline to the commentary of
+your results.  You'll see more on this later.
+
+<!-- 
+Having your code and commentary all together in one place has a plethora of benefits!
+-->
+
+**Who should use it?**
+
+Anyone who needs to use data analysis, math, tables, a lot of figures, complex
+cross-references, or who just cares about the final appearance of their document
+should use _R Markdown_. Of particular use should be anyone in the sciences, but
+the user-friendly nature of _Markdown_ and its ability to keep track of and
+easily include figures, automatically generate a table of contents, index,
+references, table of figures, etc. should make it of great benefit to nearly
+anyone writing a thesis project.
+
+## Objective {-}
+
+The purpose of this study is to... Lorem @smith ipsum dolor sit amet,
+consectetur adipiscing elit. Sed venenatis nunc sapien. Praesent
+imperdiet nulla eu rutrum venenatis. Fusce rhoncus urna a nunc semper,
+non venenatis lorem tempor. Cras sollicitudin eget velit eu venenatis.
+Mauris imperdiet pretium massa sed dapibus. Nunc ipsum ipsum, porttitor
+ut urna ut, pretium feugiat leo. Nunc magna enim, facilisis a porttitor
+eget, elementum ac turpis. Quisque et gravida justo. Etiam vulputate
+quam at commodo suscipit. Vivamus ut adipiscing tortor. Phasellus quis
+dolor et mi hendrerit sollicitudin.
+
+Cras dapibus congue mauris, et imperdiet magna pellentesque non. Sed
+venenatis adipiscing quam ut placerat. Praesent imperdiet dignissim
+cursus. Phasellus mattis nibh vitae semper pellentesque. Lorem ipsum
+dolor sit amet, consectetur adipiscing elit. Sed dignissim tellus id
+adipiscing tempus. Aenean posuere malesuada rhoncus. Ut quis elit eros.
+
+## Background {-}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis
+nunc sapien. Praesent imperdiet nulla eu rutrum venenatis. Fusce rhoncus
+urna a nunc semper, non venenatis lorem tempor. Cras sollicitudin eget
+velit eu venenatis. Mauris imperdiet pretium massa sed dapibus. Nunc
+ipsum ipsum, porttitor ut urna ut, pretium feugiat leo. Nunc magna enim,
+facilisis a porttitor eget, elementum ac turpis. Quisque et gravida
+justo. Etiam vulputate quam at commodo suscipit. Vivamus ut adipiscing
+tortor. Phasellus quis dolor et mi hendrerit sollicitudin.
+
+Cras dapibus congue mauris, et imperdiet magna pellentesque non. Sed
+venenatis adipiscing quam ut placerat. Praesent imperdiet dignissim
+cursus. Phasellus mattis nibh vitae semper pellentesque. Lorem ipsum
+dolor sit amet, consectetur adipiscing elit. Sed dignissim tellus id
+adipiscing tempus. Aenean posuere malesuada rhoncus. Ut quis elit eros.
+
+
+
+[0]: https://www.overleaf.com/latex/templates/oregon-state-university-thesis-and-dissertation/wnvzcdhqshxf
+[1]: https://github.com/zkamvar/beaverdown

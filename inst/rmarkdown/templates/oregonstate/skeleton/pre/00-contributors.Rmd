@@ -1,0 +1,24 @@
+The following people contributed to this dissertation: 
+<!-- Note: you MUST have a line at the beginning of all pretext pages -->
+
+
+#### Chapter 1 {-}
+
+  Jane R. Professor assisted in the design, analysis, and editing of the
+  manuscript.
+
+#### Chapter 2 {-}
+
+  Lisa Simpson developed the initial concept and experimental design for the
+   study. Ellen Ripley advised and assisted with statistical analysis. Jane R.
+   Professor assisted in the design, analysis, and editing of the manuscript.
+
+#### Chapter 3 {-}
+
+  Jane R. Professor assisted in the design, analysis, and editing of the
+   manuscript.
+
+#### Chapter 4 {-}
+
+  Jane R. Professor assisted in the design, analysis, and editing of the
+   manuscript.

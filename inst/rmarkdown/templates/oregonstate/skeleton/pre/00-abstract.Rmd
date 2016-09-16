@@ -1,0 +1,17 @@
+This is a 
+\LaTeX template derived from the \beavtex template found on overleaf 
+(https://www.overleaf.com/latex/templates/oregon-state-university-thesis-and-dissertation/wnvzcdhqshxf) 
+and cloned using `git clone https://git.overleaf.com/5973847rnpkdf`
+
+I have made the following changes 
+
+ - modified `beavtex.cls` from v1.1 to include support for verbatim font styles
+   in R code
+ - stripped the template of its original content to create a pandoc template
+ - placed this into a bookdown (https://bookdown.org/) framework
+ - added packages latexsym, amsmath amssymb,amsthm, longtable, booktabs,
+   setspace, url, hyperref, lmodern, caption, and float
+
+This is still a WIP, but it seems to work for the moment.
+
+Zhian N. Kamvar 2016-08-25

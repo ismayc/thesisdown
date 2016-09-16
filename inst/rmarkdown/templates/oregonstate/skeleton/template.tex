@@ -1,0 +1,111 @@
+% This is the Oregon State University LaTeX template. To the best of my
+% knowledge, most of the work was done by those acknowledged in beavtex.cls.
+
+%%
+%% Preamble
+%%
+% \documentclass{<something>} must begin each LaTeX document
+\documentclass[double,12pt]{beavtex}
+% Added by CII
+\usepackage{graphicx,latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb,amsthm}
+\usepackage{longtable,booktabs,setspace}
+\usepackage[hyphens]{url}
+\usepackage[colorlinks = true, 
+			urlcolor = blue,
+			linkcolor = black,
+			citecolor = black,
+			anchorcolor = black]{hyperref}
+\usepackage{lmodern}
+\usepackage{float}
+\floatplacement{figure}{H}
+% End of CII addition
+\usepackage{rotating} % Package added to allow the rotation of figures and chart
+                      % on a page, {sidewaysfigure} command
+\usepackage{tablefootnote} % Packaged added to allow footnotes in the tabular
+                           % environment, use \tablefootnote command
+
+% This has to do with a default pandoc thing
+% http://tex.stackexchange.com/a/258486/77699
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Added by CII (Thanks, Hadley!)
+% Use ref for internal links
+\renewcommand{\hyperref}[2][???]{\autoref{#1}}
+\def\chapterautorefname{Chapter}
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Subsection}
+% End of CII addition
+
+% Added by CII
+\usepackage{caption}
+\captionsetup{width=5in}
+% End of CII addition
+$for(header-includes)$
+  $header-includes$
+$endfor$
+
+\title{$title$} % {An Analysis of Something}
+\author{$author$} % {Joseph A. Student}
+\degree{$degree$} % {Master of Science}
+\doctype{$doctype$}
+\submitdate{$date$} % {January 1, 2013}
+\commencementyear{$commencement$} % {2013}
+
+\department{$department$} % {Nuclear Engineering and Radiation Health Physics}
+$if(twodepartment)$
+	\twodepartment{$twodepartment$}
+$endif$
+
+\depttype{$depttype$} % {School}
+$if(twodepttype)$
+	\twodepttype{$twodepttype$}
+$endif$
+
+\depthead{$depthead$} % {Director}
+$if(twodepthead)$
+	\twodepthead{$twodepthead$}
+$endif$
+
+\major{$major$} % {Radiation Health Physics}
+$if(twomajor)$
+	\twomajor{$twomajor$}
+$endif$
+
+\advisor{$advisor$} % {Jane R. Professor}
+$if(coadvisor)$
+	\coadvisor{$coadvisor$}
+$endif$
+
+\abstract{$abstract$}
+\acknowledgements{$acknowledgements$}
+
+
+$if(contributors)$
+	\contributors{$contributors$}
+$endif$
+
+
+$if(dedication)$
+	\dedication{$dedication$}
+$endif$
+
+$if(preface)$
+	\preface{$preface$}
+$endif$
+
+
+
+\begin{document}
+
+\maketitle
+\mainmatter
+
+
+  $body$
+
+
+\end{document}
+
