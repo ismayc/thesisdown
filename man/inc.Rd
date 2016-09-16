@@ -19,7 +19,7 @@ Generate a section for the yaml input
 }
 \examples{
 f <- file()
-cat("this is\\nsome text that\\nwill be renedered in\\n a file", file = f)
+cat("  this is\\nsome text that\\nwill be renedered in\\na file\\n", file = f)
 cat(inc(f))
 close(f)
 }

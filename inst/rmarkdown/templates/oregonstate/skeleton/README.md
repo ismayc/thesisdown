@@ -1,7 +1,7 @@
 # Oregon State University RMarkdown thesis template
 
 This is the unofficial Oregon State University RMarkdown thesis template. You 
-can find a copy of this template at https://github.com/zkamvar/thesisdown/tree/osu-thesis.
+can find a copy of this template at https://github.com/zkamvar/beaverdown.
 
 To install the template, be sure you have the following:
 

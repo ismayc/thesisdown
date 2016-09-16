@@ -28,10 +28,10 @@ advisor: 'Jane R. Professor'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
-  thesisdown::thesis_pdf: default
-#  thesisdown::thesis_gitbook: default
-#  thesisdown::thesis_word: default
-#  thesisdown::thesis_epub: default
+  beaverdown::thesis_pdf: default
+#  beaverdown::thesis_gitbook: default
+#  beaverdown::thesis_word: default
+#  beaverdown::thesis_epub: default
 # If you are creating a PDF you'll need to write your preliminary content here 
 # or use code similar to the line below for the files.  If you are producing in 
 # a different format than PDF, you can delete or ignore the following lines in 
@@ -46,14 +46,14 @@ csl: csl/apa.csl
 # Pretext sections ------------------------------------------------------------
 #
 abstract: >
-  `r if(knitr:::is_latex_output()) thesisdown::inc("pre/00-abstract.Rmd")`
+  `r if(knitr:::is_latex_output()) beaverdown::inc("pre/00-abstract.Rmd")`
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab is 
 # needed on the line after the >.
 acknowledgements: >
-  `r if(knitr:::is_latex_output()) thesisdown::inc("pre/00-acknowledgements.Rmd")`
+  `r if(knitr:::is_latex_output()) beaverdown::inc("pre/00-acknowledgements.Rmd")`
 contributors: > 
-  `r if(knitr:::is_latex_output()) thesisdown::inc("pre/00-contributors.Rmd")`
+  `r if(knitr:::is_latex_output()) beaverdown::inc("pre/00-contributors.Rmd")`
 dedication: >
   This is for my mother 
   who paved the way.
@@ -81,14 +81,14 @@ thesis.Rmd file and then knit again.
 -->
 
 ```{r include_packages, include = FALSE}
-# This chunk ensures that the thesisdown package is
-# installed and loaded. This thesisdown package includes
+# This chunk ensures that the beaverdown package is
+# installed and loaded. This beaverdown package includes
 # the template files for the thesis.
 if(!require(devtools))
   install.packages("devtools", repos = "http://cran.rstudio.com")
-if(!require(thesisdown))
-  devtools::install_github("zkamvar/thesisdown@osu-thesis")
-library(thesisdown)
+if(!require(beaverdown))
+  devtools::install_github("zkamvar/beaverdown")
+library(beaverdown)
 ```
 
 <!-- 
@@ -107,7 +107,7 @@ can also use {.unnumbered} so the introduction will be "Chapter 0."
 
 Welcome to the _R Markdown_ thesis template. This template is based on (and in
 many places copied directly from) the [Oregon State University LaTeX
-template][0] and wrapped up into Chester Ismay's [*thesisdown* package][1], but
+template][0] and wrapped up into Chester Ismay's [*beaverdown* package][1], but
 hopefully it will provide a nicer interface for those that have never used TeX
 or LaTeX before.  Using _R Markdown_ will also allow you to easily keep track of
 your analyses in **R** chunks of code, with the resulting plots and output
@@ -195,4 +195,4 @@ adipiscing tempus. Aenean posuere malesuada rhoncus. Ut quis elit eros.
 
 
 [0]: https://www.overleaf.com/latex/templates/oregon-state-university-thesis-and-dissertation/wnvzcdhqshxf
-[1]: https://github.com/ismayc/thesisdown
+[1]: https://github.com/zkamvar/beaverdown

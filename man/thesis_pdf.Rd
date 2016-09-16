@@ -19,7 +19,7 @@ A modified \code{pdf_document} based on the Reed Senior Thesis LaTeX
 }
 \description{
 This is a function called in output in the YAML of the driver Rmd file
-to specify using the Reed College Senior Thesis LaTeX template and cls files.
+to specify using the Oregon State University LaTeX template and cls files.
 }
 \note{
 The arguments highlight, keep_tex, and pandoc_args, are already set.

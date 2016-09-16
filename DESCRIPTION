@@ -1,11 +1,11 @@
-Package: thesisdown
-Title: An updated R Markdown thesis template using the bookdown package
-Version: 0.0.2
-Authors@R: person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = c("aut", "cre"))
+Package: beaverdown
+Title: An updated R Markdown thesis template for Oregon State University using the bookdown package
+Version: 0.0.3
+Authors@R: c(person(c("Zhian", "N."), "Kamvar", email = "zkamvar@gmail.com", role = c("aut", "cre")),
+    person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = c("aut")))
 Description: Using the bookdown package and LaTeX and Word thesis templates from
-    Reed College, this package aims to encourage reproducible research using
-    simple Markdown syntax while embedding all of the R code to produce plots
-    and analyses as well.
+    Oregon State University, this package was derived from Chester Ismay's
+    package "thesisdown"
 Depends:
     R (>= 3.3.0),
     devtools,
