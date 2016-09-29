@@ -25,7 +25,7 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3){
   base$knitr$opts_chunk$comment <- NA
   base$knitr$opts_chunk$fig.align <- "center"
   # Not sure if needed?
-  base$knitr$knit_hooks$plot <- knitr:::hook_plot_tex
+  #base$knitr$knit_hooks$plot <- knitr:::hook_plot_tex
 
   base
 
