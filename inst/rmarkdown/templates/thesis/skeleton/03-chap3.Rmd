@@ -41,7 +41,7 @@ In addition to the tables that can be automatically generated from a data frame 
 ------------------------- ----------------------------------------- --------------
 Table: (\#tab:inher) Correlation of Inheritance Factors for Parents and Child 
 
-We can also create a link to the table by doing the following: Table \@ref(tab:inher).  If you go back to [Loading and exploring data] and look at the `kable` table, we can create a reference to this max delays table too: Table \@ref(tab:maxdelays). The addition of the `\label{tab:inher}` option to the end of the table caption allows us to then a make a reference to Table `\@ref(tab:label)`. Note that this reference could appear anywhere throughout the document after the table has appeared.  
+We can also create a link to the table by doing the following: Table \@ref(tab:inher).  If you go back to [Loading and exploring data] and look at the `kable` table, we can create a reference to this max delays table too: Table \@ref(tab:maxdelays). The addition of the `(\#tab:inher)` option to the end of the table caption allows us to then make a reference to Table `\@ref(tab:label)`. Note that this reference could appear anywhere throughout the document after the table has appeared.  
 
 <!-- We will next explore ways to create this label-ref link using figures. -->
 
