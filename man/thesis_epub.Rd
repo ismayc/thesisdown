@@ -4,7 +4,7 @@
 \alias{thesis_epub}
 \title{Creates an R Markdown epub Thesis document}
 \usage{
-thesis_epub()
+thesis_epub(...)
 }
 \value{
 A ebook version of the thesis

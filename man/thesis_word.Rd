@@ -4,7 +4,7 @@
 \alias{thesis_word}
 \title{Creates an R Markdown Word Thesis document}
 \usage{
-thesis_word()
+thesis_word(...)
 }
 \value{
 A Word Document based on (hopefully soon, but not currently)

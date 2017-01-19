@@ -9,7 +9,7 @@ If you'd like to change the name of the bibliography to something else,
 delete "References" and replace it.
 -->
 
-# References
+# References {-}
 
 <!--
 To remove the indentation of the first entry.

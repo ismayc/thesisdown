@@ -4,7 +4,7 @@
 \alias{thesis_gitbook}
 \title{Creates an R Markdown gitbook Thesis document}
 \usage{
-thesis_gitbook()
+thesis_gitbook(...)
 }
 \value{
 A gitbook webpage
