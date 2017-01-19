@@ -12,18 +12,19 @@
 #' \dontrun{
 #'  output: thesisdown::thesis_pdf
 #' }
-thesis_pdf <- function(toc = TRUE, toc_depth = 3){
+thesis_pdf <- function(toc = TRUE, toc_depth = 3, ...){
 
   base <- bookdown::pdf_book(template = "template.tex",
     toc = toc,
     toc_depth = toc_depth,
     highlight = "pygments",
     keep_tex = TRUE,
-    pandoc_args = "--chapters")
+    pandoc_args = "--chapters",
+    ...)
 
   # Mostly copied from knitr::render_sweave
   base$knitr$opts_chunk$comment <- NA
-  base$knitr$opts_chunk$fig.align <- "center"
+  #base$knitr$opts_chunk$fig.align <- "center"
 
   base
 
@@ -40,13 +41,14 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3){
 #' \dontrun{
 #'  output: thesisdown::thesis_gitbook
 #' }
-thesis_gitbook <- function(){
+thesis_gitbook <- function(...){
 
   base <- bookdown::gitbook(
     split_by = "chapter+number",
     config = list(toc = list(collapse = "section",
       before = '<li><a href="./"></a></li>',
-      after = '<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>')
+      after = '<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>',
+      ...)
     )
   )
 
@@ -70,9 +72,9 @@ thesis_gitbook <- function(){
 #' \dontrun{
 #'  output: thesisdown::thesis_word
 #' }
-thesis_word <- function(){
+thesis_word <- function(...){
 
-  base <- bookdown::word_document2()
+  base <- bookdown::word_document2(...)
 
   # Mostly copied from knitr::render_sweave
   base$knitr$opts_chunk$comment <- NA
@@ -93,9 +95,9 @@ thesis_word <- function(){
 #' \dontrun{
 #'  output: thesisdown::thesis_epub
 #' }
-thesis_epub <- function(){
+thesis_epub <- function(...){
 
-  base <- bookdown::epub_book()
+  base <- bookdown::epub_book(...)
 
   # Mostly copied from knitr::render_sweave
   base$knitr$opts_chunk$comment <- NA

@@ -51,7 +51,7 @@ If you'd like to include a comment that won't be produced in your resulting file
 -->
 
 <!--
-If you receive a duplicate label error after knitting, make sure to delete the thesis.Rmd file and then knit again.
+If you receive a duplicate label error after knitting, make sure to delete the index.Rmd file and then knit again.
 -->
 
 ```{r include_packages, include = FALSE}
