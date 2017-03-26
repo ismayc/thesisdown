@@ -20,10 +20,11 @@ To use **thesisdown** from RStudio:
 
 1) Install the latest [RStudio](http://www.rstudio.com/products/rstudio/download/).
 
-2) Install the **thesisdown** package: 
+2) Install the **bookdown** and **thesisdown** packages: 
 
 ```S
 install.packages("devtools")
+devtools::install_github("rstudio/bookdown")
 devtools::install_github("ismayc/thesisdown")
 ```
 

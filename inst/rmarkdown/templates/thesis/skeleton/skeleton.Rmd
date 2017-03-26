@@ -10,8 +10,8 @@ title: 'My Final College Paper'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
-  thesisdown::thesis_pdf: default
-#  thesisdown::thesis_gitbook: default
+#  thesisdown::thesis_pdf: default
+  thesisdown::thesis_gitbook: default
 #  thesisdown::thesis_word: default
 #  thesisdown::thesis_epub: default
 # If you are creating a PDF you'll need to write your preliminary content here or
@@ -51,7 +51,7 @@ If you'd like to include a comment that won't be produced in your resulting file
 -->
 
 <!--
-If you receive a duplicate label error after knitting, make sure to delete the thesis.Rmd file and then knit again.
+If you receive a duplicate label error after knitting, make sure to delete the index.Rmd file and then knit again.
 -->
 
 ```{r include_packages, include = FALSE}
