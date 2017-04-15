@@ -17,16 +17,16 @@ output:
 # If you are creating a PDF you'll need to write your preliminary content here or
 # use code similar to line 20 for the files.  If you are producing in a different
 # format than PDF, you can delete or ignore lines 20-31 in this YAML header.
-abstract: >
-  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = ' ')`
+abstract: |
+  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab is 
-# needed on the line after the >.
-acknowledgements: >
+# needed on the line after the |.
+acknowledgements: |
   I want to thank a few people.
-dedication: >
+dedication: |
   You can have a dedication here if you wish. 
-preface: >
+preface: |
   This is an example of a thesis setup to use the reed thesis document class
   (for LaTeX) and the R bookdown package, in general.
 bibliography: bib/thesis.bib
