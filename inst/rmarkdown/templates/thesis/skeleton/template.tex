@@ -149,58 +149,58 @@ $endfor$
 \begin{document}
 
 % Everything below added by CII
-  $if(title)$
-    \maketitle
-  $endif$
+$if(title)$
+  \maketitle
+$endif$
 
-  \frontmatter % this stuff will be roman-numbered
-  \pagestyle{empty} % this removes page numbers from the frontmatter
+\frontmatter % this stuff will be roman-numbered
+\pagestyle{empty} % this removes page numbers from the frontmatter
 
-  $if(acknowledgements)$
-    \begin{acknowledgements}
-      $acknowledgements$
-    \end{acknowledgements}
-  $endif$
+$if(acknowledgements)$
+  \begin{acknowledgements}
+    $acknowledgements$
+  \end{acknowledgements}
+$endif$
 
-  $if(preface)$
-    \begin{preface}
-      $preface$
-    \end{preface}
-  $endif$
+$if(preface)$
+  \begin{preface}
+    $preface$
+  \end{preface}
+$endif$
 
-  $if(toc)$
-    \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
-    \setcounter{tocdepth}{$toc-depth$}
-    \tableofcontents
-  $endif$
+$if(toc)$
+  \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
+  \setcounter{tocdepth}{$toc-depth$}
+  \tableofcontents
+$endif$
 
-  $if(lot)$
-    \listoftables
-  $endif$
+$if(lot)$
+  \listoftables
+$endif$
 
-  $if(lof)$
-    \listoffigures
-  $endif$
+$if(lof)$
+  \listoffigures
+$endif$
 
-  $if(abstract)$
-    \begin{abstract}
-      $abstract$
-    \end{abstract}
-  $endif$
+$if(abstract)$
+  \begin{abstract}
+    $abstract$
+  \end{abstract}
+$endif$
 
-  $if(dedication)$
-    \begin{dedication}
-      $dedication$
-    \end{dedication}
-  $endif$
+$if(dedication)$
+  \begin{dedication}
+    $dedication$
+  \end{dedication}
+$endif$
 
-  \mainmatter % here the regular arabic numbering starts
-  \pagestyle{fancyplain} % turns page numbering back on
+\mainmatter % here the regular arabic numbering starts
+\pagestyle{fancyplain} % turns page numbering back on
 
-  $body$
+$body$
 
 
-  % Index?
+% Index?
 
 \end{document}
 
