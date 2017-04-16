@@ -59,7 +59,7 @@
 \newcommand{\VerbBar}{|}
 \newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
 \DefineVerbatimEnvironment{verbatim}{Verbatim}{xleftmargin=-1em}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{xleftmargin=-1em,commandchars=\\\{\}}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
 % Add ',fontsize=\small' for more characters per line
 \usepackage{framed}
 \definecolor{shadecolor}{RGB}{248,248,248}
