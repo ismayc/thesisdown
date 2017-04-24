@@ -10,7 +10,10 @@ delete "References" and replace it.
 -->
 
 # References {-}
-
+<!--
+This manually sets the header for this unnumbered chapter.
+-->
+\markboth{References}{References}
 <!--
 To remove the indentation of the first entry.
 -->
