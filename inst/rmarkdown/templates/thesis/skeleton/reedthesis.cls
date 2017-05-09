@@ -193,6 +193,10 @@
 %\addtolength\textheight{\headheight}
 %\addtolength\textheight{\headsep}
 
+\def\degree#1{\gdef \@degree{#1}}
+\def\@degree{\@latex@warning@no@line{No \noexpand\degree given}}
+\def\institution#1{\gdef \@institution{#1}}
+\def\@institution{\@latex@warning@no@line{No \noexpand\institution given}}
 \def\division#1{\gdef \@division{#1}}
 \def\@division{\@latex@warning@no@line{No \noexpand\division given}}
 \def\department#1{\gdef \@department{#1}}
@@ -302,13 +306,13 @@
     A Thesis \\
     Presented to \\
     \@thedivisionof \ \@division \\
-    Reed College
+    \@institution
     \vfil
     \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
     \vfil
     In Partial Fulfillment \\
     of the Requirements for the Degree \\
-    Bachelor of Arts
+    \@degree
     \vfil
     \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
     \bigskip
