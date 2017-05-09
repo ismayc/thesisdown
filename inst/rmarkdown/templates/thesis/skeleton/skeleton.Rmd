@@ -1,11 +1,13 @@
 ---
 author: 'Your R. Name'
 date: 'May 20xx'
+institution: 'Reed College'
 division: 'Mathematics and Natural Sciences'
 advisor: 'Advisor F. Name'
 #altadvisor: 'Your Other Advisor'
 # Delete line 6 if you only have one advisor
 department: 'Mathematics'
+degree: 'Bachelor of Arts'
 title: 'My Final College Paper'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
