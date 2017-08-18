@@ -102,7 +102,7 @@ You may wish to put your reaction in an equation environment, which means that L
 
 \begin{equation}
   \mathrm{C_6H_{12}O_6  + 6O_2} \longrightarrow \mathrm{6CO_2 + 6H_2O}
-  \label{eq:reaction}
+  (\#eq:reaction)
 \end{equation}
 
 We can reference this combustion of glucose reaction via Equation \@ref(eq:reaction).
