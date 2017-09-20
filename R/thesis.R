@@ -6,18 +6,19 @@
 #' @export
 #' @param toc A Boolean (TRUE or FALSE) specifying whether table of contents should be created
 #' @param toc_depth A positive integer
+#' @param highlight Syntax highlighting style. Supported styles include "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", and "haddock". Pass NULL to prevent syntax highlighting.
 #' @return A modified \code{pdf_document} based on the Reed Senior Thesis LaTeX
 #'   template
 #' @examples
 #' \dontrun{
 #'  output: thesisdown::thesis_pdf
 #' }
-thesis_pdf <- function(toc = TRUE, toc_depth = 3, ...){
+thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...){
 
   base <- bookdown::pdf_book(template = "template.tex",
     toc = toc,
     toc_depth = toc_depth,
-    highlight = "pygments",
+    highlight = highlight,
     keep_tex = TRUE,
     pandoc_args = "--chapters",
     ...)
