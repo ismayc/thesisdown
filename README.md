@@ -33,3 +33,6 @@ devtools::install_github("ismayc/thesisdown")
 ![New R Markdown](thesis_rmd.png)
 
 Note that this will currently only **Knit** if you name the directory `index` as shown above.
+
+4) **Knit** the `index.Rmd` file to get the book in PDF and HTML formats.
+5) Edit the individual chapter R Markdown files as you wish and then re-run step (4) again.
