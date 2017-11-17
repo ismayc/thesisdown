@@ -21,6 +21,7 @@ In an ideal world, this package would support a variety of different LaTeX templ
 - Mine Cetinkaya-Rundel at Duke University: [thesisdowndss](https://github.com/mine-cetinkaya-rundel/thesisdowndss)
 - Zhian Kamvar at Oregon State University: [beaverdown](https://github.com/zkamvar/beaverdown)
 - Ben Marwick at the University of Washington: [huskydown](https://github.com/benmarwick/huskydown)
+- Jake Thompson at the University of Kansas: [jayhawkdown](https://github.com/wjakethompson/jayhawkdown)
 
 
 ### Using thesisdown from Chester's GitHub
