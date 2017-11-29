@@ -19,4 +19,5 @@ Depends:
 License: MIT
 Encoding: UTF-8
 LazyData: true
+SystemRequirements: pandoc (>= 1.18) - http://pandoc.org
 RoxygenNote: 6.0.1
