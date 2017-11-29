@@ -31,6 +31,13 @@ Using **thesisdown** has some prerequisites which are described below. To compil
 To use **thesisdown** from RStudio:
 
 1) Install the latest [RStudio](http://www.rstudio.com/products/rstudio/download/).
+Only the version as of Oct 2017 has a recent enough Pandoc included so you may need to upgrade this
+separately or install a newer RStudio.
+
+    ```r
+    rmarkdown::pandoc_available("1.18")
+    #> [1] TRUE
+    ```
 
 2) Install the **bookdown** and **thesisdown** packages: 
 
