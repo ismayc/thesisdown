@@ -35,7 +35,7 @@ Only the version as of Oct 2017 has a recent enough Pandoc included so you may n
 separately or install a newer RStudio.
 
     ```r
-    rmarkdown::pandoc_available("1.18")
+    rmarkdown::pandoc_available("1.2")
     #> [1] TRUE
     ```
 
