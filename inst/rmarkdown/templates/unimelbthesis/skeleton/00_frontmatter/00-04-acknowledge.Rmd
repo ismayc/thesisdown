@@ -1,0 +1,9 @@
+This template is based on thesisdown (https://github.com/ismayc/thesisdown) and
+makes use of RMarkdown (https://rmarkdown.rstudio.com/) and bookdown
+https://bookdown.org/yihui/bookdown/. The LaTeX template is based on John
+Papandriopoulos' University of Melbourne thesis template
+(https://github.com/jpap/phd-thesis-template). Inspriation also comes from
+similar projects including beaverdown (https://github.com/zkamvar/beaverdown),
+aggidown (https://github.com/ryanpeek/aggiedown),
+huskydown (https://github.com/benmarwick/huskydown) and jayhawkdown
+(https://github.com/wjakethompson/jayhawkdown).

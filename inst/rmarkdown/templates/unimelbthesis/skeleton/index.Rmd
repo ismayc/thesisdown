@@ -1,0 +1,178 @@
+---
+# *============================================================================*
+#                UNIVERSITY OF MELBOURNE RMARKDOWN THESIS
+# *============================================================================*
+
+# +----------------------------------------------------------------------------+
+#  This bookdown template can be used to create a thesis for the University of
+#  Melbourne.
+#  
+#  This document defines all the metadata associated with the thesis in a YAML
+#  (YAML Ain't Markup Language) header. Your text should be placed in other 
+#  RMarkdown documents (usually one per chapter). Edit the `_bookdown.yml` file
+#  to change the order etc. of the other files. See 
+#  https://bookdown.org/yihui/bookdown/ for more details on how to use bookdown.
+# +----------------------------------------------------------------------------+
+
+# +----------------------------------------------------------------------------+
+#  Changes:
+#
+#  2018-10-11 (Luke Zappia)
+#    * Create first draft RMarkdown template file
+# +----------------------------------------------------------------------------+
+
+# *============================================================================*
+#  TITLE PAGE
+# *============================================================================*
+
+# +-----Title------------------------------------------------------------------+
+
+title: "My Thesis"
+
+# +-----Author-----------------------------------------------------------------+
+author: "Your R. Name"
+orcid: "0000-0001-0000-0000"
+
+# +-----Degree-----------------------------------------------------------------+
+degree: "Doctor of Philosophy"
+
+# +-----Submission date--------------------------------------------------------+
+#  By default these are set based on when the document is built but that they
+#  also be manually controlled.
+# +----------------------------------------------------------------------------+
+
+submissionmonth: "`r format(Sys.Date(), '%B')`"
+submissionyear: "`r format(Sys.Date(), '%Y')`"
+
+# +-----Institute--------------------------------------------------------------+
+#  Whatever is in the `department` field is placed first with the `university`
+#  below it. If you are assoicated with multiple departments/institutes you
+#  might need to adjust the format or consider how to include your information.
+# +----------------------------------------------------------------------------+
+
+department: "Department of Studies"
+university: "The University of Melbourne"
+
+# +-----Statement--------------------------------------------------------------+
+
+statement: |
+  A statement of whether the thesis is being submitted in partial or total
+  fulfilment of the degree, and whether the degree is being completed under a
+  jointly awarded degree.
+
+# *============================================================================*
+#  FRONT MATTER
+#
+#  Other sections that come after the title page but before the main text.
+#
+#  By default these are pulled from other files (for PDF output) but they can
+#  also be included directly here. Setting any of these sections to `FALSE` will
+#  remove them from the final document.
+# *============================================================================*
+
+# +-----Abstract---------------------------------------------------------------+
+
+abstract: |
+  `r if(knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-01-abstract.Rmd"), collapse = "\n  ")`
+
+# +-----Declaration------------------------------------------------------------+
+
+declaration: |
+  `r if(knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-02-declaration.Rmd"), collapse = "\n  ")`
+
+# +-----Preface----------------------------------------------------------------+
+
+preface: |
+  `r if(knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-03-preface.Rmd"), collapse = "\n  ")`
+
+# +-----Acknowledgements-------------------------------------------------------+
+
+acknowledgements: |
+  `r if(knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-04-acknowledge.Rmd"), collapse = "\n  ")`
+
+# +-----List of tables---------------------------------------------------------+
+#  Should only be included if you have at least 10 tables
+# +----------------------------------------------------------------------------+
+
+lot: true
+
+# +-----List of figures--------------------------------------------------------+
+#  Should only be included if you have at least 10 figures
+# +----------------------------------------------------------------------------+
+
+lof: true
+
+# +-----List of copyright------------------------------------------------------+
+#  List of all third party copyright material included in the thesis and whether
+#  permissions have been obtained to include this content in the open access
+#  version of the thesis.
+# +----------------------------------------------------------------------------+
+
+copyrightlist: |
+  `r if(knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-05-copyrightlist.Rmd"), collapse = "\n  ")`
+
+# *============================================================================*
+#  CITATIONS
+# *============================================================================*
+
+# +-----Bibliography-----------------------------------------------------------+
+#  Export your bibliography database as a bibtex file and refer to it here.
+# +----------------------------------------------------------------------------+
+
+bibliography: "bib/thesis.bib"
+
+# +-----Citation style---------------------------------------------------------+
+#  To change your citation style download a Citation Style Language file from 
+#  https://www.zotero.org/styles and refer to it to change the appearance of
+#  your citations. See https://citationstyles.org/ for more details.
+# +----------------------------------------------------------------------------+
+
+csl: "style/apa.csl"
+
+# *============================================================================*
+#  OUTPUT FORMATS
+#
+#  These options control the various output formats. You may be able to control
+#  some things but editing these, other things will require editing the template
+#  files or the underlying functions.
+# *============================================================================*
+
+knit: "bookdown::render_book"
+site: "bookdown::bookdown_site"
+output: 
+    unimelbdown::thesis_pdf:
+        template: "style/template.tex"
+        toc: true
+        toc_depth: 3
+    # unimelbdown::thesis_gitbook: default
+    # unimelbdown::thesis_word:
+    #     reference_docx: "style/template.docx"
+    #     toc: true
+    #     toc_depth: 3
+    #     fig_caption: true
+    # unimelbdown::thesis_epub: default
+---
+
+```{r install-package, include = FALSE}
+# This chunk ensures that the unimelb package is installed and loaded. This
+# unimelb package includes the template files for the thesis.
+if(!require(devtools))
+  install.packages("devtools", repos = "http://cran.rstudio.com")
+if(!require(unimelbdown))
+  devtools::install_github("lazappi/unimelbdown")
+library(unimelbdown)
+```
+
+```{r knitr-options, include = FALSE}
+knitr::opts_chunk$set(
+  echo      = FALSE,
+  warning   = FALSE,
+  message   = FALSE,
+  error     = FALSE,
+  cache     = FALSE,
+  fig.ext   = "png",
+  fig.path  = "figure/",
+  fig.align = "center",
+  out.width = "80%"
+)
+```

@@ -1,21 +1,28 @@
 #' Creates an R Markdown PDF Thesis document
 #'
 #' This is a function called in output in the YAML of the driver Rmd file
-#' to specify using the Reed College Senior Thesis LaTeX template and cls files.
+#' to specify the LaTeX template and cls files.
 #'
-#' @export
-#' @param toc A Boolean (TRUE or FALSE) specifying whether table of contents should be created
+#' @param toc A Boolean (TRUE or FALSE) specifying whether table of contents
+#' should be created
 #' @param toc_depth A positive integer
-#' @param highlight Syntax highlighting style. Supported styles include "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", and "haddock". Pass NULL to prevent syntax highlighting.
+#' @param highlight Syntax highlighting style. Supported styles include
+#' "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn",
+#' and "haddock". Pass NULL to prevent syntax highlighting.
+#' @param ... additional arguments passed to \code{bookdown::pdf_book}
+#'
 #' @return A modified \code{pdf_document} based on the Reed Senior Thesis LaTeX
 #'   template
+#'
 #' @examples
 #' \dontrun{
-#'  output: thesisdown::thesis_pdf
+#'  output: unimelbdown::thesis_pdf
 #' }
-thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...){
+#'
+#' @export
+thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...) {
 
-  base <- bookdown::pdf_book(template = "template.tex",
+  base <- bookdown::pdf_book(
     toc = toc,
     toc_depth = toc_depth,
     highlight = highlight,
@@ -40,11 +47,12 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...){
 #' This is a function called in output in the YAML of the driver Rmd file
 #' to specify the creation of a webpage version of the thesis.
 #'
+#' @param ... additional arguments passed to \code{bookdown::gitbook}
 #' @export
 #' @return A gitbook webpage
 #' @examples
 #' \dontrun{
-#'  output: thesisdown::thesis_gitbook
+#'  output: unimelbdown::thesis_gitbook
 #' }
 thesis_gitbook <- function(...){
 
@@ -70,12 +78,13 @@ thesis_gitbook <- function(...){
 #' This is a function called in output in the YAML of the driver Rmd file
 #' to specify the creation of a Microsoft Word version of the thesis.
 #'
+#' @param ... additional arguments passed to \code{bookdown::word_document2}
 #' @export
 #' @return A Word Document based on (hopefully soon, but not currently)
 #' the Reed Senior Thesis Word template
 #' @examples
 #' \dontrun{
-#'  output: thesisdown::thesis_word
+#'  output: unimelbdown::thesis_word
 #' }
 thesis_word <- function(...){
 
@@ -94,11 +103,12 @@ thesis_word <- function(...){
 #' This is a function called in output in the YAML of the driver Rmd file
 #' to specify the creation of a epub version of the thesis.
 #'
+#' @param ... additional arguments passed to \code{bookdown::epub_book}
 #' @export
 #' @return A ebook version of the thesis
 #' @examples
 #' \dontrun{
-#'  output: thesisdown::thesis_epub
+#'  output: unimelbdown::thesis_epub
 #' }
 thesis_epub <- function(...){
 

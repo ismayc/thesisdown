@@ -1,0 +1,973 @@
+% *============================================================================*
+%                  UNIVERSITY OF MELBOURNE THESIS TEMPLATE
+% *============================================================================*
+
+% +----------------------------------------------------------------------------+
+%  This is a Pandoc/LaTeX template for a University of Melbourne thesis designed
+%  to be used as part of a bookdown project
+%  (https://bookdown.org/yihui/bookdown/).
+% +----------------------------------------------------------------------------+
+
+% +----------------------------------------------------------------------------+
+%  Changes:
+%
+%  2018-10-10 (Luke Zappia)
+%    * Create first draft template
+% +----------------------------------------------------------------------------+
+
+% *============================================================================*
+%  PREAMBLE
+%
+%  Set up the document, load packages, set parameters etc.
+% *============================================================================*
+
+% +-----Document class---------------------------------------------------------+
+%  Set the class associated with the document, options in square brackets are
+%  passed to the class
+% +----------------------------------------------------------------------------+
+
+\documentclass[11pt,a4paper,titlepage,twoside,openright]{style/unimelbthesis}
+
+% +-----Packages---------------------------------------------------------------+
+%  External packages used in the document
+% +----------------------------------------------------------------------------+
+
+\usepackage{graphicx}  % Extended graphics package.
+\usepackage{amsmath}   % American Mathematics Society standards
+\usepackage{amsxtra}   % Additional math symbols
+\usepackage{amssymb}   % Additional math symbols
+\usepackage{amsthm}    % Additional math symbols
+\usepackage{latexsym}  % Additional math symbols
+\usepackage{booktabs}  % Table formatting
+\usepackage{longtable} % Table formatting
+\usepackage{hyperref}  % Hyperlinks
+\usepackage{setspace}  % Line spacing
+\usepackage{chemarr}   % Improved reaction arrows for chemists
+\usepackage{palatino}  % Use the palatino font family
+\usepackage{mathpazo}  % Use the palotino font family
+
+% +-----Parameters-------------------------------------------------------------+
+%  Set parameters for the document. To convert from YAML to LaTeX we need to add
+%  the dollar signs.
+% +----------------------------------------------------------------------------+
+
+\title{My Thesis}
+\author{Your R. Name}
+\orcid{0000-0001-0000-0000}
+\degree{Doctor of Philosophy}
+\submissionmonth{October}
+\submissionyear{2018}
+\department{Department of Studies}
+\university{The University of Melbourne}
+\statement{A statement of whether the thesis is being submitted in partial or total
+fulfilment of the degree, and whether the degree is being completed
+under a jointly awarded degree.}
+
+% +-----Syntax highlighting----------------------------------------------------+
+%  If code chunks are included in the document this allows Pandoc to insert the
+%  code highlighting macros.
+% +----------------------------------------------------------------------------+
+
+  \usepackage{color}
+  \usepackage{fancyvrb}
+  \newcommand{\VerbBar}{|}
+  \newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+  \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+  % Add ',fontsize=\small' for more characters per line
+  \usepackage{framed}
+  \definecolor{shadecolor}{RGB}{248,248,248}
+  \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+  \newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+  \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+  \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+  \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+  \newcommand{\BuiltInTok}[1]{#1}
+  \newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+  \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+  \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+  \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+  \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+  \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+  \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+  \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+  \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+  \newcommand{\ExtensionTok}[1]{#1}
+  \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+  \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+  \newcommand{\ImportTok}[1]{#1}
+  \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+  \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+  \newcommand{\NormalTok}[1]{#1}
+  \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+  \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+  \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+  \newcommand{\RegionMarkerTok}[1]{#1}
+  \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+  \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+  \newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+  \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+  \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+  \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+
+% *============================================================================*
+%  FRONT MATTER
+%
+%  Front section of the document, everything before the main text.
+% *============================================================================*
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
+\begin{document}
+\begin{frontmatter}
+
+% +-----Title------------------------------------------------------------------+
+
+  \maketitle
+
+% +-----Abstract---------------------------------------------------------------+
+  \begin{abstract}
+    The preface pretty much says it all.
+    
+    \par
+    
+    Second paragraph of abstract starts here.
+  \end{abstract}
+% +-----Declaration------------------------------------------------------------+
+  \begin{declaration}
+    This is to certify that:
+    \begin{enumerate}
+    \def\labelenumi{\roman{enumi}.}
+    \tightlist
+    \item
+      the thesis comprises only their original work towards the {[}name of
+      the award{]} except where indicated in the preface;
+    \item
+      due acknowledgement has been made in the text to all other material
+      used; and
+    \item
+      the thesis is fewer than the maximum word limit in length, exclusive
+      of tables, maps, bibliographies and appendices or that the thesis is
+      {[}number of words{]} as approved by the Research Higher Degrees
+      Committee.
+    \end{enumerate}
+  \end{declaration}
+% +-----Preface----------------------------------------------------------------+
+  \begin{preface}
+    This is an example of a thesis setup to use the reed thesis document
+    class (for LaTeX) and the R bookdown package, in general.
+  \end{preface}
+% +-----Acknowledgements-------------------------------------------------------+
+  \begin{acknowledgements}
+    This template is based on thesisdown
+    (\url{https://github.com/ismayc/thesisdown}) and makes use of RMarkdown
+    (\url{https://rmarkdown.rstudio.com/}) and bookdown
+    \url{https://bookdown.org/yihui/bookdown/}. The LaTeX template is based
+    on John Papandriopoulos' University of Melbourne thesis template
+    (\url{https://github.com/jpap/phd-thesis-template}). Inspriation also
+    comes from similar projects including beaverdown
+    (\url{https://github.com/zkamvar/beaverdown}), aggidown
+    (\url{https://github.com/ryanpeek/aggiedown}), huskydown
+    (\url{https://github.com/benmarwick/huskydown}) and jayhawkdown
+    (\url{https://github.com/wjakethompson/jayhawkdown}).
+  \end{acknowledgements}
+% +-----Table of contents------------------------------------------------------+
+
+  \hypersetup{linkcolor=black}
+  \setcounter{tocdepth}{2}
+  \tableofcontents
+
+% +-----List of tables---------------------------------------------------------+
+
+  \listoftables
+
+% +-----List of figures--------------------------------------------------------+
+
+  \listoffigures
+
+% +-----List of copyright------------------------------------------------------+
+\begin{copyrightlist}
+  List of all third party copyright material included in the thesis and
+  whether permissions have been obtained to include this content in the
+  open access version of the thesis.
+\end{copyrightlist}
+\end{frontmatter}
+% *============================================================================*
+%  MAIN MATTER
+%
+%  Main part of the document. Includes all chapters and appendices.
+% *============================================================================*
+
+\begin{mainmatter}
+
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+Welcome to my University of Melbourne \emph{R Markdown} thesis template.
+This template is designed to let you produce a nicely formatted thesis
+using \emph{R Markdown}. \emph{R Markdown} allows you to easily keep
+track of your analyses in \textbf{R} chunks of code, with the resulting
+plots and output included in the final document. The hope is this
+\emph{R Markdown} template gets you in the habit of doing reproducible
+research, which benefits you long-term as a researcher, but also will
+greatly help anyone that is trying to reproduce or build onto your
+results down the road.
+
+Hopefully, you won't have much of a learning period to go through and
+you will reap the benefits of a nicely formatted thesis. The use of
+LaTeX in combination with \emph{Markdown} can be more consistent than
+the output of a word processor, much less prone to corruption or
+crashing, and the resulting file is smaller than a Word file. While you
+may have never had problems using Word in the past, your thesis is
+likely going to be about twice as large and complex as anything you've
+written before, taxing Word's capabilities. After working with
+\emph{Markdown} and \textbf{R} together for a few weeks, we are
+confident this will be your reporting style of choice going forward.
+
+\textbf{Why use it?}
+
+\emph{R Markdown} creates a simple and straightforward way to interface
+with the beauty of LaTeX. Packages have been written in \textbf{R} to
+work directly with LaTeX to produce nicely formatting tables and
+paragraphs. In addition to creating a user friendly interface to LaTeX,
+\emph{R Markdown} also allows you to read in your data, to analyze it
+and to visualize it using \textbf{R} functions, and also to provide the
+documentation and commentary on the results of your project. Further, it
+allows for \textbf{R} results to be passed inline to the commentary of
+your results. You'll see more on this later.
+
+\textbf{Who should use it?}
+
+Anyone who needs to use data analysis, math, tables, a lot of figures,
+complex cross-references, or who just cares about the final appearance
+of their document should use \emph{R Markdown}. Of particular use should
+be anyone in the sciences, but the user-friendly nature of
+\emph{Markdown} and its ability to keep track of and easily include
+figures, automatically generate a table of contents, index, references,
+table of figures, etc. should make it of great benefit to nearly anyone
+writing a thesis project.
+
+\hypertarget{rmd-basics}{%
+\chapter{R Markdown Basics}\label{rmd-basics}}
+
+Here is a brief introduction to using \emph{R Markdown}. \emph{Markdown}
+is a simple formatting syntax for authoring HTML, PDF, and MS Word
+documents. \emph{R Markdown} provides the flexibility of \emph{Markdown}
+with the implementation of \textbf{R} input and output. For more details
+on using \emph{R Markdown} see \url{http://rmarkdown.rstudio.com}.
+
+Be careful with your spacing in \emph{Markdown} documents. While
+whitespace largely is ignored, it does at times give \emph{Markdown}
+signals as to how to proceed. As a habit, try to keep everything left
+aligned whenever possible, especially as you type a new paragraph. In
+other words, there is no need to indent basic text in the Rmd document
+(in fact, it might cause your text to do funny things if you do).
+
+\hypertarget{lists}{%
+\section{Lists}\label{lists}}
+
+It's easy to create a list. It can be unordered like
+\begin{itemize}
+\tightlist
+\item
+  Item 1
+\item
+  Item 2
+\end{itemize}
+or it can be ordered like
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Item 1
+\item
+  Item 2
+\end{enumerate}
+Notice that I intentionally mislabeled Item 2 as number 4.
+\emph{Markdown} automatically figures this out! You can put any numbers
+in the list and it will create the list. Check it out below.
+
+To create a sublist, just indent the values a bit (at least four spaces
+or a tab). (Here's one case where indentation is key!)
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Item 1
+\item
+  Item 2
+\item
+  Item 3
+  \begin{itemize}
+  \tightlist
+  \item
+    Item 3a
+  \item
+    Item 3b
+  \end{itemize}
+\end{enumerate}
+\hypertarget{line-breaks}{%
+\section{Line breaks}\label{line-breaks}}
+
+Make sure to add white space between lines if you'd like to start a new
+paragraph. Look at what happens below in the outputted document if you
+don't:
+
+Here is the first sentence. Here is another sentence. Here is the last
+sentence to end the paragraph. This should be a new paragraph.
+
+\emph{Now for the correct way:}
+
+Here is the first sentence. Here is another sentence. Here is the last
+sentence to end the paragraph.
+
+This should be a new paragraph.
+
+\hypertarget{r-chunks}{%
+\section{R chunks}\label{r-chunks}}
+
+When you click the \textbf{Knit} button above a document will be
+generated that includes both content as well as the output of any
+embedded \textbf{R} code chunks within the document. You can embed an
+\textbf{R} code chunk like this (\texttt{cars} is a built-in \textbf{R}
+dataset):
+\begin{verbatim}
+     speed           dist       
+ Min.   : 4.0   Min.   :  2.00  
+ 1st Qu.:12.0   1st Qu.: 26.00  
+ Median :15.0   Median : 36.00  
+ Mean   :15.4   Mean   : 42.98  
+ 3rd Qu.:19.0   3rd Qu.: 56.00  
+ Max.   :25.0   Max.   :120.00  
+\end{verbatim}
+\hypertarget{inline-code}{%
+\section{Inline code}\label{inline-code}}
+
+If you'd like to put the results of your analysis directly into your
+discussion, add inline code like this:
+\begin{quote}
+The \texttt{cos} of \(2 \pi\) is 1.
+\end{quote}
+Another example would be the direct calculation of the standard
+deviation:
+\begin{quote}
+The standard deviation of \texttt{speed} in \texttt{cars} is 5.2876444.
+\end{quote}
+One last neat feature is the use of the \texttt{ifelse} conditional
+statement which can be used to output text depending on the result of an
+\textbf{R} calculation:
+\begin{quote}
+The standard deviation is less than 6.
+\end{quote}
+Note the use of \texttt{\textgreater{}} here, which signifies a
+quotation environment that will be indented.
+
+As you see with \texttt{\$2\ \textbackslash{}pi\$} above, mathematics
+can be added by surrounding the mathematical text with dollar signs.
+More examples of this are in \protect\hyperlink{math-sci}{Mathematics
+and Science} if you uncomment the code in
+\protect\hyperlink{math}{Math}.
+
+\hypertarget{including-plots}{%
+\section{Including plots}\label{including-plots}}
+
+You can also embed plots. For example, here is a way to use the base
+\textbf{R} graphics package to produce a plot using the built-in
+\texttt{pressure} dataset:
+\begin{center}\includegraphics[width=0.8\linewidth]{figure/pressure-1} \end{center}
+
+Note that the \texttt{echo=FALSE} parameter was added to the code chunk
+to prevent printing of the \textbf{R} code that generated the plot.
+There are plenty of other ways to add chunk options. More information is
+available at \url{http://yihui.name/knitr/options/}.
+
+Another useful chunk option is the setting of \texttt{cache=TRUE} as you
+see here. If document rendering becomes time consuming due to long
+computations or plots that are expensive to generate you can use knitr
+caching to improve performance. Later in this file, you'll see a way to
+reference plots created in \textbf{R} or external figures.
+
+\hypertarget{loading-and-exploring-data}{%
+\section{Loading and exploring data}\label{loading-and-exploring-data}}
+
+Included in this template is a file called \texttt{flights.csv}. This
+file includes a subset of the larger dataset of information about all
+flights that departed from Seattle and Portland in 2014. More
+information about this dataset and its \textbf{R} package is available
+at \url{http://github.com/ismayc/pnwflights14}. This subset includes
+only Portland flights and only rows that were complete with no missing
+values. Merges were also done with the \texttt{airports} and
+\texttt{airlines} data sets in the \texttt{pnwflights14} package to get
+more descriptive airport and airline names.
+
+We can load in this data set using the following command:
+
+The data is now stored in the data frame called \texttt{flights} in
+\textbf{R}. To get a better feel for the variables included in this
+dataset we can use a variety of functions. Here we can see the
+dimensions (rows by columns) and also the names of the columns.
+\begin{verbatim}
+[1] 52808    16
+\end{verbatim}
+\begin{verbatim}
+ [1] "month"        "day"          "dep_time"     "dep_delay"   
+ [5] "arr_time"     "arr_delay"    "carrier"      "tailnum"     
+ [9] "flight"       "dest"         "air_time"     "distance"    
+[13] "hour"         "minute"       "carrier_name" "dest_name"   
+\end{verbatim}
+Another good idea is to take a look at the dataset in table form. With
+this dataset having more than 50,000 rows, we won't explicitly show the
+results of the command here. I recommend you enter the command into the
+Console \textbf{\emph{after}} you have run the \textbf{R} chunks above
+to load the data into \textbf{R}.
+
+While not required, it is highly recommended you use the \texttt{dplyr}
+package to manipulate and summarize your data set as needed. It uses a
+syntax that is easy to understand using chaining operations. Below I've
+created a few examples of using \texttt{dplyr} to get information about
+the Portland flights in 2014. You will also see the use of the
+\texttt{ggplot2} package, which produces beautiful, high-quality
+academic visuals.
+
+We begin by checking to ensure that needed packages are installed and
+then we load them into our current working environment:
+
+\clearpage
+
+The example we show here does the following:
+\begin{itemize}
+\item
+  Selects only the \texttt{carrier\_name} and \texttt{arr\_delay} from
+  the \texttt{flights} dataset and then assigns this subset to a new
+  variable called \texttt{flights2}.
+\item
+  Using \texttt{flights2}, we determine the largest arrival delay for
+  each of the carriers.
+\end{itemize}
+A useful function in the \texttt{knitr} package for making nice tables
+in \emph{R Markdown} is called \texttt{kable}. It is much easier to use
+than manually entering values into a table by copying and pasting values
+into Excel or LaTeX. This again goes to show how nice reproducible
+documents can be! (Note the use of \texttt{results="asis"}, which will
+produce the table instead of the code to create the table.) The
+\texttt{caption.short} argument is used to include a shorter title to
+appear in the List of Tables.
+\begin{longtable}[t]{lr}
+\caption[Max Delays by Airline]{\label{tab:maxdelays}Maximum Delays by Airline}\\
+\toprule
+Airline & Max Arrival Delay\\
+\midrule
+Alaska Airlines Inc. & 338\\
+American Airlines Inc. & 1539\\
+Delta Air Lines Inc. & 651\\
+Frontier Airlines Inc. & 575\\
+Hawaiian Airlines Inc. & 407\\
+\addlinespace
+JetBlue Airways & 273\\
+SkyWest Airlines Inc. & 421\\
+Southwest Airlines Co. & 694\\
+United Air Lines Inc. & 472\\
+US Airways Inc. & 347\\
+Virgin America & 366\\
+\bottomrule
+\end{longtable}
+The last two options make the table a little easier-to-read.
+
+We can further look into the properties of the largest value here for
+American Airlines Inc.~To do so, we can isolate the row corresponding to
+the arrival delay of 1539 minutes for American in our original
+\texttt{flights} dataset.
+\begin{verbatim}
+  dep_time dep_delay arr_time tailnum flight dest air_time distance
+1     1403      1553     1934  N595AA   1568  DFW      182     1616
+\end{verbatim}
+We see that the flight occurred on March 3rd and departed a little after
+2 PM on its way to Dallas/Fort Worth. Lastly, we show how we can
+visualize the arrival delay of all departing flights from Portland on
+March 3rd against time of departure.
+\begin{center}\includegraphics[width=0.8\linewidth]{figure/march3plot-1} \end{center}
+
+\hypertarget{additional-resources}{%
+\section{Additional resources}\label{additional-resources}}
+\begin{itemize}
+\item
+  \emph{Markdown} Cheatsheet -
+  \url{https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet}
+\item
+  \emph{R Markdown} Reference Guide -
+  \url{https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf}
+\item
+  Introduction to \texttt{dplyr} -
+  \url{https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html}
+\item
+  \texttt{ggplot2} Documentation -
+  \url{http://docs.ggplot2.org/current/}
+\end{itemize}
+\hypertarget{math-sci}{%
+\chapter{Mathematics and Science}\label{math-sci}}
+
+\hypertarget{math}{%
+\section{Math}\label{math}}
+
+\TeX~is the best way to typeset mathematics. Donald Knuth designed
+\TeX~when he got frustrated at how long it was taking the typesetters to
+finish his book, which contained a lot of mathematics. One nice feature
+of \emph{R Markdown} is its ability to read LaTeX code directly.
+
+If you are doing a thesis that will involve lots of math, you will want
+to read the following section which has been commented out. If you're
+not going to use math, skip over or delete this next commented section.
+
+\hypertarget{chemistry-101-symbols}{%
+\section{Chemistry 101: Symbols}\label{chemistry-101-symbols}}
+
+Chemical formulas will look best if they are not italicized. Get around
+math mode's automatic italicizing in LaTeX by using the argument
+\texttt{\$\textbackslash{}mathrm\{formula\ here\}\$}, with your formula
+inside the curly brackets. (Notice the use of the backticks here which
+enclose text that acts as code.)
+
+So, \(\mathrm{Fe_2^{2+}Cr_2O_4}\) is written
+\texttt{\$\textbackslash{}mathrm\{Fe\_2\^{}\{2+\}Cr\_2O\_4\}\$}.
+
+\noindent Exponent or Superscript: \(\mathrm{O^-}\)
+
+\noindent Subscript: \(\mathrm{CH_4}\)
+
+To stack numbers or letters as in \(\mathrm{Fe_2^{2+}}\), the subscript
+is defined first, and then the superscript is defined.
+
+\noindent Bullet: CuCl \(\bullet\) \(\mathrm{7H_{2}O}\)
+
+\noindent Delta: \(\Delta\)
+
+\noindent Reaction Arrows: \(\longrightarrow\) or
+\(\xrightarrow{solution}\)
+
+\noindent Resonance Arrows: \(\leftrightarrow\)
+
+\noindent Reversible Reaction Arrows: \(\rightleftharpoons\)
+
+\hypertarget{typesetting-reactions}{%
+\subsection{Typesetting reactions}\label{typesetting-reactions}}
+
+You may wish to put your reaction in an equation environment, which
+means that LaTeX will place the reaction where it fits and will number
+the equations for you.
+\begin{equation}
+  \mathrm{C_6H_{12}O_6  + 6O_2} \longrightarrow \mathrm{6CO_2 + 6H_2O}
+  \label{eq:reaction}
+\end{equation}
+We can reference this combustion of glucose reaction via Equation
+\eqref{eq:reaction}.
+
+\hypertarget{other-examples-of-reactions}{%
+\subsection{Other examples of
+reactions}\label{other-examples-of-reactions}}
+
+\(\mathrm{NH_4Cl_{(s)}}\) \(\rightleftharpoons\)
+\(\mathrm{NH_{3(g)}+HCl_{(g)}}\)
+
+\noindent \(\mathrm{MeCH_2Br + Mg}\) \(\xrightarrow[below]{above}\)
+\(\mathrm{MeCH_2\bullet Mg \bullet Br}\)
+
+\hypertarget{physics}{%
+\section{Physics}\label{physics}}
+
+Many of the symbols you will need can be found on the math page
+\url{http://web.reed.edu/cis/help/latex/math.html} and the Comprehensive
+LaTeX Symbol Guide
+(\url{http://mirror.utexas.edu/ctan/info/symbols/comprehensive/symbols-letter.pdf}).
+
+\hypertarget{biology}{%
+\section{Biology}\label{biology}}
+
+You will probably find the resources at
+\url{http://www.lecb.ncifcrf.gov/~toms/latex.html} helpful, particularly
+the links to bsts for various journals. You may also be interested in
+TeXShade for nucleotide typesetting
+(\url{http://homepages.uni-tuebingen.de/beitz/txe.html}). Be sure to
+read the proceeding chapter on graphics and tables.
+
+\hypertarget{ref-labels}{%
+\chapter{Tables, Graphics, References, and Labels}\label{ref-labels}}
+
+\hypertarget{tables}{%
+\section{Tables}\label{tables}}
+
+In addition to the tables that can be automatically generated from a
+data frame in \textbf{R} that you saw in
+\protect\hyperlink{rmd-basics}{R Markdown Basics} using the
+\texttt{kable} function, you can also create tables using \emph{pandoc}.
+(More information is available at
+\url{http://pandoc.org/README.html\#tables}.) This might be useful if
+you don't have values specifically stored in \textbf{R}, but you'd like
+to display them in table form. Below is an example. Pay careful
+attention to the alignment in the table and hyphens to create the rows
+and columns.
+\begin{longtable}[]{@{}ccc@{}}
+\caption{\label{tab:inher} Correlation of Inheritance Factors for Parents
+and Child}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.29\columnwidth}\centering
+Factors\strut
+\end{minipage} & \begin{minipage}[b]{0.47\columnwidth}\centering
+Correlation between Parents \& Child\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\centering
+Inherited\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.29\columnwidth}\centering
+Factors\strut
+\end{minipage} & \begin{minipage}[b]{0.47\columnwidth}\centering
+Correlation between Parents \& Child\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\centering
+Inherited\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.29\columnwidth}\centering
+Education\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+-0.49\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+Yes\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.29\columnwidth}\centering
+Socio-Economic Status\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+0.28\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+Slight\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.29\columnwidth}\centering
+Income\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+0.08\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+No\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.29\columnwidth}\centering
+Family Size\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+0.18\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+Slight\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.29\columnwidth}\centering
+Occupational Prestige\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+0.21\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\centering
+Slight\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+We can also create a link to the table by doing the following: Table
+\ref{tab:inher}. If you go back to
+\protect\hyperlink{loading-and-exploring-data}{Loading and exploring
+data} and look at the \texttt{kable} table, we can create a reference to
+this max delays table too: Table \ref{tab:maxdelays}. The addition of
+the \texttt{(\textbackslash{}\#tab:inher)} option to the end of the
+table caption allows us to then make a reference to Table
+\texttt{\textbackslash{}@ref(tab:label)}. Note that this reference could
+appear anywhere throughout the document after the table has appeared.
+
+\clearpage
+
+\hypertarget{figures}{%
+\section{Figures}\label{figures}}
+
+If your thesis has a lot of figures, \emph{R Markdown} might behave
+better for you than that other word processor. One perk is that it will
+automatically number the figures accordingly in each chapter. You'll
+also be able to create a label for each figure, add a caption, and then
+reference the figure in a way similar to what we saw with tables
+earlier. If you label your figures, you can move the figures around and
+\emph{R Markdown} will automatically adjust the numbering for you. No
+need for you to remember! So that you don't have to get too far into
+LaTeX to do this, a couple \textbf{R} functions have been created for
+you to assist. You'll see their use below.
+
+In the \textbf{R} chunk below, we will load in a picture stored as
+\texttt{reed.jpg} in our main directory. We then give it the caption of
+``Reed logo'', the label of ``reedlogo'', and specify that this is a
+figure. Make note of the different \textbf{R} chunk options that are
+given in the R Markdown file (not shown in the knitted document).
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{figure/reed} 
+
+}
+
+\caption{Reed logo}\label{fig:reedlogo}
+\end{figure}
+Here is a reference to the Reed logo: Figure \ref{fig:reedlogo}. Note
+the use of the \texttt{fig:} code here. By naming the \textbf{R} chunk
+that contains the figure, we can then reference that figure later as
+done in the first sentence here. We can also specify the caption for the
+figure via the R chunk option \texttt{fig.cap}.
+
+\clearpage
+
+Below we will investigate how to save the output of an \textbf{R} plot
+and label it in a way similar to that done above. Recall the
+\texttt{flights} dataset from Chapter \ref{rmd-basics}. (Note that we've
+shown a different way to reference a section or chapter here.) We will
+next explore a bar graph with the mean flight departure delays by
+airline from Portland for 2014. Note also the use of the \texttt{scale}
+parameter which is discussed on the next page.
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{figure/delaysboxplot-1} 
+
+}
+
+\caption{Mean Delays by Airline}\label{fig:delaysboxplot}
+\end{figure}
+Here is a reference to this image: Figure \ref{fig:delaysboxplot}.
+
+A table linking these carrier codes to airline names is available at
+\url{https://github.com/ismayc/pnwflights14/blob/master/data/airlines.csv}.
+
+\clearpage
+
+Next, we will explore the use of the \texttt{out.extra} chunk option,
+which can be used to shrink or expand an image loaded from a file by
+specifying \texttt{"scale=\ "}. Here we use the mathematical graph
+stored in the ``subdivision.pdf'' file.
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth,scale=0.75]{figure/subdivision} 
+
+}
+
+\caption{Subdiv. graph}\label{fig:subd}
+\end{figure}
+Here is a reference to this image: Figure \ref{fig:subd}. Note that
+\texttt{echo=FALSE} is specified so that the \textbf{R} code is hidden
+in the document.
+
+\textbf{More Figure Stuff}
+
+Lastly, we will explore how to rotate and enlarge figures using the
+\texttt{out.extra} chunk option. (Currently this only works in the PDF
+version of the book.)
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth,angle=180, scale=1.1]{figure/subdivision} 
+
+}
+
+\caption{A Larger Figure, Flipped Upside Down}\label{fig:subd2}
+\end{figure}
+As another example, here is a reference: Figure \ref{fig:subd2}.
+
+\hypertarget{footnotes-and-endnotes}{%
+\section{Footnotes and Endnotes}\label{footnotes-and-endnotes}}
+
+You might want to footnote something.\footnote{footnote text} The
+footnote will be in a smaller font and placed appropriately. Endnotes
+work in much the same way. More information can be found about both on
+the CUS site or feel free to reach out to
+\href{mailto:data@reed.edu}{\nolinkurl{data@reed.edu}}.
+
+\hypertarget{bibliographies}{%
+\section{Bibliographies}\label{bibliographies}}
+
+Of course you will need to cite things, and you will probably accumulate
+an armful of sources. There are a variety of tools available for
+creating a bibliography database (stored with the .bib extension). In
+addition to BibTeX suggested below, you may want to consider using the
+free and easy-to-use tool called Zotero. The Reed librarians have
+created Zotero documentation at
+\url{http://libguides.reed.edu/citation/zotero}. In addition, a tutorial
+is available from Middlebury College at
+\url{http://sites.middlebury.edu/zoteromiddlebury/}.
+
+\emph{R Markdown} uses \emph{pandoc} (\url{http://pandoc.org/}) to build
+its bibliographies. One nice caveat of this is that you won't have to do
+a second compile to load in references as standard LaTeX requires. To
+cite references in your thesis (after creating your bibliography
+database), place the reference name inside square brackets and precede
+it by the ``at'' symbol. For example, here's a reference to a book about
+worrying: (Molina \& Borkovec, 1994). This \texttt{Molina1994} entry
+appears in a file called \texttt{thesis.bib} in the \texttt{bib} folder.
+This bibliography database file was created by a program called BibTeX.
+You can call this file something else if you like (look at the YAML
+header in the main .Rmd file) and, by default, is to placed in the
+\texttt{bib} folder.
+
+For more information about BibTeX and bibliographies, see our CUS site
+(\url{http://web.reed.edu/cis/help/latex/index.html})\footnote{Reed~College
+  (2007)}. There are three pages on this topic: \emph{bibtex} (which
+talks about using BibTeX, at
+\url{http://web.reed.edu/cis/help/latex/bibtex.html}),
+\emph{bibtexstyles} (about how to find and use the bibliography style
+that best suits your needs, at
+\url{http://web.reed.edu/cis/help/latex/bibtexstyles.html}) and
+\emph{bibman} (which covers how to make and maintain a bibliography by
+hand, without BibTeX, at
+\url{http://web.reed.edu/cis/help/latex/bibman.html}). The last page
+will not be useful unless you have only a few sources.
+
+If you look at the YAML header at the top of the main .Rmd file you can
+see that we can specify the style of the bibliography by referencing the
+appropriate csl file. You can download a variety of different style
+files at \url{https://www.zotero.org/styles}. Make sure to download the
+file into the csl folder.
+
+\textbf{Tips for Bibliographies}
+\begin{itemize}
+\tightlist
+\item
+  Like with thesis formatting, the sooner you start compiling your
+  bibliography for something as large as thesis, the better. Typing in
+  source after source is mind-numbing enough; do you really want to do
+  it for hours on end in late April? Think of it as procrastination.
+\item
+  The cite key (a citation's label) needs to be unique from the other
+  entries.
+\item
+  When you have more than one author or editor, you need to separate
+  each author's name by the word ``and'' e.g.
+  \texttt{Author\ =\ \{Noble,\ Sam\ and\ Youngberg,\ Jessica\},}.
+\item
+  Bibliographies made using BibTeX (whether manually or using a manager)
+  accept LaTeX markup, so you can italicize and add symbols as
+  necessary.
+\item
+  To force capitalization in an article title or where all lowercase is
+  generally used, bracket the capital letter in curly braces.
+\item
+  You can add a Reed Thesis citation\footnote{Noble (2002)} option. The
+  best way to do this is to use the phdthesis type of citation, and use
+  the optional ``type'' field to enter ``Reed thesis'' or
+  ``Undergraduate thesis.''
+\end{itemize}
+\hypertarget{anything-else}{%
+\section{Anything else?}\label{anything-else}}
+
+If you'd like to see examples of other things in this template, please
+contact the Data @ Reed team (email
+\href{mailto:data@reed.edu}{\nolinkurl{data@reed.edu}}) with your
+suggestions. We love to see people using \emph{R Markdown} for their
+theses, and are happy to help.
+
+\hypertarget{conclusion}{%
+\chapter*{Conclusion}\label{conclusion}}
+\addcontentsline{toc}{chapter}{Conclusion}
+
+If we don't want Conclusion to have a chapter number next to it, we can
+add the \texttt{\{-\}} attribute.
+
+\textbf{More info}
+
+And here's some other random info: the first paragraph after a chapter
+title or section head \emph{shouldn't be} indented, because indents are
+to tell the reader that you're starting a new paragraph. Since that's
+obvious after a chapter or section title, proper typesetting doesn't add
+an indent there.
+
+\hypertarget{references}{%
+\chapter*{References}\label{references}}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\noindent
+
+\setlength{\parindent}{-0.20in}
+\setlength{\leftskip}{0.20in}
+\setlength{\parskip}{8pt}
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-angel2000}{}%
+Angel, E. (2000). \emph{Interactive computer graphics : A top-down
+approach with opengl}. Boston, MA: Addison Wesley Longman.
+
+\leavevmode\hypertarget{ref-angel2001}{}%
+Angel, E. (2001a). \emph{Batch-file computer graphics : A bottom-up
+approach with quicktime}. Boston, MA: Wesley Addison Longman.
+
+\leavevmode\hypertarget{ref-angel2002a}{}%
+Angel, E. (2001b). \emph{Test second book by angel}. Boston, MA: Wesley
+Addison Longman.
+
+\leavevmode\hypertarget{ref-Molina1994}{}%
+Molina, S. T., \& Borkovec, T. D. (1994). The Penn State worry
+questionnaire: Psychometric properties and associated characteristics.
+In G. C. L. Davey \& F. Tallis (Eds.), \emph{Worrying: Perspectives on
+theory, assessment and treatment} (pp. 265--283). New York: Wiley.
+
+\leavevmode\hypertarget{ref-noble2002}{}%
+Noble, S. G. (2002). \emph{Turning images into simple line-art}
+(Undergraduate thesis). Reed College.
+
+\leavevmode\hypertarget{ref-reedweb2007}{}%
+Reed~College. (2007). LaTeX your document. Retrieved from
+\url{http://web.reed.edu/cis/help/LaTeX/index.html}
+
+\appendix
+
+\hypertarget{the-first-appendix}{%
+\chapter{The First Appendix}\label{the-first-appendix}}
+
+This first appendix includes all of the R chunks of code that were
+hidden throughout the document (using the \texttt{include\ =\ FALSE}
+chunk tag) to help with readibility and/or setup.
+
+\textbf{In the main Rmd file}
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# This chunk ensures that the thesisdown package is installed and loaded. This}
+\CommentTok{# thesisdown package includes the template files for the thesis.}
+\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(devtools))}
+  \KeywordTok{install.packages}\NormalTok{(}\StringTok{"devtools"}\NormalTok{, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
+\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(thesisdown))}
+\NormalTok{  devtools}\OperatorTok{::}\KeywordTok{install_github}\NormalTok{(}\StringTok{"ismayc/thesisdown"}\NormalTok{)}
+\KeywordTok{library}\NormalTok{(thesisdown)}
+\end{Highlighting}
+\end{Shaded}
+\textbf{In Chapter \ref{ref-labels}:}
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# This chunk ensures that the thesisdown package is}
+\CommentTok{# installed and loaded. This thesisdown package includes}
+\CommentTok{# the template files for the thesis and also two functions}
+\CommentTok{# used for labeling and referencing}
+\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(devtools))}
+  \KeywordTok{install.packages}\NormalTok{(}\StringTok{"devtools"}\NormalTok{, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
+\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(dplyr))}
+    \KeywordTok{install.packages}\NormalTok{(}\StringTok{"dplyr"}\NormalTok{, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
+\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(ggplot2))}
+    \KeywordTok{install.packages}\NormalTok{(}\StringTok{"ggplot2"}\NormalTok{, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
+\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(ggplot2))}
+    \KeywordTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
+\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(thesisdown))\{}
+  \KeywordTok{library}\NormalTok{(devtools)}
+\NormalTok{  devtools}\OperatorTok{::}\KeywordTok{install_github}\NormalTok{(}\StringTok{"ismayc/thesisdown"}\NormalTok{)}
+\NormalTok{  \}}
+\KeywordTok{library}\NormalTok{(thesisdown)}
+\NormalTok{flights <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/flights.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+\hypertarget{the-second-appendix-for-fun}{%
+\chapter{The Second Appendix, for
+Fun}\label{the-second-appendix-for-fun}}
+
+\end{mainmatter}
+\end{document}

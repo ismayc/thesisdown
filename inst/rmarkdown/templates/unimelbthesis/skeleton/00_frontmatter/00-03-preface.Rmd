@@ -1,0 +1,2 @@
+This is an example of a thesis setup to use the reed thesis document class (for 
+LaTeX) and the R bookdown package, in general.

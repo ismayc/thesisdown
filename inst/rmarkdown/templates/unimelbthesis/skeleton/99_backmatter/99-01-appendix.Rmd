@@ -1,11 +1,7 @@
+<!-- These lines tell the templates that we are about to start the appendices.
+They should appear at the start of your first appendix.-->
 `r if(knitr:::is_latex_output()) '\\appendix'`
-
-`r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'` 
-
-<!--
-If you feel it necessary to include an appendix, it goes here.
--->
-
+`r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'`
 
 # The First Appendix
 

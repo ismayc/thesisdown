@@ -1,0 +1,164 @@
+% *============================================================================*
+%                  UNIVERSITY OF MELBOURNE THESIS TEMPLATE
+% *============================================================================*
+
+% +----------------------------------------------------------------------------+
+%  This is a Pandoc/LaTeX template for a University of Melbourne thesis designed
+%  to be used as part of a bookdown project
+%  (https://bookdown.org/yihui/bookdown/).
+% +----------------------------------------------------------------------------+
+
+% +----------------------------------------------------------------------------+
+%  Changes:
+%
+%  2018-10-10 (Luke Zappia)
+%    * Create first draft template
+% +----------------------------------------------------------------------------+
+
+% *============================================================================*
+%  PREAMBLE
+%
+%  Set up the document, load packages, set parameters etc.
+% *============================================================================*
+
+% +-----Document class---------------------------------------------------------+
+%  Set the class associated with the document, options in square brackets are
+%  passed to the class
+% +----------------------------------------------------------------------------+
+
+\documentclass[11pt,a4paper,titlepage,twoside,openright]{style/unimelbthesis}
+
+% +-----Packages---------------------------------------------------------------+
+%  External packages used in the document
+% +----------------------------------------------------------------------------+
+
+\usepackage{graphicx}  % Extended graphics package.
+\usepackage{amsmath}   % American Mathematics Society standards
+\usepackage{amsxtra}   % Additional math symbols
+\usepackage{amssymb}   % Additional math symbols
+\usepackage{amsthm}    % Additional math symbols
+\usepackage{latexsym}  % Additional math symbols
+\usepackage{booktabs}  % Table formatting
+\usepackage{longtable} % Table formatting
+\usepackage{hyperref}  % Hyperlinks
+\usepackage{setspace}  % Line spacing
+\usepackage{chemarr}   % Improved reaction arrows for chemists
+\usepackage{palatino}  % Use the palatino font family
+\usepackage{mathpazo}  % Use the palotino font family
+
+% +-----Parameters-------------------------------------------------------------+
+%  Set parameters for the document. To convert from YAML to LaTeX we need to add
+%  the dollar signs.
+% +----------------------------------------------------------------------------+
+
+\title{$title$}
+\author{$author$}
+\orcid{$orcid$}
+\degree{$degree$}
+\submissionmonth{$submissionmonth$}
+\submissionyear{$submissionyear$}
+\department{$department$}
+\university{$university$}
+\statement{$statement$}
+
+% +-----Syntax highlighting----------------------------------------------------+
+%  If code chunks are included in the document this allows Pandoc to insert the
+%  code highlighting macros.
+% +----------------------------------------------------------------------------+
+
+$if(highlighting-macros)$
+  $highlighting-macros$
+$endif$
+
+% *============================================================================*
+%  FRONT MATTER
+%
+%  Front section of the document, everything before the main text.
+% *============================================================================*
+
+\begin{document}
+
+\begin{frontmatter}
+
+% +-----Title------------------------------------------------------------------+
+
+$if(title)$
+  \maketitle
+$endif$
+
+% +-----Abstract---------------------------------------------------------------+
+
+$if(abstract)$
+  \begin{abstract}
+    $abstract$
+  \end{abstract}
+$endif$
+
+% +-----Declaration------------------------------------------------------------+
+
+$if(declaration)$
+  \begin{declaration}
+    $declaration$
+  \end{declaration}
+$endif$
+
+% +-----Preface----------------------------------------------------------------+
+
+$if(preface)$
+  \begin{preface}
+    $preface$
+  \end{preface}
+$endif$
+
+% +-----Acknowledgements-------------------------------------------------------+
+
+$if(acknowledgements)$
+  \begin{acknowledgements}
+    $acknowledgements$
+  \end{acknowledgements}
+$endif$
+
+% +-----Table of contents------------------------------------------------------+
+
+$if(toc)$
+  \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
+  \setcounter{tocdepth}{$toc-depth$}
+  \tableofcontents
+$endif$
+
+% +-----List of tables---------------------------------------------------------+
+
+$if(lot)$
+  \listoftables
+$endif$
+
+% +-----List of figures--------------------------------------------------------+
+
+$if(lof)$
+  \listoffigures
+$endif$
+
+% +-----List of copyright------------------------------------------------------+
+
+$if(copyrightlist)$
+\begin{copyrightlist}
+  $copyrightlist$
+\end{copyrightlist}
+$endif$
+
+\end{frontmatter}
+
+% *============================================================================*
+%  MAIN MATTER
+%
+%  Main part of the document. Includes all chapters and appendices.
+% *============================================================================*
+
+
+\begin{mainmatter}
+
+$body$
+
+\end{mainmatter}
+
+\end{document}

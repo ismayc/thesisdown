@@ -6,6 +6,9 @@
 \usage{
 thesis_gitbook(...)
 }
+\arguments{
+\item{...}{additional arguments passed to \code{bookdown::gitbook}}
+}
 \value{
 A gitbook webpage
 }
@@ -15,7 +18,6 @@ to specify the creation of a webpage version of the thesis.
 }
 \examples{
 \dontrun{
- output: thesisdown::thesis_gitbook
+ output: unimelbdown::thesis_gitbook
 }
 }
-

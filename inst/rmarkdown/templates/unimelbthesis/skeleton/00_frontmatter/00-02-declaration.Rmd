@@ -1,0 +1,11 @@
+This is to certify that:
+
+i. the thesis comprises only their original work towards the [name of
+   the award] except where indicated in the preface;
+i. due acknowledgement has been made in the text to all other material
+   used; and
+i. the thesis is fewer than the maximum word limit in length, exclusive of
+   tables, maps, bibliographies and appendices or that the thesis is [number
+   of words] as approved by the Research Higher Degrees Committee.
+
+<!-- Signature line will be placed here -->

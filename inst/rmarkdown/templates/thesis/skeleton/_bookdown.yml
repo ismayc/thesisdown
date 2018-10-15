@@ -1,5 +1,0 @@
-book_filename: "thesis"
-chapter_name: "Chapter "
-rmd_files: ["index.Rmd", "01-chap1.Rmd", "02-chap2.Rmd", "03-chap3.Rmd", "04-conclusion.Rmd", "05-appendix.Rmd", "99-references.Rmd"]
-download: [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]]
-delete_merged_file: true

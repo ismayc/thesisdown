@@ -1,0 +1,41 @@
+# Introduction
+
+Welcome to my University of Melbourne _R Markdown_ thesis template. This
+template is designed to let you produce a nicely formatted thesis using _R
+Markdown_. _R Markdown_ allows you to easily keep track of your analyses in
+**R** chunks of code, with the resulting plots and output included in the final
+document. The hope is this _R Markdown_ template gets you in the habit of doing
+reproducible research, which benefits you long-term as a researcher, but also
+will greatly help anyone that is trying to reproduce or build onto your results
+down the road.
+
+Hopefully, you won't have much of a learning period to go through and you will
+reap the benefits of a nicely formatted thesis. The use of LaTeX in combination
+with _Markdown_ can be more consistent than the output of a word processor,
+much less prone to corruption or crashing, and the resulting file is smaller
+than a Word file. While you may have never had problems using Word in the past,
+your thesis is likely going to be about twice as large and complex as anything
+you've written before, taxing Word's capabilities. After working with
+_Markdown_ and **R** together for a few weeks, we are confident this will be
+your reporting style of choice going forward.
+
+**Why use it?**
+
+_R Markdown_ creates a simple and straightforward way to interface with the
+beauty of LaTeX. Packages have been written in **R** to work directly with
+LaTeX to produce nicely formatting tables and paragraphs. In addition to
+creating a user friendly interface to LaTeX, _R Markdown_ also allows you to
+read in your data, to analyze it and to visualize it using **R** functions, and
+also to provide the documentation and commentary on the results of your
+project. Further, it allows for **R** results to be passed inline to the
+commentary of your results. You'll see more on this later.
+
+**Who should use it?**
+
+Anyone who needs to use data analysis, math, tables, a lot of figures, complex
+cross-references, or who just cares about the final appearance of their
+document should use _R Markdown_. Of particular use should be anyone in the
+sciences, but the user-friendly nature of _Markdown_ and its ability to keep
+track of and easily include figures, automatically generate a table of
+contents, index, references, table of figures, etc. should make it of great
+benefit to nearly anyone writing a thesis project.

@@ -1,0 +1,23 @@
+<!-- This document is used to add the front matter to formats other than LaTeX
+(mostly word). These sections can be removed if you don't want them or the whole
+file excluded from _bookdown.yml.--->
+
+`r if(!knitr:::is_latex_output()) '######### Abstract'`
+
+`r if(!knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-01-abstract.Rmd"), collapse = "\n  ")`
+
+`r if(!knitr:::is_latex_output()) '######### Declaration'`
+
+`r if(!knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-02-declaration.Rmd"), collapse = "\n  ")`
+
+`r if(!knitr:::is_latex_output()) '######### Preface'`
+
+`r if(!knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-03-preface.Rmd"), collapse = "\n  ")`
+
+`r if(!knitr:::is_latex_output()) '######### Acknowledgements'`
+
+`r if(!knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-04-acknowledge.Rmd"), collapse = "\n  ")`
+
+`r if(!knitr:::is_latex_output()) '######### List of copyright'`
+
+`r if(!knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-05-copyrightlist.Rmd"), collapse = "\n  ")`
