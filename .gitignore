@@ -2,5 +2,5 @@
 .Rhistory
 .RData
 .DS_Store
-inst/rmarkdown/templates/unimelbthesis/skeleton/_book/*
+inst/rmarkdown/templates/unimelbthesis/skeleton/output/*
 inst/rmarkdown/templates/unimelbthesis/skeleton/_bookdown_files/*
