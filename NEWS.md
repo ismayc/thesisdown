@@ -1,3 +1,7 @@
+# unimelbdown 0.0.0.9001
+
+- Fix thesisdown install chunk
+
 # unimelbdown 0.0.0.9000
 
 - Convert to unimelbdown from thesisdown

@@ -1,6 +1,6 @@
-```{r include_packages_2, include = FALSE}
-# This chunk ensures that the thesisdown package is
-# installed and loaded. This thesisdown package includes
+```{r install-packages-2, include = FALSE}
+# This chunk ensures that the unimelbdown package is
+# installed and loaded. This unimelbdown package includes
 # the template files for the thesis and also two functions
 # used for labeling and referencing
 if(!require(devtools))
@@ -11,11 +11,11 @@ if(!require(ggplot2))
     install.packages("ggplot2", repos = "http://cran.rstudio.com")
 if(!require(ggplot2))
     install.packages("bookdown", repos = "http://cran.rstudio.com")
-if(!require(thesisdown)){
+if(!require(unimelbdown)){
   library(devtools)
-  devtools::install_github("ismayc/thesisdown")
+  devtools::install_github("lazappi/unimelbdown")
   }
-library(thesisdown)
+library(unimelbdown)
 flights <- read.csv("data/flights.csv")
 ```
 
