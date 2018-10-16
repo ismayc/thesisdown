@@ -1,3 +1,7 @@
+# unimelbdown 0.0.0.9002
+
+- Fix another install chunk...
+
 # unimelbdown 0.0.0.9001
 
 - Fix thesisdown install chunk

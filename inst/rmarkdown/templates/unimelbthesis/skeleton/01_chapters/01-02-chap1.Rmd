@@ -168,8 +168,8 @@ new.pkg <- pkg[!(pkg %in% installed.packages())]
 # install them
 if (length(new.pkg))
   install.packages(new.pkg, repos = "http://cran.rstudio.com")
-# Load packages (thesisdown will load all of the packages as well)
-library(thesisdown)
+# Load packages (unimelbdown will load all of the packages as well)
+library(unimelbdown)
 ```
 
 \clearpage
