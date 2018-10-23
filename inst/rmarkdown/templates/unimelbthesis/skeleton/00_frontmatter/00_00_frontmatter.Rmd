@@ -2,22 +2,42 @@
 (mostly word). These sections can be removed if you don't want them or the whole
 file excluded from _bookdown.yml.--->
 
-`r if(!knitr:::is_latex_output()) '######### Abstract'`
+```{r frontmatter}
+tex  <- TRUE
+docx <- FALSE
+html <- FALSE
 
-`r if(!knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-01-abstract.Rmd"), collapse = "\n  ")`
+if (!knitr:::is_latex_output()) {
+    tex <- FALSE
+    if (knitr:::is_html_output()) {
+        html <- TRUE
+    } else {
+        docx <- TRUE
+    }
+}
+```
 
-`r if(!knitr:::is_latex_output()) '######### Declaration'`
+`r if (html) '## Abstract {-}'`
+`r if (docx) '######### Abstract {-}'`
 
-`r if(!knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-02-declaration.Rmd"), collapse = "\n  ")`
+`r if (!tex) paste(readLines("00_frontmatter/00-01-abstract.Rmd"), collapse = "\n  ")`
 
-`r if(!knitr:::is_latex_output()) '######### Preface'`
+`r if (html) '## Declaration {-}'`
+`r if (docx) '######### Declaration {-}'`
 
-`r if(!knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-03-preface.Rmd"), collapse = "\n  ")`
+`r if (!tex) paste(readLines("00_frontmatter/00-02-declaration.Rmd"), collapse = "\n  ")`
 
-`r if(!knitr:::is_latex_output()) '######### Acknowledgements'`
+`r if (html) '## Preface {-}'`
+`r if (docx) '######### Preface {-}'`
 
-`r if(!knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-04-acknowledge.Rmd"), collapse = "\n  ")`
+`r if (!tex) paste(readLines("00_frontmatter/00-03-preface.Rmd"), collapse = "\n  ")`
 
-`r if(!knitr:::is_latex_output()) '######### List of copyright'`
+`r if (html) '## Acknowledgements {-}'`
+`r if (docx) '######### Acknowledgements {-}'`
 
-`r if(!knitr:::is_latex_output()) paste(readLines("00_frontmatter/00-05-copyrightlist.Rmd"), collapse = "\n  ")`
+`r if (!tex) paste(readLines("00_frontmatter/00-04-acknowledge.Rmd"), collapse = "\n  ")`
+
+`r if (html) '## List of copyright {-}'`
+`r if (docx) '######### List of copyright {-}'`
+
+`r if (!tex) paste(readLines("00_frontmatter/00-05-copyrightlist.Rmd"), collapse = "\n  ")`

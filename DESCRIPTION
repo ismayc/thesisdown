@@ -1,7 +1,7 @@
 Package: unimelbdown
 Title: An updated unimelb R Markdown thesis template using the bookdown package
-Version: 0.0.0.9002
-Date: 2018-10-16
+Version: 0.0.0.9003
+Date: 2018-10-23
 Authors@R: c(
     person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = "aut"),
     person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"),

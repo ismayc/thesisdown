@@ -176,3 +176,7 @@ knitr::opts_chunk$set(
   out.width = "80%"
 )
 ```
+
+<!-- This is required for HTML output. If there is no text in index.Rmd then
+index.html will not be created. -->
+`r if(knitr:::is_html_output()) '# Front matter {-}'`

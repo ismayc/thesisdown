@@ -1,3 +1,7 @@
+# unimelbdown 0.0.0.9003
+
+- Fix front matter in HTML output
+
 # unimelbdown 0.0.0.9002
 
 - Fix another install chunk...
