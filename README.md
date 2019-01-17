@@ -41,10 +41,10 @@ separately or install a newer RStudio.
 
 2) Install the **bookdown** and **thesisdown** packages: 
 
-```
-install.packages("devtools")
-devtools::install_github("rstudio/bookdown")
-devtools::install_github("ismayc/thesisdown")
+```r
+install.packages("remotes")
+remotes::install_github("rstudio/bookdown")
+remotes::install_github("ismayc/thesisdown")
 ```
 
 3) Use the **New R Markdown** dialog to select **Thesis**:
