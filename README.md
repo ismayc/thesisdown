@@ -24,6 +24,27 @@ In an ideal world, this package would support a variety of different LaTeX templ
 - Jake Thompson at the University of Kansas: [jayhawkdown](https://github.com/wjakethompson/jayhawkdown)
 - Phi Nguyen at the Humboldt University of Berlin: [huwiwidown](https://github.com/phister/thesisdown)
 
+
+|University                              |Repository                                                                                    |Based on                                                        |
+|:---------------------------------------|:---------------------------------------------------------------------------------------------|:---------------------------------------------------------------|
+|Brock University                        |[brentthorne/brockdown](https://github.com/brentthorne/brockdown)                             |[zkamvar/beaverdown](https://github.com/zkamvar/beaverdown)     |
+|Duke University                         |[mine-cetinkaya-rundel/thesisdowndss](https://github.com/mine-cetinkaya-rundel/thesisdowndss) |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|Humboldth University of Berlin          |[phister/huwiwidown](https://github.com/phister/thesisdown)  |[ismayc/thesisdown](https://github.com/ismayc/thesisdown) 
+|Kansas State University                 |[emraher/wildcatdown](https://github.com/emraher/wildcatdown)                                 |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
+|Oregon State University                 |[zkamvar/beaverdown](https://github.com/zkamvar/beaverdown)                                   |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|Oxford University                       |[davidplans/oxdown](https://github.com/davidplans/oxdown)                                     |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|Southampton University                  |[dr-harper/sotonthesis](https://github.com/dr-harper/sotonthesis)                             |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|Stanford University                     |[mhtess/treedown](https://github.com/mhtess/treedown)                                         |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|University College London               |[benyohaiphysics/thesisdownUCL](https://github.com/benyohaiphysics/thesisdownUCL)             |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|University of California, Davis         |[ryanpeek/aggiedown](https://github.com/ryanpeek/aggiedown)                                   |[DanOvando/gauchodown](https://github.com/DanOvando/gauchodown) |
+|University of California, Santa Barbara |[DanOvando/gauchodown](https://github.com/DanOvando/gauchodown)                               |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
+|University of Florida                   |[ksauby/thesisdownufl](https://github.com/ksauby/thesisdownufl)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|University of Freiburg                  |[vivekbhr/doctorRbite](https://github.com/vivekbhr/doctorRbite)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|University of Minnesota                 |[zief0002/qmedown](https://github.com/zief0002/qmedown)                                       |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|University of New South Wales           |[rensa/unswthesisdown](https://github.com/rensa/unswthesisdown)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|University of Salzburg                  |[irmingard/salzburgthesisdown](https://github.com/irmingard/salzburgthesisdown)               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|University of Washington                |[benmarwick/huskydown](https://github.com/benmarwick/huskydown)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+
 ### Using thesisdown from Chester's GitHub
 
 Using **thesisdown** has some prerequisites which are described below. To compile PDF documents using **R**, you are going to need to have LaTeX installed.  It can be downloaded for Windows at <https://miktex.org/download> and for Mac at <https://tug.org/mactex/mactex-download.html>.  Follow the instructions to install the necessary packages after downloading the (somewhat large) installer files.  You may need to install a few extra LaTeX packages on your first attempt to knit as well.
