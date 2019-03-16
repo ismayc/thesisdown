@@ -18,14 +18,8 @@ Under the hood, the Reed College LaTeX template is used to ensure that documents
 
 In an ideal world, this package would support a variety of different LaTeX templates from a wide range of institutions and we'd love to get it there at some point. Until that time, realize that this was designed to only work with the Reed College LaTeX template but others have adapted it to work with their institutions.  Here are a couple that have customized it to fit their needs.  It is recommended you review how they changed the files by comparing their repositories to this one and then make tweaks to yours as needed.  Feel free to file an issue on this repo if you have questions/troubles:
 
-- Mine Cetinkaya-Rundel at Duke University: [thesisdowndss](https://github.com/mine-cetinkaya-rundel/thesisdowndss)
-- Zhian Kamvar at Oregon State University: [beaverdown](https://github.com/zkamvar/beaverdown)
-- Ben Marwick at the University of Washington: [huskydown](https://github.com/benmarwick/huskydown)
-- Jake Thompson at the University of Kansas: [jayhawkdown](https://github.com/wjakethompson/jayhawkdown)
-- Phi Nguyen at the Humboldt University of Berlin: [huwiwidown](https://github.com/phister/thesisdown)
 
-
-|University                              |Repository                                                                                    |Based on                                                        |
+|College/University                              |Repository                                                                                    |Based on                                                        |
 |:---------------------------------------|:---------------------------------------------------------------------------------------------|:---------------------------------------------------------------|
 |Brock University                        |[brentthorne/brockdown](https://github.com/brentthorne/brockdown)                             |[zkamvar/beaverdown](https://github.com/zkamvar/beaverdown)     |
 |Duke University                         |[mine-cetinkaya-rundel/thesisdowndss](https://github.com/mine-cetinkaya-rundel/thesisdowndss) |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
