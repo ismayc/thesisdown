@@ -22,7 +22,7 @@ In an ideal world, this package would support a variety of different LaTeX templ
 - Zhian Kamvar at Oregon State University: [beaverdown](https://github.com/zkamvar/beaverdown)
 - Ben Marwick at the University of Washington: [huskydown](https://github.com/benmarwick/huskydown)
 - Jake Thompson at the University of Kansas: [jayhawkdown](https://github.com/wjakethompson/jayhawkdown)
-
+- Phi Nguyen at the Humboldt University of Berlin: [huwiwidown](https://github.com/phister/thesisdown)
 
 ### Using thesisdown from Chester's GitHub
 
