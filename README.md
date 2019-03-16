@@ -23,7 +23,7 @@ In an ideal world, this package would support a variety of different LaTeX templ
 |:---------------------------------------|:---------------------------------------------------------------------------------------------|:---------------------------------------------------------------|
 |Brock University                        |[brentthorne/brockdown](https://github.com/brentthorne/brockdown)                             |[zkamvar/beaverdown](https://github.com/zkamvar/beaverdown)     |
 |Duke University                         |[mine-cetinkaya-rundel/thesisdowndss](https://github.com/mine-cetinkaya-rundel/thesisdowndss) |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
-|Humboldth University of Berlin          |[phister/huwiwidown](https://github.com/phister/thesisdown)  |[ismayc/thesisdown](https://github.com/ismayc/thesisdown) 
+|Humboldth University of Berlin          |[phister/huwiwidown](https://github.com/phister/huwiwidown)  |[ismayc/thesisdown](https://github.com/ismayc/thesisdown) 
 |Kansas State University                 |[emraher/wildcatdown](https://github.com/emraher/wildcatdown)                                 |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
 |Oregon State University                 |[zkamvar/beaverdown](https://github.com/zkamvar/beaverdown)                                   |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Oxford University                       |[davidplans/oxdown](https://github.com/davidplans/oxdown)                                     |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
