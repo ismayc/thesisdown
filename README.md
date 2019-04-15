@@ -23,8 +23,9 @@ In an ideal world, this package would support a variety of different LaTeX templ
 |:---------------------------------------|:---------------------------------------------------------------------------------------------|:---------------------------------------------------------------|
 |Brock University                        |[brentthorne/brockdown](https://github.com/brentthorne/brockdown)                             |[zkamvar/beaverdown](https://github.com/zkamvar/beaverdown)     |
 |Duke University                         |[mine-cetinkaya-rundel/thesisdowndss](https://github.com/mine-cetinkaya-rundel/thesisdowndss) |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
-|Humboldth University of Berlin          |[phister/huwiwidown](https://github.com/phister/huwiwidown)  |[ismayc/thesisdown](https://github.com/ismayc/thesisdown) 
+|Humboldt University of Berlin          |[phister/huwiwidown](https://github.com/phister/huwiwidown)  |[ismayc/thesisdown](https://github.com/ismayc/thesisdown) |
 |Kansas State University                 |[emraher/wildcatdown](https://github.com/emraher/wildcatdown)                                 |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
+|Massachusetts Institute of Technology                |[ratatstats/manusdown](https://github.com/ratatstats/manusdown)                                 |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)  |
 |Oregon State University                 |[zkamvar/beaverdown](https://github.com/zkamvar/beaverdown)                                   |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Oxford University                       |[davidplans/oxdown](https://github.com/davidplans/oxdown)                                     |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Southampton University                  |[dr-harper/sotonthesis](https://github.com/dr-harper/sotonthesis)                             |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
@@ -67,7 +68,7 @@ remotes::install_github("ismayc/thesisdown")
 
     ![New R Markdown](thesis_rmd.png)
 
-    Note that this will currently only **Knit** if you name the directory `index` as shown above.
+    Note that this will currently only **Knit** if you name the directory `index` as shown above. This guarantees that `index.html` is generated correctly for the Gitbook version of the thesis.
 
 4) After choosing which type of output you'd like in the YAML at the top of index.Rmd, **Knit** the `index.Rmd` file to get the book in PDF or HTML formats.
 5) Edit the individual chapter R Markdown files as you wish and then re-run step (4) again.
