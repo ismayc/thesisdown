@@ -18,7 +18,7 @@ Under the hood, the Reed College LaTeX template is used to ensure that documents
 
 In an ideal world, this package would support a variety of different LaTeX templates from a wide range of institutions and we'd love to get it there at some point. Until that time, realize that this was designed to only work with the Reed College LaTeX template but others have adapted it to work with their institutions.  Here are some that have customized it to fit their needs.  It is recommended you review how they changed the files by comparing their repositories to this one and then make tweaks to yours as needed.  Feel free to file an issue on this repo if you have questions/troubles.
 
-Have you created a thesisdown template for your institution and would like to have it included here? Make a PR [similar to the one done to include `huwiwidown`](https://github.com/ismayc/thesisdown/pull/49) and I'll review it and merge it in. Let's keep the list going!
+Have you created a thesisdown template for your institution and would like to have it included here? Make a PR [similar to the one done to include `huwiwidown`](https://github.com/ismayc/thesisdown/pull/49). Make sure to update the table too ideally! I'll review it and merge it in. Let's keep the list going!
 
 
 |College/University                              |Repository                                                                                    |Based on                                                        |
