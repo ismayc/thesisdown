@@ -23,9 +23,9 @@ Have you created a thesisdown template for your institution and would like to ha
 
 |College/University                              |Repository                                                                                    |Based on                                                        |
 |:---------------------------------------|:---------------------------------------------------------------------------------------------|:---------------------------------------------------------------|
-|Drexel University                       |[tbradley1013/dragondown](https://github.com/tbradley1013/dragondown)                         |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |American University                    |[SimonHeuberger/eagledown](https://github.com/SimonHeuberger/eagledown)                     |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
 |Brock University                        |[brentthorne/brockdown](https://github.com/brentthorne/brockdown)                             |[zkamvar/beaverdown](https://github.com/zkamvar/beaverdown)     |
+|Drexel University                       |[tbradley1013/dragondown](https://github.com/tbradley1013/dragondown)                         |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Duke University                         |[mine-cetinkaya-rundel/thesisdowndss](https://github.com/mine-cetinkaya-rundel/thesisdowndss) |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Humboldt University of Berlin          |[phister/huwiwidown](https://github.com/phister/huwiwidown)  |[ismayc/thesisdown](https://github.com/ismayc/thesisdown) |
 |Kansas State University                 |[emraher/wildcatdown](https://github.com/emraher/wildcatdown)                                 |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
