@@ -74,6 +74,8 @@ remotes::install_github("rstudio/bookdown")
 remotes::install_github("ismayc/thesisdown")
 ```
 
+Note that you may need to restart RStudio at this point for the following dialog to show up.
+
 3) Use the **New R Markdown** dialog to select **Thesis**:
 
     ![New R Markdown](thesis_rmd.png)
