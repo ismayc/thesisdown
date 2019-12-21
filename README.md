@@ -46,6 +46,7 @@ Have you created a thesisdown template for your institution and would like to ha
 |University of Salzburg                  |[irmingard/salzburgthesisdown](https://github.com/irmingard/salzburgthesisdown)               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |University of Washington                |[benmarwick/huskydown](https://github.com/benmarwick/huskydown)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |TU Wien                                 |[ben-schwen/robotdown](https://github.com/ben-schwen/robotdown)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|University of Bristol                                 |[mattlee821/bristolthesis](https://github.com/mattlee821/bristolthesis)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 
 ### Using thesisdown from Chester's GitHub
 
