@@ -7,7 +7,40 @@ foreigntitle: 'Foreign Title'
 department: 'PESC'
 date_month: '09'
 date_year: '2020'
-# EDIT keywords on template.tex file
+keyword: [Primeira palavra-chave, Segunda palavra-chave]
+author:
+- name: Zé
+  surname: Pretim
+advisor:
+- title: Prof.
+  name: Nome do Primeiro Orientador
+  surname: Sobrenome
+  degree: D.Sc.
+- title: Prof.
+  name: Nome do Segundo Orientador
+  surname: Sobrenome
+  degree: Ph.D
+examiner:
+- title: Prof.
+  name: Nome Completo do Primeiro Examinador
+  degree: D.Sc.
+- title: Prof.
+  name: Nome Completo do Segundo Examinador
+  degree: Ph.D
+- title: Prof.
+  name: Nome Completo do Terceiro Examinador
+  degree: Ph.D
+dedication: |
+  A alguém cujo valor é digno desta dedicatória.
+thanks:
+- title: Agradecimentos
+  text: Gostaria de agradecer a todos.
+abstract: |
+  Apresenta-se, nesta tese, ...
+foreignabstract: |
+  In this work, we present ...
+listoftables: true
+listoffigures: true
 
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
@@ -17,8 +50,7 @@ output:
 #  thesisdown::thesis_word: default
 #  thesisdown::thesis_epub: default
 bibliography: bib/thesis.bib
-listoftables: true
-listoffigures: true
+
 # If you prefer blank lines between paragraphs, un-silence lines  40-41 (this requires package tikz)
 #header-includes:
 #- \usepackage{tikz}

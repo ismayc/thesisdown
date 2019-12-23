@@ -19,41 +19,42 @@ $endif$
 \begin{document}
   \title{$title$}
   \foreigntitle{$foreigntitle$}
-  \author{Nome do Autor}{Sobrenome}
-  \advisor{Prof.}{Nome do Primeiro Orientador}{Sobrenome}{D.Sc.}
-  \advisor{Prof.}{Nome do Segundo Orientador}{Sobrenome}{Ph.D.}
-  \advisor{Prof.}{Nome do Terceiro Orientador}{Sobrenome}{D.Sc.}
+  $for(author)$
+  \author{$author.name$}{$author.surname$}
+  $endfor$
 
-  \examiner{Prof.}{Nome do Primeiro Examinador Sobrenome}{D.Sc.}
-  \examiner{Prof.}{Nome do Segundo Examinador Sobrenome}{Ph.D.}
-  \examiner{Prof.}{Nome do Terceiro Examinador Sobrenome}{D.Sc.}
-  \examiner{Prof.}{Nome do Quarto Examinador Sobrenome}{Ph.D.}
-  \examiner{Prof.}{Nome do Quinto Examinador Sobrenome}{Ph.D.}
+  $for(advisor)$
+  \advisor{$advisor.title$}{$advisor.name$}{$advisor.surname$}{$advisor.degree$}
+  $endfor$
+
+
+  $for(examiner)$
+  \examiner{$examiner.title$}{$examiner.name$}{$examiner.degree$}
+  $endfor$
+
   \department{$department$}
   \date{$date_month$}{$date_year$}
 
-  \keyword{Primeira palavra-chave}
-  \keyword{Segunda palavra-chave}
-  \keyword{Terceira palavra-chave}
+  $for(keyword)$
+  \keyword{$keyword$}
+  $endfor$
 
   \maketitle
 
   \frontmatter
-  \dedication{A algu\'em cujo valor \'e digno desta dedicat\'oria.}
-  \chapter*{Agradecimentos}
+  \dedication{$dedication$}
 
-Gostaria de agradecer a todos.
+  $for(thanks)$
+  \chapter*{$thanks.title$}
+  $thanks.text$
+  $endfor$
 
   \begin{abstract}
-
-Apresenta-se, nesta tese, ...
-
+$abstract$
   \end{abstract}
 
   \begin{foreignabstract}
-
-In this work, we present ...
-
+$foreignabstract$
   \end{foreignabstract}
 
   \tableofcontents
