@@ -1,41 +1,24 @@
 ---
-author: 'Your R. Name'
-date: 'May 20xx'
-institution: 'Reed College'
-division: 'Mathematics and Natural Sciences'
-advisor: 'Advisor F. Name'
-# If you have more two advisors, un-silence line 7
-#altadvisor: 'Your Other Advisor'
-department: 'Mathematics'
-degree: 'Bachelor of Arts'
+doc_type: 'msc' # 'msc' or 'dscexam' or 'dsc'
+language: '\RequirePackage[brazil,english]{babel}' # Revert to [english,brazil] for portuguese
 title: 'My Final College Paper'
+foreigntitle: 'Foreign Title'
+# EDIT author and advisor names on template.tex file
+department: 'PESC'
+date_month: '09'
+date_year: '2020'
+# EDIT keywords on template.tex file
+
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
-#  thesisdown::thesis_pdf: default
-  thesisdown::thesis_gitbook: default
+ thesisdown::thesis_pdf: default
+#  thesisdown::thesis_gitbook: default
 #  thesisdown::thesis_word: default
 #  thesisdown::thesis_epub: default
-# If you are creating a PDF you'll need to write your preliminary content (e.g., abstract, acknowledgements) here or
-# use code similar to line 22-23 for the .RMD files. If you are NOT producing a PDF, you can delete or silence lines 21-32 in this YAML header.
-abstract: |
-  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
-# If you'd rather include the preliminary content in files instead of inline
-# like below, use a command like that for the abstract above.  Note that a tab is 
-# needed on the line after the `|`.
-acknowledgements: |
-  I want to thank a few people.
-dedication: |
-  You can have a dedication here if you wish. 
-preface: |
-  This is an example of a thesis setup to use the reed thesis document class
-  (for LaTeX) and the R bookdown package, in general.
-# Specify the location of the bibliography below
 bibliography: bib/thesis.bib
-# Download your specific csl file and refer to it in the line below.
-csl: csl/apa.csl
-lot: true
-lof: true
+listoftables: true
+listoffigures: true
 # If you prefer blank lines between paragraphs, un-silence lines  40-41 (this requires package tikz)
 #header-includes:
 #- \usepackage{tikz}
