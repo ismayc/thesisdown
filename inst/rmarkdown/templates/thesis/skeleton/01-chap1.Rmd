@@ -12,6 +12,8 @@ Here is a brief introduction into using _R Markdown_. _Markdown_ is a simple for
 
 Be careful with your spacing in _Markdown_ documents.  While whitespace largely is ignored, it does at times give _Markdown_ signals as to how to proceed.  As a habit, try to keep everything left aligned whenever possible, especially as you type a new paragraph.  In other words, there is no need to indent basic text in the Rmd document (in fact, it might cause your text to do funny things if you do).
 
+Let's cite [@book-example].
+
 ## Lists
 
 It's easy to create a list.  It can be unordered like
