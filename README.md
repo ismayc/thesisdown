@@ -1,8 +1,6 @@
 
 # coppedown <img src="coppe-logo.png" align="right" />
 
-[![Travis-CI Build Status](https://travis-ci.org/mralbu/coppedown.svg?branch=master)](https://travis-ci.org/mralbu/coppedown) 
-
 This project provides a template for writing a PhD thesis in R Markdown, and rendering those files into a PDF formatted according to [the requirements of Coppe-UFRJ](https://coppe.ufrj.br/sites/default/files/arquivo_cpgp/anexos.doc). It uses the [coppetex class](http://coppetex.sourceforge.net/) to convert R Markdown files into a PDF formatted ready for submission at UW. This project was inspired by the [thesisdown](https://github.com/ismayc/thesisdown) and [bookdown](https://github.com/rstudio/bookdown) packages.
 
 Currently, the PDF and gitbook versions are fully-functional, and are the focus of this package. The word and epub versions are in development, have no templates behind them, and are essentially calls to the appropriate functions in bookdown.
