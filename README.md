@@ -1,5 +1,5 @@
 
-# coppedown <img src="coppe-logo.png" align="right" />
+# coppedown <img src="coppe-logo.png" align="right" width=30%/>
 
 [![Travis-CI Build Status](https://travis-ci.org/mralbu/coppedown.svg?branch=master)](https://travis-ci.org/mralbu/coppedown) 
 
@@ -44,7 +44,7 @@ devtools::install_github("mralbu/coppedown")
 
 File -> New File -> R Markdown... then choose 'From template', then choose 'Thesis, and enter `index` as the **Name**. Note that this will currently only **Knit** if you name the directory `index` at this step. 
 
-![](coppe-logo.png)
+<img src="coppe-logo.png" width=45%/>
 
 Or if you're not using RStudio, run this line in your R console to create a new PhD thesis from the template:
 
