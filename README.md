@@ -1,5 +1,5 @@
 
-# coppedown <img src="coppe-logo.png" align="right" />
+# coppedown <img src="coppe-logo.png" align="right" width=30%/>
 
 This project provides a template for writing a PhD thesis in R Markdown, and rendering those files into a PDF formatted according to [the requirements of Coppe-UFRJ](https://coppe.ufrj.br/sites/default/files/arquivo_cpgp/anexos.doc). It uses the [coppetex class](http://coppetex.sourceforge.net/) to convert R Markdown files into a PDF formatted ready for submission at UW. This project was inspired by the [thesisdown](https://github.com/ismayc/thesisdown) and [bookdown](https://github.com/rstudio/bookdown) packages.
 
@@ -42,7 +42,7 @@ devtools::install_github("mralbu/coppedown")
 
 File -> New File -> R Markdown... then choose 'From template', then choose 'Thesis, and enter `index` as the **Name**. Note that this will currently only **Knit** if you name the directory `index` at this step. 
 
-![](coppe-logo.png)
+<img src="coppe-logo.png" width=45%/>
 
 Or if you're not using RStudio, run this line in your R console to create a new PhD thesis from the template:
 
