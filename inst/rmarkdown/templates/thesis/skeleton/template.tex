@@ -8,6 +8,14 @@
 
 $language$
 
+$if(portuguese)$
+  \RequirePackage[english, brazil]{babel}
+$endif$
+
+$if(english)$
+  \RequirePackage[brazil,english]{babel}
+$endif$
+
 $if(highlighting-macros)$
 $highlighting-macros$
 $endif$
@@ -78,6 +86,6 @@ $endif$
   \bibliographystyle{coppe-unsrt}
   \bibliography{thesis}
 
-  \appendix
-  \include{appenA}
+  %\appendix
+  %\include{appenA}
 \end{document}

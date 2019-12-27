@@ -1,9 +1,9 @@
 ---
 doc_type: 'msc' # 'msc' or 'dscexam' or 'dsc'
-language: '\RequirePackage[brazil,english]{babel}' # Revert to [english,brazil] for portuguese
-title: 'My Final College Paper'
+portuguese: false # choose either portuguese or english to be true
+english: true 
+title:  'My Final College Paper'
 foreigntitle: 'Foreign Title'
-# EDIT author and advisor names on template.tex file
 department: 'PESC'
 date_month: '09'
 date_year: '2020'
@@ -30,26 +30,29 @@ examiner:
 - title: Prof.
   name: Nome Completo do Terceiro Examinador
   degree: Ph.D
+listoftables: true
+listoffigures: true
 dedication: |
   A alguém cujo valor é digno desta dedicatória.
 thanks:
 - title: Agradecimentos
-  text: Gostaria de agradecer a todos.
+  text:  |
+    Gostaria de agradecer a X
 abstract: |
-  Apresenta-se, nesta tese, ...
+  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
 foreignabstract: |
-  In this work, we present ...
-listoftables: true
-listoffigures: true
-
+  `r if(knitr:::is_latex_output()) paste(readLines("00-foreignabstract.Rmd"), collapse = '\n  ')`
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
-output: 
- thesisdown::thesis_pdf: default
-#  thesisdown::thesis_gitbook: default
-#  thesisdown::thesis_word: default
-#  thesisdown::thesis_epub: default
 bibliography: bib/thesis.bib
+biblio-style: "coppe-unsrt"
+link-citations: true
+output: 
+   thesisdown::thesis_pdf: default
+#  thesisdown::thesis_gitbook: default
+#  thesisdown::thesis_word: 
+#    reference_docx: template_docx.docx
+#  thesisdown::thesis_epub: default
 
 # If you prefer blank lines between paragraphs, un-silence lines  40-41 (this requires package tikz)
 #header-includes:
@@ -69,14 +72,14 @@ If you receive a duplicate label error after knitting, make sure to delete the i
 -->
 
 ```{r include_packages, include = FALSE}
-# This chunk ensures that the thesisdown package is
-# installed and loaded. This thesisdown package includes
+# This chunk ensures that the coppedown package is
+# installed and loaded. This coppedown package includes
 # the template files for the thesis.
 if(!require(devtools))
   install.packages("devtools", repos = "http://cran.rstudio.com")
-if(!require(thesisdown))
-  devtools::install_github("ismayc/thesisdown")
-library(thesisdown)
+if(!require(coppedown))
+  devtools::install_github("mralbu/coppedown")
+library(coppedown)
 ```
 
 <!-- On ordering the chapter files:

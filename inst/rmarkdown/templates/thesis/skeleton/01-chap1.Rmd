@@ -59,7 +59,7 @@ summary(cars)
 
 If you'd like to put the results of your analysis directly into your discussion, add inline code like this:
 
-> The `cos` of $2 \pi$ is `r cos(2*pi)`. 
+The `cos` of $2 \pi$ is `r cos(2*pi)`. 
 
 Another example would be the direct calculation of the standard deviation:
 
@@ -72,6 +72,8 @@ One last neat feature is the use of the `ifelse` conditional statement which can
 Note the use of `>` here, which signifies a quotation environment that will be indented.
 
 As you see with `$2 \pi$` above, mathematics can be added by surrounding the mathematical text with dollar signs.  More examples of this are in [Mathematics and Science] if you uncomment the code in [Math].  
+
+Let's cite @angel2000.
 
 ## Including plots
 
@@ -89,88 +91,9 @@ Another useful chunk option is the setting of `cache=TRUE` as you see here.  If 
 
 Included in this template is a file called `flights.csv`.  This file includes a subset of the larger dataset of information about all flights that departed from Seattle and Portland in 2014.  More information about this dataset and its **R** package is available at <http://github.com/ismayc/pnwflights14>.  This subset includes only Portland flights and only rows that were complete with no missing values.  Merges were also done with the `airports` and `airlines` data sets in the `pnwflights14` package to get more descriptive airport and airline names.
 
+Testing citation @goochandgooch2001. Or it can be [@goochandgooch2001].
+
 We can load in this data set using the following command:
-
-```{r load_data}
-flights <- read.csv("data/flights.csv")
-```
-
-The data is now stored in the data frame called `flights` in **R**.  To get a better feel for the variables included in this dataset we can use a variety of functions.  Here we can see the dimensions (rows by columns) and also the names of the columns.
-
-```{r str}
-dim(flights)
-names(flights)
-```
-
-Another good idea is to take a look at the dataset in table form.  With this dataset having more than 50,000 rows, we won't explicitly show the results of the command here.  I recommend you enter the command into the Console **_after_** you have run the **R** chunks above to load the data into **R**.
-
-```{r view_flights, eval=FALSE}
-View(flights)
-```
-
-While not required, it is highly recommended you use the `dplyr` package to manipulate and summarize your data set as needed.  It uses a syntax that is easy to understand using chaining operations.  Below I've created a few examples of using `dplyr` to get information about the Portland flights in 2014.  You will also see the use of the `ggplot2` package, which produces beautiful, high-quality academic visuals.
-
-We begin by checking to ensure that needed packages are installed and then we load them into our current working environment:
-
-```{r load_pkgs, message=FALSE}
-# List of packages required for this analysis
-pkg <- c("dplyr", "ggplot2", "knitr", "bookdown", "devtools")
-# Check if packages are not installed and assign the
-# names of the packages not installed to the variable new.pkg
-new.pkg <- pkg[!(pkg %in% installed.packages())]
-# If there are any packages in the list that aren't installed,
-# install them
-if (length(new.pkg))
-  install.packages(new.pkg, repos = "http://cran.rstudio.com")
-# Load packages (thesisdown will load all of the packages as well)
-library(thesisdown)
-```
-
-\clearpage
-
-The example we show here does the following:
-
-- Selects only the `carrier_name` and `arr_delay` from the `flights` dataset and then assigns this subset to a new variable called `flights2`. 
-
-- Using `flights2`, we determine the largest arrival delay for each of the carriers.
-
-```{r max_delays}
-flights2 <- flights %>% 
-  select(carrier_name, arr_delay)
-max_delays <- flights2 %>% 
-  group_by(carrier_name) %>%
-  summarize(max_arr_delay = max(arr_delay, na.rm = TRUE))
-```
-
-A useful function in the `knitr` package for making nice tables in _R Markdown_ is called `kable`.  It is much easier to use than manually entering values into a table by copying and pasting values into Excel or LaTeX.  This again goes to show how nice reproducible documents can be! (Note the use of `results="asis"`, which will produce the table instead of the code to create the table.)  The `caption.short` argument is used to include a shorter title to appear in the List of Tables.
-
-```{r maxdelays, results="asis"}
-kable(max_delays, 
-      col.names = c("Airline", "Max Arrival Delay"),
-      caption = "Maximum Delays by Airline",
-      caption.short = "Max Delays by Airline",
-      longtable = TRUE,
-      booktabs = TRUE)
-```
-
-The last two options make the table a little easier-to-read.
-
-We can further look into the properties of the largest value here for American Airlines Inc.  To do so, we can isolate the row corresponding to the arrival delay of 1539 minutes for American in our original `flights` dataset.
-
-
-```{r max_props}
-flights %>% filter(arr_delay == 1539, 
-                  carrier_name == "American Airlines Inc.") %>%
-  select(-c(month, day, carrier, dest_name, hour, 
-            minute, carrier_name, arr_delay))
-```
-
-We see that the flight occurred on March 3rd and departed a little after 2 PM on its way to Dallas/Fort Worth.  Lastly, we show how we can visualize the arrival delay of all departing flights from Portland on March 3rd against time of departure.
-
-```{r march3plot, fig.height=3, fig.width=6}
-flights %>% filter(month == 3, day == 3) %>%
-  ggplot(aes(x = dep_time, y = arr_delay)) + geom_point()
-```
 
 ## Additional resources
 

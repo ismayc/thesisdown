@@ -1,5 +1,4 @@
 `r if(knitr:::is_latex_output()) '\\appendix'`
-
 `r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'` 
 
 <!--
@@ -22,3 +21,5 @@ This first appendix includes all of the R chunks of code that were hidden throug
 ```
 
 # The Second Appendix, for Fun
+
+This first appendix includes all of the R chunks of code that were hidden throughout the document (using the `include = FALSE` chunk tag) to help with readibility and/or setup.
