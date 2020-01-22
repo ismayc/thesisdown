@@ -4,9 +4,12 @@
 #' to specify using the Reed College Senior Thesis LaTeX template and cls files.
 #'
 #' @export
+#'
 #' @param toc A Boolean (TRUE or FALSE) specifying whether table of contents should be created
 #' @param toc_depth A positive integer
+#' @param ... Further arguments passed to or from other methods.
 #' @param highlight Syntax highlighting style. Supported styles include "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", and "haddock". Pass NULL to prevent syntax highlighting.
+#'
 #' @return A modified \code{pdf_document} based on the Reed Senior Thesis LaTeX
 #'   template
 #' @examples
@@ -40,6 +43,8 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...){
 #' This is a function called in output in the YAML of the driver Rmd file
 #' to specify the creation of a webpage version of the thesis.
 #'
+#' @param ... Further arguments passed to or from other methods.
+#'
 #' @export
 #' @return A gitbook webpage
 #' @examples
@@ -70,6 +75,8 @@ thesis_gitbook <- function(...){
 #' This is a function called in output in the YAML of the driver Rmd file
 #' to specify the creation of a Microsoft Word version of the thesis.
 #'
+#' @param ... Further arguments passed to or from other methods.
+#'
 #' @export
 #' @return A Word Document based on (hopefully soon, but not currently)
 #' the Reed Senior Thesis Word template
@@ -93,6 +100,8 @@ thesis_word <- function(...){
 #'
 #' This is a function called in output in the YAML of the driver Rmd file
 #' to specify the creation of a epub version of the thesis.
+#'
+#' @param ... Further arguments passed to or from other methods.
 #'
 #' @export
 #' @return A ebook version of the thesis
