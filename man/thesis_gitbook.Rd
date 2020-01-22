@@ -6,6 +6,9 @@
 \usage{
 thesis_gitbook(...)
 }
+\arguments{
+\item{...}{Further arguments passed to or from other methods.}
+}
 \value{
 A gitbook webpage
 }
@@ -18,4 +21,3 @@ to specify the creation of a webpage version of the thesis.
  output: thesisdown::thesis_gitbook
 }
 }
-

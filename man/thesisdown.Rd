@@ -3,7 +3,6 @@
 \docType{package}
 \name{thesisdown}
 \alias{thesisdown}
-\alias{thesisdown-package}
 \title{thesisdown: A package for creating undergraduate, Masters, and PhD theses
 using R Markdown}
 \description{
