@@ -6,6 +6,9 @@
 \usage{
 thesis_word(...)
 }
+\arguments{
+\item{...}{Further arguments passed to or from other methods.}
+}
 \value{
 A Word Document based on (hopefully soon, but not currently)
 the Reed Senior Thesis Word template
@@ -19,4 +22,3 @@ to specify the creation of a Microsoft Word version of the thesis.
  output: thesisdown::thesis_word
 }
 }
-
