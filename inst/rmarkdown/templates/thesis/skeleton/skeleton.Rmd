@@ -44,7 +44,7 @@ lof: true
 <!--
 Above is the YAML (YAML Ain't Markup Language) header that includes a lot of metadata used to produce the document.  Be careful with spacing in this header!
 
-If you'd prefer to not include a Dedication, for example, simply delete the section entirely, or silence (add #) them. 
+If you'd prefer to not include a Dedication, for example, simply delete the section entirely, or silence them (add # before each line). 
 
 If you have other LaTeX packages you would like to include, delete the # before header-includes and list the packages after hyphens on new lines.
 
