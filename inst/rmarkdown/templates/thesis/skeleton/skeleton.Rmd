@@ -12,8 +12,8 @@ title: 'My Final College Paper'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
-#  thesisdown::thesis_pdf: default
-  thesisdown::thesis_gitbook: default
+  thesisdown::thesis_pdf: default
+#  thesisdown::thesis_gitbook: default
 #  thesisdown::thesis_word: default
 #  thesisdown::thesis_epub: default
 # If you are creating a PDF you'll need to write your preliminary content (e.g., abstract, acknowledgements) here or
