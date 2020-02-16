@@ -22,6 +22,8 @@ install.packages(c('tinytex', 'rmarkdown'))
 tinytex::install_tinytex()
 # after restarting RStudio, confirm that you have LaTeX with 
 tinytex:::is_tinytex()
+# install additional needed latex packages
+tinytex::tlmgr_install("babel-portuges")
 ```
 
 ### Starting to write your thesis
