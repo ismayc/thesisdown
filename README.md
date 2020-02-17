@@ -63,7 +63,11 @@ tinytex::install_tinytex()
 tinytex:::is_tinytex() 
 ```
 
-You may need to install a few extra LaTeX packages on your first attempt to knit as well. 
+You may need to install a few extra LaTeX packages on your first attempt to knit as well. Here is one such example of how to do so:
+
+```{r}
+tinytex::tlmgr_install("babel-portuges")
+```
 
 To use **thesisdown** from [RStudio](http://www.rstudio.com/products/rstudio/download/):
 
