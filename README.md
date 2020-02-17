@@ -73,7 +73,7 @@ To use **thesisdown** from [RStudio](http://www.rstudio.com/products/rstudio/dow
 
 1) Ensure that you have already installed LaTeX and the fonts described above, and are using the latest version of [RStudio](http://www.rstudio.com/products/rstudio/download/). You can use `thesisdown` without RStudio. For example, you can write the Rmd files in your favourite text editor (e.g. [Atom](https://atom.io/), [Notepad++](https://notepad-plus-plus.org/)). But RStudio is probably the easiest tool for writing both R code and text in your thesis. It also provides a nice way to build your thesis while editing. We'll proceed assuming that you have decided to use the RStudio workflow.
 
-2) Install the **bookdown** and **thesisdown** packages: 
+2) Install the **bookdown** and **thesisdown** packages. Note that **thesisdown** is not available on CRAN at the moment and that's why `install.packages("thesisdown")` won't work. Use `remotes::install_github()` as shown below instead to install the package.
 
 ```r
 if (!require("remotes")) install.packages("remotes", repos = "http://cran.rstudio.org")
