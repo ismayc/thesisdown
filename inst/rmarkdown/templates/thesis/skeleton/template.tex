@@ -113,6 +113,16 @@ $endif$
 }
 \makeatother
 
+%Added by @MyKo101, code provided by @GerbrichFerdinands
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
+$endif$
+
 \renewcommand{\contentsname}{Table of Contents}
 % End of CII addition
 
