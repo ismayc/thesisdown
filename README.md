@@ -46,6 +46,7 @@ Have you created a thesisdown template for your institution and would like to ha
 |University of Minnesota                 |[zief0002/qmedown](https://github.com/zief0002/qmedown)                                       |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |University of New South Wales           |[rensa/unswthesisdown](https://github.com/rensa/unswthesisdown)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |University of Salzburg                  |[irmingard/salzburgthesisdown](https://github.com/irmingard/salzburgthesisdown)               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|University of Southampton                  |[dr-harper/sotonthesis](https://github.com/dr-harper/sotonthesis)               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |University of Washington                |[benmarwick/huskydown](https://github.com/benmarwick/huskydown)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |TU Wien                                 |[ben-schwen/robotdown](https://github.com/ben-schwen/robotdown)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |University of Bristol                                 |[mattlee821/bristolthesis](https://github.com/mattlee821/bristolthesis)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
