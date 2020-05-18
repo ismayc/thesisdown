@@ -58,7 +58,7 @@ thesis_gitbook <- function(...){
     config = list(toc = list(collapse = "section",
       before = '<li><a href="./"></a></li>',
       after = '<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>',
-      ...)
+      ...), ...
     )
   )
 
