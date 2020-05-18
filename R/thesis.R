@@ -53,12 +53,26 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...){
 #' }
 thesis_gitbook <- function(...){
 
+  before <- '<li><a href="./"></a></li>'
+  after <- '<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>'
+
+  if ("toc" %in% names(list(...))) {
+    if ("before" %in% names(list(...)$toc)) {
+      before <- list(...)$toc$before
+    }
+    if ("after" %in% names(list(...)$toc)) {
+      after <- list(...)$toc$after
+    }
+  }
+
   base <- bookdown::gitbook(
     split_by = "chapter+number",
-    config = list(toc = list(collapse = "section",
-      before = '<li><a href="./"></a></li>',
-      after = '<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>',
-      ...), ...
+    config = list(
+      toc = list(collapse = "section",
+                 before = before,
+                 after = after, ...
+                 ),
+      ...
     )
   )
 
