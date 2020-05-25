@@ -176,8 +176,17 @@ flights %>% filter(month == 3, day == 3) %>%
 
 - _Markdown_ Cheatsheet - <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>
 
-- _R Markdown_ Reference Guide - <https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf>
+- _R Markdown_
+    - Reference Guide - <https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf>
+    - Cheatsheet - <https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf>
 
-- Introduction to `dplyr` - <https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html>
+- _RStudio IDE_
+    - Cheatsheet - <https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf>
+    - Official website - <https://rstudio.com/products/rstudio/>
 
-- `ggplot2` Documentation - <http://docs.ggplot2.org/current/>
+- Introduction to `dplyr` - <https://cran.rstudio.com/web/packages/dplyr/vignettes/dplyr.html>
+
+- `ggplot2`
+    - Documentation - <https://ggplot2.tidyverse.org/>
+    - Cheatsheet - <https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf>
+

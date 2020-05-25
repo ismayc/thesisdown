@@ -53,14 +53,36 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...){
 #' }
 thesis_gitbook <- function(...){
 
-  base <- bookdown::gitbook(
-    split_by = "chapter+number",
-    config = list(toc = list(collapse = "section",
-      before = '<li><a href="./"></a></li>',
-      after = '<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>',
-      ...)
-    )
-  )
+  config_default <- list(
+    toc = list(collapse = "section",
+               before = '<li><a href="./"></a></li>',
+               after = '<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>'))
+
+  listarg <- list(...)
+
+  if (!"split_by" %in% names(listarg)) {
+    listarg$split_by <- "chapter+number"
+  }
+
+  if (!"config" %in% names(listarg)) {
+    listarg$config <- config_default
+  } else {
+    if (!"toc" %in% names(listarg$config)) {
+      listarg$config$toc <- config_default$toc
+    } else {
+      if (!"collapse" %in% names(listarg$config$toc)) {
+        listarg$config$toc$collapse <- config_default$toc$collapse
+      }
+      if (!"before" %in% names(listarg$config$toc)) {
+        listarg$config$toc$before <- config_default$toc$before
+      }
+      if (!"after" %in% names(listarg$config$toc)) {
+        listarg$config$toc$after <- config_default$toc$after
+      }
+    }
+  }
+
+  base <- do.call(bookdown::gitbook, listarg)
 
   # Mostly copied from knitr::render_sweave
   base$knitr$opts_chunk$comment <- NA

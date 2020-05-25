@@ -49,6 +49,8 @@ Have you created a thesisdown template for your institution and would like to ha
 |University of Washington                |[benmarwick/huskydown](https://github.com/benmarwick/huskydown)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |TU Wien                                 |[ben-schwen/robotdown](https://github.com/ben-schwen/robotdown)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |University of Bristol                                 |[mattlee821/bristolthesis](https://github.com/mattlee821/bristolthesis)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|Universidade Federal de Santa Catarina  | [lfpdroubi/ufscdown](https://github.com/lfpdroubi/ufscdown)                                  |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|Universiteit van Amsterdam              | [lcreteig/amsterdown](https://github.com/lcreteig/amsterdown)                                |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
 
 ### Using thesisdown from Chester's GitHub
 
@@ -63,13 +65,17 @@ tinytex::install_tinytex()
 tinytex:::is_tinytex() 
 ```
 
-You may need to install a few extra LaTeX packages on your first attempt to knit as well. 
+You may need to install a few extra LaTeX packages on your first attempt to knit as well. Here is one such example of how to do so:
+
+```{r}
+tinytex::tlmgr_install("babel-portuges")
+```
 
 To use **thesisdown** from [RStudio](http://www.rstudio.com/products/rstudio/download/):
 
 1) Ensure that you have already installed LaTeX and the fonts described above, and are using the latest version of [RStudio](http://www.rstudio.com/products/rstudio/download/). You can use `thesisdown` without RStudio. For example, you can write the Rmd files in your favourite text editor (e.g. [Atom](https://atom.io/), [Notepad++](https://notepad-plus-plus.org/)). But RStudio is probably the easiest tool for writing both R code and text in your thesis. It also provides a nice way to build your thesis while editing. We'll proceed assuming that you have decided to use the RStudio workflow.
 
-2) Install the **bookdown** and **thesisdown** packages: 
+2) Install the **bookdown** and **thesisdown** packages. Note that **thesisdown** is not available on CRAN at the moment and that's why `install.packages("thesisdown")` won't work. Use `remotes::install_github()` as shown below instead to install the package.
 
 ```r
 if (!require("remotes")) install.packages("remotes", repos = "http://cran.rstudio.org")
