@@ -20,8 +20,8 @@ params:
 # Remove the hashtag to specify which version of output you would like.
 # Can only choose one at a time.
 output:
-#  thesisdown::thesis_pdf: default 
-  thesisdown::thesis_gitbook: default         
+  thesisdown::thesis_pdf: default 
+#  thesisdown::thesis_gitbook: default         
 #  thesisdown::thesis_word: default
 #  thesisdown::thesis_epub: default
 
@@ -91,10 +91,6 @@ if (!require(thesisdown)) {
 }
 library(thesisdown)
 ```
-
-<!-- 
-You can specify the order of the chapter file Rmd's appearing in _bookdown.yml.
--->
 
 <!--
 The ackowledgements, preface, dedication, and abstract are added into the PDF
