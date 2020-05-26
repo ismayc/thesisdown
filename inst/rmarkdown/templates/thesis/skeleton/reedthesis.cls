@@ -185,8 +185,7 @@
 %\setlength{\oddsidemargin}{.6in}
 %\setlength{\evensidemargin}{0in}
 %\setlength{\textwidth}{5.9in}
-%\setlength\topmargin{0in}
-%\addtolength\headheight{2.5pt}
+\addtolength\headheight{2.5pt}
 %\addtolength\topmargin{-\headheight}
 %\addtolength\topmargin{-\headsep}
 %\addtolength\textheight{1in}

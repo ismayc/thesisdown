@@ -1,6 +1,6 @@
 Package: thesisdown
 Title: An updated R Markdown thesis template using the bookdown package
-Version: 0.0.3
+Version: 0.1.0
 Authors@R: c(
     person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = "cre"),
     person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"))
@@ -15,9 +15,10 @@ Depends:
     dplyr,
     ggplot2,
     bookdown,
-    knitr
+    knitr,
+    here
 License: MIT
 Encoding: UTF-8
 LazyData: true
 SystemRequirements: pandoc (>= 1.18) - http://pandoc.org
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
