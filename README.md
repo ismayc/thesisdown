@@ -7,7 +7,7 @@ Currently, the PDF and gitbook versions are fully-functional.  The word and epub
 If you are new to working with `bookdown`/`rmarkdown`, please read over the documentation available in the `gitbook` template at https://thesisdown.netlify.com/.  This is also available below at https://ismayc.github.io/thesisdown_book.
 
 The current output for the four versions is here:
-- [PDF](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.pdf) (Generating LaTeX file is available [here](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.tex) with other files at in the [book directory](https://github.com/ismayc/thesisdown_book/tree/gh-pages).)
+- [PDF](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.pdf) (Generating LaTeX file is available [here](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.tex) with other files in the [book directory](https://github.com/ismayc/thesisdown_book/tree/gh-pages).)
 - [Word](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.docx)
 - [ePub](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.epub)
 - [gitbook](https://ismayc.github.io/thesisdown_book)
@@ -71,14 +71,14 @@ You may need to install a few extra LaTeX packages on your first attempt to knit
 tinytex::tlmgr_install("babel-portuges")
 ```
 
-To use **thesisdown** from [RStudio](http://www.rstudio.com/products/rstudio/download/):
+To use **thesisdown** from [RStudio](https://www.rstudio.com/products/rstudio/download/):
 
-1) Ensure that you have already installed LaTeX and the fonts described above, and are using the latest version of [RStudio](http://www.rstudio.com/products/rstudio/download/). You can use `thesisdown` without RStudio. For example, you can write the Rmd files in your favourite text editor (e.g. [Atom](https://atom.io/), [Notepad++](https://notepad-plus-plus.org/)). But RStudio is probably the easiest tool for writing both R code and text in your thesis. It also provides a nice way to build your thesis while editing. We'll proceed assuming that you have decided to use the RStudio workflow.
+1) Ensure that you have already installed LaTeX and the fonts described above, and are using the latest version of [RStudio](https://www.rstudio.com/products/rstudio/download/). You can use `thesisdown` without RStudio. For example, you can write the Rmd files in your favourite text editor (e.g. [Atom](https://atom.io/), [Notepad++](https://notepad-plus-plus.org/)). But RStudio is probably the easiest tool for writing both R code and text in your thesis. It also provides a nice way to build your thesis while editing. We'll proceed assuming that you have decided to use the RStudio workflow.
 
 2) Install the **bookdown** and **thesisdown** packages. Note that **thesisdown** is not available on CRAN at the moment and that's why `install.packages("thesisdown")` won't work. Use `remotes::install_github()` as shown below instead to install the package.
 
 ```r
-if (!require("remotes")) install.packages("remotes", repos = "http://cran.rstudio.org")
+if (!require("remotes")) install.packages("remotes", repos = "https://cran.rstudio.org")
 remotes::install_github("rstudio/bookdown")
 remotes::install_github("ismayc/thesisdown")
 ```
@@ -87,7 +87,7 @@ Note that you may need to restart RStudio at this point for the following dialog
 
 3) Use the **New R Markdown** dialog to select **Thesis**:
 
-    ![New R Markdown](thesis_rmd.png)
+    ![New R Markdown](images/thesis_rmd.png)
 
     Note that this will currently only **Knit** if you name the directory `index` as shown above. This guarantees that `index.html` is generated correctly for the Gitbook version of the thesis.
 
@@ -95,7 +95,7 @@ Note that you may need to restart RStudio at this point for the following dialog
 
 ### Day-to-day writing of your thesis 
 
-You need to edit the individual chapter R Markdown files to write your thesis. It's recommended that you version control your thesis using GitHub if possible. RStudio can also easily sync up with GitHub to make the process easier. While writing, you should `git commit` your work frequently, after every major activity on your thesis. For example, every few paragraphs or section of text, and after major step of analysis development. You should `git push` at the end of each work session before you leave your computer or change tasks. For a gentle, novice-friendly guide to getting starting with using Git with R and RStudio, see <http://happygitwithr.com/>.
+You need to edit the individual chapter R Markdown files to write your thesis. It's recommended that you version control your thesis using GitHub if possible. RStudio can also easily sync up with GitHub to make the process easier. While writing, you should `git commit` your work frequently, after every major activity on your thesis. For example, every few paragraphs or section of text, and after major step of analysis development. You should `git push` at the end of each work session before you leave your computer or change tasks. For a gentle, novice-friendly guide to getting starting with using Git with R and RStudio, see <https://happygitwithr.com/>.
 
 ## Rendering
 
