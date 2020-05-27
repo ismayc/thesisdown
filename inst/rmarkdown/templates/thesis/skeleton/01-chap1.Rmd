@@ -8,7 +8,7 @@ The {#rmd-basics} text after the chapter declaration will allow us to link throu
 
 # R Markdown Basics {#rmd-basics}
 
-Here is a brief introduction into using _R Markdown_. _Markdown_ is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. _R Markdown_ provides the flexibility of _Markdown_ with the implementation of **R** input and output.  For more details on using _R Markdown_ see <http://rmarkdown.rstudio.com>.  
+Here is a brief introduction into using _R Markdown_. _Markdown_ is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. _R Markdown_ provides the flexibility of _Markdown_ with the implementation of **R** input and output.  For more details on using _R Markdown_ see <https://rmarkdown.rstudio.com>.  
 
 Be careful with your spacing in _Markdown_ documents.  While whitespace largely is ignored, it does at times give _Markdown_ signals as to how to proceed.  As a habit, try to keep everything left aligned whenever possible, especially as you type a new paragraph.  In other words, there is no need to indent basic text in the Rmd document (in fact, it might cause your text to do funny things if you do).
 
@@ -75,34 +75,37 @@ As you see with `$2 \pi$` above, mathematics can be added by surrounding the mat
 
 ## Including plots
 
-You can also embed plots.  For example, here is a way to use the base **R** graphics package to produce a plot using the built-in `pressure` dataset:
+You can also embed plots. For example, here is a way to use the base **R** graphics package to produce a plot using the built-in `pressure` dataset:
 
-```{r pressure, echo=FALSE, cache=TRUE}
+```{r pressure, echo=FALSE, cache=TRUE, fig.height=3, fig.width=5}
 plot(pressure)
 ```
 
-Note that the `echo=FALSE` parameter was added to the code chunk to prevent printing of the **R** code that generated the plot.  There are plenty of other ways to add chunk options.  More information is available at <http://yihui.name/knitr/options/>.  
+Note that the `echo=FALSE` parameter was added to the code chunk to prevent printing of the **R** code that generated the plot. There are plenty of other ways to add chunk options (like `fig.height` and `fig.width` in the chunk above).  More information is available at <https://yihui.org/knitr/options/>.  
 
 Another useful chunk option is the setting of `cache=TRUE` as you see here.  If document rendering becomes time consuming due to long computations or plots that are expensive to generate you can use knitr caching to improve performance.  Later in this file, you'll see a way to reference plots created in **R** or external figures.
 
 ## Loading and exploring data
 
-Included in this template is a file called `flights.csv`.  This file includes a subset of the larger dataset of information about all flights that departed from Seattle and Portland in 2014.  More information about this dataset and its **R** package is available at <http://github.com/ismayc/pnwflights14>.  This subset includes only Portland flights and only rows that were complete with no missing values.  Merges were also done with the `airports` and `airlines` data sets in the `pnwflights14` package to get more descriptive airport and airline names.
+Included in this template is a file called `flights.csv`.  This file includes a subset of the larger dataset of information about all flights that departed from Seattle and Portland in 2014. More information about this dataset and its **R** package is available at <https://github.com/ismayc/pnwflights14>. This subset includes only Portland flights and only rows that were complete with no missing values. Merges were also done with the `airports` and `airlines` data sets in the `pnwflights14` package to get more descriptive airport and airline names.
 
-We can load in this data set using the following command:
+We can load in this data set using the following commands:
 
 ```{r load_data}
-flights <- read.csv("data/flights.csv")
+# flights.csv is in the data directory
+flights_path <- here::here("data", "flights.csv")
+# string columns will be read in as strings and not factors now
+flights <- read.csv(flights_path, stringsAsFactors = FALSE)
 ```
 
-The data is now stored in the data frame called `flights` in **R**.  To get a better feel for the variables included in this dataset we can use a variety of functions.  Here we can see the dimensions (rows by columns) and also the names of the columns.
+The data is now stored in the data frame called `flights` in **R**.  To get a better feel for the variables included in this dataset we can use a variety of functions. Here we can see the dimensions (rows by columns) and also the names of the columns.
 
 ```{r str}
 dim(flights)
 names(flights)
 ```
 
-Another good idea is to take a look at the dataset in table form.  With this dataset having more than 50,000 rows, we won't explicitly show the results of the command here.  I recommend you enter the command into the Console **_after_** you have run the **R** chunks above to load the data into **R**.
+Another good idea is to take a look at the dataset in table form.  With this dataset having more than 20,000 rows, we won't explicitly show the results of the command here. I recommend you enter the command into the Console **_after_** you have run the **R** chunks above to load the data into **R**.
 
 ```{r view_flights, eval=FALSE}
 View(flights)
@@ -121,7 +124,7 @@ new.pkg <- pkg[!(pkg %in% installed.packages())]
 # If there are any packages in the list that aren't installed,
 # install them
 if (length(new.pkg)) {
-  install.packages(new.pkg, repos = "http://cran.rstudio.com")
+  install.packages(new.pkg, repos = "https://cran.rstudio.com")
 }
 # Load packages (thesisdown will load all of the packages as well)
 library(thesisdown)

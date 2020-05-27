@@ -62,7 +62,7 @@ If you'd like to include a comment that won't be produced in your resulting file
 If you receive a duplicate label error after knitting, make sure to delete the index.Rmd file and then knit again.
 -->
 
-```{r include_packages, include = FALSE}
+```{r include_packages, include=FALSE}
 # This chunk ensures that the thesisdown package is
 # installed and loaded. This thesisdown package includes
 # the template files for the thesis.
@@ -90,6 +90,8 @@ if (!require(thesisdown)) {
   }
 }
 library(thesisdown)
+# Set how wide the R output will go
+options(width = 70)
 ```
 
 <!--

@@ -10,15 +10,18 @@ Description: Using the bookdown package and LaTeX and Word thesis templates from
     and analyses as well.
 Maintainer: Chester Ismay <chester.ismay@gmail.com>
 Depends:
-    R (>= 3.2.0),
-    remotes,
+    R (>= 3.2.0)
+Imports: 
     dplyr,
     ggplot2,
     bookdown,
     knitr,
     here
-License: MIT
+Suggests:
+    remotes,
+    usethis
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-SystemRequirements: pandoc (>= 1.18) - http://pandoc.org
+SystemRequirements: pandoc (>= 1.18) - https://pandoc.org
 RoxygenNote: 7.1.0
