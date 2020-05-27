@@ -1,4 +1,4 @@
-# thesisdown <img src="images/thesisdown_hex.png" align="right" width=125 />
+# thesisdown <img src="man/figures/thesisdown_hex.png" align="right" width=200 />
 
 This project was inspired by the [bookdown](https://github.com/rstudio/bookdown) package and is an updated version of my Senior Thesis template in the `reedtemplates` package [here](https://github.com/ismayc/reedtemplates). It was originally designed to only work with the Reed College LaTeX template, but has since been adapted to work with many different institutions by many different individuals. Check out the [**Customizing thesisdown to your institution**](https://github.com/ismayc/thesisdown#customizing-thesisdown-to-your-institution) section below for examples.
 
@@ -87,9 +87,9 @@ Note that you may need to restart RStudio at this point for the following dialog
 
 3) Use the **New R Markdown** dialog to select **Thesis**:
 
-    ![New R Markdown](images/thesis_rmd.png)
+  ![New R Markdown](images/thesis_rmd.png)
 
-    Note that this will currently only **Knit** if you name the directory `index` as shown above. This guarantees that `index.html` is generated correctly for the Gitbook version of the thesis.
+  Note that this will currently only **Knit** if you name the directory `index` as shown above. This guarantees that `index.html` is generated correctly for the Gitbook version of the thesis.
 
 4) After choosing which type of output you'd like in the YAML at the top of index.Rmd, **Knit** the `index.Rmd` file to get the book in PDF or HTML formats.
 
@@ -127,7 +127,7 @@ Store your bibliography (as bibtex files) here. We recommend using the [citr add
 ### `csl/`
 
 Specific style files for bibliographies should be stored here. A good source for
-citation styles is https://github.com/citation-style-language/styles#readme
+citation styles is https://github.com/citation-style-language/styles#readme.
 
 ### `figure/` and `data/`
 
