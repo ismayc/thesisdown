@@ -12,4 +12,4 @@
 #' Creates an R Markdown thesis template as an ebook
 #' @docType package
 #' @name thesisdown
-NULL
+"_PACKAGE"
