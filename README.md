@@ -109,12 +109,12 @@ The following components are ones you should edit to customize your thesis:
 
 ### `_bookdown.yml`
 
-This is the main configuration file for your thesis. It determines what Rmd files are included in the output, and in what order. Arrange the order of your chapters in this file and ensure that the names match the names in your folders. 
+This is the main configuration file for your thesis. You can change the name of your outputted file here for your thesis and other options about your thesis here.
 
 ### `index.Rmd`
 
 This file contains all the meta information that goes at the beginning of your
-document. You'll need to edit this to put your name on the first page, the title of your thesis, etc.
+document. You'll need to edit the top portion of this file (the YAML) to put your name on the first page, the title of your thesis, etc. Note that you need to have at least one chapter start in the `index.Rmd` file for the build to work. For the template, this is done with `# Introduction` in the example from the template.
 
 ### `01-chap1.Rmd`, `02-chap2.Rmd`, etc.
 
