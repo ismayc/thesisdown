@@ -5,7 +5,7 @@
 - Fixed issue ([#86](https://github.com/ismayc/thesisdown/issues/86)) with references not showing in Gitbook version in ([#91](https://github.com/ismayc/thesisdown/pull/91) PR)
   - [Moved preliminary content files for the Gitbook to a `prelims` folder](https://github.com/ismayc/thesisdown/pull/91/commits/46dce4572fe027f51e1335cab4348d2492e61265). Note that this was needed since using the Knit button in RStudio with {thesisdown} does not appear to allow for the `rmd_files` argument to be used in building theses.
   - [Fixed \headheight is too small error](https://github.com/ismayc/thesisdown/pull/91/commits/4374e7a81b9d16fa79eb2b9a483cf4cfcd71af6f)
-  - [Updated the YAML of index.Rmd to ensure references pass through in Gitbook](https://github.com/ismayc/thesisdown/pull/91/commits/42aecc61f662e19f32c0a7b3e1e2fc7cfa3dcd92)
+  - [Updated the YAML of `index.Rmd` to ensure references pass through in Gitbook](https://github.com/ismayc/thesisdown/pull/91/commits/42aecc61f662e19f32c0a7b3e1e2fc7cfa3dcd92)
   
 ## Cosmetic changes to the template (non-breaking)
 
@@ -14,7 +14,7 @@
 
 ## Updates to the package
 
-- Added support for customizing of thesisdown::gitbook ([#84](https://github.com/ismayc/thesisdown/pull/84))
+- Added support for customizing of `thesisdown::gitbook()` ([#84](https://github.com/ismayc/thesisdown/pull/84))
 - Added hex sticker ([1](https://github.com/ismayc/thesisdown/commit/ababba5437ee2fe0632c74d5428fed35b911c751) and [2](https://github.com/ismayc/thesisdown/commit/d556073c94ae5069d4373fc73811b3115905c56f))
 - [Created {pkgdown} site](https://github.com/ismayc/thesisdown/commit/7febd70b98ae6e8d104bf1080e066468d030b968)
 - [Added MIT License](https://github.com/ismayc/thesisdown/pull/91/commits/7ba5cf1ea24876e248ae9e78d28a43212b6f759b) and other cosmetic tweaks to [#91](https://github.com/ismayc/thesisdown/pull/91) PR
