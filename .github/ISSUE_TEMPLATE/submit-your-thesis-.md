@@ -23,6 +23,10 @@ assignees: ismayc
 
 <!-- From which college/university did you complete your thesis -->
 
+# Summarize your thesis
+
+<!-- In 10 sentences or less, explain your work. Ideally, this should help the layperson understand what you did as much as possible. -->
+
 # What did you like about using {thesisdown} for this work?
 
 <!-- Add any comments you have here. What worked well? What tweaks might have made it easier to work with. -->
