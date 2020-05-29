@@ -18,6 +18,8 @@
 - Added hex sticker ([1](https://github.com/ismayc/thesisdown/commit/ababba5437ee2fe0632c74d5428fed35b911c751) and [2](https://github.com/ismayc/thesisdown/commit/d556073c94ae5069d4373fc73811b3115905c56f))
 - [Created {pkgdown} site](https://github.com/ismayc/thesisdown/commit/7febd70b98ae6e8d104bf1080e066468d030b968)
 - [Added MIT License](https://github.com/ismayc/thesisdown/pull/91/commits/7ba5cf1ea24876e248ae9e78d28a43212b6f759b) and other cosmetic tweaks to [#91](https://github.com/ismayc/thesisdown/pull/91) PR
+- [Switched to using `Imports` instead of `Depends` for best practice](https://github.com/ismayc/thesisdown/commit/2a39610b8f3a97974d9220976edb1d14cd74d6e5#diff-35ba4a2677442e210c23a00a5601aba3R14)
+  - [Updated template Rmd files to reflect change to Imports](https://github.com/ismayc/thesisdown/commit/b5dd154e8c87cc9f971b185e667ea4a8b104ddcd)
 
 # thesisdown 0.0.2
 
