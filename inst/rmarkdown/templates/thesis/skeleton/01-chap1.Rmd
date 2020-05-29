@@ -126,8 +126,10 @@ new.pkg <- pkg[!(pkg %in% installed.packages())]
 if (length(new.pkg)) {
   install.packages(new.pkg, repos = "https://cran.rstudio.com")
 }
-# Load packages (thesisdown will load all of the packages as well)
+# Load packages
 library(thesisdown)
+# load other packages
+invisible(lapply(pkg, library, character.only = T))
 ```
 
 \clearpage
