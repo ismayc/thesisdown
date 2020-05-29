@@ -117,7 +117,7 @@ We begin by checking to ensure that needed packages are installed and then we lo
 
 ```{r load_pkgs, message=FALSE}
 # List of packages required for this analysis
-pkg <- c("dplyr", "ggplot2", "knitr", "bookdown", "devtools")
+pkg <- c("dplyr", "ggplot2", "knitr", "bookdown")
 # Check if packages are not installed and assign the
 # names of the packages not installed to the variable new.pkg
 new.pkg <- pkg[!(pkg %in% installed.packages())]
@@ -126,8 +126,11 @@ new.pkg <- pkg[!(pkg %in% installed.packages())]
 if (length(new.pkg)) {
   install.packages(new.pkg, repos = "https://cran.rstudio.com")
 }
-# Load packages (thesisdown will load all of the packages as well)
+# Load packages
 library(thesisdown)
+library(dplyr)
+library(ggplot2)
+library(knitr)
 ```
 
 \clearpage
