@@ -20,6 +20,7 @@
 - [Added MIT License](https://github.com/ismayc/thesisdown/pull/91/commits/7ba5cf1ea24876e248ae9e78d28a43212b6f759b) and other cosmetic tweaks to [#91](https://github.com/ismayc/thesisdown/pull/91) PR
 - [Switched to using `Imports` instead of `Depends` for best practice](https://github.com/ismayc/thesisdown/commit/2a39610b8f3a97974d9220976edb1d14cd74d6e5#diff-35ba4a2677442e210c23a00a5601aba3R14)
   - [Updated template Rmd files to reflect change to Imports](https://github.com/ismayc/thesisdown/commit/b5dd154e8c87cc9f971b185e667ea4a8b104ddcd)
+  - Added Chester Ismay as author and creator to DESCRIPTION
 
 # thesisdown 0.0.2
 
