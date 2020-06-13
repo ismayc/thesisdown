@@ -65,9 +65,9 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="thesisdown-" class="section level1">
+<div id="thesisdown" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#thesisdown-" class="anchor"></a>thesisdown <img src="reference/figures/thesisdown_hex.png" align="right" width="200">
+<a href="#thesisdown" class="anchor"></a>thesisdown <img src="reference/figures/thesisdown_hex.png" align="right" width="200">
 </h1></div>
 <p>This project was inspired by the <a href="https://github.com/rstudio/bookdown">bookdown</a> package and is an updated version of my Senior Thesis template in the <code>reedtemplates</code> package <a href="https://github.com/ismayc/reedtemplates">here</a>. It was originally designed to only work with the Reed College LaTeX template, but has since been adapted to work with many different institutions by many different individuals. Check out the <a href="https://github.com/ismayc/thesisdown#customizing-thesisdown-to-your-institution"><strong>Customizing thesisdown to your institution</strong></a> section below for examples.</p>
 <p>Currently, the PDF and gitbook versions are fully-functional. The word and epub versions are developmental, have no templates behind them, and are essentially calls to the appropriate functions in bookdown.</p>
@@ -252,7 +252,7 @@ tinytex:::is_tinytex() </a></code></pre>
 <p>You may need to install a few extra LaTeX packages on your first attempt to knit as well. Here is one such example of how to do so:</p>
 <pre class="{r}"><code><a href="https://rdrr.io/pkg/tinytex/man/tlmgr.html">tinytex::tlmgr_install("babel-portuges")</a></code></pre>
 <p>To use <strong>thesisdown</strong> from <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a>:</p>
-<p>1) Ensure that you have already installed LaTeX and the fonts described above, and are using the latest version of <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a>. You can use <code>thesisdown</code> without RStudio. For example, you can write the Rmd files in your favourite text editor (e.g. <a href="https://atom.io/">Atom</a>, <a href="https://notepad-plus-plus.org/">Notepad++</a>). But RStudio is probably the easiest tool for writing both R code and text in your thesis. It also provides a nice way to build your thesis while editing. We’ll proceed assuming that you have decided to use the RStudio workflow.</p>
+<p>1) Ensure that you have already installed LaTeX and the fonts described above, and are using the latest version of <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a>. You can use <code>thesisdown</code> without RStudio. For example, you can write the Rmd files in your favourite text editor (e.g. <a href="https://atom.io/">Atom</a>, <a href="https://notepad-plus-plus.org/">Notepad++</a>). But RStudio is probably the easiest tool for writing both R code and text in your thesis. It also provides a nice way to build your thesis while editing. We’ll proceed assuming that you have decided to use the RStudio workflow.</p>
 <p>2) Install the <strong>bookdown</strong> and <strong>thesisdown</strong> packages. Note that <strong>thesisdown</strong> is not available on CRAN at the moment and that’s why <code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages("thesisdown")</a></code> won’t work. Use <code><a href="https://remotes.r-lib.org/reference/install_github.html">remotes::install_github()</a></code> as shown below instead to install the package.</p>
 <div class="sourceCode" id="cb3"><pre class="r"><span class="kw">if</span> (!<span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="st">"remotes"</span>)) <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>, <span class="kw">repos</span> <span class="kw">=</span> <span class="st">"https://cran.rstudio.org"</span>)
 <span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"rstudio/bookdown"</span>)
@@ -279,21 +279,21 @@ tinytex:::is_tinytex() </a></code></pre>
 <h2 class="hasAnchor">
 <a href="#components" class="anchor"></a>Components</h2>
 <p>The following components are ones you should edit to customize your thesis:</p>
-<div id="_bookdownyml" class="section level3">
+<div id="bookdown-yml" class="section level3">
 <h3 class="hasAnchor">
-<a href="#_bookdownyml" class="anchor"></a><code>_bookdown.yml</code>
+<a href="#bookdown-yml" class="anchor"></a><code>_bookdown.yml</code>
 </h3>
 <p>This is the main configuration file for your thesis. You can change the name of your outputted file here for your thesis and other options about your thesis here.</p>
 </div>
-<div id="indexrmd" class="section level3">
+<div id="index-rmd" class="section level3">
 <h3 class="hasAnchor">
-<a href="#indexrmd" class="anchor"></a><code>index.Rmd</code>
+<a href="#index-rmd" class="anchor"></a><code>index.Rmd</code>
 </h3>
 <p>This file contains all the meta information that goes at the beginning of your document. You’ll need to edit the top portion of this file (the YAML) to put your name on the first page, the title of your thesis, etc. Note that you need to have at least one chapter start in the <code>index.Rmd</code> file for the build to work. For the template, this is done with <code># Introduction</code> in the example from the template.</p>
 </div>
-<div id="01-chap1rmd-02-chap2rmd-etc" class="section level3">
+<div id="chap1-rmd-02-chap2-rmd-etc-" class="section level3">
 <h3 class="hasAnchor">
-<a href="#01-chap1rmd-02-chap2rmd-etc" class="anchor"></a><code>01-chap1.Rmd</code>, <code>02-chap2.Rmd</code>, etc.</h3>
+<a href="#chap1-rmd-02-chap2-rmd-etc-" class="anchor"></a><code>01-chap1.Rmd</code>, <code>02-chap2.Rmd</code>, etc.</h3>
 <p>These are the Rmd files for each chapter in your dissertation. Write your thesis in these. If you’re writing in RStudio, you may find the <a href="https://github.com/benmarwick/wordcountaddin">wordcount addin</a> useful for getting word counts and readability statistics in R Markdown documents.</p>
 </div>
 <div id="bib" class="section level3">
@@ -329,7 +329,7 @@ tinytex:::is_tinytex() </a></code></pre>
 <div class="developers">
 <h2>Developers</h2>
 <ul class="list-unstyled">
-<li>Chester Ismay <br><small class="roles"> Maintainer </small>  </li>
+<li>Chester Ismay <br><small class="roles"> Maintainer, author </small>  </li>
 <li>Nick Solomon <br><small class="roles"> Author </small>  </li>
 </ul>
 </div>
