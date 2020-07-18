@@ -29,6 +29,7 @@ Have you created a thesisdown template for your institution and would like to ha
 |Drexel University                       |[tbradley1013/dragondown](https://github.com/tbradley1013/dragondown)                         |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Duke University                         |[mine-cetinkaya-rundel/thesisdowndss](https://github.com/mine-cetinkaya-rundel/thesisdowndss) |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Graduate Institute of International and Development Studies          |[jhollway/iheiddown](https://github.com/jhollway/iheiddown)  |[ulyngs/oxforddown](https://github.com/ulyngs/oxforddown) |
+|Heidelberg University, Faculty of Biosciences          |[nkurzaw/heididown](https://github.com/nkurzaw/heididown)  |[phister/huwiwidown](https://github.com/phister/huwiwidown) |
 |Humboldt University of Berlin          |[phister/huwiwidown](https://github.com/phister/huwiwidown)  |[ismayc/thesisdown](https://github.com/ismayc/thesisdown) |
 |Kansas State University                 |[emraher/wildcatdown](https://github.com/emraher/wildcatdown)                                 |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
 |Massachusetts Institute of Technology                |[ratatstats/manusdown](https://github.com/ratatstats/manusdown)                                 |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)  |
