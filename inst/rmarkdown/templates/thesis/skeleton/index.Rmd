@@ -1,0 +1,279 @@
+---
+################
+#### Output ####
+################
+knit: "bookdown::render_book"
+site: bookdown::bookdown_site
+output: 
+# thesisdown::thesis_gitbook: default
+ thesisdown::thesis_pdf: default
+#  thesisdown::thesis_word: default
+#  thesisdown::thesis_epub: default
+############################
+#### Page de garde EDMH ####
+############################
+auteur: "Antoine BICHAT"
+date: "14 mai"
+titre: "Test de déploiement"
+title: "Deployment test"
+##
+#### Numéro national de thèse ####
+##
+NNT: "2020SACLY000"
+##
+#### Spécialité ####
+##
+# specialite: Mathématiques fondamentales
+specialite: Mathématiques appliquées
+# specialite: Mathématiques aux interfaces
+##
+#### Établissement de regroupement et logos ####
+##
+regroupement: "Université Paris-Saclay"
+logo_regroupement_edmh: "logos/edmhsaclay.jpg"
+taille_logo_regroupement_edmh: "8cm"
+logo_regroupement: "logos/saclay.jpg"
+taille_logo_regroupement: "1cm"
+# regroupement: "Institut Polytechnique de Paris"
+# logo_regroupement_edmh: "logos/edmhipp.jpg"
+# taille_logo_regroupement_edmh: "8cm"
+## pas de logo_regroupement pour IPP
+##
+#### Établissement inscripteur et logo ####
+##
+# inscripteur: Centrale-Supélec
+# logo_inscripteur: "logos/centralesupelec.jpg"
+# taille_logo_inscripteur: "3cm"
+# inscripteur: École des Hautes Études Commerciales de Paris
+# logo_inscripteur: "logos/hec.jpg"
+# taille_logo_inscripteur: "2.8cm"
+# inscripteur: École Polytechnique
+# logo_inscripteur: "logos/polytechnique.jpg"
+# taille_logo_inscripteur: "1.2cm"
+# inscripteur: École Nationale de la Statistique et de l'Administration Économique
+# logo_inscripteur: "logos/ensae.jpg"
+# taille_logo_inscripteur: "2.3cm"
+# inscripteur: École Nationale Supérieure de Techniques Avancées
+# logo_inscripteur: "logos/ensta.jpg"
+# taille_logo_inscripteur: "1.4cm"
+# inscripteur: École Normale Supérieure
+# logo_inscripteur: "logos/ensulm.jpg"
+# taille_logo_inscripteur: "1.6cm"
+# inscripteur: École Normale Supérieure Paris-Saclay
+# logo_inscripteur: "logos/ensparissaclay.jpg"
+# taille_logo_inscripteur: "3cm"
+# inscripteur: Télécom Paris
+# logo_inscripteur: "logos/telecomparis.jpg"
+# taille_logo_inscripteur: "1.2cm"
+# inscripteur: Télécom SudParis
+# logo_inscripteur: "logos/telecomsudparis.jpg"
+# taille_logo_inscripteur: "2cm"
+inscripteur: "Université d'Évry-Val d'Essonne"
+logo_inscripteur: "logos/ueve.jpg"
+taille_logo_inscripteur: "2cm"
+# inscripteur: Université Paris-Sud
+# logo_inscripteur: "logos/upsud.jpg"
+# taille_logo_inscripteur: "3cm"
+# inscripteur: Université de Versailles Saint-Quentin-en-Yvelines
+# logo_inscripteur: "logos/uvsq.jpg"
+# taille_logo_inscripteur: "3cm"
+##
+#### Établissement d'accueil et logo si différent du précédent ####
+##
+# accueil: "AgroParisTech"
+# logo_accueil: "logos/agroparistech.jpg"
+# taille_logo_accueil: "4cm"
+# accueil: "Commissariat à l'Énergie Atomique et aux Énergies Alternatives"
+# logo_accueil: "logos/cea.jpg"
+# taille_logo_accueil: "1.8cm"
+# accueil: "Institut des Hautes Études Scientifiques"
+# logo_accueil: "logos/ihes.jpg"
+# taille_logo_accueil: "2cm"
+# accueil: "Institut National de la Recherche Agronomique"
+# logo_accueil: "logos/inra.jpg"
+# taille_logo_accueil: "3cm"
+##
+#### Laboratoire d'accueil et logo ####
+##
+# labo: "Centre de Mathématiques Appliquées de Polytechnique, UMR 7641 CNRS"
+# logo_labo: "logos/cmap.jpg"
+# taille_logo_labo: "2cm"
+# labo: "Centre de Mathématiques et de leurs Applications, UMR 8536 CNRS"
+# logo_labo: "logos/cmla.jpg"
+# taille_logo_labo: "2cm"
+# labo: "Centre de Mathématiques Laurent Schwartz, UMR 7640 CNRS"
+# logo_labo: "logos/cmls.jpg"
+# taille_logo_labo: "1.8cm"
+# labo: "Centre de Recherche en Économie et Statistique, UMR 9194 CNRS"
+# logo_labo: "logos/crest.jpg"
+# taille_logo_labo: "2.4cm"
+# labo: "Département de Mathématiques et Applications, UMR 8553 CNRS"
+# logo_labo: "logos/dma.jpg"
+# taille_logo_labo: "7cm"
+# labo: "Fédération de Mathématiques, FR 3487 CNRS"
+# logo_labo: "logos/fdm.jpg"
+# taille_logo_labo: "3cm"
+# labo: "Groupement de Recherche et d'Études en Gestion (GREGHEC), UMR 8071 CNRS"
+# logo_labo: "logos/greghec.jpg"
+# taille_logo_labo: "6cm"
+# labo: "Institut de Physique Théorique de Saclay, URA 2306 CNRS"
+# logo_labo: "logos/ipht.jpg"
+# taille_logo_labo: "2cm"
+# labo: "Laboratoire Alexander Grothendieck (ERL 9216 CNRS)"
+# logo_labo: "logos/lag.jpg"
+# taille_logo_labo: "2cm"
+labo: "Laboratoire de Mathématiques et Modélisation d'Évry, UMR 8071 CNRS-INRA"
+logo_labo: "logos/lamme.jpg"
+taille_logo_labo: "1.5cm"
+# labo: "Laboratoire de Mathématiques d'Orsay, UMR 8628 CNRS"
+# logo_labo: "logos/lmo.jpg"
+# taille_logo_labo: "2cm"
+# labo: "Laboratoire de Mathématiques de Versailles, UMR 8100 CNRS"
+# logo_labo: "logos/lmv.jpg"
+# taille_logo_labo: "3.2cm"
+# labo: "Laboratoire Traitement et Communication de l'Information, UMR 5141 CNRS"
+# logo_labo: "logos/ltci.jpg"
+# taille_logo_labo: "2.7cm"
+# labo: "Mathématiques et Informatique Appliquées du Génome à l'Environnement, UR 1404"
+# logo_labo: "logos/maiage.jpg"
+# taille_logo_labo: "3cm"
+# labo: "Mathématiques et Informatique Appliquées, UMR 518 INRA"
+# logo_labo: "logos/mia.jpg"
+# taille_logo_labo: "5.5cm"
+# labo: "Services Répartis, Architectures, Modélisation, Validation, Administration des Réseaux, UMR 5157 CNRS"
+# logo_labo: "logos/samovar.jpg"
+# taille_logo_labo: "3.3cm"
+# labo: "Unité de Mathématiques Appliquées, ENSTA-CNRS-INRIA"
+# logo_labo: "logos/uma.jpg"
+# taille_logo_labo: "2.5cm"
+##
+#### Rapporteurs ####
+##
+rapporteur1: "Prénom NOM 1"
+institution_rapporteur1: "Institution 1"
+rapporteur2: "Prénom NOM 2"
+institution_rapporteur2: "Institution 2"
+##
+#### Jurés par ordre alphabétique des membres ####
+##
+jure_1: "Prénom NOM 1"
+institution_jure_1: "Institution 1"
+role_jure_1: "Rapporteur"
+jure_2: "Prénom NOM 2"
+institution_jure_2: "Institution 2"
+role_jure_2: "Codirecteur de thèse"
+jure_3: "Prénom NOM 3"
+institution_jure_3: "Institution 3"
+role_jure_3: "Examinateur"
+jure_4: "Prénom NOM 4"
+institution_jure_4: "Institution 4"
+role_jure_4: "Examinateur"
+jure_5: "Prénom NOM 5"
+institution_jure_5: "Institution 4"
+role_jure_5: "Codirecteur de thèse"
+jure_6: "Prénom NOM 6"
+institution_jure_6: "Institution 6"
+role_jure_6: "Invité"
+######################################
+#### Quatrième de couverture EDMH ####
+######################################
+#### Les titres ont été définis dans la partie page de garde ####
+##
+#### Mots-clefs ####
+##
+motsclefs: "Mettre de 3 à 6 mots clefs"
+keywords: "3 to 6 key words"
+##
+#### Résumé ####
+##
+resume: "Résumé en français"
+abstract_bc: "Abstract in english"
+################
+#### Autres ####
+################
+# If you are creating a PDF you'll need to write your preliminary content (e.g., abstract, acknowledgements) here or
+# use code similar to line 22-23 for the .RMD files. If you are NOT producing a PDF, you can delete or silence lines 21-32 in this YAML header.
+abstract: |
+ `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
+# If you'd rather include the preliminary content in files instead of inline
+# like below, use a command like that for the abstract above.  Note that a tab is 
+# needed on the line after the `|`.
+acknowledgements: |
+  I want to thank a few people.
+dedication: |
+  You can have a dedication here if you wish. 
+preface: |
+  This is an example of a thesis setup to use the reed thesis document class
+  (for LaTeX) and the R bookdown package, in general.
+# Specify the location of the bibliography below
+bibliography: bib/thesis.bib
+# Download your specific csl file and refer to it in the line below.
+csl: csl/apa.csl
+lot: true
+lof: true
+# If you prefer blank lines between paragraphs, un-silence these two lines (this requires package tikz)
+#header-includes:
+#- \usepackage{tikz}
+---
+
+<!--
+Above is the YAML (YAML Ain't Markup Language) header that includes a lot of metadata used to produce the document.  Be careful with spacing in this header!
+
+If you'd prefer to not include a Dedication, for example, simply delete the section entirely, or silence (add #) them. 
+
+If you have other LaTeX packages you would like to include, delete the # before header-includes and list the packages after hyphens on new lines.
+
+If you'd like to include a comment that won't be produced in your resulting file enclose it in a block like this.
+
+If you receive a duplicate label error after knitting, make sure to delete the index.Rmd file and then knit again.
+-->
+
+```{r include_packages, include = FALSE}
+# This chunk ensures that the thesisdown package is
+# installed and loaded. This thesisdown package includes
+# the template files for the thesis.
+if(!require(devtools))
+  install.packages("devtools", repos = "http://cran.rstudio.com")
+if(!require(thesisdown))
+  devtools::install_github("ismayc/thesisdown")
+library(thesisdown)
+```
+
+<!-- On ordering the chapter files:
+There are two options:
+1. Name your chapter files in the order in which you want them to appear (e.g., 01-Inro, 02-Data, 03-Conclusions). 
+2. Otherwise, you can specify the order in which they appear in the _bookdown.yml (for PDF only).
+
+Do not include 00(two-hyphens)prelim.Rmd and 00-abstract.Rmd in the YAML file--they are handled in the YAML above differently for the PDF version.
+-->
+
+<!-- The {.unnumbered} option here means that the introduction will be "Chapter 0." You can also use {-} for no numbers
+on chapters.
+-->
+
+# Introduction {.unnumbered}
+
+This is a test for _Bookdown_ deployment with GitHub Actions.
+
+Welcome to the _R Markdown_ thesis template. This template is based on (and in many places copied directly from) the Reed College LaTeX template, but hopefully it will provide a nicer interface for those that have never used TeX or LaTeX before.  Using _R Markdown_ will also allow you to easily keep track of your analyses in **R** chunks of code, with the resulting plots and output included as well.  The hope is this _R Markdown_ template gets you in the habit of doing reproducible research, which benefits you long-term as a researcher, but also will greatly help anyone that is trying to reproduce or build onto your results down the road.
+
+Hopefully, you won't have much of a learning period to go through and you will reap the benefits of a nicely formatted thesis.  The use of LaTeX in combination with _Markdown_ is more consistent than the output of a word processor, much less prone to corruption or crashing, and the resulting file is smaller than a Word file. While you may have never had problems using Word in the past, your thesis is likely going to be about twice as large and complex as anything you've written before, taxing Word's capabilities.  After working with _Markdown_ and **R** together for a few weeks, we are confident this will be your reporting style of choice going forward.
+
+<!-- 
+If you're still on the fence about using _R Markdown_, check out the resource for newbies available at <https://ismayc.github.io/rbasics-book/> or email us at <data@reed.edu>. 
+-->
+
+**Why use it?**
+
+_R Markdown_ creates a simple and straightforward way to interface with the beauty of LaTeX.  Packages have been written in **R** to work directly with LaTeX to produce nicely formatting tables and paragraphs. In addition to creating a user friendly interface to LaTeX, _R Markdown_ also allows you to read in your data, to analyze it and to visualize it using **R** functions, and also to provide the documentation and commentary on the results of your project.  Further, it allows for **R** results to be passed inline to the commentary of your results.  You'll see more on this later.  
+
+<!-- 
+Having your code and commentary all together in one place has a plethora of benefits!
+-->
+
+**Who should use it?**
+
+Anyone who needs to use data analysis, math, tables, a lot of figures, complex cross-references, or who just cares about the final appearance of their document should use _R Markdown_. Of particular use should be anyone in the sciences, but the user-friendly nature of _Markdown_ and its ability to keep track of and easily include figures, automatically generate a table of contents, index, references, table of figures, etc. should make it of great benefit to nearly anyone writing a thesis project.
+
+**For additional help with bookdown** 
+Please visit [the free online bookdown reference guide](https://bookdown.org/yihui/bookdown/).

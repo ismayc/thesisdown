@@ -3,72 +3,20 @@
 # installed and loaded. This thesisdown package includes
 # the template files for the thesis and also two functions
 # used for labeling and referencing
-if (!require(remotes)) {
-  if (params$`Install needed packages for {thesisdown}`) {
-    install.packages("remotes", repos = "https://cran.rstudio.com")
-  } else {
-    stop(
-      paste(
-        'You need to run install.packages("remotes")',
-        "first in the Console."
-      )
-    )
+if(!require(devtools))
+  install.packages("devtools", repos = "http://cran.rstudio.com")
+if(!require(dplyr))
+    install.packages("dplyr", repos = "http://cran.rstudio.com")
+if(!require(ggplot2))
+    install.packages("ggplot2", repos = "http://cran.rstudio.com")
+if(!require(ggplot2))
+    install.packages("bookdown", repos = "http://cran.rstudio.com")
+if(!require(thesisdown)){
+  library(devtools)
+  devtools::install_github("ismayc/thesisdown")
   }
-}
-if (!require(dplyr)) {
-  if (params$`Install needed packages for {thesisdown}`) {
-    install.packages("dplyr", repos = "https://cran.rstudio.com")
-  } else {
-    stop(
-      paste(
-        'You need to run install.packages("dplyr")',
-        "first in the Console."
-      )
-    )
-  }
-}
-if (!require(ggplot2)) {
-  if (params$`Install needed packages for {thesisdown}`) {
-    install.packages("ggplot2", repos = "https://cran.rstudio.com")
-  } else {
-    stop(
-      paste(
-        'You need to run install.packages("ggplot2")',
-        "first in the Console."
-      )
-    )
-  }
-}
-if (!require(bookdown)) {
-  if (params$`Install needed packages for {thesisdown}`) {
-    install.packages("bookdown", repos = "https://cran.rstudio.com")
-  } else {
-    stop(
-      paste(
-        'You need to run install.packages("bookdown")',
-        "first in the Console."
-      )
-    )
-  }
-}
-if (!require(thesisdown)) {
-  if (params$`Install needed packages for {thesisdown}`) {
-    remotes::install_github("ismayc/thesisdown")
-  } else {
-    stop(
-      paste(
-        "You need to run",
-        'remotes::install_github("ismayc/thesisdown")',
-        "first in the Console."
-      )
-    )
-  }
-}
 library(thesisdown)
-library(dplyr)
-library(ggplot2)
-library(knitr)
-flights <- read.csv("data/flights.csv", stringsAsFactors = FALSE)
+flights <- read.csv("data/flights.csv")
 ```
 
 
@@ -76,7 +24,7 @@ flights <- read.csv("data/flights.csv", stringsAsFactors = FALSE)
 
 ## Tables
 
-In addition to the tables that can be automatically generated from a data frame in **R** that you saw in [R Markdown Basics] using the `kable()` function, you can also create tables using _pandoc_. (More information is available at <https://pandoc.org/README.html#tables>.)  This might be useful if you don't have values specifically stored in **R**, but you'd like to display them in table form.  Below is an example.  Pay careful attention to the alignment in the table and hyphens to create the rows and columns.
+In addition to the tables that can be automatically generated from a data frame in **R** that you saw in [R Markdown Basics] using the `kable` function, you can also create tables using _pandoc_. (More information is available at <http://pandoc.org/README.html#tables>.)  This might be useful if you don't have values specifically stored in **R**, but you'd like to display them in table form.  Below is an example.  Pay careful attention to the alignment in the table and hyphens to create the rows and columns.
 
 ----------------------------------------------------------------------------------
   Factors                    Correlation between Parents & Child      Inherited
@@ -126,13 +74,12 @@ Here is a reference to the Reed logo: Figure \@ref(fig:reedlogo).  Note the use 
 
 <!-- starts a new page and stops trying to place floats such as tables and figures -->
 
-Below we will investigate how to save the output of an **R** plot and label it in a way similar to that done above.  Recall the `flights` dataset from Chapter \@ref(rmd-basics).  (Note that we've shown a different way to reference a section or chapter here.)  We will next explore a bar graph with the mean flight departure delays by airline from Portland for 2014.
+Below we will investigate how to save the output of an **R** plot and label it in a way similar to that done above.  Recall the `flights` dataset from Chapter \@ref(rmd-basics).  (Note that we've shown a different way to reference a section or chapter here.)  We will next explore a bar graph with the mean flight departure delays by airline from Portland for 2014.  Note also the use of the `scale` parameter which is discussed on the next page.
 
 ```{r delaysboxplot, warnings=FALSE, messages=FALSE, fig.cap="Mean Delays by Airline", fig.width=6}
-mean_delay_by_carrier <- flights %>%
-  group_by(carrier) %>%
-  summarize(mean_dep_delay = mean(dep_delay))
-ggplot(mean_delay_by_carrier, aes(x = carrier, y = mean_dep_delay)) +
+flights %>% group_by(carrier) %>%
+  summarize(mean_dep_delay = mean(dep_delay)) %>%
+  ggplot(aes(x = carrier, y = mean_dep_delay)) +
   geom_bar(position = "identity", stat = "identity", fill = "red")
 ```
 
@@ -166,17 +113,13 @@ You might want to footnote something. ^[footnote text] The footnote will be in a
 
 ## Bibliographies
 
-Of course you will need to cite things, and you will probably accumulate an armful of sources. There are a variety of tools available for creating a bibliography database (stored with the .bib extension).  In addition to BibTeX suggested below, you may want to consider using the free and easy-to-use tool called Zotero.  The Reed librarians have created Zotero documentation at <https://libguides.reed.edu/citation/zotero>.  In addition, a tutorial is available from Middlebury College at <https://sites.middlebury.edu/zoteromiddlebury/>.
+Of course you will need to cite things, and you will probably accumulate an armful of sources. There are a variety of tools available for creating a bibliography database (stored with the .bib extension).  In addition to BibTeX suggested below, you may want to consider using the free and easy-to-use tool called Zotero.  The Reed librarians have created Zotero documentation at <http://libguides.reed.edu/citation/zotero>.  In addition, a tutorial is available from Middlebury College at <http://sites.middlebury.edu/zoteromiddlebury/>.
 
-_R Markdown_ uses _pandoc_ (<https://pandoc.org/>) to build its bibliographies.  One nice caveat of this is that you won't have to do a second compile to load in references as standard LaTeX requires. To cite references in your thesis (after creating your bibliography database), place the reference name inside square brackets and precede it by the "at" symbol.  For example, here's a reference to a book about worrying:  [@Molina1994].  This `Molina1994` entry appears in a file called `thesis.bib` in the `bib` folder.  This bibliography database file was created by a program called BibTeX.  You can call this file something else if you like (look at the YAML header in the main .Rmd file) and, by default, is to placed in the `bib` folder.  
+_R Markdown_ uses _pandoc_ (<http://pandoc.org/>) to build its bibliographies.  One nice caveat of this is that you won't have to do a second compile to load in references as standard LaTeX requires. To cite references in your thesis (after creating your bibliography database), place the reference name inside square brackets and precede it by the "at" symbol.  For example, here's a reference to a book about worrying:  [@Molina1994].  This `Molina1994` entry appears in a file called `thesis.bib` in the `bib` folder.  This bibliography database file was created by a program called BibTeX.  You can call this file something else if you like (look at the YAML header in the main .Rmd file) and, by default, is to placed in the `bib` folder.  
 
-For more information about BibTeX and bibliographies, see our CUS site (<https://web.reed.edu/cis/help/latex/index.html>)^[@reedweb2007]. There are three pages on this topic:  _bibtex_ (which talks about using BibTeX, at <https://web.reed.edu/cis/help/latex/bibtex.html>), _bibtexstyles_ (about how to find and use the bibliography style that best suits your needs, at <https://web.reed.edu/cis/help/latex/bibtexstyles.html>) and _bibman_ (which covers how to make and maintain a bibliography by hand, without BibTeX, at <https://web.reed.edu/cis/help/latex/bibman.html>). The last page will not be useful unless you have only a few sources.
+For more information about BibTeX and bibliographies, see our CUS site (<http://web.reed.edu/cis/help/latex/index.html>)^[@reedweb2007]. There are three pages on this topic:  _bibtex_ (which talks about using BibTeX, at <http://web.reed.edu/cis/help/latex/bibtex.html>), _bibtexstyles_ (about how to find and use the bibliography style that best suits your needs, at <http://web.reed.edu/cis/help/latex/bibtexstyles.html>) and _bibman_ (which covers how to make and maintain a bibliography by hand, without BibTeX, at <http://web.reed.edu/cis/help/latex/bibman.html>). The last page will not be useful unless you have only a few sources.
 
-If you look at the YAML header at the top of the main .Rmd file you can see that we can specify the style of the bibliography by referencing the appropriate csl file.  You can download a variety of different style files at <https://www.zotero.org/styles>.  Make sure to download the file into the csl folder.  
-
-<!-- Fill the rest of the page with the content below for the PDF version. -->
-
-\vfill
+If you look at the YAML header at the top of the main .Rmd file you can see that we can specify the style of the bibliography by referencing the appropriate csl file.  You can download a variety of different style files at <https://www.zotero.org/styles>.  Make sure to download the file into the csl folder.
 
 **Tips for Bibliographies**
 

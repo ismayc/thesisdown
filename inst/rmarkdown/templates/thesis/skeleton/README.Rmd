@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# testdeploybook
+
+<!-- badges: start -->
+![deploy](https://github.com/abichat/testdeploybook/workflows/deploy/badge.svg)
+<!-- badges: end -->
+
+## Configure GitHub Actions workflow
+
+With the help of [ROpenSci](https://ropenscilabs.github.io/actions_sandbox/websites-using-pkgdown-bookdown-and-blogdown.html#action-to-deploy-a-bookdown-site) and [ColinFay](https://github.com/ThinkR-open/engineering-shiny-book/blob/master/.github/workflows/deploy_bookdown.yml). 
+
+```{r, echo = FALSE, comment = NA}
+cat(readLines(".github/workflows/deploy_bookdown.yml"), sep = "\n")
+```
+
+
+
+## Create an empty GitHub page
+
+```
+git checkout --orphan gh-pages
+git rm -rf .
+git commit --allow-empty -m 'Initial gh-pages commit'
+git push origin gh-pages
+git checkout master
+```
+
+
+
+

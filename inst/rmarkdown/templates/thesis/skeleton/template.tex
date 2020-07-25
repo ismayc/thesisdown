@@ -5,7 +5,7 @@
 % Your comments and suggestions are more than welcome; please email
 % them to cus@reed.edu
 %
-% See https://www.reed.edu/cis/help/LaTeX/index.html for help. There are a
+% See http://web.reed.edu/cis/help/latex.html for help. There are a
 % great bunch of help pages there, with notes on
 % getting started, bibtex, etc. Go there and read it if you're not
 % already familiar with LaTeX.
@@ -24,15 +24,15 @@
 %% Preamble
 %%
 % \documentclass{<something>} must begin each LaTeX document
-\documentclass[12pt,twoside]{reedthesis}
+\documentclass[a4paper,12pt]{reedthesis}
 % Packages are extensions to the basic LaTeX functions. Whatever you
 % want to typeset, there is probably a package out there for it.
 % Chemistry (chemtex), screenplays, you name it.
-% Check out CTAN to see: https://www.ctan.org/
+% Check out CTAN to see: http://www.ctan.org/
 %%
 \usepackage{graphicx,latexsym}
-\usepackage{amsmath}
-\usepackage{amssymb,amsthm}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{fullpage}
 \usepackage{longtable,booktabs,setspace}
 \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
 \usepackage[hyphens]{url}
@@ -73,31 +73,6 @@ $if(highlighting-macros)$
   $highlighting-macros$
 $endif$
 
-% To pass between YAML and LaTeX the dollar signs are added by CII
-\title{$title$}
-\author{$author$}
-% The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
-\date{$date$}
-\division{$division$}
-\advisor{$advisor$}
-\institution{$institution$}
-\degree{$degree$}
-%If you have two advisors for some reason, you can use the following
-% Uncommented out by CII
-$if(altadvisor)$
-\altadvisor{$altadvisor$}
-$endif$
-% End of CII addition
-
-%%% Remember to use the correct department!
-\department{$department$}
-% if you're writing a thesis in an interdisciplinary major,
-% uncomment the line below and change the text as appropriate.
-% check the Senior Handbook if unsure.
-%\thedivisionof{The Established Interdisciplinary Committee for}
-% if you want the approval page to say "Approved for the Committee",
-% uncomment the next line
-%\approvedforthe{Committee}
 
 % Added by CII
 %%% Copied from knitr
@@ -137,22 +112,6 @@ $endif$
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-\Acknowledgements{
-$acknowledgements$
-}
-
-\Dedication{
-$dedication$
-}
-
-\Preface{
-$preface$
-}
-
-\Abstract{
-$abstract$
-}
-
 $for(header-includes)$
 	$header-includes$
 $endfor$
@@ -164,10 +123,158 @@ $endfor$
 
 \begin{document}
 
-% Everything below added by CII
-$if(title)$
-  \maketitle
+\thispagestyle{empty}
+\vspace{-2cm}
+
+\voffset-10pt
+
+
+%%%
+%% premiere ligne avec logo légaux et numéro national de thèse
+%% (modifier les symboles % en début de lignes
+%%  pour obtenir la configuration souhaitée)
+%%%
+\noindent
+\hspace*{-1cm}\hbox{\includegraphics[width=$taille_logo_regroupement_edmh$]{$logo_regroupement_edmh$}}
+%%%
+%% Numéro National de Thèse, à préciser lors du second dépôt
+%% de la thèse post-soutenance
+%%%
+\hfill
+\hspace*{-0.4cm}{\small {\bf NNT~: $NNT$}}
+%%%
+%% logo établissement inscripteur
+%% En cas de cotutelle internationale,
+%% mettre à la place le logo de l'université étrangère et rajouter
+%% en bas de page le logo de l'établissement inscripteur
+%%%
+\hfill
+\hbox{\includegraphics[width=$taille_logo_inscripteur$]{$logo_inscripteur$}}
+\vspace{7mm}
+
+\begin{center}
+{\Large\bf THÈSE DE DOCTORAT}
+\end{center}
+\begin{center}
+{de }
+\end{center}
+\begin{center}
+ {\Large\sc l'$regroupement$}\\
+  \vspace*{0.4cm}
+École doctorale de mathématiques Hadamard (EDMH, ED 574)\\
+ \vspace*{0.4cm}
+%%%
+%% nom établissement inscripteur
+%%%
+{\small \it Établissement d'inscription~:} $inscripteur$
+
+ \vspace*{0.2cm}
+%%%
+%% nom établissement(s) d'accueil, si différent du précédent
+%%%
+$if(accueil)$
+{\small \it Établissement d'accueil~:} $accueil$
+
+\vspace*{0.2cm}
 $endif$
+%%%
+%% nom laboratoire(s) d'accueil
+%%%
+{\small \it Laboratoire d'accueil~:} $labo$
+
+\vspace*{0.2cm}
+\end{center}
+
+
+\begin{center}
+%%%
+%%  Spécialité
+%%%
+{\it Spécialité de doctorat~:} {\large $specialite$}
+\end{center}
+
+\vspace{5mm}
+
+\begin{center}
+{\large\bf $auteur$}
+\end{center}
+
+\vspace{3mm}
+
+\begin{center}
+{\Large $titre$}
+%%%
+%% éventuellement sur deux lignes
+%%%
+\end{center}
+
+
+\vspace{10mm}
+
+\noindent{\small \it Date de soutenance~:} $date$
+
+\vspace{5mm}
+
+\noindent
+{\small \it Après avis des rapporteurs~:}
+\begin{tabular}{l}
+{\sc $rapporteur1$} ($institution_rapporteur1$)\vspace{1mm}  \\
+{\sc $rapporteur2$} ($institution_rapporteur2$)\\
+\end{tabular}
+
+\vspace{8mm}
+
+\noindent
+{\small \it Jury de soutenance~:}
+%%%
+%% par ordre alphabétique des membres
+%%
+%% version avant soutenance à adapter (un jury peut contenir
+%% tout ou partie des rapporteurs, tout au partie des codirecteurs de thèses,
+%% voire des invités). Le président du jury est choisi par le jury en
+%% son sein le jour de la soutenance, et est indiqué sur les exemplaires
+%% post-soutenance
+%% En cas d'absense d'un membre de jury prévu, les exemplaires post-thèse
+%% ne doivent faire figurer que les présents.
+%%%%
+\begin{tabular}{ll}
+{\sc   $jure_1$}&($institution_jure_1$) {\small $role_jure_1$}\vspace{1mm}\\
+{\sc   $jure_2$}&($institution_jure_2$) {\small $role_jure_2$}\vspace{1mm}\\
+{\sc   $jure_3$}&($institution_jure_3$) {\small $role_jure_3$}\vspace{1mm}\\
+{\sc   $jure_4$}&($institution_jure_4$) {\small $role_jure_4$}\vspace{1mm}\\
+{\sc   $jure_5$}&($institution_jure_5$) {\small $role_jure_5$}\vspace{1mm}\\
+{\sc   $jure_6$}&($institution_jure_6$) {\small $role_jure_6$}\vspace{1mm}\\
+\end{tabular}
+
+
+\vfill
+\noindent
+\hfill
+\hbox{\includegraphics[width=2.2cm]{logos/fmjh.jpg}}
+%%%
+%% logo établissement d'accueil, si différent du précédent, s'il existe
+%%%
+$if(logo_accueil)$
+\hfill\hfill\hfill\hfill
+\hbox{\includegraphics[width=$taille_logo_accueil$]{$logo_accueil$}}
+$endif$
+%%%
+%% logo laboratoire d'accueil, s'il existe
+%%%
+$if(logo_labo)$
+\hfill\hfill\hfill\hfill
+\hbox{\includegraphics[width=$taille_logo_labo$]{$logo_labo$}}
+$endif$
+%%%
+%% logo établissement de regroupement, s'il existe
+%%%
+$if(logo_regroupement)$
+\hfill\hfill\hfill\hfill
+\includegraphics[width=$taille_logo_regroupement$]{$logo_regroupement$}
+$endif$
+\hfill
+\
+
 
 \frontmatter % this stuff will be roman-numbered
 \pagestyle{empty} % this removes page numbers from the frontmatter
@@ -215,8 +322,51 @@ $endif$
 
 $body$
 
+%%%
+%%
+%% Quatrième de couverture (last cover page of the memoirs)
+%%
+%%%
 
-% Index?
+\newpage
+\pagestyle{empty}
+\hbox{\includegraphics[width=$taille_logo_regroupement_edmh$]{$logo_regroupement_edmh$}}
 
+
+\bigskip
+\noindent\fbox{\parbox{\textwidth}{
+{\bf Titre :} $titre$
+
+\medskip
+{\bf Mots Clefs :} $motsclefs$
+
+\medskip
+{\bf Résumé :} $resume$
+
+
+\vspace{6cm}
+
+}}
+
+\bigskip
+\noindent\fbox{\parbox{\textwidth}{
+{\bf Title:} $title$
+
+\medskip
+{\bf Keys words:} $keywords$
+
+\medskip
+{\bf Abstract:} $abstract_bc$
+
+
+\vspace{6cm}
+
+}}
+
+\vfill
+$if(logo_regroupement)$
+\hfill
+\includegraphics[width=$taille_logo_regroupement$]{$logo_regroupement$}
+$endif$
 \end{document}
 

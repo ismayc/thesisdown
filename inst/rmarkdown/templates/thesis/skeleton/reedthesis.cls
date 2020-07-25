@@ -179,13 +179,15 @@
 \setlength{\textwidth}{6.0in}
 \setlength{\textheight}{9.0in}
 \setlength\topmargin{0in}
-\addtolength\topmargin{-\headheight}
-\addtolength\topmargin{-\headsep}
+%\addtolength\topmargin{-\headheight}
+%\addtolength\topmargin{-\headsep}
 
 %\setlength{\oddsidemargin}{.6in}
 %\setlength{\evensidemargin}{0in}
 %\setlength{\textwidth}{5.9in}
-\addtolength\headheight{2.5pt}
+%\setlength\topmargin{0in}
+\setlength{\headheight}{15pt}
+%\addtolength\headheight{2.5pt}
 %\addtolength\topmargin{-\headheight}
 %\addtolength\topmargin{-\headsep}
 %\addtolength\textheight{1in}
