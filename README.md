@@ -38,6 +38,7 @@ Have you created a thesisdown template for your institution and would like to ha
 |Southampton University                  |[dr-harper/sotonthesis](https://github.com/dr-harper/sotonthesis)                             |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Stanford University                     |[mhtess/treedown](https://github.com/mhtess/treedown)                                         |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Universidade Federal do Rio de Janeiro               |[mralbu/coppedown](https://github.com/mralbu/coppedown)             |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|Université Paris-Saclay               |[abichat/hadamardown](https://github.com/abichat/hadamardown)                           |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |University College London               |[benyohaiphysics/thesisdownUCL](https://github.com/benyohaiphysics/thesisdownUCL)             |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |University of California, Davis         |[ryanpeek/aggiedown](https://github.com/ryanpeek/aggiedown)                                   |[DanOvando/gauchodown](https://github.com/DanOvando/gauchodown) |
 |University of California, Santa Barbara |[DanOvando/gauchodown](https://github.com/DanOvando/gauchodown)                               |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
