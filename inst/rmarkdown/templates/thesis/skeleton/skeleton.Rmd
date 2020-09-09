@@ -38,7 +38,7 @@ acknowledgements: |
 dedication: |
   You can have a dedication here if you wish. 
 preface: |
-  This is an example of a thesis setup to use the reed thesis document class 
+  This is an example of a thesis setup to use the smiththesis document class 
   (for LaTeX) and the R bookdown package, in general.
   
 # Specify the location of the bibliography below

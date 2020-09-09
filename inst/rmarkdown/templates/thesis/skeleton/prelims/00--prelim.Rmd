@@ -6,7 +6,7 @@ I want to thank a few people.
 
 ## Preface {-}
 
-This is an example of a thesis setup to use the reed thesis document class
+This is an example of a thesis setup to use the smiththesis document class
 (for LaTeX) and the R bookdown package, in general.
 
 ## Dedication {-}

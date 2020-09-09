@@ -26,4 +26,4 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 SystemRequirements: pandoc (>= 1.18) - https://pandoc.org
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1

@@ -2,15 +2,15 @@
 % Please edit documentation in R/thesisdown.R
 \docType{package}
 \name{thesisdown}
-\alias{thesisdown}
-\alias{thesisdown-package}
+\alias{pioneerdown}
+\alias{pioneerdown-package}
 \title{thesisdown: A package for creating undergraduate, Masters, and PhD theses
 using R Markdown}
 \description{
 Using the bookdown package and LaTeX and Word thesis templates from
     Reed College, this package aims to encourage reproducible research using
     simple Markdown syntax while embedding all of the R code to produce plots
-    and analyses as well.
+    and analyses as well. This package is adapted for Smith College
 }
 \section{thesis_gitbook}{
 
@@ -33,10 +33,11 @@ Creates an R Markdown thesis template as an ebook
 }
 
 \author{
-\strong{Maintainer}: Chester Ismay \email{chester.ismay@gmail.com}
+\strong{Maintainer}: Benjamin S. Baumer \email{ben.baumer@gmail.com} (\href{https://orcid.org/0000-0002-3279-0516}{ORCID})
 
 Authors:
 \itemize{
+  \item Chester Ismay \email{chester.ismay@gmail.com}
   \item Nick Solomon \email{nick@nicksolomon.me}
 }
 
