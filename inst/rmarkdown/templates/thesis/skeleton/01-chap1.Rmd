@@ -127,7 +127,7 @@ if (length(new.pkg)) {
   install.packages(new.pkg, repos = "https://cran.rstudio.com")
 }
 # Load packages
-library(thesisdown)
+library(pioneerdown)
 library(dplyr)
 library(ggplot2)
 library(knitr)

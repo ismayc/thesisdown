@@ -1,10 +1,10 @@
 ```{r include_packages_2, include = FALSE}
-# This chunk ensures that the thesisdown package is
-# installed and loaded. This thesisdown package includes
+# This chunk ensures that the pioneerdown package is
+# installed and loaded. This pioneerdown package includes
 # the template files for the thesis and also two functions
 # used for labeling and referencing
 if (!require(remotes)) {
-  if (params$`Install needed packages for {thesisdown}`) {
+  if (params$`Install needed packages for {pioneerdown}`) {
     install.packages("remotes", repos = "https://cran.rstudio.com")
   } else {
     stop(
@@ -16,7 +16,7 @@ if (!require(remotes)) {
   }
 }
 if (!require(dplyr)) {
-  if (params$`Install needed packages for {thesisdown}`) {
+  if (params$`Install needed packages for {pioneerdown}`) {
     install.packages("dplyr", repos = "https://cran.rstudio.com")
   } else {
     stop(
@@ -28,7 +28,7 @@ if (!require(dplyr)) {
   }
 }
 if (!require(ggplot2)) {
-  if (params$`Install needed packages for {thesisdown}`) {
+  if (params$`Install needed packages for {pioneerdown}`) {
     install.packages("ggplot2", repos = "https://cran.rstudio.com")
   } else {
     stop(
@@ -40,7 +40,7 @@ if (!require(ggplot2)) {
   }
 }
 if (!require(bookdown)) {
-  if (params$`Install needed packages for {thesisdown}`) {
+  if (params$`Install needed packages for {pioneerdown}`) {
     install.packages("bookdown", repos = "https://cran.rstudio.com")
   } else {
     stop(
@@ -51,20 +51,20 @@ if (!require(bookdown)) {
     )
   }
 }
-if (!require(thesisdown)) {
-  if (params$`Install needed packages for {thesisdown}`) {
-    remotes::install_github("ismayc/thesisdown")
+if (!require(pioneerdown)) {
+  if (params$`Install needed packages for {pioneerdown}`) {
+    remotes::install_github("ismayc/pioneerdown")
   } else {
     stop(
       paste(
         "You need to run",
-        'remotes::install_github("ismayc/thesisdown")',
+        'remotes::install_github("ismayc/pioneerdown")',
         "first in the Console."
       )
     )
   }
 }
-library(thesisdown)
+library(pioneerdown)
 library(dplyr)
 library(ggplot2)
 library(knitr)
