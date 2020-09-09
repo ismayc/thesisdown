@@ -2,28 +2,28 @@
 title: 'My Final College Paper'
 author: 'Your R. Name'
 date: 'May 20xx'
-institution: 'Reed College'
+institution: 'Smith College'
 division: 'Mathematics and Natural Sciences'
 advisor: 'Advisor F. Name'
 # If you have more two advisors, un-silence line 7
 #altadvisor: 'Your Other Advisor'
-department: 'Mathematics'
+department: 'Statistical & Data Scieces'
 degree: 'Bachelor of Arts'
 knit: bookdown::render_book
 site: bookdown::bookdown_site
 
-# This will automatically install the {remotes} package and {thesisdown}
+# This will automatically install the {remotes} package and {pioneerdown}
 # Change this to FALSE if you'd like to install them manually on your own.
 params:
-  'Install needed packages for {thesisdown}': True
+  'Install needed packages for {pioneerdown}': True
   
 # Remove the hashtag to specify which version of output you would like.
 # Can only choose one at a time.
 output:
-  thesisdown::thesis_pdf: default 
-#  thesisdown::thesis_gitbook: default         
-#  thesisdown::thesis_word: default
-#  thesisdown::thesis_epub: default
+  pioneerdown::thesis_pdf: default 
+#  pioneerdown::thesis_gitbook: default         
+#  pioneerdown::thesis_word: default
+#  pioneerdown::thesis_epub: default
 
 # If you are creating a PDF you'll need to write your preliminary content 
 # (e.g., abstract, acknowledgements) below or use code similar to line 25-26 
@@ -63,11 +63,11 @@ If you receive a duplicate label error after knitting, make sure to delete the i
 -->
 
 ```{r include_packages, include=FALSE}
-# This chunk ensures that the thesisdown package is
-# installed and loaded. This thesisdown package includes
+# This chunk ensures that the pioneerdown package is
+# installed and loaded. This pioneerdown package includes
 # the template files for the thesis.
 if (!require(remotes)) {
-  if (params$`Install needed packages for {thesisdown}`) {
+  if (params$`Install needed packages for {pioneerdown}`) {
     install.packages("remotes", repos = "https://cran.rstudio.com")
   } else {
     stop(
@@ -76,20 +76,20 @@ if (!require(remotes)) {
     )
   }
 }
-if (!require(thesisdown)) {
-  if (params$`Install needed packages for {thesisdown}`) {
-    remotes::install_github("ismayc/thesisdown")
+if (!require(pioneerdown)) {
+  if (params$`Install needed packages for {pioneerdown}`) {
+    remotes::install_github("SmithCollege-SDS/pioneerdown")
   } else {
     stop(
       paste(
         "You need to run",
-        'remotes::install_github("ismayc/thesisdown")',
+        'remotes::install_github("SmithCollege-SDS/pioneerdown")',
         "first in the Console."
       )
     )
   }
 }
-library(thesisdown)
+library(pioneerdown)
 # Set how wide the R output will go
 options(width = 70)
 ```

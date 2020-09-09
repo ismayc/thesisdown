@@ -1,14 +1,16 @@
-Package: thesisdown
+Package: pioneerdown
 Title: An updated R Markdown thesis template using the bookdown package
 Version: 0.1.0
 Authors@R: c(
-    person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = c("cre", "aut")),
-    person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"))
+    person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = c("aut")),
+    person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"),
+    person("Benjamin S.", "Baumer", email = "ben.baumer@gmail.com",
+      role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3279-0516"))
+    )
 Description: Using the bookdown package and LaTeX and Word thesis templates from
     Reed College, this package aims to encourage reproducible research using
     simple Markdown syntax while embedding all of the R code to produce plots
-    and analyses as well.
-Maintainer: Chester Ismay <chester.ismay@gmail.com>
+    and analyses as well. This package is adapted for Smith College
 Depends:
     R (>= 3.2.0)
 Imports: 
