@@ -41,6 +41,7 @@ Have you created a thesisdown template for your institution and would like to ha
 |Universidade Federal do Rio de Janeiro               |[COPPE-UFRJ/coppedown](https://github.com/COPPE-UFRJ/coppedown)             |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Université Paris-Saclay               |[abichat/hadamardown](https://github.com/abichat/hadamardown)                           |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |University College London               |[benyohaiphysics/thesisdownUCL](https://github.com/benyohaiphysics/thesisdownUCL)             |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+| University of Arizona                      | [kelseygonzalez/beardown](https://github.com/kelseygonzalez/beardown)                    |[ismayc/thesisdown](https://github.com/ismayc/thesisdown) |
 |University of California, Davis         |[ryanpeek/aggiedown](https://github.com/ryanpeek/aggiedown)                                   |[DanOvando/gauchodown](https://github.com/DanOvando/gauchodown) |
 |University of California, Santa Barbara |[DanOvando/gauchodown](https://github.com/DanOvando/gauchodown)                               |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
 |University of Florida                   |[ksauby/thesisdownufl](https://github.com/ksauby/thesisdownufl)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
