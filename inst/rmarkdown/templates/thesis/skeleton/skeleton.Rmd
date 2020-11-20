@@ -95,8 +95,8 @@ options(width = 70)
 ```
 
 <!--
-The ackowledgements, preface, dedication, and abstract are added into the PDF
-version automatically by inputing them in the YAML at the top of this file.
+The acknowledgements, preface, dedication, and abstract are added into the PDF
+version automatically by inputting them in the YAML at the top of this file.
 Alternatively, you can put that content in files like 00--prelim.Rmd and
 00-abstract.Rmd like done below.
 -->
