@@ -186,7 +186,8 @@ $endif$
 
 $if(toc)$
   \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
-  \setcounter{tocdepth}{$toc_depth$}
+  \setcounter{secnumdepth}{$toc-depth$ - 1}
+  \setcounter{tocdepth}{$toc-depth$}
   \tableofcontents
 $endif$
 
