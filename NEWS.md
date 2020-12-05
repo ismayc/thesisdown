@@ -2,15 +2,16 @@
 
 ## Breaking changes to the template
 
-- Fixed issue ([#86](https://github.com/ismayc/thesisdown/issues/86)) with references not showing in Gitbook version in ([#91](https://github.com/ismayc/thesisdown/pull/91) PR)
+- Fixed issue ([#86](https://github.com/ismayc/thesisdown/issues/86)) with references not showing in Gitbook version in [#91](https://github.com/ismayc/thesisdown/pull/91) PR
   - [Moved preliminary content files for the Gitbook to a `prelims` folder](https://github.com/ismayc/thesisdown/pull/91/commits/46dce4572fe027f51e1335cab4348d2492e61265). Note that this was needed since using the Knit button in RStudio with {thesisdown} does not appear to allow for the `rmd_files` argument to be used in building theses.
   - [Fixed \headheight is too small error](https://github.com/ismayc/thesisdown/pull/91/commits/4374e7a81b9d16fa79eb2b9a483cf4cfcd71af6f)
   - [Updated the YAML of `index.Rmd` to ensure references pass through in Gitbook](https://github.com/ismayc/thesisdown/pull/91/commits/42aecc61f662e19f32c0a7b3e1e2fc7cfa3dcd92)
-  
+ 
 ## Cosmetic changes to the template (non-breaking)
 
 - [Converted http to https throughout Rmd files](https://github.com/ismayc/thesisdown/commit/aa4bac89ab7cf91d7898d9b52d737b00e6b6f71a)
 - [Reduced `flights.csv` included data](https://github.com/ismayc/thesisdown/commit/0a6bf0c5d6bdb75be4e09a58b588feeaff778af0) to prepare for sending to CRAN
+- Fixed issue (#[116](https://github.com/ismayc/thesisdown/issues/116)) with toc depth not showing in table of contents beyond depth of 3 in [#117](https://github.com/ismayc/thesisdown/pull/117) PR
 
 ## Updates to the package
 
