@@ -34,9 +34,9 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...) {
   base$knitr$opts_chunk$comment <- NA
   # base$knitr$opts_chunk$fig.align <- "center"
 
-  # old_opt <- getOption("bookdown.post.latex")
-  # options(bookdown.post.latex = fix_envs)
-  # on.exit(options(bookdown.post.late = old_opt))
+  old_opt <- getOption("bookdown.post.latex")
+  options(bookdown.post.latex = fix_envs)
+  on.exit(options(bookdown.post.late = old_opt))
 
   base
 }
