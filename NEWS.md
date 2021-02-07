@@ -14,6 +14,7 @@
 
 ## Updates to the package
 
+- Fixed failure of template to build due to `pandoc` changes brought up in Issue [#122](https://github.com/ismayc/thesisdown/issues/122) ([#124](https://github.com/ismayc/thesisdown/pull/124))
 - Added support for customizing of `thesisdown::gitbook()` ([#84](https://github.com/ismayc/thesisdown/pull/84))
 - Added hex sticker ([1](https://github.com/ismayc/thesisdown/commit/ababba5437ee2fe0632c74d5428fed35b911c751) and [2](https://github.com/ismayc/thesisdown/commit/d556073c94ae5069d4373fc73811b3115905c56f))
 - [Created {pkgdown} site](https://github.com/ismayc/thesisdown/commit/7febd70b98ae6e8d104bf1080e066468d030b968)
