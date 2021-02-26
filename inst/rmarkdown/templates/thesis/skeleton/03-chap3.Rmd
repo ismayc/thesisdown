@@ -72,35 +72,7 @@ flights <- read.csv("data/flights.csv", stringsAsFactors = FALSE)
 ```
 
 
-# Tables, Graphics, References, and Labels {#ref-labels}
-
-## Tables
-
-In addition to the tables that can be automatically generated from a data frame in **R** that you saw in [R Markdown Basics] using the `kable()` function, you can also create tables using _pandoc_. (More information is available at <https://pandoc.org/README.html#tables>.)  This might be useful if you don't have values specifically stored in **R**, but you'd like to display them in table form.  Below is an example.  Pay careful attention to the alignment in the table and hyphens to create the rows and columns.
-
-----------------------------------------------------------------------------------
-  Factors                    Correlation between Parents & Child      Inherited
-------------------------- ----------------------------------------- --------------
-  Education                                -0.49                         Yes
-  
-  Socio-Economic Status                     0.28                        Slight   
-  
-  Income                                    0.08                          No
-  
-  Family Size                               0.18                        Slight
-  
-  Occupational Prestige                     0.21                        Slight
-------------------------- ----------------------------------------- --------------
-Table: (\#tab:inher) Correlation of Inheritance Factors for Parents and Child 
-
-We can also create a link to the table by doing the following: Table \@ref(tab:inher).  If you go back to [Loading and exploring data] and look at the `kable` table, we can create a reference to this max delays table too: Table \@ref(tab:maxdelays). The addition of the `(\#tab:inher)` option to the end of the table caption allows us to then make a reference to Table `\@ref(tab:label)`. Note that this reference could appear anywhere throughout the document after the table has appeared.  
-
-<!-- We will next explore ways to create this label-ref link using figures. -->
-
-\clearpage
-
-<!-- clearpage ends the page, and also dumps out all floats.
-  Floats are things like tables and figures. -->
+# Graphics, References, and Labels {#ref-labels}
 
 
 ## Figures
@@ -116,19 +88,24 @@ If you need a graphic or tabular material to be part of the text, you can just p
 
 In the **R** chunk below, we will load in a picture stored as `reed.jpg` in our main directory.  We then give it the caption of "Reed logo", the label of "reedlogo", and specify that this is a figure.  Make note of the different **R** chunk options that are given in the R Markdown file (not shown in the knitted document).
 
-```{r reedlogo, fig.cap="Reed logo"}
+```{r reedlogo, fig.cap="Reed logo", out.width="0.2\\linewidth", fig.align="center"}
 include_graphics(path = "figure/reed.jpg")
 ```
 
+<!-- Note the use of `out.width` as a chunk option here. The resulting
+image is 20% of what the linewidth is in LaTeX. You can also center
+the image using `fig.align="center"` as shown.-->
+
 Here is a reference to the Reed logo: Figure \@ref(fig:reedlogo).  Note the use of the `fig:` code here.  By naming the **R** chunk that contains the figure, we can then reference that figure later as done in the first sentence here.  We can also specify the caption for the figure via the R chunk option `fig.cap`.
 
-\clearpage 
+\clearpage
 
-<!-- starts a new page and stops trying to place floats such as tables and figures -->
-
+<!-- clearpage ends the page, and also dumps out all floats.
+  Floats are things like tables and figures. -->
+  
 Below we will investigate how to save the output of an **R** plot and label it in a way similar to that done above.  Recall the `flights` dataset from Chapter \@ref(rmd-basics).  (Note that we've shown a different way to reference a section or chapter here.)  We will next explore a bar graph with the mean flight departure delays by airline from Portland for 2014.
 
-```{r delaysboxplot, warnings=FALSE, messages=FALSE, fig.cap="Mean Delays by Airline", fig.width=6}
+```{r delaysboxplot, warnings=FALSE, messages=FALSE, fig.cap="Mean Delays by Airline", fig.width=6, fig.height=5}
 mean_delay_by_carrier <- flights %>%
   group_by(carrier) %>%
   summarize(mean_dep_delay = mean(dep_delay))
