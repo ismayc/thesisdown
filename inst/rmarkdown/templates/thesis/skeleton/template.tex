@@ -123,6 +123,10 @@ $if(csl-refs)$
   {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
   \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
   {\par}
+\newenvironment{cslreferences}%
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
 $endif$
 
 \renewcommand{\contentsname}{Table of Contents}
@@ -188,7 +192,7 @@ $endif$
 
 $if(toc)$
   \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
-  \setcounter{secnumdepth}{$toc-depth$ - 1}
+  \setcounter{secnumdepth}{$toc-depth$}
   \setcounter{tocdepth}{$toc-depth$}
   \tableofcontents
 $endif$
