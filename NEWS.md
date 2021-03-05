@@ -1,3 +1,9 @@
+# thesisdown 0.1.1
+
+## Cosmetic changes to the template (non-breaking)
+
+- Finally figured out a long standing issue with csl-refs by using {rticles} code, fixing issue ([#133](https://github.com/ismayc/thesisdown/issues/133))
+
 # thesisdown 0.1.0
 
 ## Breaking changes to the template
