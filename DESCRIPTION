@@ -20,7 +20,7 @@ Imports:
 Suggests:
     remotes,
     usethis,
-    rstudioapi
+    R.utils
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
