@@ -1,0 +1,144 @@
+---
+title: 'My Final College Paper'
+author: 'Your R. Name'
+date: 'May 20xx'
+institution: 'Reed College'
+division: 'Mathematics and Natural Sciences'
+advisor: 'Advisor F. Name'
+# If you have more two advisors, un-silence line 7
+#altadvisor: 'Your Other Advisor'
+department: 'Mathematics'
+degree: 'Bachelor of Arts'
+knit: bookdown::render_book
+site: bookdown::bookdown_site
+
+# This will automatically install the {remotes} package and {thesisdown}
+# Change this to FALSE if you'd like to install them manually on your own.
+params:
+  'Install needed packages for {thesisdown}': True
+  
+# Remove the hashtag to specify which version of output you would like.
+# Can only choose one at a time.
+output:
+  thesisdown::thesis_pdf: default 
+#  thesisdown::thesis_gitbook: default         
+#  thesisdown::thesis_word: default
+#  thesisdown::thesis_epub: default
+
+# If you are creating a PDF you'll need to write your preliminary content 
+# (e.g., abstract, acknowledgements) below or use code similar to line 25-26 
+# for the .RMD files. If you are NOT producing a PDF, delete or silence
+# lines 25-39 in this YAML header.
+abstract: '`r if(knitr:::is_latex_output()) paste(readLines(here::here("prelims", "00-abstract.Rmd")), collapse = "\n  ")`'
+# If you'd rather include the preliminary content in files instead of inline
+# like below, use a command like that for the abstract above.  Note that a tab 
+# is needed on the line after the `|`.
+acknowledgements: |
+  I want to thank a few people.
+dedication: |
+  You can have a dedication here if you wish. 
+preface: |
+  This is an example of a thesis setup to use the reed thesis document class 
+  (for LaTeX) and the R bookdown package, in general.
+  
+# Specify the location of the bibliography below
+bibliography: bib/thesis.bib
+# Download your specific csl file and refer to it in the line below.
+csl: csl/apa.csl
+lot: true
+lof: true
+---
+
+<!--
+Above is the YAML (YAML Ain't Markup Language) header that includes a lot of 
+metadata used to produce the document.  Be careful with spacing in this header!
+
+If you'd prefer to not include a Dedication, for example, simply delete the section entirely, or silence them (add # before each line). 
+
+If you have other LaTeX packages you would like to include, delete the # before header-includes and list the packages after hyphens on new lines.
+
+If you'd like to include a comment that won't be produced in your resulting file enclose it in a block like this.
+
+If you receive a duplicate label error after knitting, make sure to delete the index.Rmd file and then knit again.
+-->
+
+```{r include_packages, include=FALSE}
+# This chunk ensures that the thesisdown package is
+# installed and loaded. This thesisdown package includes
+# the template files for the thesis.
+if (!require(remotes)) {
+  if (params$`Install needed packages for {thesisdown}`) {
+    install.packages("remotes", repos = "https://cran.rstudio.com")
+  } else {
+    stop(
+      paste('You need to run install.packages("remotes")",
+            "first in the Console.')
+    )
+  }
+}
+if (!require(thesisdown)) {
+  if (params$`Install needed packages for {thesisdown}`) {
+    remotes::install_github("ismayc/thesisdown")
+  } else {
+    stop(
+      paste(
+        "You need to run",
+        'remotes::install_github("ismayc/thesisdown")',
+        "first in the Console."
+      )
+    )
+  }
+}
+library(thesisdown)
+# Set how wide the R output will go
+options(width = 70)
+```
+
+<!--
+The acknowledgments, preface, dedication, and abstract are added into the PDF
+version automatically by inputting them in the YAML at the top of this file.
+Alternatively, you can put that content in files like 00--prelim.Rmd and
+00-abstract.Rmd like done below.
+-->
+
+
+
+```{r eval=!knitr::is_latex_output(), child=here::here("prelims", "00--prelim.Rmd")}
+
+```
+
+```{r eval=!knitr::is_latex_output(), child=here::here("prelims", "00-abstract.Rmd")}
+
+```
+
+<!-- The {.unnumbered} option here means that the introduction will be 
+"Chapter 0." You can also use {-} for no numbers on chapters.
+-->
+
+# Introduction {.unnumbered}
+
+Welcome to the _R Markdown_ thesis template. This template is based on (and in many places copied directly from) the Reed College LaTeX template, but hopefully it will provide a nicer interface for those that have never used TeX or LaTeX before.  Using _R Markdown_ will also allow you to easily keep track of your analyses in **R** chunks of code, with the resulting plots and output included as well.  The hope is this _R Markdown_ template gets you in the habit of doing reproducible research, which benefits you long-term as a researcher, but also will greatly help anyone that is trying to reproduce or build onto your results down the road.
+
+Hopefully, you won't have much of a learning period to go through and you will reap the benefits of a nicely formatted thesis.  The use of LaTeX in combination with _Markdown_ is more consistent than the output of a word processor, much less prone to corruption or crashing, and the resulting file is smaller than a Word file. While you may have never had problems using Word in the past, your thesis is likely going to be about twice as large and complex as anything you've written before, taxing Word's capabilities.  After working with _Markdown_ and **R** together for a few weeks, we are confident this will be your reporting style of choice going forward.
+
+<!-- 
+If you're still on the fence about using _R Markdown_, check out the resource
+for newbies available at <https://rbasics.netlify.com>. 
+-->
+
+**Why use it?**
+
+_R Markdown_ creates a simple and straightforward way to interface with the beauty of LaTeX.  Packages have been written in **R** to work directly with LaTeX to produce nicely formatting tables and paragraphs. In addition to creating a user friendly interface to LaTeX, _R Markdown_ also allows you to read in your data, to analyze it and to visualize it using **R** functions, and also to provide the documentation and commentary on the results of your project.  Further, it allows for **R** results to be passed inline to the commentary of your results.  You'll see more on this later.  
+
+<!-- 
+Having your code and commentary all together in one place has a plethora of 
+benefits!
+-->
+
+**Who should use it?**
+
+Anyone who needs to use data analysis, math, tables, a lot of figures, complex cross-references, or who just cares about the final appearance of their document should use _R Markdown_. Of particular use should be anyone in the sciences, but the user-friendly nature of _Markdown_ and its ability to keep track of and easily include figures, automatically generate a table of contents, index, references, table of figures, etc. should make it of great benefit to nearly anyone writing a thesis project.
+
+**For additional help with bookdown** 
+
+Please visit [the free online bookdown reference guide](https://bookdown.org/yihui/bookdown/).

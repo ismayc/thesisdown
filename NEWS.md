@@ -1,3 +1,13 @@
+# thesisdown 0.2.0
+
+## Breaking changes to the template
+ 
+## Cosmetic changes to the template (non-breaking)
+
+## Updates to the package
+
+- Added thesisdown RStudio project template
+
 # thesisdown 0.1.1
 
 ## Cosmetic changes to the template (non-breaking)
