@@ -7,6 +7,7 @@
 ## Updates to the package
 
 - Added thesisdown RStudio project template
+- Added GitHub Actions PR and issue lock
 
 # thesisdown 0.1.1
 
