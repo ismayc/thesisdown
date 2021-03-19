@@ -1,4 +1,3 @@
-
 <!-- README.md is generated from README.Rmd via `devtools::build_readme()`. Please edit README.Rmd -->
 
 # thesisdown <img src="man/figures/thesisdown_hex.png" align="right" width=200 />

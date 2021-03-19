@@ -4,6 +4,13 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd via `devtools::build_readme()`. Please edit README.Rmd -->
 
+```{r include=FALSE}
+knitr::opts_chunk$set(
+  fig.path = "man/figures/"
+)
+```
+
+
 # thesisdown <img src="man/figures/thesisdown_hex.png" align="right" width=200 />
 
 This project was inspired by the [bookdown](https://github.com/rstudio/bookdown) package and is an updated version of my Senior Thesis template in the `reedtemplates` package [here](https://github.com/ismayc/reedtemplates). It was originally designed to only work with the Reed College LaTeX template, but has since been adapted to work with many different institutions by many different individuals. Check out the [**Customizing thesisdown to your institution**](https://github.com/ismayc/thesisdown#customizing-thesisdown-to-your-institution) section below for examples.
