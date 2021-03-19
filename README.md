@@ -4,9 +4,10 @@ This project was inspired by the [bookdown](https://github.com/rstudio/bookdown)
 
 Currently, the PDF and gitbook versions are fully-functional.  The word and epub versions are developmental, have no templates behind them, and are essentially calls to the appropriate functions in bookdown.
 
-If you are new to working with `bookdown`/`rmarkdown`, please read over the documentation available in the `gitbook` template at https://thesisdown.netlify.com/.  This is also available below at https://ismayc.github.io/thesisdown_book.
+If you are new to working with `bookdown`/`rmarkdown`, please read over the documentation available in the `gitbook` template at <https://ismayc.github.io/thesisdown_book>.
 
 The current output for the four versions is here:
+
 - [PDF](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.pdf) (Generating LaTeX file is available [here](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.tex) with other files in the [book directory](https://github.com/ismayc/thesisdown_book/tree/gh-pages).)
 - [Word](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.docx)
 - [ePub](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.epub)
@@ -62,50 +63,79 @@ Have you created a thesisdown template for your institution and would like to ha
 
 Special thanks to [Ben Marwick](https://github.com/benmarwick) for helping to add a lot more clarity to the directions below from the [README of his spin-off `huskydown` package](https://github.com/benmarwick/huskydown/blob/master/README.md).
 
-Using **thesisdown** has some prerequisites which are described below. To compile PDF documents using **R**, you are going to need to have LaTeX installed. By far the easiest way to install LaTeX on any platform is with the [tinytex](https://yihui.name/tinytex/) R package:
+Using {thesisdown} has some prerequisites which are described below. To compile PDF documents using **R**, you are going to need to have LaTeX installed. By far the easiest way to install LaTeX on any platform is with the [tinytex](https://yihui.name/tinytex/) R package:
 
-```{r}
+```r
 install.packages(c('tinytex', 'rmarkdown'))
 tinytex::install_tinytex()
-# after restarting RStudio, confirm that you have LaTeX with 
-tinytex:::is_tinytex() 
+# after restarting RStudio, confirm that you have LaTeX with
+tinytex:::is_tinytex()
 ```
 
 You may need to install a few extra LaTeX packages on your first attempt to knit as well. Here is one such example of how to do so:
 
-```{r}
+```r
 tinytex::tlmgr_install("babel-portuges")
 ```
 
-To use **thesisdown** from [RStudio](https://www.rstudio.com/products/rstudio/download/):
+To use {thesisdown} from [RStudio](https://www.rstudio.com/products/rstudio/download/):
 
-1) Ensure that you have already installed LaTeX and the fonts described above, and are using the latest version of [RStudio](https://www.rstudio.com/products/rstudio/download/). You can use `thesisdown` without RStudio. For example, you can write the Rmd files in your favourite text editor (e.g. [Atom](https://atom.io/), [Notepad++](https://notepad-plus-plus.org/)). But RStudio is probably the easiest tool for writing both R code and text in your thesis. It also provides a nice way to build your thesis while editing. We'll proceed assuming that you have decided to use the RStudio workflow.
+1. Ensure that you have already installed LaTeX and the fonts described above, and are using the latest version of [RStudio](https://www.rstudio.com/products/rstudio/download/). You can use `thesisdown` without RStudio. For example, you can write the Rmd files in your favorite text editor (e.g. [Atom](https://atom.io/), [Notepad++](https://notepad-plus-plus.org/)). But RStudio is probably the easiest tool for writing both R code and text in your thesis. It also provides a nice way to build your thesis while editing. We'll proceed assuming that you have decided to use the RStudio workflow.
 
-2) Install the **bookdown** and **thesisdown** packages. Note that **thesisdown** is not available on CRAN at the moment and that's why `install.packages("thesisdown")` won't work. Use `remotes::install_github()` as shown below instead to install the package.
+2. Install the {bookdown} and {thesisdown} packages. Note that {thesisdown} is not available on CRAN at the moment and that's why `install.packages("thesisdown")` won't work. Use `remotes::install_github()` as shown below instead to install the package.
 
-```r
-if (!require("remotes")) install.packages("remotes", repos = "https://cran.rstudio.org")
-remotes::install_github("rstudio/bookdown")
-remotes::install_github("ismayc/thesisdown")
-```
+    ```r
+    if (!require("remotes")) 
+      install.packages("remotes", repos = "https://cran.rstudio.org")
+    remotes::install_github("rstudio/bookdown")
+    remotes::install_github("ismayc/thesisdown")
+    ```
+      
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note that you may need to restart RStudio at this point for the following dialog to show up.
 
-Note that you may need to restart RStudio at this point for the following dialog to show up.
+3. Get started with the {thesisdown} template. There are two
+options for doing so.
 
-3) Use the **New R Markdown** dialog to select **Thesis**:
+- 3a) **RECOMMENDED** Create a new RStudio project with a
+{thesisdown} template.
 
-  ![New R Markdown](images/thesis_rmd.png)
+  In RStudio, click on **File** > **New Project** > 
+**New Directory**. Then select 
+**Thesis Project using thesisdown** from the dropdown that
+will look something like the image below. You'll see the
+graduation cap as the icon on the left for the appropriate
+project type.
+
+  ![](images/thesis_proj.png)
+
+  Next, give your project a name and specify where you'd like
+the files to appear. In the screenshot below, the project
+name is `my_thesis` and it will appear as a new folder
+on my Desktop.
+
+  ![](images/thesis_proj_name.png)
+
+  If you got this far, skip over step 3b which is the older
+version of getting the template. It might force you to
+change some of the directories to get knitting to work
+and has some other limitations as well. That's why step 3a
+is recommended.
+
+- 3b) Use the **New R Markdown** dialog to select **Thesis**:
+
+  ![](images/thesis_rmd.png)
 
   Note that this will currently only **Knit** if you name the directory `index` as shown above. This guarantees that `index.html` is generated correctly for the Gitbook version of the thesis.
 
-4) After choosing which type of output you'd like in the YAML at the top of index.Rmd, **Knit** the `index.Rmd` file to get the book in PDF or HTML formats.
+4. After choosing which type of output you'd like in the YAML at the top of `index.Rmd`, **Knit** the `index.Rmd` file to get the book in PDF or HTML formats.
 
-### Day-to-day writing of your thesis 
+### Day-to-day writing of your thesis
 
 You need to edit the individual chapter R Markdown files to write your thesis. It's recommended that you version control your thesis using GitHub if possible. RStudio can also easily sync up with GitHub to make the process easier. While writing, you should `git commit` your work frequently, after every major activity on your thesis. For example, every few paragraphs or section of text, and after major step of analysis development. You should `git push` at the end of each work session before you leave your computer or change tasks. For a gentle, novice-friendly guide to getting starting with using Git with R and RStudio, see <https://happygitwithr.com/>.
 
 ## Rendering
 
-To render your thesis into a PDF, open `index.Rmd` in RStudio and then click the "knit" button. To change the output formats between PDF, gitbook and Word , look at the `output:` field in `index.Rmd` and comment-out the formats you don't want.
+To render your thesis into a PDF, open `index.Rmd` in RStudio and then click the "knit" button. To change the output formats between PDF, gitbook and Word, look at the `output:` field in `index.Rmd` and comment-out the formats you don't want.
 
 The PDF file of your thesis will be deposited in the `_book/` directory, by default.
 
@@ -128,7 +158,7 @@ These are the Rmd files for each chapter in your dissertation. Write your thesis
 
 ### `bib/`
 
-Store your bibliography (as bibtex files) here. We recommend using the [citr addin](https://github.com/crsh/citr) and [Zotero](https://www.zotero.org/) to efficiently manage and insert citations. 
+Store your bibliography (as bibtex files) here. We recommend using the [citr addin](https://github.com/crsh/citr) and [Zotero](https://www.zotero.org/) to efficiently manage and insert citations.
 
 ### `csl/`
 
