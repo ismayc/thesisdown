@@ -61,10 +61,312 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-Using the bookdown package and LaTeX and Word thesis templates from
-    Reed College, this package aims to encourage reproducible research using
-    simple Markdown syntax while embedding all of the R code to produce plots
-    and analyses as well.
+<div id="thesisdown-" class="section level1">
+<div class="page-header"><h1 class="hasAnchor">
+<a href="#thesisdown-" class="anchor"></a>thesisdown <img src="reference/figures/thesisdown_hex.png" align="right" width="200">
+</h1></div>
+<p>This project was inspired by the <a href="https://github.com/rstudio/bookdown" class="external-link">bookdown</a> package and is an updated version of my Senior Thesis template in the <code>reedtemplates</code> package <a href="https://github.com/ismayc/reedtemplates" class="external-link">here</a>. It was originally designed to only work with the Reed College LaTeX template, but has since been adapted to work with many different institutions by many different individuals. Check out the <a href="https://github.com/ismayc/thesisdown#customizing-thesisdown-to-your-institution" class="external-link"><strong>Customizing thesisdown to your institution</strong></a> section below for examples.</p>
+<p>Currently, the PDF and gitbook versions are fully-functional. The word and epub versions are developmental, have no templates behind them, and are essentially calls to the appropriate functions in bookdown.</p>
+<p>If you are new to working with <code>bookdown</code>/<code>rmarkdown</code>, please read over the documentation available in the <code>gitbook</code> template at <a href="https://ismayc.github.io/thesisdown_book" class="external-link uri">https://ismayc.github.io/thesisdown_book</a>.</p>
+<p>The current output for the four versions is here:</p>
+<ul>
+<li>
+<a href="https://github.com/ismayc/thesisdown_book/blob/master/thesis.pdf" class="external-link">PDF</a> (Generating LaTeX file is available <a href="https://github.com/ismayc/thesisdown_book/blob/master/thesis.tex" class="external-link">here</a> with other files in the <a href="https://github.com/ismayc/thesisdown_book/tree/master" class="external-link">book directory</a>.)</li>
+<li><a href="https://github.com/ismayc/thesisdown_book/blob/master/thesis.docx" class="external-link">Word</a></li>
+<li><a href="https://github.com/ismayc/thesisdown_book/blob/master/thesis.epub" class="external-link">ePub</a></li>
+<li><a href="https://ismayc.github.io/thesisdown_book" class="external-link">gitbook</a></li>
+</ul>
+<p>Under the hood, the Reed College LaTeX template is used to ensure that documents conform precisely to submission standards. At the same time, composition and formatting can be done using lightweight <a href="https://rmarkdown.rstudio.com/authoring_basics.html" class="external-link">markdown</a> syntax, and <strong>R</strong> code and its output can be seamlessly included using <a href="https://rmarkdown.rstudio.com" class="external-link">rmarkdown</a>.</p>
+<div id="customizing-thesisdown-to-your-institution" class="section level2">
+<h2 class="hasAnchor">
+<a href="#customizing-thesisdown-to-your-institution" class="anchor"></a>Customizing thesisdown to your institution</h2>
+<p>In an ideal world, this package would support a variety of different LaTeX templates from a wide range of institutions and we’d love to get it there at some point. Until that time, realize that this was designed to only work with the Reed College LaTeX template but others have adapted it to work with their institutions. Here are some that have customized it to fit their needs. It is recommended you review how they changed the files by comparing their repositories to this one and then make tweaks to yours as needed. Feel free to file an issue on this repo if you have questions/troubles.</p>
+<p>Have you created a thesisdown template for your institution and would like to have it included here? Make a PR <a href="https://github.com/ismayc/thesisdown/commit/760113a076767cf67b6e22339e398bd3f15305c5" class="external-link">similar to the commit done to include <code>jayhawkdown</code></a>. I’ll review it and merge it in. Let’s keep the list going!</p>
+<table class="table">
+<colgroup>
+<col width="27%">
+<col width="42%">
+<col width="29%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">College/University</th>
+<th align="left">Repository</th>
+<th align="left">Based on</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">American University</td>
+<td align="left"><a href="https://github.com/SimonHeuberger/eagledown" class="external-link">SimonHeuberger/eagledown</a></td>
+<td align="left"><a href="https://github.com/benmarwick/huskydown" class="external-link">benmarwick/huskydown</a></td>
+</tr>
+<tr class="even">
+<td align="left">Brock University</td>
+<td align="left"><a href="https://github.com/brentthorne/brockdown" class="external-link">brentthorne/brockdown</a></td>
+<td align="left"><a href="https://github.com/zkamvar/beaverdown" class="external-link">zkamvar/beaverdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">École Doctorale de Mathématiques Hadamard</td>
+<td align="left"><a href="https://github.com/abichat/hadamardown" class="external-link">abichat/hadamardown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="even">
+<td align="left">Drexel University</td>
+<td align="left"><a href="https://github.com/tbradley1013/dragondown" class="external-link">tbradley1013/dragondown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Duke University</td>
+<td align="left"><a href="https://github.com/mine-cetinkaya-rundel/thesisdowndss" class="external-link">mine-cetinkaya-rundel/thesisdowndss</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="even">
+<td align="left">Graduate Institute of International and Development Studies</td>
+<td align="left"><a href="https://github.com/jhollway/iheiddown" class="external-link">jhollway/iheiddown</a></td>
+<td align="left"><a href="https://github.com/ulyngs/oxforddown" class="external-link">ulyngs/oxforddown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Heidelberg University, Faculty of Biosciences</td>
+<td align="left"><a href="https://github.com/nkurzaw/heididown" class="external-link">nkurzaw/heididown</a></td>
+<td align="left"><a href="https://github.com/phister/huwiwidown" class="external-link">phister/huwiwidown</a></td>
+</tr>
+<tr class="even">
+<td align="left">Humboldt University of Berlin</td>
+<td align="left"><a href="https://github.com/phister/huwiwidown" class="external-link">phister/huwiwidown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Kansas State University</td>
+<td align="left"><a href="https://github.com/emraher/wildcatdown" class="external-link">emraher/wildcatdown</a></td>
+<td align="left"><a href="https://github.com/benmarwick/huskydown" class="external-link">benmarwick/huskydown</a></td>
+</tr>
+<tr class="even">
+<td align="left">Massachusetts Institute of Technology</td>
+<td align="left"><a href="https://github.com/ratatstats/manusdown" class="external-link">ratatstats/manusdown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Oregon State University</td>
+<td align="left"><a href="https://github.com/zkamvar/beaverdown" class="external-link">zkamvar/beaverdown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="even">
+<td align="left">Oxford University</td>
+<td align="left"><a href="https://github.com/davidplans/oxdown" class="external-link">davidplans/oxdown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Smith College</td>
+<td align="left"><a href="https://github.com/SmithCollege-SDS/pioneerdown" class="external-link">SmithCollege-SDS/pioneerdown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="even">
+<td align="left">Southampton University</td>
+<td align="left"><a href="https://github.com/dr-harper/sotonthesis" class="external-link">dr-harper/sotonthesis</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Stanford University</td>
+<td align="left"><a href="https://github.com/mhtess/treedown" class="external-link">mhtess/treedown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="even">
+<td align="left">Universidade Federal do Rio de Janeiro</td>
+<td align="left"><a href="https://github.com/COPPE-UFRJ/coppedown" class="external-link">COPPE-UFRJ/coppedown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Université Paris-Saclay</td>
+<td align="left"><a href="https://github.com/abichat/hadamardown" class="external-link">abichat/hadamardown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="even">
+<td align="left">University College London</td>
+<td align="left"><a href="https://github.com/benyohaiphysics/thesisdownUCL" class="external-link">benyohaiphysics/thesisdownUCL</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">University of Arizona</td>
+<td align="left"><a href="https://github.com/kelseygonzalez/beardown" class="external-link">kelseygonzalez/beardown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="even">
+<td align="left">University of California, Davis</td>
+<td align="left"><a href="https://github.com/ryanpeek/aggiedown" class="external-link">ryanpeek/aggiedown</a></td>
+<td align="left"><a href="https://github.com/DanOvando/gauchodown" class="external-link">DanOvando/gauchodown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">University of California, Santa Barbara</td>
+<td align="left"><a href="https://github.com/DanOvando/gauchodown" class="external-link">DanOvando/gauchodown</a></td>
+<td align="left"><a href="https://github.com/benmarwick/huskydown" class="external-link">benmarwick/huskydown</a></td>
+</tr>
+<tr class="even">
+<td align="left">University of Florida</td>
+<td align="left"><a href="https://github.com/ksauby/thesisdownufl" class="external-link">ksauby/thesisdownufl</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">University of Freiburg</td>
+<td align="left"><a href="https://github.com/vivekbhr/doctorRbite" class="external-link">vivekbhr/doctorRbite</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="even">
+<td align="left">University of Kansas</td>
+<td align="left"><a href="https://github.com/wjakethompson/jayhawkdown" class="external-link">wjakethompson/jayhawkdown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">University of Manchester</td>
+<td align="left"><a href="https://github.com/JulioV/uomthesisdown" class="external-link">juliov/uomthesisdown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="even">
+<td align="left">University of Minnesota</td>
+<td align="left"><a href="https://github.com/zief0002/qmedown" class="external-link">zief0002/qmedown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">University of New South Wales</td>
+<td align="left"><a href="https://github.com/rensa/unswthesisdown" class="external-link">rensa/unswthesisdown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="even">
+<td align="left">University of Salzburg</td>
+<td align="left"><a href="https://github.com/irmingard/salzburgthesisdown" class="external-link">irmingard/salzburgthesisdown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">University of Toronto</td>
+<td align="left"><a href="https://github.com/mattwarkentin/torontodown" class="external-link">mattwarkentin/torontodown</a></td>
+<td align="left"><a href="https://github.com/zkamvar/beaverdown" class="external-link">zkamvar/beaverdown</a></td>
+</tr>
+<tr class="even">
+<td align="left">University of Washington</td>
+<td align="left"><a href="https://github.com/benmarwick/huskydown" class="external-link">benmarwick/huskydown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">TU Wien</td>
+<td align="left"><a href="https://github.com/ben-schwen/robotdown" class="external-link">ben-schwen/robotdown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="even">
+<td align="left">University of Bristol</td>
+<td align="left"><a href="https://github.com/mattlee821/bristolthesis" class="external-link">mattlee821/bristolthesis</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Universidade Federal de Santa Catarina</td>
+<td align="left"><a href="https://github.com/lfpdroubi/ufscdown" class="external-link">lfpdroubi/ufscdown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
+<tr class="even">
+<td align="left">Universiteit van Amsterdam</td>
+<td align="left"><a href="https://github.com/lcreteig/amsterdown" class="external-link">lcreteig/amsterdown</a></td>
+<td align="left"><a href="https://github.com/benmarwick/huskydown" class="external-link">benmarwick/huskydown</a></td>
+</tr>
+</tbody>
+</table>
+<div id="using-thesisdown-from-chesters-github" class="section level3">
+<h3 class="hasAnchor">
+<a href="#using-thesisdown-from-chesters-github" class="anchor"></a>Using thesisdown from Chester’s GitHub</h3>
+<p>Special thanks to <a href="https://github.com/benmarwick" class="external-link">Ben Marwick</a> for helping to add a lot more clarity to the directions below from the <a href="https://github.com/benmarwick/huskydown/blob/master/README.md" class="external-link">README of his spin-off <code>huskydown</code> package</a>.</p>
+<p>Using {thesisdown} has some prerequisites which are described below. To compile PDF documents using <strong>R</strong>, you are going to need to have LaTeX installed. By far the easiest way to install LaTeX on any platform is with the <a href="https://yihui.name/tinytex/" class="external-link">tinytex</a> R package:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'tinytex'</span>, <span class="st">'rmarkdown'</span><span class="op">)</span><span class="op">)</span>
+<span class="fu">tinytex</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tinytex/man/install_tinytex.html" class="external-link">install_tinytex</a></span><span class="op">(</span><span class="op">)</span>
+<span class="co"># after restarting RStudio, confirm that you have LaTeX with</span>
+<span class="fu">tinytex</span><span class="fu">:::</span><span class="fu"><a href="https://rdrr.io/pkg/tinytex/man/is_tinytex.html" class="external-link">is_tinytex</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<p>You may need to install a few extra LaTeX packages on your first attempt to knit as well. Here is one such example of how to do so:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">tinytex</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tinytex/man/tlmgr.html" class="external-link">tlmgr_install</a></span><span class="op">(</span><span class="st">"babel-portuges"</span><span class="op">)</span></code></pre></div>
+<p>To use {thesisdown} from <a href="https://www.rstudio.com/products/rstudio/download/" class="external-link">RStudio</a>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Ensure that you have already installed LaTeX and the fonts described above, and are using the latest version of <a href="https://www.rstudio.com/products/rstudio/download/" class="external-link">RStudio</a>. You can use <code>thesisdown</code> without RStudio. For example, you can write the Rmd files in your favorite text editor (e.g. <a href="https://atom.io/" class="external-link">Atom</a>, <a href="https://notepad-plus-plus.org/" class="external-link">Notepad++</a>). But RStudio is probably the easiest tool for writing both R code and text in your thesis. It also provides a nice way to build your thesis while editing. We’ll proceed assuming that you have decided to use the RStudio workflow.</p></li>
+<li>
+<p>Install the {bookdown} and {thesisdown} packages. Note that {thesisdown} is not available on CRAN at the moment and that’s why <code><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages("thesisdown")</a></code> won’t work. Use <code><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">remotes::install_github()</a></code> as shown below instead to install the package.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://remotes.r-lib.org" class="external-link">"remotes"</a></span><span class="op">)</span><span class="op">)</span> 
+  <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span>, repos <span class="op">=</span> <span class="st">"https://cran.rstudio.org"</span><span class="op">)</span>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"rstudio/bookdown"</span><span class="op">)</span>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"ismayc/thesisdown"</span><span class="op">)</span></code></pre></div>
+</li>
+</ol>
+<p>          Note that you may need to restart RStudio at this point for the following dialog to show up.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Get started with the {thesisdown} template. There are two options for doing so.</li>
+</ol>
+<ul>
+<li>
+<p>3a) <strong>RECOMMENDED</strong> Create a new RStudio project with a {thesisdown} template.</p>
+<p>In RStudio, click on <strong>File</strong> &gt; <strong>New Project</strong> &gt; <strong>New Directory</strong>. Then select <strong>Thesis Project using thesisdown</strong> from the dropdown that will look something like the image below. You’ll see the graduation cap as the icon on the left for the appropriate project type.</p>
+<p><img src="images/thesis_proj.png"></p>
+<p>Next, give your project a name and specify where you’d like the files to appear. In the screenshot below, the project name is <code>my_thesis</code> and it will appear as a new folder on my Desktop.</p>
+<p><img src="images/thesis_proj_name.png"></p>
+<p>If you got this far, skip over step 3b which is the older version of getting the template. It might force you to change some of the directories to get knitting to work and has some other limitations as well. That’s why step 3a is recommended.</p>
+</li>
+<li>
+<p>3b) Use the <strong>New R Markdown</strong> dialog to select <strong>Thesis</strong>:</p>
+<p><img src="images/thesis_rmd.png"></p>
+<p>Note that this will currently only <strong>Knit</strong> if you name the directory <code>index</code> as shown above. This guarantees that <code>index.html</code> is generated correctly for the Gitbook version of the thesis.</p>
+</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>After choosing which type of output you’d like in the YAML at the top of <code>index.Rmd</code>, <strong>Knit</strong> the <code>index.Rmd</code> file to get the book in PDF or HTML formats.</li>
+</ol>
+</div>
+<div id="day-to-day-writing-of-your-thesis" class="section level3">
+<h3 class="hasAnchor">
+<a href="#day-to-day-writing-of-your-thesis" class="anchor"></a>Day-to-day writing of your thesis</h3>
+<p>You need to edit the individual chapter R Markdown files to write your thesis. It’s recommended that you version control your thesis using GitHub if possible. RStudio can also easily sync up with GitHub to make the process easier. While writing, you should <code>git commit</code> your work frequently, after every major activity on your thesis. For example, every few paragraphs or section of text, and after major step of analysis development. You should <code>git push</code> at the end of each work session before you leave your computer or change tasks. For a gentle, novice-friendly guide to getting starting with using Git with R and RStudio, see <a href="https://happygitwithr.com/" class="external-link uri">https://happygitwithr.com/</a>.</p>
+</div>
+</div>
+<div id="rendering" class="section level2">
+<h2 class="hasAnchor">
+<a href="#rendering" class="anchor"></a>Rendering</h2>
+<p>To render your thesis into a PDF, open <code>index.Rmd</code> in RStudio and then click the “knit” button. To change the output formats between PDF, gitbook and Word, look at the <code>output:</code> field in <code>index.Rmd</code> and comment-out the formats you don’t want.</p>
+<p>The PDF file of your thesis will be deposited in the <code>_book/</code> directory, by default.</p>
+</div>
+<div id="components" class="section level2">
+<h2 class="hasAnchor">
+<a href="#components" class="anchor"></a>Components</h2>
+<p>The following components are ones you should edit to customize your thesis:</p>
+<div id="_bookdownyml" class="section level3">
+<h3 class="hasAnchor">
+<a href="#_bookdownyml" class="anchor"></a><code>_bookdown.yml</code>
+</h3>
+<p>This is the main configuration file for your thesis. You can change the name of your outputted file here for your thesis and other options about your thesis here.</p>
+</div>
+<div id="indexrmd" class="section level3">
+<h3 class="hasAnchor">
+<a href="#indexrmd" class="anchor"></a><code>index.Rmd</code>
+</h3>
+<p>This file contains all the meta information that goes at the beginning of your document. You’ll need to edit the top portion of this file (the YAML) to put your name on the first page, the title of your thesis, etc. Note that you need to have at least one chapter start in the <code>index.Rmd</code> file for the build to work. For the template, this is done with <code># Introduction</code> in the example from the template.</p>
+</div>
+<div id="01-chap1rmd-02-chap2rmd-etc" class="section level3">
+<h3 class="hasAnchor">
+<a href="#01-chap1rmd-02-chap2rmd-etc" class="anchor"></a><code>01-chap1.Rmd</code>, <code>02-chap2.Rmd</code>, etc.</h3>
+<p>These are the Rmd files for each chapter in your dissertation. Write your thesis in these. If you’re writing in RStudio, you may find the <a href="https://github.com/benmarwick/wordcountaddin" class="external-link">wordcount addin</a> useful for getting word counts and readability statistics in R Markdown documents.</p>
+</div>
+<div id="bib" class="section level3">
+<h3 class="hasAnchor">
+<a href="#bib" class="anchor"></a><code>bib/</code>
+</h3>
+<p>Store your bibliography (as bibtex files) here. We recommend using the <a href="https://github.com/crsh/citr" class="external-link">citr addin</a> and <a href="https://www.zotero.org/" class="external-link">Zotero</a> to efficiently manage and insert citations.</p>
+</div>
+<div id="csl" class="section level3">
+<h3 class="hasAnchor">
+<a href="#csl" class="anchor"></a><code>csl/</code>
+</h3>
+<p>Specific style files for bibliographies should be stored here. A good source for citation styles is <a href="https://github.com/citation-style-language/styles#readme" class="external-link uri">https://github.com/citation-style-language/styles#readme</a>.</p>
+</div>
+<div id="figure-and-data" class="section level3">
+<h3 class="hasAnchor">
+<a href="#figure-and-data" class="anchor"></a><code>figure/</code> and <code>data/</code>
+</h3>
+<p>Store your figures and data here and reference them in your R Markdown files. See the <a href="https://bookdown.org/yihui/bookdown/" class="external-link">bookdown book</a> for details on cross-referencing items using R Markdown.</p>
+</div>
+</div>
+</div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
