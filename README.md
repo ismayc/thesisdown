@@ -1,3 +1,4 @@
+
 <!-- README.md is generated from README.Rmd via `devtools::build_readme()`. Please edit README.Rmd -->
 
 # thesisdown <img src="man/figures/thesisdown_hex.png" align="right" width=200 />
@@ -163,13 +164,13 @@ the following dialog to show up.
     see the graduation cap as the icon on the left for the appropriate
     project type.
 
-    ![](images/thesis_proj.png)
+    ![](man/figures/thesis_proj.png)
 
     Next, give your project a name and specify where you’d like the
     files to appear. In the screenshot below, the project name is
     `my_thesis` and it will appear as a new folder on my Desktop.
 
-    ![](images/thesis_proj_name.png)
+    ![](man/figures/thesis_proj_name.png)
 
     If you got this far, skip over step 3b which is the older version of
     getting the template. It might force you to change some of the
@@ -178,7 +179,7 @@ the following dialog to show up.
 
 -   3b) Use the **New R Markdown** dialog to select **Thesis**:
 
-    ![](images/thesis_rmd.png)
+    ![](man/figures/thesis_rmd.png)
 
     Note that this will currently only **Knit** if you name the
     directory `index` as shown above. This guarantees that `index.html`
