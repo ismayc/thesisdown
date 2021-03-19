@@ -7,3 +7,4 @@ R/.setup.R
 ^images$
 ^LICENSE\.md$
 .github
+^README\.Rmd$
