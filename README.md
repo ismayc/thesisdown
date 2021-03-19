@@ -8,9 +8,9 @@ If you are new to working with `bookdown`/`rmarkdown`, please read over the docu
 
 The current output for the four versions is here:
 
-- [PDF](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.pdf) (Generating LaTeX file is available [here](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.tex) with other files in the [book directory](https://github.com/ismayc/thesisdown_book/tree/gh-pages).)
-- [Word](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.docx)
-- [ePub](https://github.com/ismayc/thesisdown_book/blob/gh-pages/thesis.epub)
+- [PDF](https://github.com/ismayc/thesisdown_book/blob/master/thesis.pdf) (Generating LaTeX file is available [here](https://github.com/ismayc/thesisdown_book/blob/master/thesis.tex) with other files in the [book directory](https://github.com/ismayc/thesisdown_book/tree/master).)
+- [Word](https://github.com/ismayc/thesisdown_book/blob/master/thesis.docx)
+- [ePub](https://github.com/ismayc/thesisdown_book/blob/master/thesis.epub)
 - [gitbook](https://ismayc.github.io/thesisdown_book)
 
 Under the hood, the Reed College LaTeX template is used to ensure that documents conform precisely to submission standards. At the same time, composition and formatting can be done using lightweight [markdown](https://rmarkdown.rstudio.com/authoring_basics.html) syntax, and **R** code and its output can be seamlessly included using [rmarkdown](https://rmarkdown.rstudio.com).
