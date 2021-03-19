@@ -44,6 +44,8 @@
 
 
 
+
+
 <!-- mathjax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script>
@@ -55,9 +57,15 @@
 
 
 
+  
+
+  
+
   </head>
 
   <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-news">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -71,19 +79,13 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">thesisdown</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
@@ -109,64 +111,103 @@
       
     </div>
 
-    <div id="thesisdown-0-1-0" class="section level1">
-<h1 class="page-header" data-toc-text="0.1.0">
-<a href="#thesisdown-0-1-0" class="anchor"></a>thesisdown 0.1.0</h1>
+    <div id="thesisdown-020" class="section level1">
+<h1 class="page-header" data-toc-text="0.2.0">
+<a href="#thesisdown-020" class="anchor"></a>thesisdown 0.2.0</h1>
 <div id="breaking-changes-to-the-template" class="section level2">
 <h2 class="hasAnchor">
 <a href="#breaking-changes-to-the-template" class="anchor"></a>Breaking changes to the template</h2>
-<ul>
-<li>Fixed issue (<a href="https://github.com/ismayc/thesisdown/issues/86">#86</a>) with references not showing in Gitbook version in (<a href="https://github.com/ismayc/thesisdown/pull/91">#91</a> PR)
-<ul>
-<li>
-<a href="https://github.com/ismayc/thesisdown/pull/91/commits/46dce4572fe027f51e1335cab4348d2492e61265">Moved preliminary content files for the Gitbook to a <code>prelims</code> folder</a>. Note that this was needed since using the Knit button in RStudio with {thesisdown} does not appear to allow for the <code>rmd_files</code> argument to be used in building theses.</li>
-<li><a href="https://github.com/ismayc/thesisdown/pull/91/commits/4374e7a81b9d16fa79eb2b9a483cf4cfcd71af6f">Fixed \headheight is too small error</a></li>
-<li><a href="https://github.com/ismayc/thesisdown/pull/91/commits/42aecc61f662e19f32c0a7b3e1e2fc7cfa3dcd92">Updated the YAML of <code>index.Rmd</code> to ensure references pass through in Gitbook</a></li>
-</ul>
-</li>
-</ul>
 </div>
 <div id="cosmetic-changes-to-the-template-non-breaking" class="section level2">
 <h2 class="hasAnchor">
 <a href="#cosmetic-changes-to-the-template-non-breaking" class="anchor"></a>Cosmetic changes to the template (non-breaking)</h2>
 <ul>
-<li><a href="https://github.com/ismayc/thesisdown/commit/aa4bac89ab7cf91d7898d9b52d737b00e6b6f71a">Converted http to https throughout Rmd files</a></li>
 <li>
-<a href="https://github.com/ismayc/thesisdown/commit/0a6bf0c5d6bdb75be4e09a58b588feeaff778af0">Reduced <code>flights.csv</code> included data</a> to prepare for sending to CRAN</li>
+<a href="https://github.com/shirdekel" class="external-link">@shirdekel</a> added functionality to allow for other pandoc args to be specified beyond setting the chapter as top level</li>
 </ul>
 </div>
 <div id="updates-to-the-package" class="section level2">
 <h2 class="hasAnchor">
 <a href="#updates-to-the-package" class="anchor"></a>Updates to the package</h2>
 <ul>
-<li>Added support for customizing of <code>thesisdown::gitbook()</code> (<a href="https://github.com/ismayc/thesisdown/pull/84">#84</a>)</li>
-<li>Added hex sticker (<a href="https://github.com/ismayc/thesisdown/commit/ababba5437ee2fe0632c74d5428fed35b911c751">1</a> and <a href="https://github.com/ismayc/thesisdown/commit/d556073c94ae5069d4373fc73811b3115905c56f">2</a>)</li>
-<li><a href="https://github.com/ismayc/thesisdown/commit/7febd70b98ae6e8d104bf1080e066468d030b968">Created {pkgdown} site</a></li>
-<li>
-<a href="https://github.com/ismayc/thesisdown/pull/91/commits/7ba5cf1ea24876e248ae9e78d28a43212b6f759b">Added MIT License</a> and other cosmetic tweaks to <a href="https://github.com/ismayc/thesisdown/pull/91">#91</a> PR</li>
-<li>
-<a href="https://github.com/ismayc/thesisdown/commit/2a39610b8f3a97974d9220976edb1d14cd74d6e5#diff-35ba4a2677442e210c23a00a5601aba3R14">Switched to using <code>Imports</code> instead of <code>Depends</code> for best practice</a>
+<li>Added thesisdown RStudio project template, which needs {R.utils} to <code>copyDirectory()</code>
+</li>
+<li>Added GitHub Actions PR and issue lock</li>
+</ul>
+</div>
+</div>
+    <div id="thesisdown-011" class="section level1">
+<h1 class="page-header" data-toc-text="0.1.1">
+<a href="#thesisdown-011" class="anchor"></a>thesisdown 0.1.1</h1>
+<div id="cosmetic-changes-to-the-template-non-breaking-1" class="section level2">
+<h2 class="hasAnchor">
+<a href="#cosmetic-changes-to-the-template-non-breaking-1" class="anchor"></a>Cosmetic changes to the template (non-breaking)</h2>
 <ul>
-<li><a href="https://github.com/ismayc/thesisdown/commit/b5dd154e8c87cc9f971b185e667ea4a8b104ddcd">Updated template Rmd files to reflect change to Imports</a></li>
+<li>Finally figured out a long standing issue with csl-refs by using {rticles} code, fixing issue (<a href="https://github.com/ismayc/thesisdown/issues/133" class="external-link">#133</a>)</li>
+</ul>
+</div>
+</div>
+    <div id="thesisdown-010" class="section level1">
+<h1 class="page-header" data-toc-text="0.1.0">
+<a href="#thesisdown-010" class="anchor"></a>thesisdown 0.1.0</h1>
+<div id="breaking-changes-to-the-template-1" class="section level2">
+<h2 class="hasAnchor">
+<a href="#breaking-changes-to-the-template-1" class="anchor"></a>Breaking changes to the template</h2>
+<ul>
+<li>Fixed issue (<a href="https://github.com/ismayc/thesisdown/issues/86" class="external-link">#86</a>) with references not showing in Gitbook version in <a href="https://github.com/ismayc/thesisdown/pull/91" class="external-link">#91</a> PR
+<ul>
+<li>
+<a href="https://github.com/ismayc/thesisdown/pull/91/commits/46dce4572fe027f51e1335cab4348d2492e61265" class="external-link">Moved preliminary content files for the Gitbook to a <code>prelims</code> folder</a>. Note that this was needed since using the Knit button in RStudio with {thesisdown} does not appear to allow for the <code>rmd_files</code> argument to be used in building theses.</li>
+<li><a href="https://github.com/ismayc/thesisdown/pull/91/commits/4374e7a81b9d16fa79eb2b9a483cf4cfcd71af6f" class="external-link">Fixed is too small error</a></li>
+<li><a href="https://github.com/ismayc/thesisdown/pull/91/commits/42aecc61f662e19f32c0a7b3e1e2fc7cfa3dcd92" class="external-link">Updated the YAML of <code>index.Rmd</code> to ensure references pass through in Gitbook</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="cosmetic-changes-to-the-template-non-breaking-2" class="section level2">
+<h2 class="hasAnchor">
+<a href="#cosmetic-changes-to-the-template-non-breaking-2" class="anchor"></a>Cosmetic changes to the template (non-breaking)</h2>
+<ul>
+<li><a href="https://github.com/ismayc/thesisdown/commit/aa4bac89ab7cf91d7898d9b52d737b00e6b6f71a" class="external-link">Converted http to https throughout Rmd files</a></li>
+<li>
+<a href="https://github.com/ismayc/thesisdown/commit/0a6bf0c5d6bdb75be4e09a58b588feeaff778af0" class="external-link">Reduced <code>flights.csv</code> included data</a> to prepare for sending to CRAN</li>
+<li>Fixed issue (#<a href="https://github.com/ismayc/thesisdown/issues/116" class="external-link">116</a>) with toc depth not showing in table of contents beyond depth of 3 in <a href="https://github.com/ismayc/thesisdown/pull/117" class="external-link">#117</a> PR</li>
+<li>Removed pandoc table from Chapter 3 as multiple reports (here’s <a href="https://github.com/ismayc/thesisdown/issues/125" class="external-link">one</a>) of it continuing to not build were reported in <a href="https://github.com/ismayc/thesisdown/pull/130" class="external-link">#130</a> PR</li>
+</ul>
+</div>
+<div id="updates-to-the-package-1" class="section level2">
+<h2 class="hasAnchor">
+<a href="#updates-to-the-package-1" class="anchor"></a>Updates to the package</h2>
+<ul>
+<li>Fixed failure of template to build due to <code>pandoc</code> changes brought up in Issue <a href="https://github.com/ismayc/thesisdown/issues/122" class="external-link">#122</a> (<a href="https://github.com/ismayc/thesisdown/pull/124" class="external-link">#124</a>)</li>
+<li>Added support for customizing of <code>thesisdown::gitbook()</code> (<a href="https://github.com/ismayc/thesisdown/pull/84" class="external-link">#84</a>)</li>
+<li>Added hex sticker (<a href="https://github.com/ismayc/thesisdown/commit/ababba5437ee2fe0632c74d5428fed35b911c751" class="external-link">1</a> and <a href="https://github.com/ismayc/thesisdown/commit/d556073c94ae5069d4373fc73811b3115905c56f" class="external-link">2</a>)</li>
+<li><a href="https://github.com/ismayc/thesisdown/commit/7febd70b98ae6e8d104bf1080e066468d030b968" class="external-link">Created {pkgdown} site</a></li>
+<li>
+<a href="https://github.com/ismayc/thesisdown/pull/91/commits/7ba5cf1ea24876e248ae9e78d28a43212b6f759b" class="external-link">Added MIT License</a> and other cosmetic tweaks to <a href="https://github.com/ismayc/thesisdown/pull/91" class="external-link">#91</a> PR</li>
+<li>
+<a href="https://github.com/ismayc/thesisdown/commit/2a39610b8f3a97974d9220976edb1d14cd74d6e5#diff-35ba4a2677442e210c23a00a5601aba3R14" class="external-link">Switched to using <code>Imports</code> instead of <code>Depends</code> for best practice</a>
+<ul>
+<li><a href="https://github.com/ismayc/thesisdown/commit/b5dd154e8c87cc9f971b185e667ea4a8b104ddcd" class="external-link">Updated template Rmd files to reflect change to Imports</a></li>
 <li>Added Chester Ismay as author and creator to DESCRIPTION</li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-    <div id="thesisdown-0-0-2" class="section level1">
+    <div id="thesisdown-002" class="section level1">
 <h1 class="page-header" data-toc-text="0.0.2">
-<a href="#thesisdown-0-0-2" class="anchor"></a>thesisdown 0.0.2</h1>
+<a href="#thesisdown-002" class="anchor"></a>thesisdown 0.0.2</h1>
 <ul>
 <li>Changed default filename (in directions) to be <code>index</code> instead of <code>skeleton</code> to match with gitbook requirements</li>
 <li>Added preliminary files <code>00--prelim.Rmd</code> and changed <code>abstract.Rmd</code> to <code>00-abstract.Rmd</code> to match with renaming of files so that <code>index.Rmd</code> always comes last alphabetically</li>
-<li>Removed _book and _bookdown_files directories since they are stored at <a href="https://github.com/ismayc/thesisdown_book/tree/gh-pages" class="uri">https://github.com/ismayc/thesisdown_book/tree/gh-pages</a>
+<li>Removed _book and _bookdown_files directories since they are stored at <a href="https://github.com/ismayc/thesisdown_book/tree/gh-pages" class="external-link uri">https://github.com/ismayc/thesisdown_book/tree/gh-pages</a>
 </li>
 </ul>
 </div>
-    <div id="thesisdown-0-0-1" class="section level1">
+    <div id="thesisdown-001" class="section level1">
 <h1 class="page-header" data-toc-text="0.0.1">
-<a href="#thesisdown-0-0-1" class="anchor"></a>thesisdown 0.0.1</h1>
+<a href="#thesisdown-001" class="anchor"></a>thesisdown 0.0.1</h1>
 <ul>
 <li>Initial release</li>
 <li>PDF version working</li>
@@ -185,11 +226,11 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Chester Ismay, Nick Solomon.</p>
+  <p><p>Developed by Chester Ismay, Nick Solomon.</p></p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.6.1.9000.</p></p>
 </div>
 
       </footer>
@@ -197,6 +238,8 @@
 
   
 
+
+  
 
   </body>
 </html>

@@ -1,0 +1,207 @@
+<!--
+This is for including Chapter 1.  Notice that it's also good practice to name your chunk.  This will help you debug potential issues as you knit.  The chunk above is called intro and the one below is called chapter1.  Feel free to change the name of the Rmd file as you wish, but don't forget to change it here from chap1.Rmd.
+-->
+
+<!--
+The {#rmd-basics} text after the chapter declaration will allow us to link throughout the document back to the beginning of Chapter 1.  These labels will automatically be generated (if not specified) by changing the spaces to hyphens and capital letters to lowercase.  Look for the reference to this label at the beginning of Chapter 2.
+-->
+
+# R Markdown Basics {#rmd-basics}
+
+Here is a brief introduction into using _R Markdown_. _Markdown_ is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. _R Markdown_ provides the flexibility of _Markdown_ with the implementation of **R** input and output.  For more details on using _R Markdown_ see <https://rmarkdown.rstudio.com>.  
+
+Be careful with your spacing in _Markdown_ documents.  While whitespace largely is ignored, it does at times give _Markdown_ signals as to how to proceed.  As a habit, try to keep everything left aligned whenever possible, especially as you type a new paragraph.  In other words, there is no need to indent basic text in the Rmd document (in fact, it might cause your text to do funny things if you do).
+
+## Lists
+
+It's easy to create a list.  It can be unordered like
+
+* Item 1
+* Item 2
+
+or it can be ordered like
+
+1. Item 1
+4. Item 2
+
+Notice that I intentionally mislabeled Item 2 as number 4.  _Markdown_ automatically figures this out!  You can put any numbers in the list and it will create the list.  Check it out below.
+
+To create a sublist, just indent the values a bit (at least four spaces or a tab).  (Here's one case where indentation is key!)
+
+1. Item 1
+1. Item 2
+1. Item 3
+    - Item 3a
+    - Item 3b
+
+## Line breaks
+
+Make sure to add white space between lines if you'd like to start a new paragraph.  Look at what happens below in the outputted document if you don't:
+
+Here is the first sentence.  Here is another sentence.  Here is the last sentence to end the paragraph.
+This should be a new paragraph.
+
+*Now for the correct way:* 
+
+Here is the first sentence.  Here is another sentence.  Here is the last sentence to end the paragraph.
+
+This should be a new paragraph.
+
+## R chunks
+
+When you click the **Knit** button above a document will be generated that includes both content as well as the output of any embedded **R** code chunks within the document. You can embed an **R** code chunk like this (`cars` is a built-in **R** dataset):
+
+```{r cars}
+summary(cars)
+```
+
+## Inline code
+
+If you'd like to put the results of your analysis directly into your discussion, add inline code like this:
+
+> The `cos` of $2 \pi$ is `r cos(2*pi)`. 
+
+Another example would be the direct calculation of the standard deviation:
+
+> The standard deviation of `speed` in `cars` is `r sd(cars$speed)`.
+
+One last neat feature is the use of the `ifelse` conditional statement which can be used to output text depending on the result of an **R** calculation:
+
+> `r ifelse(sd(cars$speed) < 6, "The standard deviation is less than 6.", "The standard deviation is equal to or greater than 6.")`
+
+Note the use of `>` here, which signifies a quotation environment that will be indented.
+
+As you see with `$2 \pi$` above, mathematics can be added by surrounding the mathematical text with dollar signs.  More examples of this are in [Mathematics and Science] if you uncomment the code in [Math].  
+
+## Including plots
+
+You can also embed plots. For example, here is a way to use the base **R** graphics package to produce a plot using the built-in `pressure` dataset:
+
+```{r pressure, echo=FALSE, cache=TRUE, fig.height=3, fig.width=5}
+plot(pressure)
+```
+
+Note that the `echo=FALSE` parameter was added to the code chunk to prevent printing of the **R** code that generated the plot. There are plenty of other ways to add chunk options (like `fig.height` and `fig.width` in the chunk above).  More information is available at <https://yihui.org/knitr/options/>.  
+
+Another useful chunk option is the setting of `cache=TRUE` as you see here.  If document rendering becomes time consuming due to long computations or plots that are expensive to generate you can use knitr caching to improve performance.  Later in this file, you'll see a way to reference plots created in **R** or external figures.
+
+## Loading and exploring data
+
+Included in this template is a file called `flights.csv`.  This file includes a subset of the larger dataset of information about all flights that departed from Seattle and Portland in 2014. More information about this dataset and its **R** package is available at <https://github.com/ismayc/pnwflights14>. This subset includes only Portland flights and only rows that were complete with no missing values. Merges were also done with the `airports` and `airlines` data sets in the `pnwflights14` package to get more descriptive airport and airline names.
+
+We can load in this data set using the following commands:
+
+```{r load_data}
+# flights.csv is in the data directory
+flights_path <- here::here("data", "flights.csv")
+# string columns will be read in as strings and not factors now
+flights <- read.csv(flights_path, stringsAsFactors = FALSE)
+```
+
+The data is now stored in the data frame called `flights` in **R**.  To get a better feel for the variables included in this dataset we can use a variety of functions. Here we can see the dimensions (rows by columns) and also the names of the columns.
+
+```{r str}
+dim(flights)
+names(flights)
+```
+
+Another good idea is to take a look at the dataset in table form.  With this dataset having more than 20,000 rows, we won't explicitly show the results of the command here. I recommend you enter the command into the Console **_after_** you have run the **R** chunks above to load the data into **R**.
+
+```{r view_flights, eval=FALSE}
+View(flights)
+```
+
+While not required, it is highly recommended you use the `dplyr` package to manipulate and summarize your data set as needed.  It uses a syntax that is easy to understand using chaining operations.  Below I've created a few examples of using `dplyr` to get information about the Portland flights in 2014.  You will also see the use of the `ggplot2` package, which produces beautiful, high-quality academic visuals.
+
+We begin by checking to ensure that needed packages are installed and then we load them into our current working environment:
+
+```{r load_pkgs, message=FALSE}
+# List of packages required for this analysis
+pkg <- c("dplyr", "ggplot2", "knitr", "bookdown")
+# Check if packages are not installed and assign the
+# names of the packages not installed to the variable new.pkg
+new.pkg <- pkg[!(pkg %in% installed.packages())]
+# If there are any packages in the list that aren't installed,
+# install them
+if (length(new.pkg)) {
+  install.packages(new.pkg, repos = "https://cran.rstudio.com")
+}
+# Load packages
+library(thesisdown)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+```
+
+\clearpage
+
+The example we show here does the following:
+
+- Selects only the `carrier_name` and `arr_delay` from the `flights` dataset and then assigns this subset to a new variable called `flights2`. 
+
+- Using `flights2`, we determine the largest arrival delay for each of the carriers.
+
+```{r max_delays}
+flights2 <- flights %>%
+  select(carrier_name, arr_delay)
+max_delays <- flights2 %>%
+  group_by(carrier_name) %>%
+  summarize(max_arr_delay = max(arr_delay, na.rm = TRUE))
+```
+
+A useful function in the `knitr` package for making nice tables in _R Markdown_ is called `kable`.  It is much easier to use than manually entering values into a table by copying and pasting values into Excel or LaTeX.  This again goes to show how nice reproducible documents can be! (Note the use of `results="asis"`, which will produce the table instead of the code to create the table.)  The `caption.short` argument is used to include a shorter title to appear in the List of Tables.
+
+```{r maxdelays, results="asis"}
+kable(max_delays,
+  col.names = c("Airline", "Max Arrival Delay"),
+  caption = "Maximum Delays by Airline",
+  caption.short = "Max Delays by Airline",
+  longtable = TRUE,
+  booktabs = TRUE
+)
+```
+
+The last two options make the table a little easier-to-read.
+
+We can further look into the properties of the largest value here for American Airlines Inc.  To do so, we can isolate the row corresponding to the arrival delay of 1539 minutes for American in our original `flights` dataset.
+
+
+```{r max_props}
+flights %>%
+  filter(
+    arr_delay == 1539,
+    carrier_name == "American Airlines Inc."
+  ) %>%
+  select(-c(
+    month, day, carrier, dest_name, hour,
+    minute, carrier_name, arr_delay
+  ))
+```
+
+We see that the flight occurred on March 3rd and departed a little after 2 PM on its way to Dallas/Fort Worth.  Lastly, we show how we can visualize the arrival delay of all departing flights from Portland on March 3rd against time of departure.
+
+```{r march3plot, fig.height=3, fig.width=6}
+flights %>%
+  filter(month == 3, day == 3) %>%
+  ggplot(aes(x = dep_time, y = arr_delay)) +
+  geom_point()
+```
+
+## Additional resources
+
+- _Markdown_ Cheatsheet - <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>
+
+- _R Markdown_
+    - Reference Guide - <https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf>
+    - Cheatsheet - <https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf>
+
+- _RStudio IDE_
+    - Cheatsheet - <https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf>
+    - Official website - <https://rstudio.com/products/rstudio/>
+
+- Introduction to `dplyr` - <https://cran.rstudio.com/web/packages/dplyr/vignettes/dplyr.html>
+
+- `ggplot2`
+    - Documentation - <https://ggplot2.tidyverse.org/>
+    - Cheatsheet - <https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf>
+

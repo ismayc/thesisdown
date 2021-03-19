@@ -1,0 +1,36 @@
+name: 'Lock Threads'
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  lock:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dessant/lock-threads@v2
+        with:
+          github-token: ${{ github.token }}
+          issue-lock-inactive-days: '5'
+#          issue-exclude-labels: ''
+#          issue-lock-labels: 'outdated'
+          issue-lock-comment: >
+            This issue has been automatically locked. If you believe you have
+            found a related problem, please file a new issue (with a reprex:
+            <https://reprex.tidyverse.org> whenever possible) and link to this issue.
+            If a reprex is not applicable, recording a short
+            [Loom](https://www.loom.com/) video showing what you are seeing
+            can go a long way in helping to diagnose problems.
+          issue-lock-reason: ''
+          pr-lock-inactive-days: '5'
+#          pr-exclude-labels: 'wip'
+          pr-lock-labels: ''
+          pr-lock-comment: >
+            This pull request has been automatically locked. If you believe you
+            have found a related problem, please file a new issue (with a reprex:
+            <https://reprex.tidyverse.org> whenever possible) and link to this issue.
+            If a reprex is not applicable, recording a short
+            [Loom](https://www.loom.com/) video showing what you are seeing
+            can go a long way in helping to diagnose problems.
+          pr-lock-reason: ''
+#          process-only: 'issues'

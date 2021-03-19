@@ -6,3 +6,4 @@ R/.setup.R
 ^pkgdown$
 ^images$
 ^LICENSE\.md$
+.github
