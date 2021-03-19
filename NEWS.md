@@ -4,9 +4,13 @@
  
 ## Cosmetic changes to the template (non-breaking)
 
+- [@shirdekel](https://github.com/shirdekel) added functionality to allow for other pandoc args to be
+specified beyond setting the chapter as top level
+
 ## Updates to the package
 
-- Added thesisdown RStudio project template
+- Added thesisdown RStudio project template, which needs
+{R.utils} to `copyDirectory()`
 - Added GitHub Actions PR and issue lock
 
 # thesisdown 0.1.1

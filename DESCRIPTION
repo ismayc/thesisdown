@@ -16,11 +16,11 @@ Imports:
     ggplot2,
     bookdown,
     knitr,
-    here
+    here,
+    R.utils
 Suggests:
     remotes,
-    usethis,
-    R.utils
+    usethis
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
