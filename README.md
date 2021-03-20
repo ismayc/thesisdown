@@ -164,13 +164,13 @@ the following dialog to show up.
     see the graduation cap as the icon on the left for the appropriate
     project type.
 
-    ![](man/figures/thesis_proj.png)
+    ![](https://raw.githubusercontent.com/ismayc/thesisdown/master/docs/reference/figures/thesis_proj.png)
 
     Next, give your project a name and specify where you’d like the
     files to appear. In the screenshot below, the project name is
     `my_thesis` and it will appear as a new folder on my Desktop.
 
-    ![](man/figures/thesis_proj_name.png)
+    ![](https://raw.githubusercontent.com/ismayc/thesisdown/master/docs/reference/figures/thesis_proj_name.png)
 
     If you got this far, skip over step 3b which is the older version of
     getting the template. It might force you to change some of the
@@ -179,7 +179,7 @@ the following dialog to show up.
 
 -   3b) Use the **New R Markdown** dialog to select **Thesis**:
 
-    ![](man/figures/thesis_rmd.png)
+    ![](https://raw.githubusercontent.com/ismayc/thesisdown/master/docs/reference/figures/thesis_rmd.png)
 
     Note that this will currently only **Knit** if you name the
     directory `index` as shown above. This guarantees that `index.html`
