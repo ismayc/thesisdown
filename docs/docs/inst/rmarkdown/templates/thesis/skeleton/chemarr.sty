@@ -1,0 +1,77 @@
+% File:        chemarr.sty
+% Version:     2001/06/22 v1.1
+% Author:      Heiko Oberdiek
+% Email:       <oberdiek@uni-freiburg.de>
+%
+% Copyright:   Copyright (C) 2001 Heiko Oberdiek.
+%
+%              This program may be distributed and/or modified under
+%              the conditions of the LaTeX Project Public License,
+%              either version 1.2 of this license or (at your option)
+%              any later version. The latest version of this license
+%              is in
+%                https://www.latex-project.org/lppl.txt
+%              and version 1.2 or later is part of all distributions
+%              of LaTeX version 1999/12/01 or later.
+%
+% Function:    Very often chemists need a longer version
+%              of reaction arrows (\rightleftharpoons) with
+%              the possibility to put text above and below.
+%              Analogous to amsmath's \xrightarrow and
+%              \xleftarrow this package provides the macro
+%              \xrightleftharpoons.
+%
+% Requirement: amsmath
+% Use:         LaTeX: \usepackage{chemarr}
+%              \xrightleftharpoons[below]{above}
+%
+% History:     2001/06/21 v1.0:
+%                * first public version
+%              2001/06/22 v1.1:
+%                * documentation fixes
+%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{chemarr}%
+  [2001/06/22 v1.1 Chemical reaction arrows (HO)]
+%
+\RequirePackage{amsmath}
+% The package amsmath is needed for the following commands:
+%   \ext@arrow, \@ifnotempty, \arrowfill@
+%   \relbar, \std@minus
+%   \@ifempty, \@xifempty, \@xp
+%
+% In fontmath.ltx \rightleftharpoons is defined with
+% a vertical space of 2pt.
+%
+\newcommand{\xrightleftharpoons}[2][]{%
+  \ensuremath{%
+    \mathrel{%
+      \settoheight{\dimen@}{\raise 2pt\hbox{$\rightharpoonup$}}%
+      \setlength{\dimen@}{-\dimen@}%
+      \edef\CA@temp{\the\dimen@}%
+      \settoheight\dimen@{$\rightleftharpoons$}%
+      \addtolength{\dimen@}{\CA@temp}%
+      \raisebox{\dimen@}{%
+        \rlap{%
+          \raisebox{2pt}{%
+            $%
+            \ext@arrow 0359\rightharpoonupfill@{\hphantom{#1}}{#2}%
+            $%
+          }%
+        }%
+        \hbox{%
+          $%
+          \ext@arrow 3095\leftharpoondownfill@{#1}{\hphantom{#2}}%
+          $%
+        }%
+      }%
+    }%
+  }%
+}
+\newcommand*{\leftharpoondownfill@}{%
+  \arrowfill@\leftharpoondown\relbar\relbar
+}
+\newcommand*{\rightharpoonupfill@}{%
+  \arrowfill@\relbar\relbar\rightharpoonup
+}
+\endinput
