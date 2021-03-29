@@ -4,9 +4,14 @@
  
 ## Cosmetic changes to the template (non-breaking)
 
+- [@shirdekel](https://github.com/shirdekel) added functionality to allow for other pandoc args to be
+specified beyond setting the chapter as top level
+
 ## Updates to the package
 
-- Added thesisdown RStudio project template
+- Added thesisdown RStudio project template, which needs
+{R.utils} to `copyDirectory()`
+- Added GitHub Actions PR and issue lock
 
 # thesisdown 0.1.1
 
@@ -28,6 +33,7 @@
 - [Converted http to https throughout Rmd files](https://github.com/ismayc/thesisdown/commit/aa4bac89ab7cf91d7898d9b52d737b00e6b6f71a)
 - [Reduced `flights.csv` included data](https://github.com/ismayc/thesisdown/commit/0a6bf0c5d6bdb75be4e09a58b588feeaff778af0) to prepare for sending to CRAN
 - Fixed issue (#[116](https://github.com/ismayc/thesisdown/issues/116)) with toc depth not showing in table of contents beyond depth of 3 in [#117](https://github.com/ismayc/thesisdown/pull/117) PR
+- Removed pandoc table from Chapter 3 as multiple reports (here's [one](https://github.com/ismayc/thesisdown/issues/125)) of it continuing to not build were reported in [#130](https://github.com/ismayc/thesisdown/pull/130) PR
 
 ## Updates to the package
 

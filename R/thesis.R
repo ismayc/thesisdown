@@ -19,14 +19,14 @@
 #' \dontrun{
 #' output:thesisdown::thesis_pdf
 #' }
-thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...) {
+thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", pandoc_args = NULL, ...) {
   base <- bookdown::pdf_book(
     template = "template.tex",
     toc = toc,
     toc_depth = toc_depth,
     highlight = highlight,
     keep_tex = TRUE,
-    pandoc_args = "--top-level-division=chapter",
+    pandoc_args = c(pandoc_args, "--top-level-division=chapter"),
     ...
   )
 
