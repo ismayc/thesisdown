@@ -13,9 +13,9 @@ knit: bookdown::render_book
 site: bookdown::bookdown_site
 
 # The next two lines allow you to change the spacing in your thesis. You can 
-# switch out \singlespacing with \onehalfspacing or \doublespacing, if desired.
+# switch out \onehalfspacing with \singlespacing or \doublespacing, if desired.
 header-includes:
-    - \usepackage{setspace}\singlespacing
+    - \usepackage{setspace}\onehalfspacing
 
 # This will automatically install the {remotes} package and {thesisdown}
 # Change this to FALSE if you'd like to install them manually on your own.
