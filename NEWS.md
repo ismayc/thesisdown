@@ -1,6 +1,30 @@
+# thesisdown (development version - 0.2.0.9000)
+
+## Breaking changes to the template
+ 
+## Cosmetic changes to the template (non-breaking)
+
+- [@eugenesit](https://github.com/eugenesit) [discovered bug in output of
+references](https://github.com/ismayc/thesisdown/issues/157) and it was
+fixed with [this commit](https://github.com/ismayc/thesisdown/pull/159/commits/29ff90873e3a48cf3c8a5f80f945459c5f4389dc)
+
+## Updates to the package
+
+- Added thesisdown RStudio project template, which needs
+{R.utils} to `copyDirectory()`
+- Added GitHub Actions PR and issue lock
+
+# thesisdown 0.1.1
+
+## Cosmetic changes to the template (non-breaking)
+
+- Finally figured out a long standing issue with csl-refs by using {rticles} code, fixing issue ([#133](https://github.com/ismayc/thesisdown/issues/133))
+
 # thesisdown 0.2.0
 
 ## Breaking changes to the template
+ 
+- None 
  
 ## Cosmetic changes to the template (non-breaking)
 
