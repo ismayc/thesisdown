@@ -5,8 +5,7 @@ date: 'May 20xx'
 institution: 'Smith College'
 division: 'Mathematics and Natural Sciences'
 advisor: 'Advisor F. Name'
-# If you have more two advisors, un-silence line 7
-#altadvisor: 'Your Other Advisor'
+altadvisor: 'Your Other Advisor'
 department: 'Statistical & Data Scieces'
 degree: 'Bachelor of Arts'
 knit: bookdown::render_book
