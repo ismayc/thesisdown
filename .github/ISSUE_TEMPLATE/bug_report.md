@@ -7,6 +7,12 @@ assignees: ismayc
 
 ---
 
+<!--
+(Please note that I (@ismayc) am not able to devote as much time to this project currently as I would like. I'd love for additional help
+but in the meantime, you should expect longer delays if you are having issues. Please also check https://github.com/rstudio/bookdown since
+{thesisdown} is based on {bookdown}.
+-->
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
