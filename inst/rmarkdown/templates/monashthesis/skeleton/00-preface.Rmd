@@ -1,0 +1,14 @@
+---
+knit: "bookdown::render_book"
+---
+
+# Preface {-}
+
+The material in Chapter \ref{ch:intro} has been submitted to the journal *Journal of Impossible Results* for possible publication.
+
+The contribution in Chapter \ref{ch:litreview} of this thesis was presented in the International Symposium on Nonsense held in Dublin, Ireland, in July 2015.
+
+<!-- 
+The following line is required to re-set page numbering after preliminary material. Do not remove
+-->
+\clearpage\pagenumbering{arabic}\setcounter{page}{0}

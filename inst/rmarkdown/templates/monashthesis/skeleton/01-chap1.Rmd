@@ -1,0 +1,85 @@
+---
+chapter: 1
+knit: "bookdown::render_book"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, cache=TRUE)
+# Load any R packages you need here
+library(forecast)
+library(ggplot2)
+```
+
+# Introduction {#ch:intro}
+
+
+
+This is where you introduce the main ideas of your thesis, and an overview of the context and background.
+
+In a PhD, Chapter 2 would normally contain a literature review. Typically, Chapters 3--5 would contain your own contributions. Think of each of these as potential papers to be submitted to journals. Finally, Chapter 6 provides some concluding remarks, discussion, ideas for future research, and so on. Appendixes can contain additional material that don't fit into any chapters, but that you want to put on record. For example, additional tables, output, etc.
+
+## Rmarkdown
+
+In this template, the rest of the chapter shows how to use Rmarkdown. The big advantage of using Rmarkdown is that it allows you to include your R code directly into your thesis, to ensure there are no errors in copying and pasting, and that everything is reproducible. It also helps you stay better organized.
+
+For details on using _R Markdown_ see <http://rmarkdown.rstudio.com>.  
+
+## Data
+
+Included in this template is a file called `sales.csv`.  This contains quarterly data on Sales and Advertising budget for a small company over the period 1981--2005. It also contains the GDP (gross domestic product) over the same period. All series have been adjusted for inflation.  We can load in this data set using the following command:
+
+```{r loaddata, echo=TRUE}
+sales <- ts(read.csv("data/sales.csv")[,-1], start=1981, frequency=4)
+```
+
+Any data you use in your thesis can go into the data directory. The data should be in exactly the format you obtained it. Do no editing or manipulation of the data outside of R. Any data munging should be scripted in R and form part of your thesis files (possibly hidden in the output).
+
+## Figures
+
+Figure \ref{fig:deaths} shows time plots of the data we just loaded. Notice how figure captions and references work. Chunk names can be used as figure labels with `fig:` prefixed. Never manually type figure numbers, as they can change when you add or delete figures. This way, the figure numbering is always correct.
+
+```{r deaths, message=FALSE, fig.cap="Quarterly sales, advertising and GDP data."}
+autoplot(sales, facets=TRUE, ylab="", xlab="Year")
+```
+
+## Results from analyses
+
+We can fit a dynamic regression model to the sales data.
+
+```{r, echo=FALSE}
+fit <- auto.arima(sales[,"Sales"], xreg=sales[,2:3], D=1)
+if(!identical(fit$arma, c(1L,0L,0L,1L,4L,0L,1L))) {
+  stop("Model not ARIMA(1,0,0)(0,1,1)[4]")
+}
+#This is an example of how to put checks into your R code to warn you if something has gone wrong. 
+```
+
+If $y_t$ denotes the sales in quarter $t$, $x_t$ denotes the corresponding advertising budget and $z_t$ denotes the GDP, then the resulting model is:
+\begin{equation}
+  y_t - y_{t-4} = \beta (x_t-x_{t-4}) + \gamma (z_t-z_{t-4}) + \theta_1 \varepsilon_{t-1} + \Theta_1 \varepsilon_{t-4} + \varepsilon_t
+\end{equation}
+where
+$\beta = `r format(fit[['coef']]['AdBudget'], digits=2, nsmall=2)`$, 
+$\gamma = `r format(fit[['coef']]['GDP'], digits=2, nsmall=2)`$, 
+$\theta_1 = `r format(fit[['coef']]['ma1'], digits=2, nsmall=2)`$, 
+and
+$\Theta_1 = `r format(fit[['coef']]['sma1'], digits=2, nsmall=2)`$.
+
+## Tables
+
+Let's assume future advertising spend and GDP are at the current levels. Then forecasts for the next year are given in Table \ref{tab:salesforecasts}.
+
+```{r forecasts, results="asis"}
+currentad <- rep(tail(sales[,"AdBudget"],1),4)
+currentgdp <- rep(tail(sales[,"GDP"],1),4)
+fc <- forecast(fit, xreg=cbind(AdBudget=currentad, GDP=currentgdp))
+knitLatex::xTab(format(as.data.frame(fc), nsmall=1, digits=1),
+   caption.bottom="Forecasts for the next year assuming Advertising budget and GDP are unchanged.",
+   booktabs=TRUE, 
+   label='tab:salesforecasts')
+```
+
+Again, notice the use of labels and references to automatically generate Table numbers. In this case, we need to generate the label ourselves. 
+
+The `knitLatex` package is useful for generating tables from R output. Other packages can do similar things including the `kable` function in `knitr` which is somewhat simpler but you have less control over the result. If you use `knitLatex` to generate tables, don't forget to include `results="asis"` in the chunk settings.
+

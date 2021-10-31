@@ -1,4 +1,4 @@
-Package: pioneerdown
+Package: monashthesisdown
 Title: An updated R Markdown thesis template using the bookdown package
 Version: 0.1.0
 Authors@R: c(
@@ -26,4 +26,4 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 SystemRequirements: pandoc (>= 1.18) - https://pandoc.org
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2

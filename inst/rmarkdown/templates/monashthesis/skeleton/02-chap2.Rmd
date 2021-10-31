@@ -1,0 +1,27 @@
+---
+chapter: 2
+knit: "bookdown::render_book"
+---
+
+# Literature Review {#ch:litreview}
+
+This chapter contains a summary of the context in which your research is set. 
+
+Imagine you are writing for your fellow PhD students. Topics that are well-known to them do not have to be included here. But things that they may not know about should be included.
+
+Resist the temptation to discuss everything you've read in the last few years. And you are not writing a textbook either. This chapter is meant to provide the background necessary to understand the material in subsequent chapters. Stick to that.
+
+You will need to organize the literature review around themes, and within each theme provide a story explaining the development of ideas to date. In each theme, you should get to the point where your ideas will fit in. But leave your ideas to later chapters. This way it is clear what has been done beforehand, and what new contributions you are making to the research field.
+
+All citations should be done using markdown notation as shown below. This way, your bibliography will be compiled automatically and correctly.
+
+
+## Exponential smoothing {#sec:expsmooth}
+
+Exponential smoothing was originally developed in the late 1950s [@Brown59;@Brown63;@Holt57;@Winters60]. Because of their computational simplicity and interpretability, they became widely used in practice.
+
+Empirical studies by @MH79 and @Metal82 found little difference in forecast accuracy between exponential smoothing and ARIMA models. This made the family of exponential smoothing procedures an attractive proposition [see @CKOS01].
+
+The methods were less popular in academic circles until  @OKS97 introduced a state space formulation of some of the methods, which was extended in @HKSG02 to cover the full range of exponential smoothing methods.
+
+

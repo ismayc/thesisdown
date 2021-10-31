@@ -1,0 +1,25 @@
+bookdown::gitbook:
+  css: monashthesis.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">Visual and Non-visual Effects of Light</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    
+    download: ["pdf", "epub"]
+bookdown::pdf_book:
+  template: monashthesis.tex
+  fig_caption: yes
+  fig_height: 3.8
+  fig_width: 6.3
+  number_sections: yes
+  pandoc_args: [
+    "--top-level-division=chapter"
+  ]
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+bookdown::epub_book: default

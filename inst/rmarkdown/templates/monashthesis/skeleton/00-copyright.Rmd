@@ -1,0 +1,22 @@
+---
+knit: "bookdown::render_book"
+---
+
+# Copyright notice {-}
+
+
+\emph{(Choose one of the following notices.)}
+
+\emph{(Notice 1)}
+
+\textcopyright { } \authorname\ (\number\the\year). 
+
+\emph{The second notice certifies the appropriate use of any third-party material in the thesis. Students choosing to deposit their thesis into the restricted access section of the repository are not required to complete Notice 2.}
+
+\emph{(Notice 2)}
+
+\textcopyright { } \authorname\ (\number\the\year). 
+
+I certify that I have made all reasonable efforts to secure copyright permissions for third-party content included in this thesis and have not knowingly added copyright content to my work without the owner's permission.
+
+\newpage

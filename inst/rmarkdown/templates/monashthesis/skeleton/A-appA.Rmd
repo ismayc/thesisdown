@@ -1,0 +1,11 @@
+---
+knit: "bookdown::render_book"
+---
+
+\appendix
+
+# Additional stuff
+
+You might put some computer output here, or maybe additional tables.
+
+Note that line 5 must appear before your first appendix. But other appendices can just start like any other chapter.
