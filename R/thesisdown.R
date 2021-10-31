@@ -1,4 +1,4 @@
-#' pioneerdown: A package for creating undergraduate, Masters, and PhD theses
+#' monashthesisdown: A package for creating undergraduate, Masters, and PhD theses
 #' using R Markdown
 #'
 #'
@@ -11,5 +11,5 @@
 #' @section thesis_epub:
 #' Creates an R Markdown thesis template as an ebook
 #' @docType package
-#' @name pioneerdown
+#' @name monashthesisdown
 "_PACKAGE"

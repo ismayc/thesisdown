@@ -19,6 +19,6 @@ to specify the creation of a Microsoft Word version of the thesis.
 }
 \examples{
 \dontrun{
-output:pioneerdown::thesis_word
+output:thesisdown::thesis_word
 }
 }

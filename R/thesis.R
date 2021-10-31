@@ -17,16 +17,16 @@
 #'   template
 #' @examples
 #' \dontrun{
-#' output:pioneerdown::thesis_pdf
+#' output:thesisdown::thesis_pdf
 #' }
-thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...) {
+thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", pandoc_args = NULL, ...) {
   base <- bookdown::pdf_book(
     template = "template.tex",
     toc = toc,
     toc_depth = toc_depth,
     highlight = highlight,
     keep_tex = TRUE,
-    pandoc_args = "--top-level-division=chapter",
+    pandoc_args = c(pandoc_args, "--top-level-division=chapter"),
     ...
   )
 
@@ -52,7 +52,7 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...) {
 #' @return A gitbook webpage
 #' @examples
 #' \dontrun{
-#' output:pioneerdown::thesis_gitbook
+#' output:thesisdown::thesis_gitbook
 #' }
 thesis_gitbook <- function(...) {
   config_default <- list(
@@ -111,7 +111,7 @@ thesis_gitbook <- function(...) {
 #' the Reed Senior Thesis Word template
 #' @examples
 #' \dontrun{
-#' output:pioneerdown::thesis_word
+#' output:thesisdown::thesis_word
 #' }
 thesis_word <- function(...) {
   base <- bookdown::word_document2(...)
@@ -134,7 +134,7 @@ thesis_word <- function(...) {
 #' @return A ebook version of the thesis
 #' @examples
 #' \dontrun{
-#' output:pioneerdown::thesis_epub
+#' output:thesisdown::thesis_epub
 #' }
 thesis_epub <- function(...) {
   base <- bookdown::epub_book(...)

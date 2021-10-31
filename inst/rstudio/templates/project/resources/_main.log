@@ -1,0 +1,1213 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.22)  1 NOV 2021 00:28
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**_main.tex
+(./_main.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-10-18> (./monashthesis.cls
+Document Class: monashthesis 2016/09/06 Monash Thesis Class
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.
+sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+2.
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc
+.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/bera/bera.sty
+Package: bera 2004/01/31 (WaS)
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.
+sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp
+.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/bera/beraseri
+f.sty
+Package: beraserif 2004/01/30 (WaS)
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyv
+al.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+LaTeX Font Info:    Trying to load font information for T1+fve on input line 30
+.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/bera/t1fve.fd
+File: t1fve.fd 2004/09/07 scalable font definitions for T1/fve.
+)
+LaTeX Font Info:    Font shape `T1/fve/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 30.
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/bera/berasans
+.sty
+Package: berasans 2004/01/30 (WaS)
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/bera/beramono
+.sty
+Package: beramono 2004/01/31 (WaS)
+))
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/psnfss/mathpa
+zo.sty
+Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/base/report.c
+ls
+Document Class: report 2021/02/12 v1.4n Standard LaTeX document class
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/base/size11.c
+lo
+File: size11.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+LaTeX Font Info:    Font shape `T1/fve/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 54.
+)
+\c@part=\count178
+\c@chapter=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/geometry/geom
+etry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvte
+x.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex
+.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count187
+\Gm@cntv=\count188
+\c@Gm@tempcnt=\count189
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks19
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/caption/capti
+on.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/caption/capti
+on3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen147
+\captionmargin@=\dimen148
+\captionwidth=\dimen149
+\caption@tempdima=\dimen150
+\caption@indent=\dimen151
+\caption@parindent=\dimen152
+\caption@hangindent=\dimen153
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count190
+\c@continuedfloat=\count191
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/fancyhdr/fanc
+yhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip49
+\f@nch@O@elh=\skip50
+\f@nch@O@erh=\skip51
+\f@nch@O@olh=\skip52
+\f@nch@O@orh=\skip53
+\f@nch@O@elf=\skip54
+\f@nch@O@erf=\skip55
+\f@nch@O@olf=\skip56
+\f@nch@O@orf=\skip57
+) (/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.st
+y
+Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup5
+\symboldletters=\mathgroup6
+\symboldsymbols=\mathgroup7
+Package bm Info: No bold for \OMX/zplm/m/n, using \pmb.
+\symboldupright=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsma
+th.sty
+Package: amsmath 2021/04/20 v2.17j AMS math features
+\@mathmargin=\skip58
+For additional information on amsmath, use the `?' option.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amste
+xt.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsge
+n.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen154
+))
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbs
+y.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+LaTeX Info: Redefining \boldsymbol on input line 28.
+\pmbraise@=\dimen155
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsop
+n.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count192
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count193
+\leftroot@=\count194
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count195
+\DOTSCASE@=\count196
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen156
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count197
+\c@MaxMatrixCols=\count198
+\dotsspace@=\muskip16
+\c@parentequation=\count199
+\dspbrk@lvl=\count266
+\tag@help=\toks21
+\row@=\count267
+\column@=\count268
+\maxfields@=\count269
+\andhelp@=\toks22
+\eqnshift@=\dimen157
+\alignsep@=\dimen158
+\tagshift@=\dimen159
+\tagwidth@=\dimen160
+\totwidth@=\dimen161
+\lineht@=\dimen162
+\@envbody=\toks23
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/graphics/grap
+hicx.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/graphics/grap
+hics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig
+.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/
+graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/
+xetex.def
+File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/placeins/plac
+eins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/titlesec/titl
+esec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box52
+\beforetitleunit=\skip61
+\aftertitleunit=\skip62
+\ttl@plus=\dimen165
+\ttl@minus=\dimen166
+\ttl@toksa=\toks25
+\titlewidth=\dimen167
+\titlewidthlast=\dimen168
+\titlewidthfirst=\dimen169
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/setspace/sets
+pace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/microtype/mic
+rotype.sty
+Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
+\MT@toks=\toks26
+\MT@count=\count270
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen170
+LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
+\MT@listname@count=\count271
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/microtype/mic
+rotype-xetex.def
+File: microtype-xetex.def 2021/03/14 v2.8c Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 254.
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/microtype/mic
+rotype.cfg
+File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
+))
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/ragged2e/ragg
+ed2e.sty
+Package: ragged2e 2021/02/05 v3.0 ragged2e Package
+\CenteringLeftskip=\skip63
+\RaggedLeftLeftskip=\skip64
+\RaggedRightLeftskip=\skip65
+\CenteringRightskip=\skip66
+\RaggedLeftRightskip=\skip67
+\RaggedRightRightskip=\skip68
+\CenteringParfillskip=\skip69
+\RaggedLeftParfillskip=\skip70
+\RaggedRightParfillskip=\skip71
+\JustifyingParfillskip=\skip72
+\CenteringParindent=\skip73
+\RaggedLeftParindent=\skip74
+\RaggedRightParindent=\skip75
+\JustifyingParindent=\skip76
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/biblatex/bibl
+atex.sty
+Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/
+pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/i
+nfwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltx
+cmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoo
+lbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count272
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvo
+ptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/k
+vsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/logreq/logreq
+.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count273
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/logreq/logreq
+.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.s
+ty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count274
+\c@listtotal=\count275
+\c@listcount=\count276
+\c@liststart=\count277
+\c@liststop=\count278
+\c@citecount=\count279
+\c@citetotal=\count280
+\c@multicitecount=\count281
+\c@multicitetotal=\count282
+\c@instcount=\count283
+\c@maxnames=\count284
+\c@minnames=\count285
+\c@maxitems=\count286
+\c@minitems=\count287
+\c@citecounter=\count288
+\c@maxcitecounter=\count289
+\c@savedcitecounter=\count290
+\c@uniquelist=\count291
+\c@uniquename=\count292
+\c@refsection=\count293
+\c@refsegment=\count294
+\c@maxextratitle=\count295
+\c@maxextratitleyear=\count296
+\c@maxextraname=\count297
+\c@maxextradate=\count298
+\c@maxextraalpha=\count299
+\c@abbrvpenalty=\count300
+\c@highnamepenalty=\count301
+\c@lownamepenalty=\count302
+\c@maxparens=\count303
+\c@parenlevel=\count304
+\blx@tempcnta=\count305
+\blx@tempcntb=\count306
+\blx@tempcntc=\count307
+\blx@maxsection=\count308
+\blx@maxsegment@0=\count309
+\blx@notetype=\count310
+\blx@parenlevel@text=\count311
+\blx@parenlevel@foot=\count312
+\blx@sectionciteorder@0=\count313
+\blx@entrysetcounter=\count314
+\blx@biblioinstance=\count315
+\labelnumberwidth=\skip77
+\labelalphawidth=\skip78
+\biblabelsep=\skip79
+\bibitemsep=\skip80
+\bibnamesep=\skip81
+\bibinitsep=\skip82
+\bibparsep=\skip83
+\bibhang=\skip84
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language3
+\c@mincomprange=\count316
+\c@maxcomprange=\count317
+\c@mincompwidth=\count318
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/biblatex/blx-
+dm.def
+File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'authoryear-comp.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count319
+\c@savedafterword=\count320
+\c@annotator=\count321
+\c@savedannotator=\count322
+\c@author=\count323
+\c@savedauthor=\count324
+\c@bookauthor=\count325
+\c@savedbookauthor=\count326
+\c@commentator=\count327
+\c@savedcommentator=\count328
+\c@editor=\count329
+\c@savededitor=\count330
+\c@editora=\count331
+\c@savededitora=\count332
+\c@editorb=\count333
+\c@savededitorb=\count334
+\c@editorc=\count335
+\c@savededitorc=\count336
+\c@foreword=\count337
+\c@savedforeword=\count338
+\c@holder=\count339
+\c@savedholder=\count340
+\c@introduction=\count341
+\c@savedintroduction=\count342
+\c@namea=\count343
+\c@savednamea=\count344
+\c@nameb=\count345
+\c@savednameb=\count346
+\c@namec=\count347
+\c@savednamec=\count348
+\c@translator=\count349
+\c@savedtranslator=\count350
+\c@shortauthor=\count351
+\c@savedshortauthor=\count352
+\c@shorteditor=\count353
+\c@savedshorteditor=\count354
+\c@labelname=\count355
+\c@savedlabelname=\count356
+\c@institution=\count357
+\c@savedinstitution=\count358
+\c@lista=\count359
+\c@savedlista=\count360
+\c@listb=\count361
+\c@savedlistb=\count362
+\c@listc=\count363
+\c@savedlistc=\count364
+\c@listd=\count365
+\c@savedlistd=\count366
+\c@liste=\count367
+\c@savedliste=\count368
+\c@listf=\count369
+\c@savedlistf=\count370
+\c@location=\count371
+\c@savedlocation=\count372
+\c@organization=\count373
+\c@savedorganization=\count374
+\c@origlocation=\count375
+\c@savedoriglocation=\count376
+\c@origpublisher=\count377
+\c@savedorigpublisher=\count378
+\c@publisher=\count379
+\c@savedpublisher=\count380
+\c@language=\count381
+\c@savedlanguage=\count382
+\c@origlanguage=\count383
+\c@savedoriglanguage=\count384
+\c@pageref=\count385
+\c@savedpageref=\count386
+\shorthandwidth=\skip85
+\shortjournalwidth=\skip86
+\shortserieswidth=\skip87
+\shorttitlewidth=\skip88
+\shortauthorwidth=\skip89
+\shorteditorwidth=\skip90
+\locallabelnumberwidth=\skip91
+\locallabelalphawidth=\skip92
+\localshorthandwidth=\skip93
+\localshortjournalwidth=\skip94
+\localshortserieswidth=\skip95
+\localshorttitlewidth=\skip96
+\localshortauthorwidth=\skip97
+\localshorteditorwidth=\skip98
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/biblatex/blx-
+unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/biblatex/blx-
+compat.def
+File: blx-compat.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/biblatex/bibl
+atex.def
+File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+\c@textcitecount=\count387
+\c@textcitetotal=\count388
+\c@textcitemaxnames=\count389
+\c@biburlbigbreakpenalty=\count390
+\c@biburlbreakpenalty=\count391
+\c@biburlnumpenalty=\count392
+\c@biburlucpenalty=\count393
+\c@biburllcpenalty=\count394
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count395
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/biblatex/blx-
+natbib.def
+File: blx-natbib.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear-comp'...
+Package biblatex Info: ... file 'authoryear-comp.bbx' found.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/
+authoryear-comp.bbx
+File: authoryear-comp.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/
+authoryear.bbx
+File: authoryear.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/
+standard.bbx
+File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count396
+\c@bbx:relatedtotal=\count397
+)))
+Package biblatex Info: Trying to load citation style 'authoryear-comp'...
+Package biblatex Info: ... file 'authoryear-comp.cbx' found.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/biblatex/cbx/
+authoryear-comp.cbx
+File: authoryear-comp.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetexts'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/biblatex/bibl
+atex.cfg
+File: biblatex.cfg 
+))
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/xpatch/xpatch
+.sty
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl
+3.sty
+Package: expl3 2021-10-18 L3 programming layer (loader) 
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3b
+ackend-xetex.def
+File: l3backend-xetex.def 2021-10-18 L3 backend support: XeTeX
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count398
+\l__color_backend_stack_int=\count399
+\g__color_backend_stack_int=\count400
+\g__graphics_track_int=\count401
+\l__pdf_internal_box=\box53
+\g__pdf_backend_object_int=\count402
+\g__pdf_backend_annotation_int=\count403
+\g__pdf_backend_link_int=\count404
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xp
+arse/xparse.sty
+Package: xparse 2021-08-27 L3 Experimental document command parser
+))
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor
+.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/
+color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hype
+rref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekey
+s/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/p
+dfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycol
+or.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/l
+etltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxho
+ok.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen171
+\Hy@linkcounter=\count405
+\Hy@pagecounter=\count406
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1e
+nc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hype
+rref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/intcalc/int
+calc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/et
+excmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count407
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puen
+c.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `colorlinks' set `false' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count408
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen172
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/bitset/bits
+et.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/
+bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count409
+\Field@Width=\dimen173
+\Fld@charsize=\dimen174
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi
+-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count410
+\c@Item=\count411
+\c@Hfootnote=\count412
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hxet
+ex.def
+File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/stringenc/s
+tringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box54
+\c@Hy@AnnotLevel=\count413
+\HyField@AnnotCount=\count414
+\Fld@listcount=\count415
+\c@bookmark@seq@number=\count416
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/rerunfilechec
+k/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/base/atveryen
+d-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/uniquecount
+er/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip99
+)
+Package hyperref Info: Option `breaklinks' set `true' on input line 160.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 160.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 160.
+
+Package hyperref Info: Option `colorlinks' set `true' on input line 160.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/tocbibind/toc
+bibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/tocloft/toclo
+ft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip100
+\cftbeforetoctitleskip=\skip101
+\cftaftertoctitleskip=\skip102
+\cftbeforepartskip=\skip103
+\cftpartnumwidth=\skip104
+\cftpartindent=\skip105
+\cftbeforechapskip=\skip106
+\cftchapindent=\skip107
+\cftchapnumwidth=\skip108
+\cftbeforesecskip=\skip109
+\cftsecindent=\skip110
+\cftsecnumwidth=\skip111
+\cftbeforesubsecskip=\skip112
+\cftsubsecindent=\skip113
+\cftsubsecnumwidth=\skip114
+\cftbeforesubsubsecskip=\skip115
+\cftsubsubsecindent=\skip116
+\cftsubsubsecnumwidth=\skip117
+\cftbeforeparaskip=\skip118
+\cftparaindent=\skip119
+\cftparanumwidth=\skip120
+\cftbeforesubparaskip=\skip121
+\cftsubparaindent=\skip122
+\cftsubparanumwidth=\skip123
+\cftbeforeloftitleskip=\skip124
+\cftafterloftitleskip=\skip125
+\cftbeforefigskip=\skip126
+\cftfigindent=\skip127
+\cftfignumwidth=\skip128
+\c@lofdepth=\count417
+\c@lotdepth=\count418
+\cftbeforelottitleskip=\skip129
+\cftafterlottitleskip=\skip130
+\cftbeforetabskip=\skip131
+\cfttabindent=\skip132
+\cfttabnumwidth=\skip133
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/framed/framed
+.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip134
+\fb@frw=\dimen175
+\fb@frh=\dimen176
+\FrameRule=\dimen177
+\FrameSep=\dimen178
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/fancyvrb/fanc
+yvrb.sty
+Package: fancyvrb 2021/10/15 v3.9 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count419
+\FV@InFile=\read3
+\FV@TabBox=\box55
+\c@FancyVerbLine=\count420
+\FV@StepNumber=\count421
+\FV@OutFile=\write4
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/tools/longtab
+le.sty
+Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
+\LTleft=\skip135
+\LTright=\skip136
+\LTpre=\skip137
+\LTpost=\skip138
+\LTchunksize=\count422
+\LTcapwidth=\dimen179
+\LT@head=\box56
+\LT@firsthead=\box57
+\LT@foot=\box58
+\LT@lastfoot=\box59
+\LT@gbox=\box60
+\LT@cols=\count423
+\LT@rows=\count424
+\c@LT@tables=\count425
+\c@LT@chunks=\count426
+\LT@p@ftn=\toks27
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/booktabs/book
+tabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen180
+\lightrulewidth=\dimen181
+\cmidrulewidth=\dimen182
+\belowrulesep=\dimen183
+\belowbottomsep=\dimen184
+\aboverulesep=\dimen185
+\abovetopsep=\dimen186
+\cmidrulesep=\dimen187
+\cmidrulekern=\dimen188
+\defaultaddspace=\dimen189
+\@cmidla=\count427
+\@cmidlb=\count428
+\@aboverulesep=\dimen190
+\@belowrulesep=\dimen191
+\@thisruleclass=\count429
+\@lastruleclass=\count430
+\@thisrulewidth=\dimen192
+))
+\@quotelevel=\count431
+\@quotereset=\count432
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 29
+.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1ppl.
+fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+) (./_main.aux)
+\openout1 = `_main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
+9.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.f
+d
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(99.58464pt, 426.79135pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 674.33032pt, 99.58464pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=15.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=103.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/caption/ltcap
+tion.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \microtypecontext on input line 29.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-
+ppl.cfg
+File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/biblatex/lbx/
+english.lbx
+File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2021-10-18 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/biblatex/blx-
+case-expl3.sty
+Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
+)
+\openout3 = `_main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file '_main.bbl' not found.
+No file _main.bbl.
+Package biblatex Info: Reference section=0 on input line 29.
+Package biblatex Info: Reference segment=0 on input line 29.
+Package hyperref Info: Link coloring ON on input line 29.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/hyperref/name
+ref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/refcount/refc
+ount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/generic/gettitlestr
+ing/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count433
+)
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
+(./_main.out) (./_main.out)
+\@outlinefile=\write5
+\openout5 = `_main.out'.
+
+LaTeX Font Info:    Trying to load font information for T1+fvs on input line 33
+.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/bera/t1fvs.fd
+File: t1fvs.fd 2004/09/07 scalable font definitions for T1/fvs.
+)
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 33.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fvs' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 33.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 33.
+[1
+
+] [2]
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 21.59985pt on input line 35.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 21.59985pt on input line 35.
+(./_main.toc
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 9.85492pt on input line 2.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 2
+.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ppl
+.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
+2.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omlzpl
+m.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
+2.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omszpl
+m.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
+2.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omxzpl
+m.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
+2.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1zpl
+m.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `zplm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+)
+\tf@toc=\write6
+\openout6 = `_main.toc'.
+
+[3] [4
+
+]
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 38.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 38.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 4
+5.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ppl
+.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [5] [6
+
+] [7] [8
+
+] [9]
+Missing character: There is no ’ ("2019) in font pplb8t!
+[10] [11
+
+] [12
+
+] [13] [0
+
+
+]
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 13.49991pt on input line 136.
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 14
+0.
+
+(/Users/mushfiqulanwarsiraji/Library/TinyTeX/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 140.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fvm' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+[1]
+File: _main_files/figure-latex/deaths-1.pdf Graphic file (type pdf)
+<use _main_files/figure-latex/deaths-1.pdf>
+
+Overfull \hbox (4.82007pt too wide) in paragraph at lines 162--163
+ [][] 
+ []
+
+[2] [3] [4]
+Chapter 2.
+
+LaTeX Warning: Citation 'Brown59' on page 5 undefined on input line 234.
+
+
+LaTeX Warning: Citation 'Brown63' on page 5 undefined on input line 234.
+
+
+LaTeX Warning: Citation 'Holt57' on page 5 undefined on input line 234.
+
+
+LaTeX Warning: Citation 'Winters60' on page 5 undefined on input line 234.
+
+[5
+
+]
+
+LaTeX Warning: Citation 'MH79' on page 6 undefined on input line 236.
+
+
+LaTeX Warning: Citation 'Metal82' on page 6 undefined on input line 236.
+
+
+LaTeX Warning: Citation 'CKOS01' on page 6 undefined on input line 236.
+
+
+LaTeX Warning: Citation 'OKS97' on page 6 undefined on input line 238.
+
+
+LaTeX Warning: Citation 'HKSG02' on page 6 undefined on input line 238.
+
+[6]
+Appendix A.
+
+LaTeX Warning: Empty bibliography on input line 249.
+
+[7
+
+] (./_main.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `_main.out' has not changed.
+(rerunfilecheck)             Checksum: E8BD69CFF5595EE4809D74DC61F93048;1716.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                _main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to '_main.run.xml'.
+\openout1 = `_main.run.xml'.
+
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 102 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 21550 strings out of 478472
+ 371903 string characters out of 5859376
+ 1159614 words of memory out of 5000000
+ 41554 multiletter control sequences out of 15000+600000
+ 462652 words of font info for 103 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 75i,12n,81p,738b,16723s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on _main.pdf (21 pages).

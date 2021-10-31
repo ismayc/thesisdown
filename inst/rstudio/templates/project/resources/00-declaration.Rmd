@@ -1,0 +1,48 @@
+---
+knit: "bookdown::render_book"
+---
+
+# Declaration {-}
+
+\emph{(Standard thesis)}
+
+This thesis is an original work of my research and contains no material which has been accepted for the award of any other degree or diploma at any university or equivalent institution and that, to the best of my knowledge and belief, this thesis contains no material previously published or written by another person, except where due reference is made in the text of the thesis.
+
+\emph{(Thesis including published works declaration)}
+
+I hereby declare that this thesis contains no material which has been accepted for the award of any other degree or diploma at any university or equivalent institution and that, to the best of my knowledge and belief, this thesis contains no material previously published or written by another person, except where due reference is made in the text of the thesis. 
+
+This thesis includes (insert number) original papers published in peer reviewed journals and (insert number) submitted publications. The core theme of the thesis is (insert theme). The ideas, development and writing up of all the papers in the thesis were the principal responsibility of myself, the student, working within the (insert name of academic unit) under the supervision of (insert name of supervisor).
+	
+(The inclusion of co-authors reflects the fact that the work came from active collaboration between researchers and acknowledges input into team-based research.) Remove this paragraph for theses with sole-authored work
+
+In the case of (insert chapter numbers) my contribution to the work involved the following:
+
+I have / have not renumbered sections of submitted or published papers in order to generate a consistent presentation within the thesis.
+
+\begin{table}
+\centering\footnotesize\tabcolsep=0.12cm
+\begin{tabular}{|p{1.2cm}|p{2cm}|p{1.8cm}|p{3.4cm}|p{3.5cm}|p{1.5cm}|}
+\hline
+\RaggedRight\textbf{Thesis chapter}  & 
+\RaggedRight\textbf{Publication title}  & 
+\RaggedRight\textbf{Status (published, in press, accepted or returned for revision)}  &  
+\RaggedRight\textbf{Nature and \% of student contribution} & 
+\RaggedRight\textbf{Co-author name(s), nature and \% of co-author’s contribution} &  \RaggedRight\textbf{Co-author(s), Monash student Y/N} \\ 
+\hline
+2 & xx & xx  & xx & xx & \multicolumn{1}{c|}{N}   \\
+\hline
+3 & xx & xx  & xx & xx  & \multicolumn{1}{c|}{N}   \\
+\hline
+4 & xx & xx  & xx & xx & \multicolumn{1}{c|}{N}    \\
+\hline
+5 & xx & xx  & xx & xx & \multicolumn{1}{c|}{N}   \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Student name:} \authorname
+
+\textbf{Student signature:}
+
+\textbf{Date:}
