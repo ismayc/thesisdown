@@ -4,13 +4,10 @@ Version: 0.1.0
 Authors@R: 
     person("Mushfiqul", "Anwar Siraji", , "siraji1993@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0003-0127-9982"))
-Description: Chester Ismay's thesis down used the bookdown package and LaTeX and Word thesis templates to create Rmardown based thesis compiler. In monashthesisdown package I have modified his package to create thesis templete according to Monash University's guidline
-
+Description: 
 Depends:
     R (>= 3.2.0)
-Imports: 
-    dplyr,
-    ggplot2,
+Imports:
     bookdown,
     knitr,
     here
