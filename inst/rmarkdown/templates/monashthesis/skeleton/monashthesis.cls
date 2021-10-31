@@ -192,7 +192,7 @@
     \vfill
         A thesis submitted for the degree of \degreetitle { } at\\
         Monash University in \@submitdate\\
-        Department of Econometrics and Business Statistics
+        Department of Psychology,  School of Medicine and Health Sciences
     \end{center}
     %\hrulefill
     \newpage\mbox{}\thispagestyle{empty}\newpage}}
