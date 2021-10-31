@@ -5,8 +5,9 @@ author: 'Mushfiqul Anwar Siraji'
 degrees: 'M.Sc., B.Sc. (Hons), University of Dhaka'
 output: bookdown::pdf_book
 site: bookdown::bookdown_site
-bibliography: [thesisrefs.bib]
-link-citations: yes
+bibliography: [bib/thesisrefs.bib]
+csl: csl/apa.csl # citation style file
+link-citations: yes # hyperlinks between citations and reference list
 knit: "bookdown::render_book"
 ---
 
