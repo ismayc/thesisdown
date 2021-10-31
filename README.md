@@ -16,6 +16,7 @@ Each chapter should be in different .Rmd files. If you want specific LaTeX packa
       install.packages("remotes", repos = "https://cran.rstudio.org")
     remotes::install_github("rstudio/bookdown")
     remotes::install_github("ismayc/thesisdown")
+    remotes::install_github("masiraji/monashthesisdown")
 
 I have commented out **186 number** line in **monashthesis.cls** to sync with the guideline. If you want a logo please activate line 186.
 
