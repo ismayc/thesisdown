@@ -1,16 +1,11 @@
 Package: monashthesisdown
-Title: An updated R Markdown thesis template using the bookdown package
+Title:  R Markdown thesis template using the bookdown package
 Version: 0.1.0
-Authors@R: c(
-    person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = c("aut")),
-    person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"),
-    person("Benjamin S.", "Baumer", email = "ben.baumer@gmail.com",
-      role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3279-0516"))
-    )
-Description: Using the bookdown package and LaTeX and Word thesis templates from
-    Reed College, this package aims to encourage reproducible research using
-    simple Markdown syntax while embedding all of the R code to produce plots
-    and analyses as well. This package is adapted for Smith College
+Authors@R: 
+    person("Mushfiqul", "Anwar Siraji", , "siraji1993@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "https://orcid.org/0000-0003-0127-9982"))
+Description: Chester Ismay's thesis down used the bookdown package and LaTeX and Word thesis templates to create Rmardown based thesis compiler. In monashthesisdown package I have modified his package to create thesis templete according to Monash University's guidline
+
 Depends:
     R (>= 3.2.0)
 Imports: 
