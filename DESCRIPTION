@@ -4,13 +4,14 @@ Version: 0.1.0.9000
 Authors@R: 
     person("Mushfiqul", "Anwar Siraji", , "siraji1993@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0003-0127-9982"))
-Description: 
+Description: This package helps to render your thesis based on Monash Templete.
 Depends:
     R (>= 3.2.0)
 Imports:
     bookdown,
     knitr,
-    here
+    here,
+    R.utils
 Suggests:
     remotes,
     usethis

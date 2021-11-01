@@ -1,11 +1,13 @@
 %% monashthesis Class for LaTeX2e.
-%% Version 5.0
+%% Original Version 5.0
 %% By Rob J. Hyndman.
 %% 28 March 2018
-%%
+%%Modified by Mushfiqul Anwar Siraji
+%%Version 1.0
+%% 1 November 2021
 %% This class file is for honours and postgraduate research students
-%% in the Department of Econometrics & Business Statistics
-%% at Monash University, Australia.
+%% in the Department of Psycgology, School of Medicine and Health Sciences
+%% at Monash University.
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{monashthesis}[2016/09/06 Monash Thesis Class]

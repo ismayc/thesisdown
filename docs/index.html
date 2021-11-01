@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="R Markdown thesis template using the bookdown package">
-<meta property="og:description" content="">
+<meta property="og:description" content="This package helps to render your thesis based on Monash Templete.">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -31,7 +31,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">monashthesisdown</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9000</span>
       </span>
     </div>
 
@@ -69,18 +69,101 @@
 
 <!-- badges: end -->
 <p>This is a minimal Thesis template based on R Markdown, <a href="https://github.com/rstudio/bookdown">bookdown</a> and <a href="https://github.com/ismayc/thesisdown">thesisdown</a>. This template originally designed to work with the Monash University Thesis guidelines. Currently this template is functional in knitting gitbook and PDF version.</p>
-<p>This template provides a skeleton file structure that you can edit to create your thesis. Edit the **_bookdown.yml** file to set the order in which you’d like them to appear.</p>
-<p>Each chapter should be in different .Rmd files. If you want specific LaTeX packages to add, put them in monashthesis.tex. Make sure that you have <strong>knitr</strong>, <strong>bookdown</strong> and <strong>thesisdown</strong> packages.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"remotes"</span>)) </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(<span class="st">"remotes"</span>, <span class="at">repos =</span> <span class="st">"https://cran.rstudio.org"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"rstudio/bookdown"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"ismayc/thesisdown"</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"masiraji/monashthesisdown"</span>)</span></code></pre></div>
-<p>I have commented out <strong>186 number</strong> line in <strong>monashthesis.cls</strong> to sync with the guideline. If you want a logo please activate line 186.</p>
+<p>The monashthesis.tex and monashthesis.cls are collected from Prof’ Rob J Hyndman’s <a href="https://github.com/robjhyndman/MonashThesis">github repository</a> and modified to the updated guidlines. I have commented out <strong>186 number</strong> line in <strong>monashthesis.cls</strong> to sync with the guideline. If you want a logo please activate line 186.</p>
+<div id="current-functional-output" class="section level2">
+<h2 class="hasAnchor">
+<a href="#current-functional-output" class="anchor"></a>Current Functional Output</h2>
+<ul>
+<li><p>PDF</p></li>
+<li><p>epub</p></li>
+<li><p>gitbook</p></li>
+</ul>
+</div>
 <div id="how-to-use" class="section level2">
 <h2 class="hasAnchor">
 <a href="#how-to-use" class="anchor"></a>How to use</h2>
-<p>A detailed how to guide can be found <a href="https://github.com/ismayc/thesisdown">here</a></p>
+<p>Make you sure you have <strong>rmakrdown,</strong> <strong>bookdown</strong> and <strong>thesisdown</strong> packages installed. You also need to have have a LaTex installed. <strong>tinytex</strong> can help you in that regards</p>
+<pre class="{r}"><code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages(c('tinytex', 'rmarkdown'))
+tinytex::install_tinytex()
+# after restarting RStudio, confirm that you have LaTeX with
+tinytex:::is_tinytex()
+
+</a></code></pre>
+<p>To use monashthesisdown with your R studio:</p>
+<ol>
+<li><p>Make sure you have LaTeX and the latest version of RStudio.</p></li>
+<li>
+<p>Install bookdown and thesisdown packages</p>
+<pre class="{r}"><code>if (!require("remotes")) 
+  install.packages("remotes", repos = "https://cran.rstudio.org")
+remotes::install_github("rstudio/bookdown")
+remotes::install_github("ismayc/thesisdown")
+remotes::install_github("masiraji/monashthesisdown")
+</code></pre>
+</li>
+</ol>
+<p>After installing these restart your Rstudio.</p>
+<p>3. In Rstudio you can get started with monashthesisdown by clicking <strong>File</strong> &gt; <strong>New Project</strong> &gt; <strong>New Directory and</strong> selecting <strong>Thesis project using monashthesisdown</strong></p>
+<p><img src="images/demo_1.jpg" title="Creating a Project with monashthesisdown"></p>
+<p>Next, give your project a name and specify where you’d like the files to appear. In the screenshot below, the project name is <code>my_thesis</code> and it will appear as a new folder on my Desktop.</p>
+<p><img src="images/demo_2.jpg"></p>
+<div id="day-to-day-writing-of-your-thesis" class="section level3">
+<h3 class="hasAnchor">
+<a href="#day-to-day-writing-of-your-thesis" class="anchor"></a><strong>Day-to-day writing of your thesis</strong>
+</h3>
+<p>Each chapter of your thesis should be in different .Rmd files. If you want specific LaTeX packages to add, put them in monashthesis.tex. This template provides a skeleton file structure that you can edit to create your thesis. Edit the **_bookdown.yml** file to set the order in which you’d like them to appear. It’s recommended that you version control your thesis using GitHub if possible. see this <a href="https://happygitwithr.com">link</a> to know more about github based version controlling in Rstudio.</p>
+</div>
+</div>
+<div id="rendering" class="section level2">
+<h2 class="hasAnchor">
+<a href="#rendering" class="anchor"></a><strong>Rendering</strong>
+</h2>
+<p>This package use <code>render_book</code> command from bookdown package to render PDF and gitbook version of your thesis in accordance with the guidline of Monash University. Any change that you want to bring in can be done by modifying <strong>monashthesis.cls file.</strong></p>
+<pre class="{r}"><code><a href="https://pkgs.rstudio.com/bookdown/reference/render_book.html">bookdown::render_book("index.Rmd", "bookdown::gitbook")
+bookdown::render_book("index.Rmd", "bookdown::pdf_book")
+</a></code></pre>
+</div>
+<div id="components" class="section level2">
+<h2 class="hasAnchor">
+<a href="#components" class="anchor"></a><strong>Components</strong>
+</h2>
+<p>The following components are ones you should edit to customize your thesis:</p>
+<div id="_bookdownyml" class="section level3">
+<h3 class="hasAnchor">
+<a href="#_bookdownyml" class="anchor"></a><strong><code>_bookdown.yml</code></strong>
+</h3>
+<p>Edit the **_bookdown.yml** file to set the order in which you’d like the Rmd files to appear.</p>
+</div>
+<div id="indexrmd" class="section level3">
+<h3 class="hasAnchor">
+<a href="#indexrmd" class="anchor"></a><strong><code>index.Rmd</code></strong>
+</h3>
+<p>This file contains all the meta information that goes at the beginning of your document. You’ll need to edit the top portion of this file (the YAML) to put your name on the first page, the title of your thesis, etc. Note that you need to have at least one chapter start in the <code>index.Rmd</code> file for the build to work.</p>
+</div>
+<div id="00-abstactrmd-01-chap1rmd-etc" class="section level3">
+<h3 class="hasAnchor">
+<a href="#00-abstactrmd-01-chap1rmd-etc" class="anchor"></a><strong><code>00-abstact.Rmd</code>, <code>01-chap1.Rmd</code>, etc.</strong>
+</h3>
+<p>These are the Rmd files for each chapter in your dissertation. Write your thesis in these. If you’re writing in RStudio, you may find the <a href="https://github.com/benmarwick/wordcountaddin">wordcount addin</a> useful for getting word counts and readability statistics in R Markdown documents.</p>
+</div>
+<div id="bib" class="section level3">
+<h3 class="hasAnchor">
+<a href="#bib" class="anchor"></a><strong><code>bib/</code></strong>
+</h3>
+<p>Store your bibliography (as bibtex files) here. We recommend using the <a href="https://github.com/crsh/citr">citr addin</a> and <a href="https://www.zotero.org/">Zotero</a> to efficiently manage and insert citations.</p>
+</div>
+<div id="csl" class="section level3">
+<h3 class="hasAnchor">
+<a href="#csl" class="anchor"></a><strong><code>csl/</code></strong>
+</h3>
+<p>Specific style files for bibliographies should be stored here. A good source for citation styles is<a href="https://github.com/citation-style-language/styles#readme" class="uri">https://github.com/citation-style-language/styles#readme</a>.</p>
+</div>
+<div id="figure-and-data" class="section level3">
+<h3 class="hasAnchor">
+<a href="#figure-and-data" class="anchor"></a><strong><code>figure/</code> and <code>data/</code></strong>
+</h3>
+<p>Store your figures and data here and reference them in your R Markdown files. See the <a href="https://bookdown.org/yihui/bookdown/">bookdown book</a> for details on cross-referencing items using R Markdown.</p>
+</div>
 </div>
 </div>
   </div>
