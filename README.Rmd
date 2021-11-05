@@ -72,7 +72,7 @@ Have you created a thesisdown template for your institution and would like to ha
 |Universidade Federal de Santa Catarina  | [lfpdroubi/ufscdown](https://github.com/lfpdroubi/ufscdown)                                  |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Universiteit van Amsterdam              | [lcreteig/amsterdown](https://github.com/lcreteig/amsterdown)                                |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
 |McMaster University              | [paezha/macdown](https://github.com/paezha/macdown)                          |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)|
-
+|Monash University           | [masiraji/monashthesisdown](https://github.com/masiraji/monashthesisdown)                          |[rstudio/bookdown](https://github.com/rstudio/bookdown)|
 
 ### Using thesisdown from Chester's GitHub
 
