@@ -70,6 +70,7 @@ I’ll review it and merge it in. Let’s keep the list going!
 | Humboldt University of Berlin                               | [phister/huwiwidown](https://github.com/phister/huwiwidown)                                   | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Kansas State University                                     | [emraher/wildcatdown](https://github.com/emraher/wildcatdown)                                 | [benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
 | Massachusetts Institute of Technology                       | [ratatstats/manusdown](https://github.com/ratatstats/manusdown)                               | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|Monash University                                            | [masiraji/monashthesisdown](https://github.com/masiraji/monashthesisdown)                     | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)     |
 | Oregon State University                                     | [zkamvar/beaverdown](https://github.com/zkamvar/beaverdown)                                   | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Oxford University                                           | [davidplans/oxdown](https://github.com/davidplans/oxdown)                                     | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Queen's University                                          | [eugenesit/gaelsdown](https://github.com/eugenesit/gaelsdown)                                 | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
@@ -95,6 +96,7 @@ I’ll review it and merge it in. Let’s keep the list going!
 | University of Bristol                                       | [mattlee821/bristolthesis](https://github.com/mattlee821/bristolthesis)                       | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Universidade Federal de Santa Catarina                      | [lfpdroubi/ufscdown](https://github.com/lfpdroubi/ufscdown)                                   | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Universiteit van Amsterdam                                  | [lcreteig/amsterdown](https://github.com/lcreteig/amsterdown)                                 | [benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
+
 
 ### Using thesisdown from Chester’s GitHub
 
