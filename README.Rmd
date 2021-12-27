@@ -46,6 +46,7 @@ Have you created a thesisdown template for your institution and would like to ha
 |Heidelberg University, Faculty of Biosciences          |[nkurzaw/heididown](https://github.com/nkurzaw/heididown)  |[phister/huwiwidown](https://github.com/phister/huwiwidown) |
 |Humboldt University of Berlin          |[phister/huwiwidown](https://github.com/phister/huwiwidown)  |[ismayc/thesisdown](https://github.com/ismayc/thesisdown) |
 |Kansas State University                 |[emraher/wildcatdown](https://github.com/emraher/wildcatdown)                                 |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
+|McMaster University              | [paezha/macdown](https://github.com/paezha/macdown)                          |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)|
 |Massachusetts Institute of Technology                |[ratatstats/manusdown](https://github.com/ratatstats/manusdown)                                 |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)  |
 |Oregon State University                 |[zkamvar/beaverdown](https://github.com/zkamvar/beaverdown)                                   |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Oxford University                       |[davidplans/oxdown](https://github.com/davidplans/oxdown)                                     |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
@@ -71,7 +72,6 @@ Have you created a thesisdown template for your institution and would like to ha
 |University of Bristol                                 |[mattlee821/bristolthesis](https://github.com/mattlee821/bristolthesis)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Universidade Federal de Santa Catarina  | [lfpdroubi/ufscdown](https://github.com/lfpdroubi/ufscdown)                                  |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |Universiteit van Amsterdam              | [lcreteig/amsterdown](https://github.com/lcreteig/amsterdown)                                |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
-|McMaster University              | [paezha/macdown](https://github.com/paezha/macdown)                          |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)|
 
 
 ### Using thesisdown from Chester's GitHub
