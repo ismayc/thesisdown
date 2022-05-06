@@ -94,7 +94,8 @@ I’ll review it and merge it in. Let’s keep the list going!
 | University of Bristol                                       | [mattlee821/bristolthesis](https://github.com/mattlee821/bristolthesis)                       | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Universidade Federal de Santa Catarina                      | [lfpdroubi/ufscdown](https://github.com/lfpdroubi/ufscdown)                                   | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Universiteit van Amsterdam                                  | [lcreteig/amsterdown](https://github.com/lcreteig/amsterdown)                                 | [benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
-
+| University of Auckland                                      | [d-scanzi/UOAdown](https://github.com/d-scanzi/UOAdown)                                       | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+    
 ### Using thesisdown from Chester’s GitHub
 
 Special thanks to [Ben Marwick](https://github.com/benmarwick) for
