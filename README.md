@@ -71,8 +71,10 @@ I’ll review it and merge it in. Let’s keep the list going!
 | Kansas State University                                     | [emraher/wildcatdown](https://github.com/emraher/wildcatdown)                                 | [benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
 | McMaster University                                         | [paezha/macdown](https://github.com/paezha/macdown)                                           | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Massachusetts Institute of Technology                       | [ratatstats/manusdown](https://github.com/ratatstats/manusdown)                               | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+| Monash University | [masiraji/monashthesisdown](https://github.com/masiraji/monashthesisdown) | [ismayc/thesisdown](https://github.com/ismayc/thesisdown) |
 | Oregon State University                                     | [zkamvar/beaverdown](https://github.com/zkamvar/beaverdown)                                   | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Oxford University                                           | [davidplans/oxdown](https://github.com/davidplans/oxdown)                                     | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+| Queen's University | [eugenesit/gaelsdown](https://github.com/eugenesit/gaelsdown)| [ismayc/thesisdown](https://github.com/ismayc/thesisdown) |
 | Smith College                                               | [SmithCollege-SDS/pioneerdown](https://github.com/SmithCollege-SDS/pioneerdown)               | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Southampton University                                      | [dr-harper/sotonthesis](https://github.com/dr-harper/sotonthesis)                             | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Stanford University                                         | [mhtess/treedown](https://github.com/mhtess/treedown)                                         | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
