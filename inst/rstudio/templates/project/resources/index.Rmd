@@ -45,6 +45,14 @@ dedication: |
 preface: |
   This is an example of a thesis setup to use the reed thesis document class 
   (for LaTeX) and the R bookdown package, in general.
+abbreviations:
+  ABC: American Broadcasting Company
+  CBS: Colombia Broadcasting System
+  CUS: Computer User Services
+  PBS: Public Broadcasting System
+  NBC: National Broadcasting Company
+# Note that abbreviations in lowercase letters will NOT be automatically capitalized
+# Delete or silence the abbreviations section if you do not want a list of abbreviations
   
 # Specify the location of the bibliography below
 bibliography: bib/thesis.bib
