@@ -34,7 +34,8 @@ output:
 # (e.g., abstract, acknowledgements) below or use code similar to line 25-26 
 # for the .RMD files. If you are NOT producing a PDF, delete or silence
 # lines 25-39 in this YAML header.
-abstract: '`r if(knitr:::is_latex_output()) paste(readLines(here::here("prelims", "00-abstract.Rmd")), collapse = "\n  ")`'
+abstract: |
+  `r if(knitr:::is_latex_output()) paste(readLines(here::here("prelims", "00-abstract.Rmd")), collapse = "\n  ")`
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab 
 # is needed on the line after the `|`.
@@ -45,6 +46,14 @@ dedication: |
 preface: |
   This is an example of a thesis setup to use the reed thesis document class 
   (for LaTeX) and the R bookdown package, in general.
+abbreviations:
+  ABC: American Broadcasting Company
+  CBS: Colombia Broadcasting System
+  CUS: Computer User Services
+  PBS: Public Broadcasting System
+  NBC: National Broadcasting Company
+# Note that abbreviations in lowercase letters will NOT be automatically capitalized
+# Delete or silence the abbreviations section if you do not want a list of abbreviations
   
 # Specify the location of the bibliography below
 bibliography: bib/thesis.bib

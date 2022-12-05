@@ -207,6 +207,18 @@ $if(preface)$
   \end{preface}
 $endif$
 
+$if(abbreviations)$
+\chapter*{List of Abbreviations}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ll}
+        $for(abbreviations/pairs)$
+        \textbf{$it.key$} & $it.value$ \\
+        $endfor$
+    \end{tabular}
+\end{table}
+$endif$
+
 $if(toc)$
   \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
   \setcounter{secnumdepth}{$toc-depth$}
