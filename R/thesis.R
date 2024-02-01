@@ -36,7 +36,7 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", pandoc_
 
   old_opt <- getOption("bookdown.post.latex")
   options(bookdown.post.latex = fix_envs)
-  on.exit(options(bookdown.post.late = old_opt))
+  on.exit(options(bookdown.post.latex = old_opt))
 
   base
 }
