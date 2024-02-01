@@ -62,6 +62,7 @@ Have you created a thesisdown template for your institution and would like to ha
 |University of California, Santa Barbara |[DanOvando/gauchodown](https://github.com/DanOvando/gauchodown)                               |[benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
 |University of Florida                   |[ksauby/thesisdownufl](https://github.com/ksauby/thesisdownufl)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |University of Freiburg                  |[vivekbhr/doctorRbite](https://github.com/vivekbhr/doctorRbite)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
+|University of Guelph                  |[sebsciarra/guelphdown](https://github.com/sebsciarra/guelphdown)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |University of Kansas                    |[wjakethompson/jayhawkdown](https://github.com/wjakethompson/jayhawkdown)                     |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |University of Manchester                |[juliov/uomthesisdown](https://github.com/JulioV/uomthesisdown)                               |[ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 |University of Minnesota                 |[zief0002/gopherdown](https://github.com/zief0002/gopherdown)                                 |[wjakethompson/jayhawkdown](https://github.com/wjakethompson/jayhawkdown) |
