@@ -89,6 +89,7 @@ I’ll review it and merge it in. Let’s keep the list going!
 |University College London                                                 |[benyohaiphysics/thesisdownUCL](https://github.com/benyohaiphysics/thesisdownUCL)|[ismayc/thesisdown](https://github.com/ismayc/thesisdown)|
 |University of Arizona                                                     |[kelseygonzalez/beardown](https://github.com/kelseygonzalez/beardown)|[ismayc/thesisdown](https://github.com/ismayc/thesisdown)|
 |University of Auckland                                                    |[d-scanzi/UOAdown](https://github.com/d-scanzi/UOAdown)|[ismayc/thesisdown](https://github.com/ismayc/thesisdown)|
+|University of Bergen                                                      |[SaltyRydM/bergendown](https://github.com/SaltyRydM/bergendown)|[ismayc/thesisdown](https://github.com/ismayc/thesisdown)|
 |University of Bristol                                                     |[mattlee821/bristolthesis](https://github.com/mattlee821/bristolthesis)|[ismayc/thesisdown](https://github.com/ismayc/thesisdown)|
 |University of California, Davis                                           |[ryanpeek/aggiedown](https://github.com/ryanpeek/aggiedown)|[DanOvando/gauchodown](https://github.com/DanOvando/gauchodown)|
 |University of California, Santa Barbara                                   |[DanOvando/gauchodown](https://github.com/DanOvando/gauchodown)|[benmarwick/huskydown](https://github.com/benmarwick/huskydown)|
