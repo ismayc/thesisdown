@@ -209,14 +209,11 @@ $endif$
 
 $if(abbreviations)$
 \chapter*{List of Abbreviations}
-\begin{table}[h]
-    \centering
-    \begin{tabular}{ll}
-        $for(abbreviations/pairs)$
-        \textbf{$it.key$} & $it.value$ \\
-        $endfor$
-    \end{tabular}
-\end{table}
+\begin{longtable}{p{.20\textwidth} | p{.80\textwidth}}
+  $for(abbreviations/pairs)$
+    \textbf{$it.key$} & $it.value$ \\
+  $endfor$
+\end{longtable}
 $endif$
 
 $if(toc)$
